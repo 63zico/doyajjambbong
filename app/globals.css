@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #fffaf0;
+  --text: #171312;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.food-photo {
+  background:
+    radial-gradient(circle at 50% 43%, rgba(242, 75, 46, 0.9) 0 18%, transparent 19%),
+    radial-gradient(circle at 37% 37%, rgba(255, 244, 223, 0.86) 0 8%, transparent 9%),
+    radial-gradient(circle at 64% 34%, rgba(255, 244, 223, 0.76) 0 7%, transparent 8%),
+    radial-gradient(circle at 50% 52%, rgba(197, 22, 29, 0.95) 0 33%, transparent 34%),
+    radial-gradient(circle at 50% 52%, #1c1816 0 45%, transparent 46%),
+    linear-gradient(135deg, #fff4df, #d7a13d);
+}
+
+.noise {
+  background-image:
+    linear-gradient(90deg, rgba(17, 17, 17, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(17, 17, 17, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

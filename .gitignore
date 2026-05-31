@@ -1,0 +1,13 @@
+.next
+node_modules
+out
+dist
+*.log
+*.tsbuildinfo
+doya-homepage-preview.png
+.env
+.env.local
+
+.vercel
+tmp/
+doya-qa-*.png
