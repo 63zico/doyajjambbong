@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { blogPath, blogPosts } from "@/data/blog";
+import { menuDetailSlugs, menuDetailUrl } from "@/data/menu-details";
 import { absoluteUrl, Locale, paths, site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -41,5 +42,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75
   }));
 
-  return [...rootPages, ...pages, ...blogIndexes, ...blogPages];
+  const menuDetailPages = site.locales.flatMap((locale) =>
+    menuDetailSlugs.map((slug) => ({
+      url: menuDetailUrl(locale, slug),
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+      alternates: {
+        languages: {
+          ...Object.fromEntries(site.locales.map((lang) => [lang, menuDetailUrl(lang, slug)])),
+          "x-default": menuDetailUrl(site.defaultLocale as Locale, slug)
+        }
+      }
+    }))
+  );
+
+  return [...rootPages, ...pages, ...menuDetailPages, ...blogIndexes, ...blogPages];
 }

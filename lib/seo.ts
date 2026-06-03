@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { pageContent } from "@/data/content";
 import { faqs } from "@/data/faq";
 import { menuItems } from "@/data/menu";
+import { menuDetailSlugByName, menuDetailUrl } from "@/data/menu-details";
 import { hoChiMinhBranches } from "@/data/branches";
 import { absoluteUrl, Locale, localizedPath, ogImageUrl, PageSlug, site } from "@/lib/site";
 
@@ -331,7 +332,7 @@ export function restaurantJsonLd(locale: Locale) {
       "food delivery District 1"
     ],
     keywords: baseKeywords.join(", "),
-    acceptsReservations: false,
+    acceptsReservations: true,
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -387,6 +388,33 @@ export function branchesJsonLd(locale: Locale) {
 }
 
 export function menuJsonLd(locale: Locale) {
+  const priceValue = (price?: string) => {
+    const match = price?.match(/\d[\d,]*/);
+    return match ? match[0].replace(/,/g, "") : undefined;
+  };
+
+  const hasMenuItem = menuItems.map((item) => {
+    const detailSlug = menuDetailSlugByName[item.name];
+    const url = detailSlug ? menuDetailUrl(locale, detailSlug) : absoluteUrl(locale, "menu");
+
+    return {
+      "@type": "MenuItem",
+      name: item.name,
+      alternateName: [item.koreanName, item.vietnameseName].filter(Boolean),
+      description: item.description,
+      keywords: item.tags.join(", "),
+      url,
+      image: item.image ? `${site.baseUrl}${item.image}` : undefined,
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "VND",
+        price: priceValue(item.price),
+        url,
+        availability: "https://schema.org/InStock"
+      }
+    };
+  });
+
   return {
     "@context": "https://schema.org",
     "@type": "Menu",
@@ -396,18 +424,7 @@ export function menuJsonLd(locale: Locale) {
       {
         "@type": "MenuSection",
         name: "Korean-Chinese noodles and comfort food",
-        hasMenuItem: menuItems.map((item) => ({
-        "@type": "MenuItem",
-        name: item.name,
-        alternateName: [item.koreanName, item.vietnameseName].filter(Boolean),
-        description: item.description,
-        keywords: item.tags.join(", "),
-        offers: {
-            "@type": "Offer",
-            priceCurrency: "VND",
-            availability: "https://schema.org/InStock"
-          }
-        }))
+        hasMenuItem
       }
     ]
   };

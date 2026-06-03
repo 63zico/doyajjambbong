@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MenuItem } from "@/data/menu";
 import { Locale } from "@/lib/site";
 
@@ -26,6 +27,7 @@ export function MenuCard({ item, locale }: { item: MenuItem; locale: Locale }) {
       : locale === "ko"
         ? item.descriptionKo ?? item.description
         : item.description;
+  const detailLabel = locale === "vi" ? "Xem chi tiết" : locale === "ko" ? "자세히 보기" : "View details";
   return (
     <article className="group overflow-hidden rounded-lg border border-ink/10 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-glow">
       <div className="relative aspect-[4/3] overflow-hidden bg-soy">
@@ -66,6 +68,14 @@ export function MenuCard({ item, locale }: { item: MenuItem; locale: Locale }) {
             </span>
           ))}
         </div>
+        {item.detailSlug ? (
+          <Link
+            href={`/${locale}/menu/${item.detailSlug}`}
+            className="mt-5 inline-flex rounded-md border border-ink/10 bg-cream px-3 py-2 text-xs font-black text-ink hover:border-chili hover:text-chili"
+          >
+            {detailLabel}
+          </Link>
+        ) : null}
       </div>
     </article>
   );

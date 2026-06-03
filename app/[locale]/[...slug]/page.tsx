@@ -243,6 +243,19 @@ function FeaturedMenuGrid({ items, locale }: { items: typeof menuItems; locale: 
 function CategorizedMenu({ locale }: { locale: Locale }) {
   return (
     <div className="mt-10 space-y-10">
+      <nav className="sticky top-[82px] z-20 -mx-4 overflow-x-auto border-y border-ink/10 bg-bone/95 px-4 py-3 backdrop-blur lg:top-[73px]">
+        <div className="flex gap-2">
+          {menuCategoryOrder.map((category) => (
+            <a
+              key={category}
+              href={`#menu-${category}`}
+              className="shrink-0 rounded-full border border-ink/10 bg-white px-3 py-1.5 text-xs font-black text-ink/70 hover:border-chili hover:text-chili"
+            >
+              {menuCategoryLabels[locale][category].title}
+            </a>
+          ))}
+        </div>
+      </nav>
       {menuCategoryOrder.map((category) => {
         const copy = menuCategoryLabels[locale][category];
         const items = menuItems.filter((item) => item.category === category);

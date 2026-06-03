@@ -6,6 +6,7 @@ export type MenuItem = {
   name: string;
   koreanName?: string;
   vietnameseName?: string;
+  detailSlug?: string;
   description: string;
   descriptionVi?: string;
   descriptionKo?: string;
@@ -139,6 +140,7 @@ export const menuCategoryOrder: MenuCategory[] = ["champong", "jajang", "rice", 
 export const menuItems: MenuItem[] = [
   {
     name: "DOYA Seafood Jjambbong",
+    detailSlug: "seafood-jjambbong-champong",
     koreanName: "도야 해물짬뽕",
     vietnameseName: "Mì cay hải sản DOYA",
     description: "Korean spicy seafood noodles in Ho Chi Minh, a signature jjambbong also searched as champong District 1.",
@@ -153,6 +155,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     name: "DOYA Jjambbong",
+    detailSlug: "doya-jjambbong-champong",
     koreanName: "도야 짬뽕",
     vietnameseName: "Mì jjambbong cổ điển",
     description: "Classic jjambbong Ho Chi Minh style with red broth, vegetables, seafood flavor, and Korean-Chinese wok depth.",
@@ -258,6 +261,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     name: "Jajangmyeon",
+    detailSlug: "jajangmyeon-mi-tuong-den",
     koreanName: "짜장면",
     vietnameseName: "Mì tương đen Hàn Quốc",
     description: "Korean black bean noodles in Ho Chi Minh, also searched as jajangmyeon Ho Chi Minh and mi tuong den.",
@@ -298,6 +302,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     name: "Seafood Jajang Platter",
+    detailSlug: "seafood-jajang-platter",
     koreanName: "해물쟁반짜장",
     vietnameseName: "Mì tương đen hải sản đĩa lớn",
     description: "A generous seafood jajang platter with noodles, Korean black bean sauce, vegetables, and seafood.",
@@ -350,6 +355,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     name: "Tangsuyuk",
+    detailSlug: "tangsuyuk-korean-sweet-sour-pork",
     koreanName: "탕수육",
     vietnameseName: "Thịt chiên sốt chua ngọt",
     description: "Korean sweet and sour pork, also searched as tangsuyuk Ho Chi Minh, ideal with jjambbong or jajangmyeon.",
@@ -364,6 +370,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     name: "Kkanpunggi",
+    detailSlug: "kkanpunggi-spicy-garlic-fried-chicken",
     koreanName: "깐풍기",
     vietnameseName: "Gà chiên sốt cay tỏi",
     description: "Spicy garlic fried chicken Korean Chinese style, also searched as kkanpunggi Ho Chi Minh.",
@@ -481,6 +488,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     name: "Tteokbokki",
+    detailSlug: "tteokbokki-korean-spicy-rice-cakes",
     koreanName: "떡볶이",
     vietnameseName: "Tokbokki Hàn Quốc",
     description: "Korean spicy rice cakes in a sweet and spicy red sauce, also searched as tteokbokki Ho Chi Minh, tokbokki, and Korean spicy rice cakes.",
