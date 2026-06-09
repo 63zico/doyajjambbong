@@ -10,7 +10,7 @@ import { MenuCard } from "@/components/MenuCard";
 import { menuDetails, menuDetailSlugs, menuDetailItemBySlug, menuDetailUrl, MenuDetailSlug } from "@/data/menu-details";
 import { menuItems } from "@/data/menu";
 import { restaurantJsonLd } from "@/lib/seo";
-import { Locale, site } from "@/lib/site";
+import { Locale, localizedPath, site } from "@/lib/site";
 
 type PageParams = {
   locale: string;
@@ -89,6 +89,7 @@ function menuItemJsonLd(locale: Locale, detail: NonNullable<ReturnType<typeof ge
     description: content.description,
     image: item.image ? `${site.baseUrl}${item.image}` : undefined,
     url: menuDetailUrl(locale, itemSlug),
+    keywords: content.keywords.join(", "),
     menuAddOn: item.tags,
     offers: {
       "@type": "Offer",
@@ -98,6 +99,47 @@ function menuItemJsonLd(locale: Locale, detail: NonNullable<ReturnType<typeof ge
       url: menuDetailUrl(locale, itemSlug)
     }
   };
+}
+
+function menuDetailImageAlt(locale: Locale, detail: NonNullable<ReturnType<typeof getMenuDetail>>) {
+  if (locale === "vi" && detail.itemSlug === "jajangmyeon-mi-tuong-den") {
+    return "Mì tương đen Hàn Quốc jajangmyeon tại DOYA JJAMBBONG Quận 1 gần Bến Thành";
+  }
+
+  return `${detail.item.name} Korean Chinese food at DOYA JJAMBBONG District 1`;
+}
+
+function JajangmyeonInternalLinks({ locale, itemSlug }: { locale: Locale; itemSlug: MenuDetailSlug }) {
+  if (locale !== "vi" || itemSlug !== "jajangmyeon-mi-tuong-den") return null;
+
+  const links = [
+    { label: "Mì tương đen Hàn Quốc Quận 1", href: localizedPath(locale, "mi-tuong-den-han-quoc-quan-1") },
+    { label: "Tangsuyuk ăn cùng jajangmyeon", href: `/${locale}/menu/tangsuyuk-korean-sweet-sour-pork` },
+    { label: "Champong / jjambbong cay", href: `/${locale}/menu/seafood-jjambbong-champong` },
+    { label: "Xem toàn bộ menu", href: `/${locale}/menu` },
+    { label: "Vị trí DOYA Quận 1", href: localizedPath(locale, "location-contact") }
+  ];
+
+  return (
+    <section className="bg-white">
+      <div className="mx-auto max-w-7xl px-4 py-10">
+        <div className="rounded-lg border border-ink/10 bg-cream p-6">
+          <p className="text-sm font-black uppercase tracking-wide text-chili">Internal guide</p>
+          <h2 className="mt-2 text-2xl font-black text-ink">Bạn đang tìm mi tuong den, mì tương đen Hàn Quốc hoặc jajangmyeon?</h2>
+          <p className="mt-3 max-w-3xl leading-7 text-ink/70">
+            Trang này kết nối món mì tương đen với các lựa chọn dễ gọi tại DOYA: tangsuyuk, mandu, jjambbong và hướng dẫn đến quán ở Quận 1.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {links.map((link) => (
+              <Link key={link.href} href={link.href} className="rounded-full border border-ink/10 bg-white px-4 py-2 text-sm font-black text-ink/75 hover:border-chili hover:text-chili">
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 function breadcrumbJsonLd(locale: Locale, detail: NonNullable<ReturnType<typeof getMenuDetail>>) {
@@ -158,7 +200,7 @@ export default async function MenuDetailPage({ params }: { params: Promise<PageP
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-ink/10 bg-soy shadow-glow">
               <Image
                 src={detail.item.image ?? "/images/menu/doya-menu-spread.jpg"}
-                alt={`${detail.item.name} champong Korean food at DOYA JJAMBBONG District 1`}
+                alt={menuDetailImageAlt(locale, detail)}
                 fill
                 priority
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -167,6 +209,8 @@ export default async function MenuDetailPage({ params }: { params: Promise<PageP
             </div>
           </div>
         </section>
+
+        <JajangmyeonInternalLinks locale={locale} itemSlug={detail.itemSlug} />
 
         <section className="bg-bone">
           <div className="mx-auto grid max-w-7xl gap-6 px-4 py-14 md:grid-cols-2">

@@ -58,6 +58,8 @@ export default async function ContentPage({ params }: { params: Promise<PagePara
       <JsonLd data={breadcrumbJsonLd(locale, slug)} />
       {slug === "menu" ? <JsonLd data={menuJsonLd(locale)} /> : null}
       {slug === "faq" ? <JsonLd data={faqJsonLd(locale)} /> : null}
+      {slug === "mi-tuong-den-han-quoc-quan-1" ? <JsonLd data={miTuongDenFaqJsonLd(locale)} /> : null}
+      {slug === "mi-tuong-den-han-quoc-quan-1" ? <JsonLd data={miTuongDenImageJsonLd(locale)} /> : null}
       {slug === "branches" || slug === "" ? <JsonLd data={branchesJsonLd(locale)} /> : null}
       <Header locale={locale} slug={slug} />
       {slug === "" ? <HomePage locale={locale} /> : <InnerPage locale={locale} slug={slug} />}
@@ -123,6 +125,7 @@ function HomePage({ locale }: { locale: Locale }) {
         </div>
       </section>
       <RecommendedOrderSection locale={locale} />
+      {locale === "vi" ? <MiTuongDenLinkBand locale={locale} /> : null}
       <WhyDoya locale={locale} />
       <SpiceGuide locale={locale} />
       <TrustStrip locale={locale} />
@@ -349,12 +352,16 @@ function InnerPage({ locale, slug }: { locale: Locale; slug: PageSlug }) {
           </div>
         </div>
       </section>
+      {locale === "vi" && miTuongDenLinkPages.includes(slug) ? <MiTuongDenLinkBand locale={locale} /> : null}
+      {slug === "mi-tuong-den-han-quoc-quan-1" ? <MiTuongDenLanding locale={locale} /> : null}
       {slug === "menu" ? <MenuPreview locale={locale} full /> : null}
       {slug === "korean-food-delivery-ho-chi-minh" ? <OrderMethodButtons locale={locale} /> : null}
       {slug === "faq" ? <FaqSection locale={locale} /> : null}
       {slug === "reviews" ? <ReviewsSection locale={locale} /> : null}
       {slug === "branches" ? <BranchNetwork locale={locale} /> : null}
-      {slug !== "menu" && slug !== "faq" && slug !== "reviews" ? <TextSections locale={locale} slug={slug} /> : null}
+      {slug !== "menu" && slug !== "faq" && slug !== "reviews" && slug !== "mi-tuong-den-han-quoc-quan-1" ? (
+        <TextSections locale={locale} slug={slug} />
+      ) : null}
       {slug === "about" ? <WhyDoya locale={locale} /> : null}
       <SeoLocalSection locale={locale} />
     </main>
@@ -363,6 +370,7 @@ function InnerPage({ locale, slug }: { locale: Locale; slug: PageSlug }) {
 
 function heroImageForSlug(slug: PageSlug) {
   if (slug === "menu") return "/images/menu/doya-menu-spread.jpg";
+  if (slug === "mi-tuong-den-han-quoc-quan-1") return "/images/menu/doya-jajangmyeon.jpg";
   if (slug === "about" || slug === "reviews" || slug === "branches") return "/images/menu/doya-menu-spread.jpg";
   if (slug === "location-contact") return "/images/menu/doya-jajangmyeon.jpg";
   return "/images/menu/doya-seafood-jjambbong.jpg";
@@ -496,6 +504,238 @@ function TextSections({ locale, slug }: { locale: Locale; slug: PageSlug }) {
         ))}
       </div>
     </section>
+  );
+}
+
+const miTuongDenLinkPages: PageSlug[] = [
+  "",
+  "menu",
+  "korean-chinese-food-ho-chi-minh",
+  "korean-food-delivery-ho-chi-minh",
+  "about"
+];
+
+const miTuongDenFaq = [
+  {
+    question: "Mì tương đen là gì?",
+    answer:
+      "Mì tương đen là món mì Hàn Quốc dùng sốt đậu đen xào đậm vị, thường được biết đến với tên jajangmyeon hoặc Korean black bean noodles."
+  },
+  {
+    question: "Mì tương đen và jajangmyeon có giống nhau không?",
+    answer:
+      "Có. Jajangmyeon là tên tiếng Hàn, còn mì tương đen hoặc mi tuong den là cách nhiều khách Việt tìm món này trên Google."
+  },
+  {
+    question: "Mì tương đen có cay không?",
+    answer:
+      "Không. Đây là món sốt đen đậm vị, dễ ăn hơn các món cay như jjambbong hoặc champong."
+  },
+  {
+    question: "Ăn mì tương đen Hàn Quốc ở đâu tại Quận 1?",
+    answer:
+      "Bạn có thể ăn mì tương đen Hàn Quốc tại DOYA JJAMBBONG, 77I Bùi Thị Xuân, P. Bến Thành, Quận 1, gần Bến Thành và Bùi Viện."
+  },
+  {
+    question: "DOYA JJAMBBONG có giao mì tương đen không?",
+    answer:
+      "Có thể hỏi đặt bàn, mua mang đi hoặc giao hàng qua Zalo, KakaoTalk hoặc điện thoại trước khi đặt món."
+  },
+  {
+    question: "Mì tương đen hợp ăn với món gì?",
+    answer:
+      "Mì tương đen hợp với tangsuyuk, mandu chiên, mandu luộc hoặc một tô jjambbong cay để cân bằng vị."
+  }
+];
+
+function miTuongDenFaqJsonLd(locale: Locale) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: locale,
+    mainEntity: miTuongDenFaq.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer }
+    }))
+  };
+}
+
+function miTuongDenImageJsonLd(locale: Locale) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ImageObject",
+    contentUrl: `${site.baseUrl}/images/menu/doya-jajangmyeon.jpg`,
+    name: "Mì tương đen Hàn Quốc jajangmyeon tại DOYA JJAMBBONG Quận 1",
+    caption: "Mì tương đen Hàn Quốc jajangmyeon tại DOYA JJAMBBONG Quận 1 gần Bến Thành",
+    inLanguage: locale,
+    representativeOfPage: true
+  };
+}
+
+function MiTuongDenLinkBand({ locale }: { locale: Locale }) {
+  if (locale !== "vi") return null;
+
+  return (
+    <section className="bg-white">
+      <div className="mx-auto max-w-7xl px-4 py-8">
+        <div className="rounded-lg border border-ink/10 bg-cream p-5 md:flex md:items-center md:justify-between md:gap-6">
+          <div>
+            <p className="text-sm font-black uppercase tracking-wide text-chili">Mì tương đen Hàn Quốc</p>
+            <h2 className="mt-2 text-2xl font-black text-ink">Tìm mi tuong den, jajangmyeon hoặc Korean black bean noodles?</h2>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-ink/70">
+              DOYA có trang riêng cho mì tương đen tại Quận 1, gần Bến Thành và Bùi Viện, kèm gợi ý gọi cùng tangsuyuk, mandu và jjambbong.
+            </p>
+          </div>
+          <div className="mt-4 flex flex-wrap gap-2 md:mt-0">
+            <Link href={localizedPath(locale, "mi-tuong-den-han-quoc-quan-1")} className="rounded-md bg-chili px-4 py-3 text-sm font-black text-white">
+              Mì tương đen Quận 1
+            </Link>
+            <Link href={`/${locale}/menu/jajangmyeon-mi-tuong-den`} className="rounded-md border border-ink/10 bg-white px-4 py-3 text-sm font-black text-ink">
+              Xem món jajangmyeon
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MiTuongDenLanding({ locale }: { locale: Locale }) {
+  const menuHref = `/${locale}/menu/jajangmyeon-mi-tuong-den`;
+  const tangsuyukHref = `/${locale}/menu/tangsuyuk-korean-sweet-sour-pork`;
+  const jjambbongHref = `/${locale}/menu/seafood-jjambbong-champong`;
+
+  return (
+    <>
+      <section className="bg-bone">
+        <div className="mx-auto max-w-7xl px-4 py-14">
+          <div className="grid gap-5 md:grid-cols-3">
+            {[
+              {
+                title: "Mì tương đen là gì?",
+                body:
+                  "Đây là món mì sốt đậu đen kiểu Hàn Quốc, còn gọi là jajangmyeon. Vị đậm, không cay, dễ ăn cho khách Việt và khách du lịch.",
+                href: menuHref,
+                label: "Xem menu & giá"
+              },
+              {
+                title: "Ăn ở đâu tại Quận 1?",
+                body:
+                  "DOYA nằm tại 77I Bùi Thị Xuân, P. Bến Thành, gần Bến Thành, Bùi Viện, khách sạn và khu du lịch trung tâm.",
+                href: site.links.googleMaps,
+                label: "Chỉ đường Google Maps"
+              },
+              {
+                title: "Đặt bàn, mang đi, giao hàng",
+                body:
+                  "Bạn có thể hỏi món qua Zalo, KakaoTalk hoặc gọi điện. Mì tương đen hợp đặt cùng tangsuyuk, mandu và jjambbong.",
+                href: site.links.delivery,
+                label: "Đặt qua Zalo"
+              }
+            ].map((card) => (
+              <article key={card.title} className="rounded-lg border border-ink/10 bg-white p-6">
+                <h2 className="text-2xl font-black text-ink">{card.title}</h2>
+                <p className="mt-3 leading-7 text-ink/70">{card.body}</p>
+                <Link href={card.href} className="mt-5 inline-flex rounded-md bg-chili px-4 py-3 text-sm font-black text-white">
+                  {card.label}
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-14 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="text-sm font-black uppercase tracking-wide text-chili">Jajangmyeon guide</p>
+            <h2 className="mt-2 text-3xl font-black text-ink md:text-4xl">Vì sao mì tương đen Hàn Quốc được yêu thích?</h2>
+            <p className="mt-4 leading-7 text-ink/70">
+              Nếu bạn đang tìm mi tuong den hoặc mì tương đen Hàn Quốc tại Quận 1, DOYA JJAMBBONG là lựa chọn dễ đi vì nằm gần Bến Thành,
+              Bùi Viện và nhiều khách sạn trung tâm. Món này không cay như champong, nhưng vẫn có vị sốt đậu đen đậm, thơm và no bụng.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              ["Mì tương đen tại DOYA có gì khác?", "Sốt đen kiểu Hàn, mì mềm dai, vị đậm nhưng dễ ăn. Đây là món cân bằng tốt khi bàn có người không ăn cay."],
+              ["Gần Bến Thành, Bùi Viện, khách sạn", "Địa chỉ ở trung tâm Quận 1 giúp khách du lịch, nhân viên văn phòng và người Hàn tại Sài Gòn ghé nhanh hơn."],
+              ["Gợi ý gọi món", "Mì tương đen + tangsuyuk, mì tương đen + mandu, hoặc mì tương đen + jjambbong là các combo dễ hiểu."],
+              ["Không chỉ là jajangmyeon", "Trang này giữ cả cách gọi mi tuong den, mì tương đen, jajangmyeon và Korean black bean noodles để khách tìm đúng món."]
+            ].map(([title, body]) => (
+              <article key={title} className="rounded-lg border border-ink/10 bg-cream p-5">
+                <h3 className="text-xl font-black text-ink">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-ink/70">{body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-soy text-cream">
+        <div className="mx-auto max-w-7xl px-4 py-12">
+          <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+            <div>
+              <p className="text-sm font-black uppercase tracking-wide text-brass">Pairing menu</p>
+              <h2 className="mt-2 text-3xl font-black">Mì tương đen nên ăn với gì?</h2>
+              <p className="mt-4 leading-7 text-cream/75">
+                Nếu đi 2 người trở lên, hãy gọi một món mì tương đen không cay cùng một món chiên hoặc một tô jjambbong cay. Cách gọi này dễ hợp khẩu vị hơn cho cả nhóm.
+              </p>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-3">
+              {[
+                ["Mì tương đen", menuHref],
+                ["Tangsuyuk", tangsuyukHref],
+                ["Jjambbong", jjambbongHref]
+              ].map(([label, href]) => (
+                <Link key={label} href={href} className="rounded-md border border-cream/15 bg-cream/10 p-4 text-sm font-black text-cream hover:bg-cream/15">
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-cream">
+        <div className="mx-auto max-w-5xl px-4 py-14">
+          <h2 className="text-3xl font-black text-ink">FAQ về mì tương đen</h2>
+          <div className="mt-6 space-y-4">
+            {miTuongDenFaq.map((faq) => (
+              <details key={faq.question} className="rounded-lg border border-ink/10 bg-white p-5">
+                <summary className="cursor-pointer text-lg font-black text-ink">{faq.question}</summary>
+                <p className="mt-3 leading-7 text-ink/70">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-bone">
+        <div className="mx-auto max-w-7xl px-4 py-12">
+          <div className="rounded-lg border border-ink/10 bg-white p-6">
+            <h2 className="text-2xl font-black text-ink">Đặt bàn hoặc giao hàng</h2>
+            <p className="mt-3 leading-7 text-ink/70">
+              Muốn đặt mì tương đen Hàn Quốc, jajangmyeon hoặc món Hàn-Trung tại Quận 1? Chọn cách tiện nhất: Zalo, KakaoTalk, điện thoại hoặc Google Maps.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Link href={menuHref} className="rounded-md bg-chili px-5 py-3 text-sm font-black text-white">
+                Xem menu & giá
+              </Link>
+              <Link href={site.links.googleMaps} className="rounded-md bg-soy px-5 py-3 text-sm font-black text-white">
+                Chỉ đường Google Maps
+              </Link>
+              <Link href={site.links.delivery} className="rounded-md border border-ink/10 bg-white px-5 py-3 text-sm font-black text-ink">
+                Zalo
+              </Link>
+              <Link href={`tel:${site.phone}`} className="rounded-md border border-ink/10 bg-white px-5 py-3 text-sm font-black text-ink">
+                Gọi điện
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 

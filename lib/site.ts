@@ -33,6 +33,7 @@ export type Locale = (typeof site.locales)[number];
 export const paths = [
   "",
   "menu",
+  "mi-tuong-den-han-quoc-quan-1",
   "signature-jjambbong",
   "champong-korean-chinese-food-ho-chi-minh",
   "korean-chinese-food-ho-chi-minh",

@@ -182,21 +182,32 @@ export const menuDetails: Record<MenuDetailSlug, Record<Locale, MenuDetailConten
   },
   "jajangmyeon-mi-tuong-den": {
     vi: {
-      title: "Mì tương đen Hàn Quốc | Mi tuong den Jajangmyeon Quận 1",
+      title: "Mì tương đen Hàn Quốc / Jajangmyeon tại Quận 1 | DOYA JJAMBBONG",
       description:
-        "Jajangmyeon tại DOYA được tối ưu cho khách tìm mì tương đen Hàn Quốc, mi tuong den, Korean black bean noodles tại Quận 1.",
+        "Mì tương đen Hàn Quốc, mi tuong den, jajangmyeon và Korean black bean noodles tại DOYA JJAMBBONG Quận 1, gần Bến Thành và Bùi Viện.",
       eyebrow: "Mì tương đen",
-      h1: "Mì tương đen Hàn Quốc tại Quận 1",
+      h1: "Mì tương đen Hàn Quốc / Jajangmyeon",
       intro:
-        "Jajangmyeon là mì tương đen Hàn Quốc với sốt đậu đen đậm, dễ ăn và hợp cho khách không muốn món quá cay. Trên Google, khách Việt thường tìm bằng mì tương đen hoặc mi tuong den, vì vậy DOYA giữ cả hai cách gọi cùng với jajangmyeon.",
+        "Jajangmyeon là mì tương đen Hàn Quốc với sốt đậu đen đậm, dễ ăn và hợp cho khách không muốn món quá cay. Nếu bạn tìm mi tuong den, mì tương đen Hàn Quốc, Korean black bean noodles hoặc jajangmyeon Ho Chi Minh, DOYA JJAMBBONG phục vụ món này tại 77I Bùi Thị Xuân, Quận 1, gần Bến Thành và Bùi Viện.",
       whyTitle: "Không cay, dễ ăn",
-      whyBody: "Đây là món nên gọi cùng champong hoặc tangsuyuk khi đi theo nhóm, vì cân bằng tốt giữa món cay và món sốt đen đậm vị.",
+      whyBody: "Đây là món nên gọi cùng champong, jjambbong hoặc tangsuyuk khi đi theo nhóm, vì cân bằng tốt giữa món cay và món sốt đen đậm vị. Mì tương đen cũng phù hợp cho khách Việt, khách du lịch, gia đình và người không ăn cay.",
       searchTitle: "Từ khóa chính",
-      searchBody: "mì tương đen Hàn Quốc, mi tuong den, jajangmyeon Ho Chi Minh, Korean black bean noodles, quán Hàn Quốc quận 1.",
-      keywords: ["mì tương đen", "mi tuong den", "jajangmyeon", "Korean black bean noodles"],
+      searchBody:
+        "mì tương đen Hàn Quốc, mi tuong den, mì tương đen Quận 1, jajangmyeon Ho Chi Minh, Korean black bean noodles, quán Hàn Quốc quận 1, món Hàn gần Bến Thành.",
+      keywords: [
+        "mì tương đen Hàn Quốc",
+        "mi tuong den",
+        "mì tương đen Quận 1",
+        "jajangmyeon Ho Chi Minh",
+        "Korean black bean noodles",
+        "Bến Thành",
+        "Bùi Viện"
+      ],
       faq: [
         { question: "Mì tương đen có cay không?", answer: "Không. Đây là món sốt đen đậm vị, phù hợp cho khách muốn món không cay." },
-        { question: "Nên gọi chung với món nào?", answer: "Hợp với champong, tangsuyuk hoặc mandu để ăn theo kiểu Korean Chinese." }
+        { question: "Mì tương đen và jajangmyeon có giống nhau không?", answer: "Có. Jajangmyeon là tên tiếng Hàn, còn mì tương đen hoặc mi tuong den là cách khách Việt thường tìm món này." },
+        { question: "Nên gọi chung với món nào?", answer: "Hợp với champong, tangsuyuk hoặc mandu để ăn theo kiểu Korean Chinese." },
+        { question: "DOYA có giao mì tương đen không?", answer: "Khách có thể hỏi đặt bàn, mua mang đi hoặc giao hàng qua Zalo, KakaoTalk hoặc điện thoại." }
       ]
     },
     ko: {

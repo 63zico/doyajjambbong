@@ -9,7 +9,7 @@ import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { blogPath, blogPosts, getBlogPost } from "@/data/blog";
 import { restaurantJsonLd } from "@/lib/seo";
-import { Locale, site } from "@/lib/site";
+import { Locale, localizedPath, site } from "@/lib/site";
 
 type PageParams = {
   locale: string;
@@ -128,6 +128,7 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
                 <div className="mt-8 rounded-md bg-cream p-5">
                   <p className="text-base font-black text-ink">{post.cta}</p>
                 </div>
+                <MiTuongDenBlogLinks locale={locale} slug={post.slug} />
               </div>
 
               <aside className="h-fit rounded-lg border border-ink/10 bg-soy p-5 text-cream">
@@ -150,5 +151,30 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
       <Footer locale={locale} />
       <StickyCta locale={locale} />
     </>
+  );
+}
+
+function MiTuongDenBlogLinks({ locale, slug }: { locale: Locale; slug: string }) {
+  if (locale !== "vi" || (!slug.includes("mi-tuong-den") && !slug.includes("jajangmyeon"))) return null;
+
+  const links = [
+    { label: "Mì tương đen Hàn Quốc Quận 1", href: localizedPath(locale, "mi-tuong-den-han-quoc-quan-1") },
+    { label: "Món jajangmyeon", href: `/${locale}/menu/jajangmyeon-mi-tuong-den` },
+    { label: "Tangsuyuk ăn cùng mì tương đen", href: `/${locale}/menu/tangsuyuk-korean-sweet-sour-pork` },
+    { label: "Xem toàn bộ menu", href: `/${locale}/menu` },
+    { label: "Địa chỉ DOYA", href: localizedPath(locale, "location-contact") }
+  ];
+
+  return (
+    <div className="mt-6 rounded-md border border-ink/10 bg-bone p-5">
+      <p className="text-sm font-black uppercase tracking-wide text-chili">Đọc tiếp</p>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {links.map((link) => (
+          <Link key={link.href} href={link.href} className="rounded-full border border-ink/10 bg-white px-4 py-2 text-sm font-black text-ink/75 hover:border-chili hover:text-chili">
+            {link.label}
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }

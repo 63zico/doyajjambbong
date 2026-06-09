@@ -22,6 +22,7 @@ export const navLabels: Record<Locale, Record<PageSlug, string>> = {
   vi: {
     "": "Trang chủ",
     menu: "Thực đơn",
+    "mi-tuong-den-han-quoc-quan-1": "Mì tương đen",
     "signature-jjambbong": "Jjambbong đặc trưng",
     "champong-korean-chinese-food-ho-chi-minh": "Champong Quận 1",
     "korean-chinese-food-ho-chi-minh": "Món Hàn-Trung",
@@ -38,6 +39,7 @@ export const navLabels: Record<Locale, Record<PageSlug, string>> = {
   ko: {
     "": "홈",
     menu: "메뉴",
+    "mi-tuong-den-han-quoc-quan-1": "짜장면",
     "signature-jjambbong": "대표 짬뽕",
     "champong-korean-chinese-food-ho-chi-minh": "champong 검색",
     "korean-chinese-food-ho-chi-minh": "한국식 중화요리",
@@ -54,6 +56,7 @@ export const navLabels: Record<Locale, Record<PageSlug, string>> = {
   en: {
     "": "Home",
     menu: "Menu",
+    "mi-tuong-den-han-quoc-quan-1": "Black Bean Noodles",
     "signature-jjambbong": "Signature Jjambbong",
     "champong-korean-chinese-food-ho-chi-minh": "Champong",
     "korean-chinese-food-ho-chi-minh": "Korean Chinese Food",
@@ -107,6 +110,35 @@ export const pageContent: Record<Locale, Record<PageSlug, PageContent>> = {
       summary:
         "Thực đơn DOYA tập trung vào các món Hàn-Trung dễ hiểu: mì cay jjambbong hải sản, mì tương đen Hàn Quốc, mi tuong den, jajangmyeon, tangsuyuk, kkanpunggi và bánh gạo cay Hàn Quốc.",
       sections: [{ heading: "Dễ chọn, dễ gọi", body: "Mỗi món có nhãn độ cay và gợi ý rõ ràng để khách Việt, khách Hàn và khách du lịch gọi nhanh hơn." }]
+    },
+    "mi-tuong-den-han-quoc-quan-1": {
+      slug: "mi-tuong-den-han-quoc-quan-1",
+      nav: "Mì tương đen",
+      title: "Mì tương đen Hàn Quốc tại Quận 1 | Jajangmyeon DOYA JJAMBBONG",
+      description:
+        "Ăn mì tương đen Hàn Quốc, jajangmyeon và mì sốt đậu đen kiểu Hàn tại DOYA JJAMBBONG Quận 1, gần Bến Thành và Bùi Viện. Có đặt bàn, mang đi và giao hàng.",
+      eyebrow: "Mì tương đen / Jajangmyeon",
+      h1: "Mì tương đen Hàn Quốc tại Quận 1",
+      subtitle: "Jajangmyeon không cay, dễ ăn, hợp gọi cùng tangsuyuk, mandu hoặc một tô jjambbong cay nóng.",
+      summary:
+        "DOYA JJAMBBONG phục vụ mì tương đen Hàn Quốc, còn gọi là jajangmyeon, tại 77I Bùi Thị Xuân, Quận 1, gần Bến Thành và Bùi Viện. Đây là món mì sốt đậu đen kiểu Hàn Quốc dễ ăn, không cay, phù hợp cho khách Việt, khách du lịch và người Hàn tại TP. Hồ Chí Minh.",
+      sections: [
+        {
+          heading: "Mì tương đen là gì?",
+          body:
+            "Mì tương đen, mi tuong den hoặc jajangmyeon là món mì Hàn Quốc dùng sốt đậu đen xào đậm vị. Món này không cay như jjambbong nên dễ ăn với khách Việt và khách du lịch."
+        },
+        {
+          heading: "Ăn mì tương đen ở đâu tại Quận 1?",
+          body:
+            "DOYA nằm tại 77I Bùi Thị Xuân, P. Bến Thành, Quận 1, thuận tiện cho khách ở gần Bến Thành, Bùi Viện, khách sạn trung tâm và khu du lịch."
+        },
+        {
+          heading: "Gợi ý gọi món",
+          body:
+            "Nếu đi nhóm, hãy gọi mì tương đen cùng tangsuyuk, mandu hoặc jjambbong. Một món không cay và một món cay giúp bữa ăn cân bằng hơn."
+        }
+      ]
     },
     "signature-jjambbong": {
       slug: "signature-jjambbong",
@@ -323,6 +355,23 @@ export const pageContent: Record<Locale, Record<PageSlug, PageContent>> = {
       summary: "도야짬뽕 메뉴는 호치민 짬뽕, 호치민 짜장면, 호치민 한국식 짬뽕, 호치민 중국집, 호치민 한국 중국집을 찾는 손님이 바로 이해하기 좋은 구성입니다.",
       sections: [{ heading: "주문하기 쉬운 구성", body: "한국식 짬뽕, 짜장면, 탕수육, 깐풍기, 떡볶이를 대표 메뉴별로 나눠 관광객, 현지 손님, 배달 손님 모두 빠르게 선택할 수 있습니다." }]
     },
+    "mi-tuong-den-han-quoc-quan-1": {
+      slug: "mi-tuong-den-han-quoc-quan-1",
+      nav: "짜장면",
+      title: "호치민 1군 짜장면 | Mì tương đen Hàn Quốc DOYA JJAMBBONG",
+      description:
+        "호치민 1군 Bùi Thị Xuân, Bến Thành, Bùi Viện 근처에서 한국식 짜장면, mì tương đen, jajangmyeon을 찾는 손님을 위한 도야짬뽕 안내 페이지입니다.",
+      eyebrow: "짜장면 / Mì tương đen",
+      h1: "호치민 1군 한국식 짜장면",
+      subtitle: "베트남어로는 mì tương đen, 영어로는 jajangmyeon 또는 Korean black bean noodles로 찾는 한국식 중식 대표 메뉴입니다.",
+      summary:
+        "도야짬뽕은 77I Bùi Thị Xuân, Quận 1에서 한국식 짜장면을 제공합니다. 매운 짬뽕이 부담스러운 손님, 아이와 함께 온 가족, 관광객에게도 이해하기 쉬운 메뉴입니다.",
+      sections: [
+        { heading: "mì tương đen 검색 의도", body: "베트남 손님은 짜장면을 mì tương đen 또는 mi tuong den으로 많이 검색합니다. 도야짬뽕은 이 표현과 jajangmyeon을 함께 안내합니다." },
+        { heading: "1군 중심 위치", body: "Bến Thành, Bùi Viện, 호텔, 여행자 거리에서 이동하기 쉬운 77I Bùi Thị Xuân에 있습니다." },
+        { heading: "추천 조합", body: "짜장면은 탕수육, 군만두, 짬뽕과 같이 주문하면 매운 메뉴와 순한 메뉴의 균형이 좋습니다." }
+      ]
+    },
     "signature-jjambbong": {
       slug: "signature-jjambbong",
       nav: "대표 짬뽕",
@@ -527,6 +576,23 @@ export const pageContent: Record<Locale, Record<PageSlug, PageContent>> = {
       subtitle: "Spicy bowls, non-spicy classics, sharing dishes, and rice bowls.",
       summary: "A focused Korean-Chinese food menu built around spicy seafood jjambbong, champong District 1, Korean black bean noodles, tangsuyuk, kkanpunggi, tteokbokki, and rice bowls.",
       sections: [{ heading: "Easy to order", body: "The menu is organized for tourists, locals, delivery guests, and late-night diners." }]
+    },
+    "mi-tuong-den-han-quoc-quan-1": {
+      slug: "mi-tuong-den-han-quoc-quan-1",
+      nav: "Black Bean Noodles",
+      title: "Korean Black Bean Noodles in District 1 | Jajangmyeon DOYA JJAMBBONG",
+      description:
+        "Find Korean black bean noodles, jajangmyeon, mi tuong den, and mì tương đen Hàn Quốc at DOYA JJAMBBONG District 1 near Ben Thanh and Bui Vien.",
+      eyebrow: "Jajangmyeon / Mi tuong den",
+      h1: "Korean black bean noodles in District 1",
+      subtitle: "A non-spicy Korean-Chinese noodle dish for guests searching jajangmyeon, mi tuong den, or mì tương đen near Ben Thanh and Bui Vien.",
+      summary:
+        "DOYA JJAMBBONG serves Korean black bean noodles, also known as jajangmyeon or mì tương đen, at 77I Bui Thi Xuan in District 1. It is an easy choice for travelers who want Korean-Chinese food without spicy soup.",
+      sections: [
+        { heading: "What is mi tuong den?", body: "Mi tuong den is how many Vietnamese guests search for jajangmyeon, a Korean black bean noodle dish with a rich savory sauce." },
+        { heading: "Near Ben Thanh and Bui Vien", body: "The restaurant is located in central District 1, convenient for hotels, travelers, nightlife, and lunch or dinner plans." },
+        { heading: "Best pairings", body: "Order jajangmyeon with tangsuyuk, fried mandu, or jjambbong for a balanced Korean-Chinese meal." }
+      ]
     },
     "signature-jjambbong": {
       slug: "signature-jjambbong",
