@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BranchNetwork } from "@/components/BranchNetwork";
 import { CtaRow, OrderMethodButtons } from "@/components/CtaRow";
@@ -14,7 +15,7 @@ import { faqs } from "@/data/faq";
 import { menuCategoryLabels, menuCategoryOrder, menuItems } from "@/data/menu";
 import { uiCopy } from "@/data/ui";
 import { branchesJsonLd, breadcrumbJsonLd, faqJsonLd, menuJsonLd, metadataFor, restaurantJsonLd } from "@/lib/seo";
-import { Locale, PageSlug, paths, site } from "@/lib/site";
+import { Locale, PageSlug, localizedPath, paths, site } from "@/lib/site";
 
 type PageParams = {
   locale: string;
@@ -94,6 +95,7 @@ function HomePage({ locale }: { locale: Locale }) {
             <div className="mt-6">
               <CtaRow locale={locale} />
             </div>
+            <HeroActionGrid locale={locale} />
           </div>
           <div className="relative">
             <div className="relative aspect-[5/4] overflow-hidden rounded-lg border border-ink/10 bg-soy shadow-glow">
@@ -120,6 +122,7 @@ function HomePage({ locale }: { locale: Locale }) {
           </div>
         </div>
       </section>
+      <RecommendedOrderSection locale={locale} />
       <WhyDoya locale={locale} />
       <SpiceGuide locale={locale} />
       <TrustStrip locale={locale} />
@@ -127,6 +130,185 @@ function HomePage({ locale }: { locale: Locale }) {
       <SeoLocalSection locale={locale} />
       <MapBlock locale={locale} />
     </main>
+  );
+}
+
+function heroActionCopy(locale: Locale) {
+  if (locale === "ko") {
+    return [
+      { label: "오늘 영업", value: "10:30 - 23:30", href: localizedPath(locale, "location-contact") },
+      { label: "위치", value: "벤탄 · 부이비엔 근처 1군", href: site.links.googleMaps },
+      { label: "전화", value: site.phone, href: `tel:${site.phone}` },
+      { label: "예약/배달", value: "Zalo · 카카오톡 문의", href: localizedPath(locale, "korean-food-delivery-ho-chi-minh") }
+    ];
+  }
+
+  if (locale === "vi") {
+    return [
+      { label: "Mở cửa hôm nay", value: "10:30 - 23:30", href: localizedPath(locale, "location-contact") },
+      { label: "Vị trí", value: "Quận 1 · gần Bến Thành", href: site.links.googleMaps },
+      { label: "Gọi ngay", value: site.phone, href: `tel:${site.phone}` },
+      { label: "Đặt bàn/giao hàng", value: "Zalo · KakaoTalk", href: localizedPath(locale, "korean-food-delivery-ho-chi-minh") }
+    ];
+  }
+
+  return [
+    { label: "Open today", value: "10:30 - 23:30", href: localizedPath(locale, "location-contact") },
+    { label: "Location", value: "District 1 · near Ben Thanh", href: site.links.googleMaps },
+    { label: "Call", value: site.phone, href: `tel:${site.phone}` },
+    { label: "Reserve/order", value: "Zalo · KakaoTalk", href: localizedPath(locale, "korean-food-delivery-ho-chi-minh") }
+  ];
+}
+
+function HeroActionGrid({ locale }: { locale: Locale }) {
+  return (
+    <div className="mt-6 grid gap-2 sm:grid-cols-2">
+      {heroActionCopy(locale).map((item) => (
+        <Link
+          key={item.label}
+          href={item.href}
+          className="rounded-lg border border-ink/10 bg-white/85 p-3 text-left shadow-sm backdrop-blur hover:border-chili"
+        >
+          <span className="block text-[11px] font-black uppercase tracking-wide text-chili">{item.label}</span>
+          <span className="mt-1 block text-sm font-black text-ink">{item.value}</span>
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+function recommendedOrderCopy(locale: Locale) {
+  if (locale === "ko") {
+    return {
+      eyebrow: "처음 오면 이렇게 주문",
+      title: "대표 메뉴를 바로 고를 수 있게 정리했습니다",
+      body:
+        "호치민 1군에서 짬뽕, 짜장면, 탕수육, 떡볶이를 찾는 손님이 가장 많이 고민하는 조합입니다. 매장 방문, 포장, 배달 문의 전에 먼저 보면 선택이 빨라집니다.",
+      cta: "전체 메뉴 보기",
+      items: [
+        {
+          title: "짬뽕 첫 방문 조합",
+          body: "도야 해물짬뽕에 군만두를 더하면 매운 국물과 바삭한 사이드가 가장 균형 좋습니다.",
+          href: "/menu/seafood-jjambbong-champong",
+          tags: ["champong", "해장", "매운맛"]
+        },
+        {
+          title: "짜장면 + 탕수육 조합",
+          body: "맵지 않은 메뉴가 필요하면 짜장면과 탕수육이 가장 안전합니다. 아이, 외국인, 단체 주문에 좋습니다.",
+          href: "/menu/jajangmyeon-mi-tuong-den",
+          tags: ["짜장면", "tangsuyuk", "비매운"]
+        },
+        {
+          title: "야식·술안주 조합",
+          body: "늦은 시간에는 짬뽕탕, 깐풍기, 하이볼이나 소주 조합이 주문 전환이 좋습니다.",
+          href: "/menu/kkanpunggi-spicy-garlic-fried-chicken",
+          tags: ["야식", "술안주", "open late"]
+        }
+      ]
+    };
+  }
+
+  if (locale === "vi") {
+    return {
+      eyebrow: "Gợi ý gọi món nhanh",
+      title: "Chọn món Hàn-Trung dễ hơn trong lần đầu ghé DOYA",
+      body:
+        "Nếu bạn tìm mì cay Hàn Quốc, champong, mì tương đen, jajangmyeon, tokbokki hoặc món Hàn Quốc Quận 1, các combo này giúp gọi món nhanh hơn.",
+      cta: "Xem toàn bộ menu",
+      items: [
+        {
+          title: "Combo champong lần đầu",
+          body: "DOYA hải sản jjambbong có nước dùng cay, đậm vị hải sản. Gọi thêm mandu chiên để ăn kèm rất hợp.",
+          href: "/menu/seafood-jjambbong-champong",
+          tags: ["champong", "mì cay", "hải sản"]
+        },
+        {
+          title: "Mì tương đen + tangsuyuk",
+          body: "Mì tương đen Hàn Quốc, còn gọi là jajangmyeon, hợp với thịt heo chiên sốt chua ngọt tangsuyuk.",
+          href: "/menu/jajangmyeon-mi-tuong-den",
+          tags: ["mi tuong den", "jajangmyeon", "không cay"]
+        },
+        {
+          title: "Ăn khuya sau khi đi chơi",
+          body: "Gần Bến Thành và Bùi Viện, thực khách thường chọn jjambbong, tokbokki hoặc gà chiên sốt cay tỏi.",
+          href: "/menu/tteokbokki-korean-spicy-rice-cakes",
+          tags: ["ăn khuya", "Quận 1", "tokbokki"]
+        }
+      ]
+    };
+  }
+
+  return {
+    eyebrow: "First-order shortcuts",
+    title: "The easiest way to order at DOYA JJAMBBONG",
+    body:
+      "For Korean Chinese food in District 1, start with these combinations: spicy seafood noodles, Korean black bean noodles, tangsuyuk, tteokbokki, and late-night drinking food.",
+    cta: "View full menu",
+    items: [
+      {
+        title: "First-time champong combo",
+        body: "Start with DOYA seafood jjambbong, then add fried mandu for a crisp side with the spicy seafood broth.",
+        href: "/menu/seafood-jjambbong-champong",
+        tags: ["champong", "jjambbong", "hangover food"]
+      },
+      {
+        title: "Jajangmyeon + tangsuyuk",
+        body: "Korean black bean noodles and Korean sweet and sour pork are the safest non-spicy order for groups.",
+        href: "/menu/jajangmyeon-mi-tuong-den",
+        tags: ["jajangmyeon", "tangsuyuk", "non-spicy"]
+      },
+      {
+        title: "Late-night District 1 order",
+        body: "After Bui Vien or Ben Thanh, choose jjambbong soup, tteokbokki, or spicy garlic fried chicken.",
+        href: "/menu/tteokbokki-korean-spicy-rice-cakes",
+        tags: ["late night", "District 1", "tteokbokki"]
+      }
+    ]
+  };
+}
+
+function RecommendedOrderSection({ locale }: { locale: Locale }) {
+  const copy = recommendedOrderCopy(locale);
+
+  return (
+    <section className="bg-white">
+      <div className="mx-auto max-w-7xl px-4 py-12">
+        <div className="grid gap-7 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
+          <div>
+            <p className="text-sm font-black uppercase tracking-wide text-chili">{copy.eyebrow}</p>
+            <h2 className="mt-2 text-3xl font-black leading-tight text-ink md:text-4xl">{copy.title}</h2>
+            <p className="mt-4 text-sm leading-6 text-ink/70">{copy.body}</p>
+            <Link
+              href={localizedPath(locale, "menu")}
+              className="mt-5 inline-flex rounded-md bg-chili px-5 py-3 text-sm font-black text-white shadow-glow"
+            >
+              {copy.cta}
+            </Link>
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {copy.items.map((item) => (
+              <article key={item.title} className="rounded-lg border border-ink/10 bg-bone p-5">
+                <h3 className="text-xl font-black leading-tight text-ink">{item.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-ink/70">{item.body}</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {item.tags.map((tag) => (
+                    <span key={tag} className="rounded-full border border-ink/10 bg-white px-2.5 py-1 text-[11px] font-black text-ink/65">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <Link
+                  href={`/${locale}${item.href}`}
+                  className="mt-5 inline-flex text-sm font-black text-chili hover:text-flame"
+                >
+                  {item.title}
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
