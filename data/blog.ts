@@ -967,6 +967,246 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     cta: "Xem menu DOYA để chọn mì tương đen, tangsuyuk, mandu hoặc jjambbong rồi đặt bàn/giao hàng qua Zalo, KakaoTalk hoặc điện thoại."
+  },
+  {
+    locale: "ko",
+    slug: "mi-tuong-den-jajangmyeon-ho-chi-minh",
+    title: "mi tuong den으로 찾는 호치민 짜장면 | 도야짬뽕 1군",
+    description:
+      "베트남에서 mi tuong den, mì tương đen, jajangmyeon으로 검색하는 한국식 짜장면을 호치민 1군 도야짬뽕에서 찾는 방법.",
+    eyebrow: "짜장면 SEO 가이드",
+    date: sharedDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-jajangmyeon.jpg",
+    imageAlt: "호치민 1군 도야짬뽕의 mi tuong den 한국식 짜장면 jajangmyeon",
+    keywords: [
+      "mi tuong den",
+      "mì tương đen",
+      "호치민 짜장면",
+      "호치민 1군 짜장면",
+      "jajangmyeon Ho Chi Minh",
+      "Korean black bean noodles"
+    ],
+    intro:
+      "베트남에서는 짜장면을 찾을 때 jajangmyeon뿐 아니라 mi tuong den 또는 mì tương đen으로 검색하는 경우가 많습니다. 도야짬뽕은 호치민 1군 77I Bùi Thị Xuân에서 한국식 짜장면, 짬뽕, 탕수육을 함께 먹을 수 있는 한국식 중식당입니다.",
+    sections: [
+      {
+        heading: "mi tuong den은 짜장면을 찾는 베트남식 검색어",
+        body:
+          "mi tuong den은 베트남어 입력에서 성조 없이 쓰는 표현이고, mì tương đen은 성조가 포함된 표현입니다. 둘 다 한국식 짜장면 또는 jajangmyeon을 찾을 때 쓰입니다."
+      },
+      {
+        heading: "호치민 1군에서 찾기 쉬운 위치",
+        body:
+          "도야짬뽕은 Bến Thành, Bùi Viện, 호텔 밀집 지역에서 이동하기 쉬운 1군 중심 매장입니다. 관광객, 교민, 현지 손님 모두 메뉴를 보고 예약, 포장, 배달 문의를 할 수 있습니다."
+      },
+      {
+        heading: "짜장면과 함께 주문하기 좋은 메뉴",
+        body:
+          "짜장면은 탕수육, 군만두, 짬뽕과 함께 주문하면 가장 이해하기 쉬운 한국식 중식 조합이 됩니다. 맵지 않은 메뉴가 필요할 때도 mi tuong den은 좋은 선택입니다."
+      }
+    ],
+    cta: "도야짬뽕 메뉴에서 짜장면, 탕수육, 군만두 조합을 확인하고 카카오톡, Zalo, 전화로 예약/배달 문의하세요."
+  },
+  {
+    locale: "ko",
+    slug: "mi-tuong-den-quan-1-korean-black-bean-noodles",
+    title: "호치민 1군 mi tuong den 맛집 찾을 때 보는 짜장면 가이드",
+    description:
+      "mi tuong den quan 1, mì tương đen Hàn Quốc, 호치민 짜장면 검색에 맞춘 도야짬뽕 1군 짜장면 위치와 메뉴 조합 안내.",
+    eyebrow: "호치민 1군 짜장면",
+    date: sharedDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-jajangmyeon.jpg",
+    imageAlt: "호치민 1군 Bến Thành 근처 mi tuong den 한국식 짜장면",
+    keywords: [
+      "mi tuong den quan 1",
+      "mì tương đen Quận 1",
+      "mì tương đen Hàn Quốc",
+      "호치민 1군 짜장면",
+      "Bến Thành 짜장면",
+      "Bùi Viện Korean Chinese food"
+    ],
+    intro:
+      "호치민 1군에서 mi tuong den quan 1 또는 mì tương đen Hàn Quốc을 검색하는 손님은 맵지 않고 든든한 한국식 짜장면을 찾는 경우가 많습니다. 도야짬뽕은 짬뽕 전문 이미지와 함께 짜장면, 탕수육, 만두 메뉴까지 한 번에 고를 수 있게 구성했습니다.",
+    sections: [
+      {
+        heading: "베트남 손님에게 쉬운 한국식 중식 메뉴",
+        body:
+          "짬뽕은 매운 국물 메뉴라 취향을 타지만 짜장면은 달고 짭짤한 검은 소스라 현지 손님과 관광객이 이해하기 쉽습니다."
+      },
+      {
+        heading: "Bến Thành과 Bùi Viện 근처 검색 의도",
+        body:
+          "관광객은 보통 식당 이름보다 근처 지명과 음식명을 같이 검색합니다. 그래서 mi tuong den quan 1, jajangmyeon Ho Chi Minh, Korean black bean noodles 같은 키워드를 페이지 안에서 자연스럽게 연결했습니다."
+      },
+      {
+        heading: "도야짬뽕에서 추천하는 주문 흐름",
+        body:
+          "처음 방문한다면 짜장면 하나, 짬뽕 하나, 탕수육 또는 군만두를 함께 주문하는 방식이 가장 실패 확률이 낮습니다."
+      }
+    ],
+    cta: "호치민 1군에서 짜장면을 찾는다면 메뉴 페이지에서 가격과 사진을 확인한 뒤 길찾기 또는 예약/배달 버튼을 이용하세요."
+  },
+  {
+    locale: "ko",
+    slug: "jajangmyeon-tangsuyuk-mandu-combo",
+    title: "짜장면은 뭐랑 먹어야 할까? 탕수육, 군만두, 짬뽕 조합",
+    description:
+      "호치민 도야짬뽕에서 mi tuong den 짜장면을 탕수육, 군만두, 짬뽕과 함께 주문하는 추천 조합.",
+    eyebrow: "추천 조합",
+    date: sharedDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-tangsuyuk.jpg",
+    imageAlt: "짜장면과 함께 먹기 좋은 도야짬뽕 탕수육",
+    keywords: [
+      "짜장면 탕수육 조합",
+      "jajangmyeon tangsuyuk",
+      "mi tuong den tangsuyuk",
+      "호치민 탕수육",
+      "호치민 군만두",
+      "Korean Chinese combo Ho Chi Minh"
+    ],
+    intro:
+      "짜장면은 단독으로도 좋지만 탕수육, 군만두, 짬뽕과 함께 주문할 때 한국식 중식의 매력이 더 잘 살아납니다. 특히 mi tuong den을 검색하고 들어온 베트남 손님에게도 이 조합은 이해하기 쉽습니다.",
+    sections: [
+      {
+        heading: "짜장면 + 탕수육",
+        body:
+          "검은 소스의 짜장면과 바삭한 탕수육은 가장 익숙한 조합입니다. 가족, 친구, 단체 손님에게 객단가를 올리기 좋은 메뉴 구성입니다."
+      },
+      {
+        heading: "짜장면 + 군만두",
+        body:
+          "간단하게 추가하기 좋은 사이드가 필요하면 군만두가 좋습니다. 면 메뉴와 같이 먹기 쉽고 사진으로도 직관적입니다."
+      },
+      {
+        heading: "짜장면 + 짬뽕",
+        body:
+          "한 명은 맵지 않은 메뉴, 한 명은 매운 국물을 원할 때 짜장면과 짬뽕 조합이 가장 안정적입니다."
+      }
+    ],
+    cta: "도야짬뽕 메뉴에서 짜장면, 탕수육, 군만두, 짬뽕 사진을 보고 원하는 조합으로 예약/배달 문의하세요."
+  },
+  {
+    locale: "en",
+    slug: "mi-tuong-den-jajangmyeon-ho-chi-minh",
+    title: "Mi Tuong Den in Ho Chi Minh | Korean Jajangmyeon at DOYA",
+    description:
+      "Find mi tuong den, mì tương đen, jajangmyeon, and Korean black bean noodles at DOYA JJAMBBONG in District 1 near Ben Thanh and Bui Vien.",
+    eyebrow: "Korean black bean noodles",
+    date: sharedDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-jajangmyeon.jpg",
+    imageAlt: "Mi tuong den Korean jajangmyeon at DOYA JJAMBBONG District 1 Ho Chi Minh",
+    keywords: [
+      "mi tuong den",
+      "mì tương đen",
+      "jajangmyeon Ho Chi Minh",
+      "Korean black bean noodles",
+      "Korean black bean noodles District 1",
+      "jajangmyeon near Ben Thanh"
+    ],
+    intro:
+      "Mi tuong den is one of the ways Vietnamese guests search for Korean jajangmyeon, or Korean black bean noodles. At DOYA JJAMBBONG in District 1, guests can order jajangmyeon together with jjambbong, tangsuyuk, mandu, and other Korean-Chinese comfort dishes.",
+    sections: [
+      {
+        heading: "Mi tuong den means Korean black bean noodles",
+        body:
+          "The phrase mi tuong den is a simplified Vietnamese search term for mì tương đen. It points to the same dish many Korean food fans know as jajangmyeon."
+      },
+      {
+        heading: "Easy location in District 1",
+        body:
+          "DOYA is located at 77I Bui Thi Xuan, close to Ben Thanh, Bui Vien, central hotels, and nightlife areas. That makes it practical for tourists, Korean residents, and local guests."
+      },
+      {
+        heading: "Non-spicy choice for Korean-Chinese food",
+        body:
+          "Unlike spicy jjambbong or champong, jajangmyeon is not spicy. It is a good first choice for guests who want Korean flavor without a hot soup."
+      }
+    ],
+    cta: "Check the DOYA menu for jajangmyeon, tangsuyuk, mandu, and jjambbong, then use Maps, Zalo, KakaoTalk, or phone ordering."
+  },
+  {
+    locale: "en",
+    slug: "korean-black-bean-noodles-district-1",
+    title: "Korean Black Bean Noodles in District 1 | Jajangmyeon Near Ben Thanh",
+    description:
+      "A District 1 guide for Korean black bean noodles, mi tuong den, and jajangmyeon near Ben Thanh, Bui Vien, and central Ho Chi Minh hotels.",
+    eyebrow: "District 1 food guide",
+    date: sharedDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-jajangmyeon.jpg",
+    imageAlt: "Korean black bean noodles jajangmyeon near Ben Thanh and Bui Vien",
+    keywords: [
+      "Korean black bean noodles District 1",
+      "jajangmyeon near Ben Thanh",
+      "mi tuong den quan 1",
+      "mì tương đen Quận 1",
+      "Korean Chinese restaurant Ho Chi Minh",
+      "Bui Vien Korean food"
+    ],
+    intro:
+      "Travelers usually search by food plus location: Korean black bean noodles District 1, jajangmyeon near Ben Thanh, or mi tuong den quan 1. DOYA JJAMBBONG connects those searches to a real Korean-Chinese restaurant in central Ho Chi Minh City.",
+    sections: [
+      {
+        heading: "Why District 1 matters",
+        body:
+          "District 1 is where many tourists, office workers, and Korean visitors stay. A restaurant near Ben Thanh and Bui Vien is easier to choose when guests want quick directions, menu photos, and ordering options."
+      },
+      {
+        heading: "What to order with jajangmyeon",
+        body:
+          "Tangsuyuk, fried mandu, and jjambbong are natural pairings. They help groups mix non-spicy noodles, crispy sides, and spicy seafood soup."
+      },
+      {
+        heading: "For tourists and local guests",
+        body:
+          "The dish is familiar enough for Korean diners and easy enough for first-time guests trying Korean-Chinese food in Saigon."
+      }
+    ],
+    cta: "Open the menu, check the address, or contact DOYA for reservation, takeaway, and delivery in District 1."
+  },
+  {
+    locale: "en",
+    slug: "jajangmyeon-tangsuyuk-mandu-combo",
+    title: "What to Eat with Jajangmyeon: Tangsuyuk, Mandu, and Jjambbong",
+    description:
+      "Best Korean-Chinese menu pairings for jajangmyeon and mi tuong den at DOYA JJAMBBONG in Ho Chi Minh: tangsuyuk, mandu, and jjambbong.",
+    eyebrow: "Menu pairings",
+    date: sharedDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-tangsuyuk.jpg",
+    imageAlt: "Tangsuyuk served with jajangmyeon and Korean black bean noodles at DOYA",
+    keywords: [
+      "jajangmyeon tangsuyuk",
+      "mi tuong den tangsuyuk",
+      "Korean sweet and sour pork Ho Chi Minh",
+      "fried mandu District 1",
+      "jjambbong and jajangmyeon",
+      "Korean Chinese food combo"
+    ],
+    intro:
+      "Jajangmyeon, also searched as mi tuong den or Korean black bean noodles, works best when paired with a crispy or spicy side. At DOYA JJAMBBONG, the most useful combinations are jajangmyeon with tangsuyuk, mandu, or jjambbong.",
+    sections: [
+      {
+        heading: "Jajangmyeon + tangsuyuk",
+        body:
+          "Sweet and sour pork adds crunch and a bright sauce to the rich black bean noodles. It is the easiest pairing for groups."
+      },
+      {
+        heading: "Jajangmyeon + mandu",
+        body:
+          "Fried mandu or boiled mandu is lighter than a large sharing dish and easy to add to a noodle order."
+      },
+      {
+        heading: "Jajangmyeon + jjambbong",
+        body:
+          "This is the classic balance: one non-spicy black bean noodle dish and one spicy seafood noodle soup."
+      }
+    ],
+    cta: "Use the menu page to choose jajangmyeon, tangsuyuk, mandu, and jjambbong before visiting or ordering."
   }
 ];
 

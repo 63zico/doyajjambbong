@@ -155,19 +155,25 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
 }
 
 function MiTuongDenBlogLinks({ locale, slug }: { locale: Locale; slug: string }) {
-  if (locale !== "vi" || (!slug.includes("mi-tuong-den") && !slug.includes("jajangmyeon"))) return null;
+  if (!slug.includes("mi-tuong-den") && !slug.includes("jajangmyeon") && !slug.includes("korean-black-bean-noodles")) return null;
+
+  const labels = {
+    vi: ["Mì tương đen Hàn Quốc Quận 1", "Món jajangmyeon", "Tangsuyuk ăn cùng mì tương đen", "Xem toàn bộ menu", "Địa chỉ DOYA", "Đọc tiếp"],
+    ko: ["호치민 1군 짜장면 안내", "짜장면 메뉴 상세", "짜장면과 탕수육 조합", "전체 메뉴 보기", "도야 위치/연락처", "관련 페이지"],
+    en: ["Korean black bean noodles in District 1", "Jajangmyeon menu detail", "Tangsuyuk with jajangmyeon", "View full menu", "DOYA location", "Related pages"]
+  }[locale];
 
   const links = [
-    { label: "Mì tương đen Hàn Quốc Quận 1", href: localizedPath(locale, "mi-tuong-den-han-quoc-quan-1") },
-    { label: "Món jajangmyeon", href: `/${locale}/menu/jajangmyeon-mi-tuong-den` },
-    { label: "Tangsuyuk ăn cùng mì tương đen", href: `/${locale}/menu/tangsuyuk-korean-sweet-sour-pork` },
-    { label: "Xem toàn bộ menu", href: `/${locale}/menu` },
-    { label: "Địa chỉ DOYA", href: localizedPath(locale, "location-contact") }
+    { label: labels[0], href: localizedPath(locale, "mi-tuong-den-han-quoc-quan-1") },
+    { label: labels[1], href: `/${locale}/menu/jajangmyeon-mi-tuong-den` },
+    { label: labels[2], href: `/${locale}/menu/tangsuyuk-korean-sweet-sour-pork` },
+    { label: labels[3], href: `/${locale}/menu` },
+    { label: labels[4], href: localizedPath(locale, "location-contact") }
   ];
 
   return (
     <div className="mt-6 rounded-md border border-ink/10 bg-bone p-5">
-      <p className="text-sm font-black uppercase tracking-wide text-chili">Đọc tiếp</p>
+      <p className="text-sm font-black uppercase tracking-wide text-chili">{labels[5]}</p>
       <div className="mt-3 flex flex-wrap gap-2">
         {links.map((link) => (
           <Link key={link.href} href={link.href} className="rounded-full border border-ink/10 bg-white px-4 py-2 text-sm font-black text-ink/75 hover:border-chili hover:text-chili">
