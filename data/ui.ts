@@ -366,5 +366,87 @@ export const uiCopy: Record<
       pages: "页面",
       description: "胡志明市第1郡韩国餐厅, 提供 champong / jjambbong 辣海鲜面、韩式炸酱面、糖醋肉和韩式中餐."
     }
+  },
+  ja: {
+    badges: ["韓国中華", "ホーチミン1区", "10:30 - 23:30"],
+    cta: {
+      menu: "メニューを見る",
+      directions: "Google Maps",
+      order: "予約 / デリバリー",
+      call: "電話",
+      kakao: "KakaoTalk",
+      zalo: "Zalo",
+      phoneOrder: "電話注文",
+      orderMethodsTitle: "予約・注文方法",
+      orderMethodsBody: "KakaoTalk、Zalo、電話で席予約、持ち帰り、デリバリー、メニュー確認ができます。"
+    },
+    heroCard: { line: "77I Bui Thi Xuan の辛い韓国式海鮮麺。", pill: "Saigon", label: "看板", title: "JJAMBBONG" },
+    menu: {
+      eyebrow: "看板メニュー",
+      title: "チャンポン、ジャージャー麺、タンスユク、ご飯もの",
+      body: "辛い料理、辛くない料理、シェア料理、ご飯ものを選びやすく整理した韓国中華メニューです。",
+      lineup: "DOYA 看板ラインアップ",
+      signatureBadge: "DOYA 看板"
+    },
+    localSeo: {
+      thirdTitle: "Bui Thi Xuan 近くの韓国料理",
+      thirdBody: "ホーチミン 韓国料理、韓国料理 1区、チャンポン ホーチミン、ジャージャー麺、ベンタイン市場 韓国料理の検索に合わせた1区中心部のレストランです。"
+    },
+    map: {
+      eyebrow: "ホーチミン1区",
+      title: "77I Bui Thi Xuan, District 1, Ho Chi Minh City",
+      body1: "ベンタイン市場、ブイビエン、ホテル街、バー街、市中心部のナイトライフエリアからアクセスしやすい場所です。",
+      body2: "ランチ、夕食、辛い麺、夜遅めの食事、飲んだ後の韓国式スープ麺に向いています。",
+      hours: "営業時間",
+      phone: "電話",
+      google: "Google Maps",
+      official: "公式サイト",
+      facebook: "Facebook",
+      tripadvisor: "TripAdvisor",
+      delivery: "予約 / デリバリー"
+    },
+    branch: {
+      eyebrow: "ホーチミン DOYA ネットワーク",
+      title: "エリア別に DOYA を探す",
+      body: "1区、Phu My Hung、Sky Garden、Midtown、Sun Avenue、Thao Dien などの店舗検索を公式サイトに接続します。",
+      button: "全店舗を見る",
+      phone: "電話"
+    },
+    why: {
+      eyebrow: "DOYA が選ばれる理由",
+      title: "辛い韓国式チャンポンと韓国中華に強いレストラン。",
+      body: "DOYA はホーチミン 韓国料理、韓国中華、チャンポン、jjambbong、ジャージャー麺、深夜 韓国料理の検索に合わせて構成されています。",
+      button: "看板メニューを見る",
+      items: [
+        ["看板の赤いスープ", "海鮮の旨味と辛さがある jjambbong。日本語ではチャンポン、英語では champong と検索されます。"],
+        ["旅行者に分かりやすい", "日本語、英語、韓国語、ベトナム語、中国語でメニューと場所を確認しやすい構成です。"],
+        ["夜遅めにも使いやすい", "熱い麺、タンスユク、ジャージャー麺、ご飯ものは夕食や夜食に選びやすいメニューです。"],
+        ["予約・注文が簡単", "Zalo、KakaoTalk、Google Maps、電話への導線を分かりやすく配置しています。"]
+      ]
+    },
+    spice: {
+      eyebrow: "辛さガイド",
+      title: "好みに合わせて選びやすいメニュー。",
+      levels: [
+        ["辛くない", "ジャージャー麺、タンスユク、ご飯もの"],
+        ["辛い", "赤いスープの jjambbong / チャンポン、韓国式辛口メニュー"]
+      ]
+    },
+    trust: [
+      ["77I Bui Thi Xuan", "1区 Ben Thanh 近く"],
+      ["10:30 - 23:30", "ランチ、夕食、夜遅めの食事に対応"],
+      ["3つの注文方法", "KakaoTalk、Zalo、電話"],
+      ["おすすめ組み合わせ", "チャンポン、ジャージャー麺、タンスユク"]
+    ],
+    reviews: [
+      "1区中心部で食べやすい辛い韓国式海鮮麺。",
+      "ホーチミンで韓国料理、韓国中華、夜食を探す旅行者に便利。",
+      "チャンポン、ジャージャー麺、タンスユクの組み合わせが人気です。"
+    ],
+    footer: {
+      visit: "店舗情報",
+      pages: "ページ",
+      description: "ホーチミン1区の韓国料理・韓国中華レストラン。チャンポン、jjambbong、ジャージャー麺、タンスユクを提供しています。"
+    }
   }
 };

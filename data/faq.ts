@@ -176,5 +176,42 @@ export const faqs: Record<Locale, FaqItem[]> = {
       question: "中国客人适合来吃吗?",
       answer: "适合. 中文页面会说明 champong 辣海鲜面、韩式炸酱面、糖醋肉和位置, 方便中国客人快速点餐."
     }
+  ],
+  ja: [
+    {
+      question: "Jjambbong とは何ですか?",
+      answer:
+        "Jjambbong は韓国中華の辛い海鮮麺です。赤い辛口スープ、海鮮、野菜が入った料理で、日本語ではチャンポン、英語では champong や jjamppong と検索されることがあります。"
+    },
+    {
+      question: "チャンポンと jjambbong は同じ料理ですか?",
+      answer:
+        "はい。DOYA ではチャンポン、champong、jjamppong、jjambbong を、韓国式の辛い海鮮麺として案内しています。"
+    },
+    {
+      question: "DOYA は韓国料理店ですか、中華料理店ですか?",
+      answer:
+        "DOYA は韓国料理と中華料理を韓国式に合わせた韓国中華レストランです。チャンポン、ジャージャー麺、タンスユクが代表メニューです。"
+    },
+    {
+      question: "辛くないメニューはありますか?",
+      answer:
+        "あります。ジャージャー麺、タンスユク、ご飯ものなど、辛い料理が苦手な方でも選びやすいメニューがあります。"
+    },
+    {
+      question: "DOYA JJAMBBONG はどこにありますか?",
+      answer:
+        "DOYA JJAMBBONG はホーチミン1区 77I Bui Thi Xuan にあります。ベンタイン市場、ブイビエン、ホテル街、市中心部からアクセスしやすい場所です。"
+    },
+    {
+      question: "予約やデリバリーはできますか?",
+      answer:
+        "KakaoTalk、Zalo、電話で席予約、持ち帰り、デリバリーについて相談できます。"
+    },
+    {
+      question: "日本人旅行者にも使いやすいですか?",
+      answer:
+        "はい。日本語ページではホーチミン 韓国料理、チャンポン、ジャージャー麺、場所、注文方法を分かりやすく案内しています。"
+    }
   ]
 };

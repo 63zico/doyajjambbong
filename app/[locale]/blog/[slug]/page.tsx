@@ -161,7 +161,8 @@ function MiTuongDenBlogLinks({ locale, slug }: { locale: Locale; slug: string })
     vi: ["Mì tương đen Hàn Quốc Quận 1", "Món jajangmyeon", "Tangsuyuk ăn cùng mì tương đen", "Xem toàn bộ menu", "Địa chỉ DOYA", "Đọc tiếp"],
     ko: ["호치민 1군 짜장면 안내", "짜장면 메뉴 상세", "짜장면과 탕수육 조합", "전체 메뉴 보기", "도야 위치/연락처", "관련 페이지"],
     en: ["Korean black bean noodles in District 1", "Jajangmyeon menu detail", "Tangsuyuk with jajangmyeon", "View full menu", "DOYA location", "Related pages"],
-    zh: ["第1郡韩式炸酱面", "Jajangmyeon 菜单详情", "糖醋肉搭配炸酱面", "查看完整菜单", "DOYA 位置", "相关页面"]
+    zh: ["第1郡韩式炸酱面", "Jajangmyeon 菜单详情", "糖醋肉搭配炸酱面", "查看完整菜单", "DOYA 位置", "相关页面"],
+    ja: ["1区のジャージャー麺", "Jajangmyeon メニュー詳細", "タンスユクとジャージャー麺", "全メニューを見る", "DOYA の場所", "関連ページ"]
   };
   const labels = labelMap[locale];
 

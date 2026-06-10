@@ -565,3 +565,122 @@ const zhMenuDetails: Record<MenuDetailSlug, MenuDetailContent> = {
 menuDetailSlugs.forEach((slug) => {
   menuDetails[slug].zh = zhMenuDetails[slug];
 });
+
+const jaMenuDetails: Record<MenuDetailSlug, MenuDetailContent> = {
+  "seafood-jjambbong-champong": {
+    title: "DOYA 海鮮チャンポン | ホーチミン 韓国式海鮮ラーメン",
+    description: "ホーチミン1区でチャンポン、champong、jjambbong、韓国式海鮮ラーメンを探す方へ。DOYA の看板海鮮チャンポン。",
+    eyebrow: "看板 champong",
+    h1: "DOYA 海鮮チャンポン",
+    intro: "海鮮の旨味がある辛い jjambbong。ホーチミン チャンポン、韓国式海鮮ラーメン、辛い海鮮麺を探す日本人旅行者にも分かりやすい看板メニューです。",
+    whyTitle: "なぜおすすめ?",
+    whyBody: "赤い辛口スープ、海鮮、野菜、韓国中華の香りを一杯で楽しめます。ベンタイン市場やブイビエン近くで韓国料理を探す時にも選びやすいメニューです。",
+    searchTitle: "検索キーワード",
+    searchBody: "ホーチミン チャンポン, 韓国式海鮮ラーメン, champong District 1, jjambbong Ho Chi Minh, Korean spicy seafood noodles.",
+    keywords: ["ホーチミン チャンポン", "韓国式海鮮ラーメン", "champong", "jjambbong", "Korean spicy seafood noodles"],
+    faq: [
+      { question: "チャンポンと jjambbong は同じですか?", answer: "はい。DOYA では韓国式の辛い海鮮麺として案内しています。" },
+      { question: "辛いですか?", answer: "辛口ですが、辛い韓国料理が好きな方におすすめです。" }
+    ]
+  },
+  "doya-jjambbong-champong": {
+    title: "DOYA Jjambbong Champong | ホーチミン1区の辛い韓国麺",
+    description: "DOYA の基本 jjambbong。ホーチミン1区で champong、チャンポン、辛い韓国麺を探す方へ。",
+    eyebrow: "基本 champong",
+    h1: "DOYA Jjambbong / Champong",
+    intro: "韓国中華の定番辛口スープ麺。ホーチミン チャンポン、jjambbong District 1、spicy Korean noodles の検索に合わせたメニューです。",
+    whyTitle: "定番を選びたい時に",
+    whyBody: "初めて DOYA に来る方がチャンポンの味を知るのに向いています。",
+    searchTitle: "検索キーワード",
+    searchBody: "champong Ho Chi Minh, jjambbong District 1, ホーチミン チャンポン, 韓国 辛い麺.",
+    keywords: ["champong", "jjambbong", "ホーチミン チャンポン", "韓国 辛い麺"],
+    faq: [
+      { question: "基本の味ですか?", answer: "はい。DOYA の jjambbong / champong の定番味です。" },
+      { question: "何と合わせると良いですか?", answer: "ジャージャー麺、タンスユク、餃子と合わせやすいです。" }
+    ]
+  },
+  "jajangmyeon-mi-tuong-den": {
+    title: "Jajangmyeon ホーチミン | 韓国式ジャージャー麺 Mi Tuong Den",
+    description: "ホーチミン1区の韓国式ジャージャー麺。Jajangmyeon、mi tuong den、Korean black bean noodles として検索される不辣の韓国中華麺。",
+    eyebrow: "韓国式ジャージャー麺",
+    h1: "ホーチミンの韓国式ジャージャー麺",
+    intro: "黒味噌ソースを絡めて食べる辛くない韓国中華の麺。辛いチャンポンと一緒に頼みやすいメニューです。",
+    whyTitle: "辛くない選択肢",
+    whyBody: "辛い料理が苦手な方や、グループで辛口と不辣を分けたい時に便利です。",
+    searchTitle: "検索キーワード",
+    searchBody: "ホーチミン ジャージャー麺, Jajangmyeon Ho Chi Minh, Korean black bean noodles, mi tuong den.",
+    keywords: ["ホーチミン ジャージャー麺", "jajangmyeon", "mi tuong den", "Korean black bean noodles"],
+    faq: [
+      { question: "ジャージャー麺は辛いですか?", answer: "辛くありません。黒味噌ソースの韓国中華麺です。" },
+      { question: "mi tuong den とは何ですか?", answer: "ベトナム語圏で韓国式ジャージャー麺を探す時に使われる検索語です。" }
+    ]
+  },
+  "seafood-jajang-platter": {
+    title: "海鮮ジャージャー麺大皿 | ホーチミン1区の韓国中華",
+    description: "シェアしやすい海鮮ジャージャー麺大皿。ホーチミン 韓国中華、Jajangmyeon、Korean black bean noodles 検索向け。",
+    eyebrow: "シェア用ジャージャー麺",
+    h1: "海鮮ジャージャー麺大皿",
+    intro: "海鮮と黒味噌ソースを合わせた大皿タイプのジャージャー麺。友人や家族で分けやすいメニューです。",
+    whyTitle: "グループにおすすめ",
+    whyBody: "単品麺よりシェアしやすく、チャンポンや揚げ物と合わせやすい一皿です。",
+    searchTitle: "検索キーワード",
+    searchBody: "seafood jajang platter, ホーチミン ジャージャー麺, Korean black bean noodles, Korean Chinese food District 1.",
+    keywords: ["seafood jajang platter", "ホーチミン ジャージャー麺", "jajangmyeon"],
+    faq: [
+      { question: "辛いですか?", answer: "辛くありません。黒味噌ソースの味です。" },
+      { question: "何人向けですか?", answer: "グループで分けやすい大皿メニューです。" }
+    ]
+  },
+  "tteokbokki-korean-spicy-rice-cakes": {
+    title: "Tteokbokki ホーチミン | 韓国トッポッキ",
+    description: "ホーチミン1区の韓国トッポッキ。tteokbokki、tokbokki、Korean spicy rice cakes を探す方向け。",
+    eyebrow: "韓国ストリートフード",
+    h1: "ホーチミンの Tteokbokki トッポッキ",
+    intro: "甘辛い韓国餅料理。チャンポンや餃子と一緒に頼みやすいサイドメニューです。",
+    whyTitle: "旅行者にも分かりやすい韓国料理",
+    whyBody: "K-food として知名度が高く、韓国中華メニューにもう一品足したい時に選びやすい料理です。",
+    searchTitle: "検索キーワード",
+    searchBody: "tteokbokki Ho Chi Minh, トッポッキ ホーチミン, Korean spicy rice cakes, Korean street food District 1.",
+    keywords: ["tteokbokki Ho Chi Minh", "トッポッキ", "Korean spicy rice cakes"],
+    faq: [
+      { question: "トッポッキは辛いですか?", answer: "甘辛い味です。辛さが苦手な方は注文前に確認してください。" },
+      { question: "持ち帰りできますか?", answer: "Zalo、KakaoTalk、電話で持ち帰りやデリバリーを相談できます。" }
+    ]
+  },
+  "tangsuyuk-korean-sweet-sour-pork": {
+    title: "Tangsuyuk ホーチミン | 韓国式タンスユク",
+    description: "ホーチミン1区の韓国式タンスユク。チャンポンやジャージャー麺と合わせやすい韓国中華の揚げ物。",
+    eyebrow: "韓国式揚げ物",
+    h1: "ホーチミンの韓国式タンスユク",
+    intro: "Tangsuyuk は韓国中華の定番、甘酸っぱいソースで食べる揚げ豚料理です。",
+    whyTitle: "シェアに向いた一皿",
+    whyBody: "グループで食事する時に、チャンポンやジャージャー麺と一緒に頼みやすい人気メニューです。",
+    searchTitle: "検索キーワード",
+    searchBody: "tangsuyuk Ho Chi Minh, 韓国式タンスユク, Korean sweet and sour pork, Korean Chinese food District 1.",
+    keywords: ["tangsuyuk Ho Chi Minh", "韓国式タンスユク", "Korean sweet and sour pork"],
+    faq: [
+      { question: "タンスユクは何と合いますか?", answer: "チャンポン、jjambbong、韓国式ジャージャー麺とよく合います。" },
+      { question: "辛いですか?", answer: "辛くありません。甘酸っぱいソースの揚げ物です。" }
+    ]
+  },
+  "kkanpunggi-spicy-garlic-fried-chicken": {
+    title: "Kkanpunggi ホーチミン | 韓国式辛口ガーリックチキン",
+    description: "ホーチミン1区の韓国式辛口ガーリックチキン。お酒、グループ、夜食に向いた韓国中華メニュー。",
+    eyebrow: "辛口ガーリックチキン",
+    h1: "ホーチミンの Kkanpunggi",
+    intro: "Kkanpunggi は辛口ガーリックソースを絡めた韓国中華のフライドチキンです。",
+    whyTitle: "お酒とシェアに合う",
+    whyBody: "ビール、焼酎、ハイボールと合わせやすく、チャンポンやジャージャー麺だけでは足りない時におすすめです。",
+    searchTitle: "検索キーワード",
+    searchBody: "kkanpunggi Ho Chi Minh, spicy garlic fried chicken Korean Chinese, Korean drinking food District 1.",
+    keywords: ["kkanpunggi", "韓国式辛口ガーリックチキン", "spicy garlic fried chicken"],
+    faq: [
+      { question: "Kkanpunggi は辛いですか?", answer: "辛口ガーリックソースの味です。" },
+      { question: "メインですか、サイドですか?", answer: "グループでシェアしやすいメイン系のおつまみ料理です。" }
+    ]
+  }
+};
+
+menuDetailSlugs.forEach((slug) => {
+  menuDetails[slug].ja = jaMenuDetails[slug];
+});

@@ -170,6 +170,44 @@ export const menuCategoryLabels: Record<Locale, Record<MenuCategory, { title: st
       title: "咖啡",
       body: "韩式中餐后可点 Americano, latte, coconut coffee, salt coffee, condensed milk coffee, matcha latte 等."
     }
+  },
+  ja: {
+    champong: {
+      title: "チャンポン / Jjambbong",
+      body: "ホーチミンでチャンポン、champong、jjamppong、jjambbong、韓国式海鮮ラーメンを探す方に向けた辛い海鮮麺と白い海鮮麺です。"
+    },
+    jajang: {
+      title: "ジャージャー麺 / Jajangmyeon",
+      body: "韓国式ジャージャー麺、Korean black bean noodles、mi tuong den として検索される辛くない黒味噌ソースの麺です。"
+    },
+    rice: {
+      title: "ご飯もの",
+      body: "ランチや夕食に選びやすい、ご飯、炒飯、しっかり食べられる韓国料理メニューです。"
+    },
+    fried: {
+      title: "揚げ物",
+      body: "餃子、メンボシャ、海老フライなど、チャンポンやジャージャー麺と一緒に頼みやすいサイドです。"
+    },
+    anju: {
+      title: "おつまみ",
+      body: "タンスユク、辛いチキン、海鮮スープ、ヤンジャンピなど、ビール、焼酎、ハイボールと合うシェア料理です。"
+    },
+    side: {
+      title: "サイドメニュー",
+      body: "食事に少し足したい時に使いやすい軽めのサイドメニューです。"
+    },
+    drink: {
+      title: "ドリンク / ソーダ / ミルクティー",
+      body: "ホーチミン1区 DOYA のドリンクメニュー。パッションフルーツソーダ、ストロベリーソーダ、レモンティー、ミルクティー、コーラ、スプライトなど。"
+    },
+    alcohol: {
+      title: "焼酎・ビール・ハイボール",
+      body: "Jinro、Chamisul、Saero、Tiger beer、Tsingtao、Yantai liquor、ハイボールなど、1区で韓国料理とお酒を楽しみたい方へ。"
+    },
+    coffee: {
+      title: "コーヒー & カフェメニュー",
+      body: "韓国中華の食後に Americano、latte、coconut coffee、salt coffee、condensed milk coffee、matcha latte などを選べます。"
+    }
   }
 };
 

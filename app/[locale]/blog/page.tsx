@@ -39,6 +39,13 @@ const blogCopy: Record<Locale, { title: string; description: string; eyebrow: st
     eyebrow: "DOYA Blog",
     h1: "胡志明市韩国餐厅、辣海鲜面和韩式中餐指南",
     subtitle: "帮助中国客人和游客了解 champong, jjambbong, 韩式炸酱面、韩国夜宵和第1郡 DOYA JJAMBBONG."
+  },
+  ja: {
+    title: "DOYA JJAMBBONG ブログ | ホーチミン韓国料理と韓国中華",
+    description: "ホーチミン1区の韓国料理、チャンポン、jjambbong、ジャージャー麺、夜食、韓国中華に関するガイド。",
+    eyebrow: "DOYA Blog",
+    h1: "ホーチミン韓国料理、チャンポン、韓国中華ガイド",
+    subtitle: "ホーチミン1区でチャンポン、ジャージャー麺、深夜の韓国料理、ベンタイン市場やブイビエン近くの韓国料理を探す方向けのガイドです。"
   }
 };
 

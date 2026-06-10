@@ -551,6 +551,35 @@ function searchIntentCopy(locale: Locale) {
     };
   }
 
+  if (locale === "ja") {
+    return {
+      eyebrow: "Google 検索キーワード",
+      title: "日本人が探す韓国料理検索を DOYA へ接続",
+      body:
+        "ホーチミン 韓国料理、ホーチミン チャンポン、ジャージャー麺、ベンタイン市場 韓国料理、ブイビエン 韓国料理のような検索意図を分かりやすいページにまとめています。",
+      links: [
+        {
+          title: "ホーチミン チャンポン",
+          body: "チャンポン、champong、jjamppong、jjambbong、韓国式海鮮ラーメンを探す方へ。",
+          href: localizedPath(locale, "champong-korean-chinese-food-ho-chi-minh"),
+          label: "チャンポンを見る"
+        },
+        {
+          title: "ジャージャー麺 / Jajangmyeon",
+          body: "韓国式ジャージャー麺、Jajangmyeon、Korean black bean noodles、mi tuong den を探す方へ。",
+          href: localizedPath(locale, "mi-tuong-den-han-quoc-quan-1"),
+          label: "ジャージャー麺を見る"
+        },
+        {
+          title: "ホーチミン 韓国料理 1区",
+          body: "ベンタイン市場、ブイビエン、Bui Thi Xuan 近くで韓国料理と韓国中華を探す方へ。",
+          href: localizedPath(locale, "korean-chinese-food-ho-chi-minh"),
+          label: "韓国中華を見る"
+        }
+      ]
+    };
+  }
+
   return {
     eyebrow: "Search shortcuts",
     title: "Connect foreign Korean restaurant searches to DOYA",

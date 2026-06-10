@@ -32,6 +32,15 @@ function orderGuideCopy(locale: Locale) {
     };
   }
 
+  if (locale === "ja") {
+    return {
+      title: "この内容を送ると確認が早いです",
+      items: ["予約: 人数、日付、時間", "デリバリー/持ち帰り: メニュー、数量、住所", "近くの目印: ホテル名、ブイビエン、3区付近など"],
+      comboTitle: "おすすめ注文",
+      combos: ["DOYA jjambbong + タンスユク", "ジャージャー麺 + 焼き餃子", "チャンポン鍋 + おつまみ"]
+    };
+  }
+
   return {
     title: "Send this for faster ordering",
     items: ["Reservation: party size, date, time", "Delivery/takeaway: menu, quantity, address", "Nearby landmark: hotel name, Bui Vien, near District 3"],

@@ -16,7 +16,8 @@ export const localeNames: Record<Locale, string> = {
   vi: "Tiếng Việt",
   ko: "한국어",
   en: "English",
-  zh: "中文"
+  zh: "中文",
+  ja: "日本語"
 };
 
 export const navLabels: Record<Locale, Record<PageSlug, string>> = {
@@ -87,6 +88,23 @@ export const navLabels: Record<Locale, Record<PageSlug, string>> = {
     reviews: "评价",
     branches: "分店",
     "return-policy": "退换政策"
+  },
+  ja: {
+    "": "ホーム",
+    menu: "メニュー",
+    "mi-tuong-den-han-quoc-quan-1": "韓国式ジャージャー麺",
+    "signature-jjambbong": "看板チャンポン",
+    "champong-korean-chinese-food-ho-chi-minh": "チャンポン",
+    "korean-chinese-food-ho-chi-minh": "韓国中華",
+    "korean-food-delivery-ho-chi-minh": "予約 / デリバリー",
+    "late-night-korean-food-ho-chi-minh": "深夜の韓国料理",
+    "hangover-spicy-noodles-saigon": "辛い海鮮麺",
+    "location-contact": "場所",
+    about: "DOYA について",
+    faq: "FAQ",
+    reviews: "レビュー",
+    branches: "店舗",
+    "return-policy": "返品ポリシー"
   }
 };
 
@@ -892,4 +910,236 @@ pageContent.zh = {
   reviews: { ...pageContent.en.reviews, nav: "评价", title: "评价 | DOYA JJAMBBONG 韩国餐厅第1郡", h1: "评价" },
   branches: { ...pageContent.en.branches, nav: "分店", title: "DOYA JJAMBBONG 胡志明市分店", h1: "DOYA JJAMBBONG 胡志明市分店" },
   "return-policy": { ...pageContent.en["return-policy"], nav: "退换政策", title: "退换政策 | DOYA JJAMBBONG", h1: "退换政策" }
+};
+
+pageContent.ja = {
+  ...pageContent.en,
+  "": {
+    slug: "",
+    nav: "ホーム",
+    title: "DOYA JJAMBBONG | ホーチミン1区の韓国料理・チャンポン",
+    description:
+      "DOYA JJAMBBONG はホーチミン1区の韓国料理・韓国中華レストラン。チャンポン、韓国式海鮮ラーメン、ジャージャー麺、タンスユクをベンタイン市場やブイビエン近くで楽しめます。",
+    eyebrow: "DOYA JJAMBBONG / 도야짬뽕",
+    h1: "ホーチミン1区の韓国料理と韓国中華チャンポン",
+    subtitle: "ベンタイン市場、ブイビエン、Bui Thi Xuan 近くで、辛い海鮮チャンポン、ジャージャー麺、タンスユクを気軽にどうぞ。",
+    summary:
+      "DOYA JJAMBBONG は 77I Bui Thi Xuan, District 1, Ho Chi Minh City にある韓国中華レストランです。ホーチミン 韓国料理、ホーチミン チャンポン、ホーチミン ジャージャー麺、ベンタイン市場 韓国料理を探す日本人旅行者にも分かりやすい場所です。",
+    sections: [
+      {
+        heading: "1区中心部、ベンタイン市場とブイビエン近く",
+        body: "ホテル、観光エリア、バー街からアクセスしやすい Bui Thi Xuan にあります。ホーチミン 韓国料理 1区、ブイビエン 韓国料理、ベンタイン市場 韓国料理の検索意図に合わせたページです。"
+      },
+      {
+        heading: "毎日 10:30 - 23:30",
+        body: "ランチ、夕食、夜遅めの食事、飲んだ後の辛いスープ麺に使いやすい営業時間です。チャンポン、ジャージャー麺、韓国式中華料理を中心に提供しています。"
+      }
+    ]
+  },
+  menu: {
+    ...pageContent.en.menu,
+    nav: "メニュー",
+    title: "DOYA メニュー | ホーチミンのチャンポン、ジャージャー麺、韓国中華",
+    description:
+      "DOYA JJAMBBONG の日本語メニュー。ホーチミン1区でチャンポン、韓国式海鮮ラーメン、ジャージャー麺、タンスユク、韓国中華を探す方へ。",
+    eyebrow: "DOYA メニュー",
+    h1: "韓国中華メニュー",
+    subtitle: "辛い麺、辛くない麺、シェア料理、ご飯ものまで、旅行者にも選びやすいメニューです。",
+    summary:
+      "DOYA のメニューは、ホーチミン チャンポン、韓国式海鮮ラーメン、ジャージャー麺、Jajangmyeon、タンスユク、韓国中華を探すお客様に向けて整理されています。"
+  },
+  "mi-tuong-den-han-quoc-quan-1": {
+    slug: "mi-tuong-den-han-quoc-quan-1",
+    nav: "韓国式ジャージャー麺",
+    title: "ホーチミンの韓国式ジャージャー麺 | Jajangmyeon・Mi Tuong Den",
+    description:
+      "ホーチミン1区で韓国式ジャージャー麺、Jajangmyeon、Korean black bean noodles、mi tuong den を探すなら DOYA JJAMBBONG。ベンタイン市場とブイビエン近く。",
+    eyebrow: "Jajangmyeon / Mi tuong den",
+    h1: "ホーチミン1区の韓国式ジャージャー麺",
+    subtitle: "辛くない黒味噌ソースの麺。辛いチャンポンが苦手な方にも選びやすい韓国中華メニューです。",
+    summary:
+      "韓国式ジャージャー麺は Jajangmyeon、Korean black bean noodles、mi tuong den とも検索されます。DOYA JJAMBBONG は 77I Bui Thi Xuan にあり、ベンタイン市場、ブイビエン、1区ホテル街から行きやすい場所です。",
+    sections: [
+      {
+        heading: "ジャージャー麺とは",
+        body: "黒豆味噌ソースを絡めて食べる韓国中華の定番麺です。チャンポンより辛くないため、辛い料理が苦手な日本人のお客様にもおすすめです。"
+      },
+      {
+        heading: "mi tuong den 検索にも対応",
+        body: "ベトナムでは mi tuong den や mì tương đen と検索されることがあります。日本語ページでも Jajangmyeon とあわせて同じ料理として案内しています。"
+      },
+      {
+        heading: "タンスユクとの組み合わせ",
+        body: "ジャージャー麺はタンスユク、餃子、辛いチャンポンと一緒に頼むと、辛い料理と辛くない料理のバランスが取りやすくなります。"
+      }
+    ]
+  },
+  "signature-jjambbong": {
+    slug: "signature-jjambbong",
+    nav: "看板チャンポン",
+    title: "看板 Jjambbong | ホーチミン1区の韓国式辛い海鮮麺",
+    description:
+      "DOYA の看板 Jjambbong は、ホーチミン1区でチャンポン、韓国式海鮮ラーメン、辛い海鮮麺を探す方に向けた一杯です。",
+    eyebrow: "Signature bowl",
+    h1: "DOYA の看板チャンポン",
+    subtitle: "赤い辛口スープ、海鮮、野菜、韓国中華の香ばしさを合わせた一杯。",
+    summary:
+      "DOYA Jjambbong は、ホーチミン チャンポン、辛い海鮮麺、韓国式海鮮ラーメン、韓国中華を探す方に分かりやすい看板メニューです。",
+    sections: [
+      { heading: "赤い辛口スープ", body: "海鮮の旨味、唐辛子の辛さ、野菜、韓国中華の香りを合わせた深い味わいです。" },
+      { heading: "辛い料理が好きな方へ", body: "夕食、夜遅めの食事、飲んだ後の温かい麺として選びやすいメニューです。" }
+    ]
+  },
+  "champong-korean-chinese-food-ho-chi-minh": {
+    slug: "champong-korean-chinese-food-ho-chi-minh",
+    nav: "チャンポン",
+    title: "ホーチミン チャンポン | 韓国式海鮮ラーメン・Jjambbong",
+    description:
+      "ホーチミンでチャンポン、champong、jjambbong、韓国式海鮮ラーメン、辛い海鮮麺を探す方へ。DOYA は1区 Bui Thi Xuan で提供しています。",
+    eyebrow: "Champong / Jjambbong",
+    h1: "ホーチミンの韓国式チャンポン",
+    subtitle: "チャンポン、champong、jjamppong、jjambbong は、韓国中華の辛い海鮮麺を探すときによく使われる表記です。",
+    summary:
+      "このページは、ホーチミン チャンポン、韓国チャンポン ホーチミン、韓国式海鮮ラーメン、辛い海鮮麺、ベンタイン市場 韓国料理、ブイビエン 韓国料理の検索に合わせています。",
+    sections: [
+      {
+        heading: "Champong は Jjambbong の検索表記",
+        body: "日本語ではチャンポン、英語では champong、jjamppong、jjambbong と検索されることがあります。DOYA はこれらの検索を同じ看板メニューに接続します。"
+      },
+      {
+        heading: "1区のローカル検索に強いページ",
+        body: "77I Bui Thi Xuan、Ben Thanh、District 1、Ho Chi Minh City を明記し、日本人旅行者が Google で見つけやすい構成にしています。"
+      }
+    ]
+  },
+  "korean-chinese-food-ho-chi-minh": {
+    slug: "korean-chinese-food-ho-chi-minh",
+    nav: "韓国中華",
+    title: "ホーチミン 韓国料理 | 1区の韓国中華 DOYA JJAMBBONG",
+    description:
+      "ホーチミン 韓国料理、ホーチミン 韓国中華、1区 韓国料理、ベンタイン市場 韓国料理を探すなら DOYA。チャンポン、ジャージャー麺、タンスユクを提供。",
+    eyebrow: "Korean Chinese food",
+    h1: "ホーチミンの韓国中華",
+    subtitle: "韓国風の中華料理: チャンポン、ジャージャー麺、タンスユク、ご飯ものを1区中心部で。",
+    summary:
+      "DOYA は、ホーチミン 韓国料理、ホーチミン 韓国料理 1区、ホーチミン 韓国中華、Korean restaurant near Ben Thanh、Korean food near Bui Vien の検索意図に合わせたレストランページです。",
+    sections: [
+      {
+        heading: "一般的な中華ではなく韓国中華",
+        body: "メニューは中華由来ですが、味は韓国式です。辛い赤い海鮮スープ、黒味噌のジャージャー麺、タンスユクなどが中心です。"
+      },
+      {
+        heading: "日本人旅行者にも分かりやすく",
+        body: "韓国料理、韓国中華、チャンポン、ジャージャー麺、ベンタイン市場、ブイビエンという検索語を自然に入れ、旅行中でも探しやすくしています。"
+      }
+    ]
+  },
+  "korean-food-delivery-ho-chi-minh": {
+    ...pageContent.en["korean-food-delivery-ho-chi-minh"],
+    nav: "予約 / デリバリー",
+    title: "ホーチミン 韓国料理の予約・デリバリー | DOYA JJAMBBONG",
+    description:
+      "ホーチミン1区で韓国料理、チャンポン、ジャージャー麺、タンスユクの予約、持ち帰り、デリバリー相談は KakaoTalk、Zalo、電話で可能です。",
+    eyebrow: "予約 / デリバリー",
+    h1: "DOYA JJAMBBONG の予約・注文",
+    subtitle: "KakaoTalk、Zalo、電話から、席予約、持ち帰り、デリバリーを相談できます。",
+    summary:
+      "ホーチミン 韓国料理 デリバリー、1区 韓国料理 予約、チャンポン デリバリー、ジャージャー麺 持ち帰りを探す方に向けた案内ページです。"
+  },
+  "late-night-korean-food-ho-chi-minh": {
+    ...pageContent.en["late-night-korean-food-ho-chi-minh"],
+    nav: "深夜の韓国料理",
+    title: "ホーチミン 深夜 韓国料理 | 1区のチャンポンと韓国中華",
+    description:
+      "ホーチミン1区で夜遅めの韓国料理、飲んだ後の辛い海鮮麺、チャンポン、ジャージャー麺を探す方へ。DOYA は毎日 23:30 まで営業。",
+    eyebrow: "Late Night District 1",
+    h1: "ホーチミン1区の深夜韓国料理",
+    subtitle: "観光後、仕事後、飲んだ後に食べやすい熱い麺とシェア料理。",
+    summary:
+      "ホーチミン 深夜 韓国料理、ブイビエン 韓国料理、飲んだ後 食事 サイゴン、チャンポン 1区の検索に合わせたページです。"
+  },
+  "hangover-spicy-noodles-saigon": {
+    ...pageContent.en["hangover-spicy-noodles-saigon"],
+    nav: "辛い海鮮麺",
+    title: "サイゴンの辛い海鮮麺 | 韓国式チャンポン・Jjambbong",
+    description:
+      "飲んだ後や夜食に食べたい韓国式辛い海鮮麺。ホーチミン1区の DOYA でチャンポン、jjambbong、韓国中華をどうぞ。",
+    eyebrow: "Hangover noodles",
+    h1: "サイゴンの韓国式辛い海鮮麺",
+    subtitle: "熱いスープ、海鮮、辛さがほしい時の韓国式チャンポン。",
+    summary:
+      "サイゴン 辛い麺、ホーチミン チャンポン、韓国式海鮮ラーメン、飲んだ後 食事の検索に合わせたページです。"
+  },
+  "location-contact": {
+    ...pageContent.en["location-contact"],
+    nav: "場所",
+    title: "DOYA JJAMBBONG の場所 | ホーチミン1区 Bui Thi Xuan",
+    description:
+      "DOYA JJAMBBONG は 77I Bui Thi Xuan, District 1, Ho Chi Minh City。ベンタイン市場、ブイビエン、1区ホテル街からアクセスしやすい韓国料理店です。",
+    eyebrow: "1区の場所",
+    h1: "場所と連絡先",
+    subtitle: "Google Maps で 77I Bui Thi Xuan の DOYA JJAMBBONG へ。",
+    summary:
+      "DOYA JJAMBBONG はホーチミン1区、Bui Thi Xuan にある韓国中華レストランです。ベンタイン市場、ブイビエン、ホテル街、夜遊びエリアからアクセスしやすい場所です。"
+  },
+  about: {
+    ...pageContent.en.about,
+    nav: "DOYA について",
+    title: "DOYA JJAMBBONG について | ホーチミンの韓国中華レストラン",
+    description:
+      "DOYA JJAMBBONG はホーチミン1区の韓国中華レストラン。チャンポン、ジャージャー麺、タンスユク、辛い海鮮麺を提供しています。",
+    eyebrow: "About DOYA",
+    h1: "DOYA JJAMBBONG について",
+    subtitle: "サイゴン中心部で楽しめる韓国中華のコンフォートフード。",
+    summary:
+      "DOYA JJAMBBONG は、ホーチミン 韓国料理、ホーチミン 韓国中華、チャンポン、ジャージャー麺を探す方に向けた1区のレストランです。"
+  },
+  faq: {
+    ...pageContent.en.faq,
+    nav: "FAQ",
+    title: "FAQ | DOYA JJAMBBONG ホーチミン1区 韓国料理",
+    description:
+      "チャンポン、ジャージャー麺、辛さ、予約、デリバリー、場所についてのよくある質問。",
+    eyebrow: "FAQ",
+    h1: "よくある質問",
+    subtitle: "来店前、注文前に知っておきたいこと。",
+    summary:
+      "DOYA JJAMBBONG はホーチミン1区の韓国中華レストランです。チャンポン、ジャージャー麺、タンスユク、予約、デリバリー、場所について案内します。"
+  },
+  reviews: {
+    ...pageContent.en.reviews,
+    nav: "レビュー",
+    title: "レビュー | DOYA JJAMBBONG ホーチミン韓国料理",
+    description:
+      "ホーチミン1区でチャンポン、ジャージャー麺、韓国中華を楽しむ DOYA JJAMBBONG のレビュー案内。",
+    eyebrow: "Reviews",
+    h1: "レビュー",
+    subtitle: "1区で DOYA が選ばれる理由。",
+    summary:
+      "お客様は、辛い海鮮チャンポン、アクセスの良い1区の場所、夜遅めの食事、韓国中華メニューを理由に DOYA を選びます。"
+  },
+  branches: {
+    ...pageContent.en.branches,
+    nav: "店舗",
+    title: "DOYA JJAMBBONG ホーチミン店舗 | 1区・7区・タオディエン",
+    description:
+      "ホーチミン市内の DOYA JJAMBBONG 店舗情報。1区、Sky Garden、Midtown、Sun Avenue、Thao Dien など。",
+    eyebrow: "DOYA Branches",
+    h1: "DOYA JJAMBBONG ホーチミン店舗",
+    subtitle: "エリア別に DOYA を探せます。",
+    summary:
+      "ホーチミン市内で DOYA JJAMBBONG、韓国料理、チャンポン、韓国中華を探す方のための店舗案内です。"
+  },
+  "return-policy": {
+    ...pageContent.en["return-policy"],
+    nav: "返品ポリシー",
+    title: "返品・返金ポリシー | DOYA JJAMBBONG",
+    description:
+      "DOYA JJAMBBONG の店内飲食、持ち帰り、デリバリー注文に関する返品・返金ポリシー。",
+    eyebrow: "Return Policy",
+    h1: "返品・返金ポリシー",
+    subtitle: "DOYA JJAMBBONG 1区の食品注文について。",
+    summary:
+      "食品は注文後に調理するため、調理開始後のお客様都合による返品・返金は原則できません。注文違い、品不足、品質の問題がある場合は、当日中に電話、Zalo、Facebook、メールでご連絡ください。"
+  }
 };

@@ -2,7 +2,7 @@ export const site = {
   name: "DOYA JJAMBBONG",
   alternateName: "도야짬뽕",
   defaultLocale: "vi",
-  locales: ["vi", "ko", "en", "zh"] as const,
+  locales: ["vi", "ko", "en", "zh", "ja"] as const,
   baseUrl: "https://doyajjambbong.com",
   address: "77I Bùi Thị Xuân, P. Bến Thành, Quận 1, TP. Hồ Chí Minh",
   addressDetail: "Near Bui Thi Xuan, Ben Thanh, hotels, and the District 1 nightlife area",

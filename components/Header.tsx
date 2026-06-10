@@ -17,14 +17,16 @@ const languageShortLabel: Record<Locale, string> = {
   vi: "VN Vietnam",
   ko: "KR 한국",
   en: "US English",
-  zh: "CN 中文"
+  zh: "CN 中文",
+  ja: "JP 日本語"
 };
 
 const blogLabel: Record<Locale, string> = {
   vi: "Blog",
   ko: "블로그",
   en: "Blog",
-  zh: "博客"
+  zh: "博客",
+  ja: "ブログ"
 };
 
 export function Header({ locale, slug, activeSection }: { locale: Locale; slug: PageSlug; activeSection?: "blog" }) {
