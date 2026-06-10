@@ -364,6 +364,7 @@ function InnerPage({ locale, slug }: { locale: Locale; slug: PageSlug }) {
       ) : null}
       {slug === "about" ? <WhyDoya locale={locale} /> : null}
       <SeoLocalSection locale={locale} />
+      <SearchIntentLinks locale={locale} />
     </main>
   );
 }
@@ -486,6 +487,120 @@ function SeoLocalSection({ locale }: { locale: Locale }) {
           <h2 className="text-xl font-black">{copy.thirdTitle}</h2>
           <p className="mt-3 text-sm leading-6 text-cream/75">{copy.thirdBody}</p>
         </article>
+      </div>
+    </section>
+  );
+}
+
+function searchIntentCopy(locale: Locale) {
+  if (locale === "ko") {
+    return {
+      eyebrow: "검색어별 바로가기",
+      title: "외국인이 찾는 한식당 검색어를 도야 페이지로 연결",
+      body:
+        "champong, mi tuong den, Korean restaurant District 1, Korean food near Bui Vien처럼 실제 손님이 구글에 입력할 만한 검색 의도를 한곳에서 연결합니다.",
+      links: [
+        {
+          title: "Champong Ho Chi Minh",
+          body: "champong, champon, jjamppong, jjambbong 검색을 도야 대표 짬뽕 페이지로 연결합니다.",
+          href: localizedPath(locale, "champong-korean-chinese-food-ho-chi-minh"),
+          label: "champong 페이지"
+        },
+        {
+          title: "Mi tuong den / Jajangmyeon",
+          body: "mi tuong den, mì tương đen, Korean black bean noodles 검색을 짜장면 페이지로 연결합니다.",
+          href: localizedPath(locale, "mi-tuong-den-han-quoc-quan-1"),
+          label: "짜장면 페이지"
+        },
+        {
+          title: "Korean restaurant District 1",
+          body: "Korean food Ho Chi Minh, Korean restaurant near Ben Thanh, Korean food near Bui Vien 검색을 한국식 중화요리 페이지로 연결합니다.",
+          href: localizedPath(locale, "korean-chinese-food-ho-chi-minh"),
+          label: "한식당 검색 페이지"
+        }
+      ]
+    };
+  }
+
+  if (locale === "vi") {
+    return {
+      eyebrow: "Tu khoa Google",
+      title: "Ket noi cac tim kiem mon Han ve DOYA",
+      body:
+        "Cac tu khoa nhu champong, mi tuong den, Korean restaurant District 1 va Korean food near Bui Vien duoc gom thanh cac trang ro rang de khach tim dung mon nhanh hon.",
+      links: [
+        {
+          title: "Champong Ho Chi Minh",
+          body: "Danh cho khach tim champong, champon, jjamppong hoac jjambbong tai Quan 1.",
+          href: localizedPath(locale, "champong-korean-chinese-food-ho-chi-minh"),
+          label: "Xem champong"
+        },
+        {
+          title: "Mi tuong den / Jajangmyeon",
+          body: "Danh cho khach tim mi tuong den, mi tuong den Han Quoc hoac Korean black bean noodles.",
+          href: localizedPath(locale, "mi-tuong-den-han-quoc-quan-1"),
+          label: "Xem mi tuong den"
+        },
+        {
+          title: "Korean restaurant District 1",
+          body: "Danh cho khach tim Korean food Ho Chi Minh, Korean restaurant near Ben Thanh hoac Korean food near Bui Vien.",
+          href: localizedPath(locale, "korean-chinese-food-ho-chi-minh"),
+          label: "Xem mon Han-Trung"
+        }
+      ]
+    };
+  }
+
+  return {
+    eyebrow: "Search shortcuts",
+    title: "Connect foreign Korean restaurant searches to DOYA",
+    body:
+      "These links group high-intent searches such as champong, mi tuong den, Korean restaurant District 1, Korean food near Bui Vien, and Korean restaurant near Ben Thanh.",
+    links: [
+      {
+        title: "Champong Ho Chi Minh",
+        body: "For guests searching champong, champon, jjamppong, jjambbong, or Korean spicy seafood noodles in District 1.",
+        href: localizedPath(locale, "champong-korean-chinese-food-ho-chi-minh"),
+        label: "Open champong guide"
+      },
+      {
+        title: "Mi tuong den / Jajangmyeon",
+        body: "For guests searching mi tuong den, mì tương đen, jajangmyeon, or Korean black bean noodles.",
+        href: localizedPath(locale, "mi-tuong-den-han-quoc-quan-1"),
+        label: "Open black bean noodles"
+      },
+      {
+        title: "Korean restaurant District 1",
+        body: "For guests searching Korean food Ho Chi Minh, Korean restaurant near Ben Thanh, or Korean food near Bui Vien.",
+        href: localizedPath(locale, "korean-chinese-food-ho-chi-minh"),
+        label: "Open Korean food guide"
+      }
+    ]
+  };
+}
+
+function SearchIntentLinks({ locale }: { locale: Locale }) {
+  const copy = searchIntentCopy(locale);
+
+  return (
+    <section className="bg-bone">
+      <div className="mx-auto max-w-7xl px-4 py-14">
+        <div className="max-w-3xl">
+          <p className="text-sm font-black uppercase tracking-wide text-chili">{copy.eyebrow}</p>
+          <h2 className="mt-2 text-3xl font-black text-ink md:text-4xl">{copy.title}</h2>
+          <p className="mt-4 leading-7 text-ink/70">{copy.body}</p>
+        </div>
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          {copy.links.map((link) => (
+            <article key={link.href} className="rounded-lg border border-ink/10 bg-white p-6">
+              <h3 className="text-xl font-black text-ink">{link.title}</h3>
+              <p className="mt-3 text-sm leading-6 text-ink/70">{link.body}</p>
+              <Link href={link.href} className="mt-5 inline-flex rounded-md bg-chili px-4 py-3 text-sm font-black text-white">
+                {link.label}
+              </Link>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

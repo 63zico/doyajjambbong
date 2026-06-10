@@ -16,13 +16,15 @@ const mainPaths: PageSlug[] = [
 const languageShortLabel: Record<Locale, string> = {
   vi: "VN Vietnam",
   ko: "KR 한국",
-  en: "US English"
+  en: "US English",
+  zh: "CN 中文"
 };
 
 const blogLabel: Record<Locale, string> = {
   vi: "Blog",
   ko: "블로그",
-  en: "Blog"
+  en: "Blog",
+  zh: "博客"
 };
 
 export function Header({ locale, slug, activeSection }: { locale: Locale; slug: PageSlug; activeSection?: "blog" }) {

@@ -132,6 +132,44 @@ export const menuCategoryLabels: Record<Locale, Record<MenuCategory, { title: st
       title: "Coffee & Cafe Menu",
       body: "Cafe drinks after Korean-Chinese food in District 1: Americano, latte, coconut coffee, salt coffee, condensed milk coffee, matcha latte, and strawberry matcha latte."
     }
+  },
+  zh: {
+    champong: {
+      title: "Jjambbong / Champong 辣海鲜面",
+      body: "韩式辣海鲜汤面和白汤海鲜面, 适合搜索 champong, champon, jjamppong 或 jjambbong 的客人."
+    },
+    jajang: {
+      title: "韩式炸酱面 / Jajangmyeon",
+      body: "黑豆酱面和韩式中餐炸酱类, 不太辣, 适合想吃咸香口味的客人."
+    },
+    rice: {
+      title: "米饭类",
+      body: "拌饭、炒饭和饱腹的韩式餐食, 适合午餐或晚餐."
+    },
+    fried: {
+      title: "炸物",
+      body: "煎饺、炸虾和其他酥脆小菜, 适合搭配 jjambbong 或炸酱面."
+    },
+    anju: {
+      title: "下酒菜",
+      body: "适合啤酒、烧酒和 highball 的分享菜, 包括糖醋肉、辣鸡、海鲜汤和凉拌菜."
+    },
+    side: {
+      title: "小菜",
+      body: "轻食和加点小菜, 让一餐更完整."
+    },
+    drink: {
+      title: "饮料 / 苏打 / 奶茶",
+      body: "第1郡 DOYA 的饮料菜单: 百香果苏打、草莓苏打、柠檬茶、奶茶、橙汁、可乐和雪碧等."
+    },
+    alcohol: {
+      title: "烧酒、啤酒和 Highball",
+      body: "Jinro, Chamisul, Saero, Tiger beer, Tsingtao, Yantai liquor 和 highball, 适合搜索韩国餐厅喝酒的客人."
+    },
+    coffee: {
+      title: "咖啡",
+      body: "韩式中餐后可点 Americano, latte, coconut coffee, salt coffee, condensed milk coffee, matcha latte 等."
+    }
   }
 };
 

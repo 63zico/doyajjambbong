@@ -284,5 +284,87 @@ export const uiCopy: Record<
       pages: "Pages",
       description: "Korean food, Chinese food, Korean-Chinese jjambbong or champong, jajangmyeon, tangsuyuk, and comfort food in District 1."
     }
+  },
+  zh: {
+    badges: ["韩式中餐", "胡志明市第1郡", "10:30 - 23:30"],
+    cta: {
+      menu: "查看菜单",
+      directions: "导航",
+      order: "预订 / 外卖",
+      call: "电话",
+      kakao: "KakaoTalk",
+      zalo: "Zalo",
+      phoneOrder: "电话订餐",
+      orderMethodsTitle: "3种预订 / 点餐方式",
+      orderMethodsBody: "可通过 KakaoTalk, Zalo 或电话咨询订位、外带、外卖和菜单问题."
+    },
+    heroCard: { line: "77I Bui Thi Xuan 的韩式辣海鲜汤面.", pill: "Saigon", label: "招牌", title: "JJAMBBONG" },
+    menu: {
+      eyebrow: "招牌菜单",
+      title: "Jjambbong 辣海鲜面、韩式炸酱面、糖醋肉和米饭类",
+      body: "菜单清楚区分辣味、不辣、分享菜和米饭类, 方便游客和本地客人点餐.",
+      lineup: "DOYA 招牌菜单",
+      signatureBadge: "DOYA 招牌"
+    },
+    localSeo: {
+      thirdTitle: "Bui Thi Xuan 附近韩国餐厅",
+      thirdBody: "适合搜索 Korean restaurant Ho Chi Minh, Korean food District 1, champong District 1, mi tuong den 和韩式中餐的客人."
+    },
+    map: {
+      eyebrow: "胡志明市第1郡",
+      title: "77I Bui Thi Xuan, District 1, Ho Chi Minh City",
+      body1: "位于 Ben Thanh Ward, 靠近酒店、旅游街、酒吧和市中心夜生活区域.",
+      body2: "适合午餐、晚餐、辣海鲜面、夜宵和韩式醒酒热汤.",
+      hours: "营业时间",
+      phone: "电话",
+      google: "Google Maps",
+      official: "官方网站",
+      facebook: "Facebook",
+      tripadvisor: "TripAdvisor",
+      delivery: "预订 / 外卖"
+    },
+    branch: {
+      eyebrow: "DOYA 胡志明市分店",
+      title: "按区域查找 DOYA",
+      body: "这里帮助搜索 District 1, Phu My Hung, Sky Garden, Midtown, Sun Avenue 和 Thao Dien 的客人找到合适分店.",
+      button: "查看所有分店",
+      phone: "电话"
+    },
+    why: {
+      eyebrow: "为什么选择 DOYA",
+      title: "主打韩式中餐和辣海鲜面的韩国餐厅.",
+      body: "DOYA 面向 Korean restaurant Ho Chi Minh, Korean Chinese food, jjambbong, champong, late night Korean food 和 mi tuong den 搜索需求.",
+      button: "查看招牌菜单",
+      items: [
+        ["招牌红汤", "韩式辣海鲜 jjambbong 汤面, 也常被搜索为 champong 或 champon."],
+        ["游客友好", "中文、英文、越南文和韩文页面帮助客人快速理解菜单和位置."],
+        ["适合夜宵", "热汤面、糖醋肉、韩式炸酱面和米饭类适合晚餐和夜宵."],
+        ["方便预订外卖", "清楚提供 Zalo, KakaoTalk, Google Maps 和电话入口."]
+      ]
+    },
+    spice: {
+      eyebrow: "辣度指南",
+      title: "按口味快速选择.",
+      levels: [
+        ["不辣", "韩式炸酱面、糖醋肉、米饭类"],
+        ["辣", "红汤 jjambbong / champong 和其他韩式辣味菜品"]
+      ]
+    },
+    trust: [
+      ["77I Bui Thi Xuan", "第1郡 Ben Thanh 附近"],
+      ["10:30 - 23:30", "午餐、晚餐和夜宵都方便"],
+      ["3种点餐方式", "KakaoTalk, Zalo 或电话"],
+      ["推荐组合", "Jjambbong, 炸酱面和糖醋肉很适合一起点"]
+    ],
+    reviews: [
+      "第1郡市中心一碗热辣的韩式海鲜面.",
+      "适合游客寻找韩国餐厅、韩式中餐和夜宵.",
+      "Jjambbong、韩式炸酱面和糖醋肉是值得再来的组合."
+    ],
+    footer: {
+      visit: "到店信息",
+      pages: "页面",
+      description: "胡志明市第1郡韩国餐厅, 提供 champong / jjambbong 辣海鲜面、韩式炸酱面、糖醋肉和韩式中餐."
+    }
   }
 };

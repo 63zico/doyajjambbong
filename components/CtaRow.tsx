@@ -23,6 +23,15 @@ function orderGuideCopy(locale: Locale) {
     };
   }
 
+  if (locale === "zh") {
+    return {
+      title: "发送这些信息可以更快确认",
+      items: ["订位: 人数、日期、时间", "外卖/外带: 菜名、数量、地址", "附近地标: 酒店名、Bui Vien 或 District 3 附近"],
+      comboTitle: "推荐组合",
+      combos: ["DOYA jjambbong + 糖醋肉", "韩式炸酱面 + 煎饺", "Jjambbong 汤 + 下酒菜"]
+    };
+  }
+
   return {
     title: "Send this for faster ordering",
     items: ["Reservation: party size, date, time", "Delivery/takeaway: menu, quantity, address", "Nearby landmark: hotel name, Bui Vien, near District 3"],

@@ -30,7 +30,11 @@ const baseKeywords = [
   "Late night food Ho Chi Minh",
   "Spicy noodles Ho Chi Minh",
   "Korean comfort food Ho Chi Minh",
+  "Korean restaurant Ho Chi Minh",
+  "Korean restaurant Saigon",
   "Best Korean restaurant District 1",
+  "best Korean food in Saigon",
+  "Korean restaurant near Ben Thanh",
   "Hangover food Saigon",
   "Late night Korean food Saigon",
   "spicy seafood noodles",
@@ -61,6 +65,7 @@ const baseKeywords = [
   "Korean restaurant District 1",
   "Korean food near Bui Vien",
   "Korean restaurant near Bui Vien",
+  "Korean restaurant near Ben Thanh Market",
   "Korean food near District 3",
   "Korean restaurant drinks District 1",
   "soju District 1 Ho Chi Minh",
@@ -121,7 +126,18 @@ const baseKeywords = [
 ];
 
 const pageKeywordMap: Partial<Record<PageSlug, string[]>> = {
-  "": ["Korean food District 1", "Chinese food District 1", "champong District 1", "Mì cay Quận 1", "Korean food near Bui Vien", "Korean food near District 3"],
+  "": [
+    "Korean restaurant Ho Chi Minh",
+    "Korean restaurant District 1",
+    "Korean food District 1",
+    "best Korean food in Saigon",
+    "Chinese food District 1",
+    "champong District 1",
+    "Mì cay Quận 1",
+    "Korean food near Bui Vien",
+    "Korean restaurant near Ben Thanh",
+    "Korean food near District 3"
+  ],
   menu: [
     "DOYA menu",
     "champong menu",
@@ -153,7 +169,21 @@ const pageKeywordMap: Partial<Record<PageSlug, string[]>> = {
   ],
   "signature-jjambbong": ["signature jjambbong", "champong", "Korean spicy seafood noodle soup", "Mì cay Hàn Quốc"],
   "champong-korean-chinese-food-ho-chi-minh": ["champong Ho Chi Minh", "champon District 1", "jjamppong Saigon", "Mì cay hải sản"],
-  "korean-chinese-food-ho-chi-minh": ["Korean Chinese food Ho Chi Minh", "Korean style Chinese food", "Chinese Korean restaurant", "mì tương đen Hàn Quốc", "mi tuong den Han Quoc", "jajangmyeon Ho Chi Minh"],
+  "korean-chinese-food-ho-chi-minh": [
+    "Korean restaurant Ho Chi Minh",
+    "Korean restaurant District 1",
+    "Korean food Ho Chi Minh",
+    "Korean food Saigon",
+    "best Korean food in Saigon",
+    "Korean Chinese food Ho Chi Minh",
+    "Korean style Chinese food",
+    "Chinese Korean restaurant",
+    "Korean restaurant near Ben Thanh",
+    "Korean restaurant near Bui Vien",
+    "mì tương đen Hàn Quốc",
+    "mi tuong den Han Quoc",
+    "jajangmyeon Ho Chi Minh"
+  ],
   "korean-food-delivery-ho-chi-minh": [
     "Korean restaurant reservation Ho Chi Minh",
     "Korean food reservation District 1",
@@ -309,6 +339,8 @@ export function restaurantJsonLd(locale: Locale) {
       "Ben Thanh",
       "Bui Thi Xuan",
       "Bui Vien",
+      "Ben Thanh Market",
+      "Pham Ngu Lao",
       "District 3",
       "Ho Chi Minh City",
       "Saigon"
@@ -326,6 +358,10 @@ export function restaurantJsonLd(locale: Locale) {
       "jajangmyeon",
       "tangsuyuk",
       "Korean food",
+      "Korean restaurant Ho Chi Minh",
+      "Korean restaurant District 1",
+      "Korean food near Ben Thanh",
+      "Korean food near Bui Vien",
       "Chinese food",
       "Korean-Chinese food",
       "late-night food",

@@ -43,7 +43,7 @@ export function menuDetailUrl(locale: Locale, slug: MenuDetailSlug) {
   return `${site.baseUrl}${menuDetailPath(locale, slug)}`;
 }
 
-export const menuDetails: Record<MenuDetailSlug, Record<Locale, MenuDetailContent>> = {
+export const menuDetails = {
   "seafood-jjambbong-champong": {
     vi: {
       title: "Champong hải sản DOYA | Mì cay Hàn Quốc Quận 1",
@@ -445,4 +445,123 @@ export const menuDetails: Record<MenuDetailSlug, Record<Locale, MenuDetailConten
       ]
     }
   }
+} as Record<MenuDetailSlug, Record<Locale, MenuDetailContent>>;
+
+const zhMenuDetails: Record<MenuDetailSlug, MenuDetailContent> = {
+  "seafood-jjambbong-champong": {
+    title: "DOYA 海鲜 Champong | 胡志明市韩式辣海鲜面",
+    description: "DOYA 海鲜 Jjambbong, 也可搜索 champong 或 jjamppong, 是胡志明市第1郡的韩式辣海鲜汤面.",
+    eyebrow: "招牌 champong",
+    h1: "DOYA 海鲜 Champong 第1郡",
+    intro: "这碗海鲜 jjambbong 适合搜索 champong Ho Chi Minh, Korean spicy seafood noodles, 辣海鲜汤面或 Bui Vien 附近韩国夜宵的客人.",
+    whyTitle: "为什么推荐",
+    whyBody: "红色辣汤、海鲜、蔬菜和韩式中餐风味集中在一碗里, 是 DOYA 最容易被记住的招牌菜单.",
+    searchTitle: "覆盖搜索词",
+    searchBody: "champong District 1, jjambbong Ho Chi Minh, Korean spicy seafood noodles, hangover food Saigon, late night Korean food Saigon.",
+    keywords: ["champong Ho Chi Minh", "jjambbong", "jjamppong", "韩式辣海鲜面", "Korean spicy seafood noodles"],
+    faq: [
+      { question: "Champong 和 jjambbong 一样吗?", answer: "是的. Champong, jjambbong 和 jjamppong 都是韩国辣海鲜面的常见搜索写法." },
+      { question: "适合夜宵或醒酒吗?", answer: "适合. 热辣的海鲜汤面很适合夜宵和酒后想吃热汤的客人." }
+    ]
+  },
+  "doya-jjambbong-champong": {
+    title: "DOYA Jjambbong Champong | 第1郡韩式辣面",
+    description: "DOYA 经典 jjambbong, 也可搜索 champong, 是胡志明市第1郡的韩式辣汤面.",
+    eyebrow: "经典 champong",
+    h1: "DOYA Jjambbong / Champong",
+    intro: "经典韩式中餐辣汤面, 适合搜索 champong District 1, jjambbong Ho Chi Minh 和 Korean spicy noodles 的客人.",
+    whyTitle: "第一次来容易点",
+    whyBody: "如果想吃热辣韩式面, 这道是最简单的选择.",
+    searchTitle: "搜索关键词",
+    searchBody: "champong Ho Chi Minh, jjambbong District 1, Korean spicy noodles, spicy noodles Ho Chi Minh.",
+    keywords: ["champong", "jjambbong", "韩式辣面", "District 1"],
+    faq: [
+      { question: "这道菜辣吗?", answer: "辣. DOYA 的 jjambbong / champong 属于辣味汤面." },
+      { question: "适合搭配什么?", answer: "适合搭配煎饺、糖醋肉或韩式炸酱面." }
+    ]
+  },
+  "jajangmyeon-mi-tuong-den": {
+    title: "Jajangmyeon 胡志明市 | 韩式炸酱面 Mi Tuong Den",
+    description: "胡志明市第1郡韩式炸酱面, 也可搜索 jajangmyeon, mi tuong den, mì tương đen 或 Korean black bean noodles.",
+    eyebrow: "韩式炸酱面",
+    h1: "胡志明市韩式炸酱面 Jajangmyeon",
+    intro: "DOYA 炸酱面是不辣的黑豆酱面, 适合搭配辣味 champong 菜单.",
+    whyTitle: "适合多人点餐",
+    whyBody: "韩式炸酱面适合搭配 jjambbong、糖醋肉和煎饺, 是不吃辣客人的好选择.",
+    searchTitle: "搜索关键词",
+    searchBody: "jajangmyeon Ho Chi Minh, Korean black bean noodles, mi tuong den, mì tương đen Hàn Quốc.",
+    keywords: ["jajangmyeon", "韩式炸酱面", "mi tuong den", "Korean black bean noodles"],
+    faq: [
+      { question: "Jajangmyeon 辣吗?", answer: "不辣. 这是黑豆酱风味的韩式中餐面." },
+      { question: "为什么写 mi tuong den?", answer: "越南客人常用 mi tuong den 或 mì tương đen 搜索韩式炸酱面." }
+    ]
+  },
+  "seafood-jajang-platter": {
+    title: "海鲜炸酱大盘 | 第1郡韩式黑豆酱面",
+    description: "适合分享的海鲜炸酱大盘, 面向 Korean black bean noodles, jajangmyeon 和韩式中餐搜索.",
+    eyebrow: "分享炸酱面",
+    h1: "海鲜炸酱大盘",
+    intro: "适合多人分享的海鲜黑豆酱面大盘.",
+    whyTitle: "适合团体",
+    whyBody: "比单人面更适合朋友或家庭分享, 可搭配 champong 和炸物.",
+    searchTitle: "搜索关键词",
+    searchBody: "seafood jajang platter, Korean black bean noodles, jajangmyeon Ho Chi Minh, Korean Chinese food District 1.",
+    keywords: ["seafood jajang platter", "jajangmyeon", "韩式炸酱面"],
+    faq: [
+      { question: "辣吗?", answer: "不辣. 主要是黑豆酱风味." },
+      { question: "适合多人吗?", answer: "适合, 这是菜单里比较适合分享的菜." }
+    ]
+  },
+  "tteokbokki-korean-spicy-rice-cakes": {
+    title: "Tteokbokki 胡志明市 | 韩国辣年糕",
+    description: "DOYA 第1郡韩国辣年糕, 也可搜索 tteokbokki, tokbokki 和 Korean spicy rice cakes.",
+    eyebrow: "韩国街头小吃",
+    h1: "胡志明市 Tteokbokki 韩国辣年糕",
+    intro: "Tteokbokki 是很多游客熟悉的韩国辣年糕, 适合搭配 champong 和煎饺.",
+    whyTitle: "游客熟悉的关键词",
+    whyBody: "很多客人先认识 tteokbokki, 再尝试韩式中餐菜单.",
+    searchTitle: "搜索关键词",
+    searchBody: "tteokbokki Ho Chi Minh, Korean spicy rice cakes, tokbokki, Korean street food District 1.",
+    keywords: ["tteokbokki Ho Chi Minh", "Korean spicy rice cakes", "韩国辣年糕"],
+    faq: [
+      { question: "Tteokbokki 辣吗?", answer: "是甜辣口味的韩国年糕." },
+      { question: "适合外卖吗?", answer: "适合, 这是容易理解和点餐的韩国小吃." }
+    ]
+  },
+  "tangsuyuk-korean-sweet-sour-pork": {
+    title: "Tangsuyuk 胡志明市 | 韩式糖醋肉",
+    description: "第1郡韩式糖醋肉, 适合搭配 champong 或 jajangmyeon.",
+    eyebrow: "韩式炸物",
+    h1: "胡志明市韩式糖醋肉 Tangsuyuk",
+    intro: "Tangsuyuk 是韩式中餐经典糖醋肉, 常和 champong 或炸酱面一起点.",
+    whyTitle: "适合分享",
+    whyBody: "多人用餐时, 糖醋肉是很好的分享菜和加点菜.",
+    searchTitle: "搜索关键词",
+    searchBody: "tangsuyuk Ho Chi Minh, Korean sweet and sour pork, Korean Chinese food District 1.",
+    keywords: ["tangsuyuk Ho Chi Minh", "韩式糖醋肉", "Korean sweet and sour pork"],
+    faq: [
+      { question: "糖醋肉适合搭配什么?", answer: "最适合搭配 champong, jjambbong 和韩式炸酱面." },
+      { question: "辣吗?", answer: "不辣. 是甜酸酱的炸猪肉." }
+    ]
+  },
+  "kkanpunggi-spicy-garlic-fried-chicken": {
+    title: "Kkanpunggi 胡志明市 | 韩式辣蒜炸鸡",
+    description: "第1郡韩式辣蒜炸鸡, 适合多人、下酒菜和夜宵.",
+    eyebrow: "辣蒜炸鸡",
+    h1: "胡志明市 Kkanpunggi 辣蒜炸鸡",
+    intro: "Kkanpunggi 是带有辣蒜酱风味的韩式中餐炸鸡, 适合搭配啤酒、烧酒和汤面.",
+    whyTitle: "适合喝酒和多人分享",
+    whyBody: "这是比糖醋肉口味更重的炸物分享菜.",
+    searchTitle: "搜索关键词",
+    searchBody: "kkanpunggi Ho Chi Minh, spicy garlic fried chicken Korean Chinese, Korean drinking food District 1.",
+    keywords: ["kkanpunggi", "韩式辣蒜炸鸡", "spicy garlic fried chicken"],
+    faq: [
+      { question: "Kkanpunggi 辣吗?", answer: "有明显的辣蒜酱风味." },
+      { question: "是主菜还是小菜?", answer: "适合多人分享, 也可以作为下酒主菜." }
+    ]
+  }
 };
+
+menuDetailSlugs.forEach((slug) => {
+  menuDetails[slug].zh = zhMenuDetails[slug];
+});

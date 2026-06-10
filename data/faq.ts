@@ -146,5 +146,35 @@ export const faqs: Record<Locale, FaqItem[]> = {
       answer:
         "네. 호치민 한국 식당, 사이공 짬뽕, Bui Thi Xuan 근처 한식을 찾는 외국인 관광객도 이해하기 쉽게 구성되어 있습니다."
     }
+  ],
+  zh: [
+    {
+      question: "Jjambbong 是什么?",
+      answer: "Jjambbong 是韩式中餐的辣海鲜汤面, 有红色辣汤、海鲜、蔬菜和锅气. 有些客人也会搜索 champong, champon 或 jjamppong."
+    },
+    {
+      question: "Champong 和 jjambbong 是同一道菜吗?",
+      answer: "是的. Champong, champon, jjamppong 和 jjambbong 通常都是指韩国辣海鲜汤面."
+    },
+    {
+      question: "DOYA 是韩国餐厅还是中餐厅?",
+      answer: "DOYA 是韩式中餐餐厅, 提供韩国风味的中餐, 包括 jjambbong / champong、韩式炸酱面和糖醋肉."
+    },
+    {
+      question: "有不辣的选择吗?",
+      answer: "有. 韩式炸酱面、糖醋肉、米饭类和部分菜单适合不想吃辣的客人."
+    },
+    {
+      question: "DOYA 在哪里?",
+      answer: "DOYA JJAMBBONG 位于胡志明市第1郡 77I Bui Thi Xuan, 靠近 Ben Thanh, Bui Vien, 酒店区和市中心夜生活区域."
+    },
+    {
+      question: "可以预订或外卖吗?",
+      answer: "可以通过 KakaoTalk, Zalo 或电话咨询订位、外带和外卖."
+    },
+    {
+      question: "中国客人适合来吃吗?",
+      answer: "适合. 中文页面会说明 champong 辣海鲜面、韩式炸酱面、糖醋肉和位置, 方便中国客人快速点餐."
+    }
   ]
 };

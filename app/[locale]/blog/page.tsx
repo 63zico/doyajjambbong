@@ -32,6 +32,13 @@ const blogCopy: Record<Locale, { title: string; description: string; eyebrow: st
     eyebrow: "DOYA Blog",
     h1: "Korean spicy noodles and Korean-Chinese food in Saigon",
     subtitle: "Helpful guides for tourists and locals searching jjambbong, champong, Korean hangover soup, and late-night Korean food in District 1."
+  },
+  zh: {
+    title: "DOYA JJAMBBONG 博客 | 胡志明市韩国餐厅与韩式中餐",
+    description: "关于胡志明市第1郡韩国餐厅、champong 辣海鲜面、jjambbong、韩式炸酱面、夜宵和韩式中餐的指南.",
+    eyebrow: "DOYA Blog",
+    h1: "胡志明市韩国餐厅、辣海鲜面和韩式中餐指南",
+    subtitle: "帮助中国客人和游客了解 champong, jjambbong, 韩式炸酱面、韩国夜宵和第1郡 DOYA JJAMBBONG."
   }
 };
 

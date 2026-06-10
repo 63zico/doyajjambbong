@@ -15,7 +15,8 @@ export type PageContent = {
 export const localeNames: Record<Locale, string> = {
   vi: "Tiếng Việt",
   ko: "한국어",
-  en: "English"
+  en: "English",
+  zh: "中文"
 };
 
 export const navLabels: Record<Locale, Record<PageSlug, string>> = {
@@ -69,22 +70,39 @@ export const navLabels: Record<Locale, Record<PageSlug, string>> = {
     reviews: "Reviews",
     branches: "Branches",
     "return-policy": "Return Policy"
+  },
+  zh: {
+    "": "首页",
+    menu: "菜单",
+    "mi-tuong-den-han-quoc-quan-1": "韩式炸酱面",
+    "signature-jjambbong": "招牌辣海鲜面",
+    "champong-korean-chinese-food-ho-chi-minh": "Champong 辣海鲜面",
+    "korean-chinese-food-ho-chi-minh": "韩式中餐",
+    "korean-food-delivery-ho-chi-minh": "预订 / 外卖",
+    "late-night-korean-food-ho-chi-minh": "夜宵",
+    "hangover-spicy-noodles-saigon": "醒酒辣面",
+    "location-contact": "位置",
+    about: "关于 DOYA",
+    faq: "FAQ",
+    reviews: "评价",
+    branches: "分店",
+    "return-policy": "退换政策"
   }
 };
 
-export const pageContent: Record<Locale, Record<PageSlug, PageContent>> = {
+export const pageContent = {
   vi: {
     "": {
       slug: "",
       nav: "Trang chủ",
-      title: "DOYA JJAMBBONG | Mì cay Hàn Quốc tại Quận 1, TP. Hồ Chí Minh",
+      title: "DOYA JJAMBBONG | Korean restaurant, mì cay và champong tại Quận 1",
       description:
-        "DOYA JJAMBBONG phục vụ mì cay Hàn Quốc, mì hải sản cay jjambbong, mì tương đen Hàn Quốc jajangmyeon, tangsuyuk và món Hàn-Trung tại Quận 1, TP. Hồ Chí Minh.",
+        "DOYA JJAMBBONG là Korean restaurant tại Quận 1, phục vụ mì cay Hàn Quốc, champong jjambbong, mi tuong den jajangmyeon và tangsuyuk gần Bến Thành, Bùi Viện.",
       eyebrow: "DOYA JJAMBBONG / 도야짬뽕",
       h1: "Mì cay Hàn Quốc tại Quận 1, TP. Hồ Chí Minh",
       subtitle: "Jjambbong, mì tương đen jajangmyeon và món Hàn-Trung nóng hổi cho bữa trưa, bữa tối và ăn khuya ở trung tâm Sài Gòn.",
       summary:
-        "DOYA JJAMBBONG là nhà hàng Hàn-Trung tại Quận 1, TP. Hồ Chí Minh, chuyên mì cay Hàn Quốc, mì hải sản cay jjambbong, mì tương đen Hàn Quốc jajangmyeon và các món Hàn dễ ăn cho khách địa phương, khách du lịch và người Hàn tại Sài Gòn.",
+        "DOYA JJAMBBONG là Korean restaurant và nhà hàng Hàn-Trung tại Quận 1, TP. Hồ Chí Minh, chuyên mì cay Hàn Quốc, champong jjambbong, mi tuong den jajangmyeon và các món Hàn dễ ăn cho khách địa phương, khách du lịch và người Hàn tại Sài Gòn.",
       sections: [
         {
           heading: "Nằm tại 77I Bùi Thị Xuân, Quận 1",
@@ -175,14 +193,14 @@ export const pageContent: Record<Locale, Record<PageSlug, PageContent>> = {
     "korean-chinese-food-ho-chi-minh": {
       slug: "korean-chinese-food-ho-chi-minh",
       nav: "Món Hàn-Trung",
-      title: "Korean Chinese Food Ho Chi Minh | DOYA JJAMBBONG Quận 1",
+      title: "Korean Restaurant Ho Chi Minh | Korean Chinese Food DOYA Quận 1",
       description:
-        "Tìm Korean food, Chinese food hoặc Korean Chinese food ở Ho Chi Minh? DOYA phục vụ jjambbong, champong, mì tương đen jajangmyeon và tangsuyuk tại Quận 1.",
+        "Tìm Korean restaurant Ho Chi Minh, Korean food District 1 hoặc Korean Chinese food? DOYA phục vụ jjambbong, champong, mi tuong den jajangmyeon và tangsuyuk tại Quận 1.",
       eyebrow: "Korean Chinese food",
       h1: "Korean Chinese food tại Ho Chi Minh",
       subtitle: "Món Hàn và món Trung theo phong cách Hàn Quốc: jjambbong, champong, mì tương đen jajangmyeon, tangsuyuk và cơm nóng.",
       summary:
-        "DOYA là lựa chọn trung tâm cho khách tìm Korean food Ho Chi Minh, Chinese food District 1 hoặc Korean Chinese restaurant gần Bến Thành và Bùi Thị Xuân.",
+        "DOYA là lựa chọn trung tâm cho khách tìm Korean restaurant Ho Chi Minh, Korean food District 1, Korean restaurant near Ben Thanh, Chinese food District 1 hoặc Korean Chinese restaurant gần Bến Thành và Bùi Thị Xuân.",
       sections: [
         { heading: "Không phải Chinese food thông thường", body: "Đây là phong cách Hàn-Trung quen thuộc với người Hàn: mì tương đen Hàn Quốc, mi tuong den jajangmyeon, mì hải sản cay và món chiên ăn chung." },
         { heading: "Dễ hiểu cho khách quốc tế", body: "Nội dung dùng cả Korean food, Chinese food, Korean Chinese food, champong và jjambbong để khách tìm đúng món nhanh hơn." }
@@ -331,14 +349,14 @@ export const pageContent: Record<Locale, Record<PageSlug, PageContent>> = {
     "": {
       slug: "",
       nav: "홈",
-      title: "도야짬뽕 | 호치민 1군 한국식 매운 해물짬뽕",
+      title: "도야짬뽕 | 호치민 1군 Korean restaurant champong 맛집",
       description:
-        "도야짬뽕은 호치민 1군에서 한국식 매운 해물짬뽕, 짜장면, 탕수육, 야식 메뉴를 제공하는 한국식 중화요리 식당입니다.",
+        "도야짬뽕은 호치민 1군에서 Korean restaurant, champong, jjambbong, mi tuong den 짜장면, 탕수육, 야식 메뉴를 찾는 손님을 위한 한국식 중화요리 식당입니다.",
       eyebrow: "DOYA JJAMBBONG / 도야짬뽕",
       h1: "호치민 1군 한국식 매운 해물짬뽕",
       subtitle: "짬뽕, 짜장면, 탕수육, 늦은 밤에도 부담 없이 먹기 좋은 한국식 중화요리.",
       summary:
-        "도야짬뽕은 호치민 1군에서 매운 해물짬뽕, 짜장면, 탕수육, 야식으로 먹기 좋은 한국식 중화요리를 선보이는 식당입니다.",
+        "도야짬뽕은 호치민 1군에서 Korean restaurant, Korean food District 1, champong, jjambbong, mi tuong den 검색으로 들어오는 외국인 손님도 쉽게 찾을 수 있는 한국식 중화요리 식당입니다.",
       sections: [
         { heading: "77I Bùi Thị Xuân 1군 위치", body: "Bui Thi Xuan, 벤탄, 여행자 거리, 호텔, 나이트라이프 지역에서 찾기 쉬운 한국식 중화요리 식당입니다." },
         { heading: "10:30부터 23:30까지 영업", body: "점심, 저녁, 야식, 해장용 매운 국물 메뉴를 찾는 손님에게 잘 맞습니다." }
@@ -404,13 +422,13 @@ export const pageContent: Record<Locale, Record<PageSlug, PageContent>> = {
     "korean-chinese-food-ho-chi-minh": {
       slug: "korean-chinese-food-ho-chi-minh",
       nav: "한국식 중화요리",
-      title: "Korean Chinese Food 호치민 | 도야짬뽕 1군",
-      description: "호치민에서 Korean food, Chinese food, Korean Chinese food를 찾는 손님을 위한 짬뽕, 짜장면, 탕수육 전문 페이지입니다.",
+      title: "Korean Restaurant 호치민 | Korean Chinese Food 도야짬뽕 1군",
+      description: "호치민에서 Korean restaurant, Korean food District 1, Chinese food, Korean Chinese food를 찾는 손님을 위한 짬뽕, 짜장면, 탕수육 전문 페이지입니다.",
       eyebrow: "Korean Chinese food",
       h1: "호치민 한국식 중화요리",
       subtitle: "한국 음식과 중국 음식을 한국식으로 풀어낸 짬뽕, 짜장면, 탕수육.",
       summary:
-        "도야짬뽕은 호치민 1군에서 Korean food, Chinese food, Korean Chinese restaurant를 찾는 관광객과 현지 손님에게 맞춘 매장입니다.",
+        "도야짬뽕은 호치민 1군에서 Korean restaurant Ho Chi Minh, Korean food near Bui Vien, Korean restaurant near Ben Thanh, Chinese food, Korean Chinese restaurant를 찾는 관광객과 현지 손님에게 맞춘 매장입니다.",
       sections: [
         { heading: "한국인이 아는 중화요리", body: "중국 음식 기반이지만 한국식으로 자리 잡은 짬뽕, 짜장면, 탕수육을 중심으로 구성했습니다." },
         { heading: "외국인 검색 의도 대응", body: "Korean food, Chinese food, Korean Chinese food, champong, jjambbong을 자연스럽게 연결했습니다." }
@@ -555,12 +573,12 @@ export const pageContent: Record<Locale, Record<PageSlug, PageContent>> = {
     "": {
       slug: "",
       nav: "Home",
-      title: "DOYA JJAMBBONG | Korean Food, Chinese Food and Champong in Ho Chi Minh",
-      description: "DOYA JJAMBBONG serves Korean food, Chinese food, Korean-Chinese champong or jjambbong, jajangmyeon, and tangsuyuk in District 1.",
+      title: "DOYA JJAMBBONG | Korean Restaurant, Champong and Mi Tuong Den in Ho Chi Minh",
+      description: "DOYA JJAMBBONG is a Korean restaurant in District 1 serving Korean food, Korean-Chinese champong or jjambbong, mi tuong den jajangmyeon, and tangsuyuk near Ben Thanh and Bui Vien.",
       eyebrow: "DOYA JJAMBBONG / 도야짬뽕",
       h1: "Korean Spicy Seafood Noodles in Ho Chi Minh City",
       subtitle: "Authentic Korean-Chinese jjambbong, also searched as champong or champon, plus jajangmyeon and comfort food in District 1, Saigon.",
-      summary: "DOYA JJAMBBONG is a Korean-Chinese restaurant in District 1, Ho Chi Minh City, specializing in Korean food, Chinese food, spicy seafood jjambbong or champong, jajangmyeon, and late-night comfort food.",
+      summary: "DOYA JJAMBBONG is a Korean restaurant and Korean-Chinese restaurant in District 1, Ho Chi Minh City, specializing in Korean food, Chinese food, spicy seafood jjambbong or champong, mi tuong den jajangmyeon, and late-night comfort food near Ben Thanh and Bui Vien.",
       sections: [
         { heading: "Located at 77I Bui Thi Xuan, District 1", body: "Find DOYA near Ben Thanh, tourist streets, hotels, and the central nightlife area." },
         { heading: "Open 10:30 AM to 11:30 PM", body: "A practical stop for lunch, dinner, late meals, spicy noodles, and Korean hangover comfort food." }
@@ -626,13 +644,13 @@ export const pageContent: Record<Locale, Record<PageSlug, PageContent>> = {
     "korean-chinese-food-ho-chi-minh": {
       slug: "korean-chinese-food-ho-chi-minh",
       nav: "Korean Chinese Food",
-      title: "Korean Chinese Food Ho Chi Minh | DOYA JJAMBBONG District 1",
-      description: "Find Korean food, Chinese food, and Korean Chinese food in Ho Chi Minh at DOYA: jjambbong, champong, jajangmyeon, tangsuyuk, and rice bowls.",
+      title: "Korean Restaurant Ho Chi Minh | Korean Chinese Food DOYA District 1",
+      description: "Find a Korean restaurant in Ho Chi Minh for Korean food, Chinese food, champong, jjambbong, mi tuong den jajangmyeon, tangsuyuk, and rice bowls.",
       eyebrow: "Korean Chinese food",
       h1: "Korean Chinese Food in Ho Chi Minh",
       subtitle: "Korean-style Chinese comfort food in District 1: jjambbong, champong, jajangmyeon, tangsuyuk, and rice bowls.",
       summary:
-        "DOYA helps guests searching Korean food Ho Chi Minh, Chinese food District 1, Korean Chinese restaurant Saigon, and spicy seafood noodles find a clear restaurant choice.",
+        "DOYA helps guests searching Korean restaurant Ho Chi Minh, Korean food District 1, Korean restaurant near Ben Thanh, Korean food near Bui Vien, Chinese food District 1, Korean Chinese restaurant Saigon, and spicy seafood noodles find a clear restaurant choice.",
       sections: [
         { heading: "Korean food plus Chinese food", body: "The menu is Chinese-inspired but Korean in flavor, built around red seafood broth, black bean noodles, crispy dishes, and fast comfort." },
         { heading: "Easy for travelers to understand", body: "The page uses Korean food, Chinese food, Korean Chinese food, champong, and jjambbong naturally so tourists can match the dish they want." }
@@ -758,4 +776,120 @@ export const pageContent: Record<Locale, Record<PageSlug, PageContent>> = {
       ]
     }
   }
+} as unknown as Record<Locale, Record<PageSlug, PageContent>>;
+
+pageContent.zh = {
+  ...pageContent.en,
+  "": {
+    slug: "",
+    nav: "首页",
+    title: "DOYA JJAMBBONG | 胡志明市第1郡韩国餐厅, Champong 辣海鲜面",
+    description:
+      "DOYA JJAMBBONG 是胡志明市第1郡的韩国餐厅, 主打韩式中餐、champong 辣海鲜面、jjambbong、mi tuong den 韩式炸酱面、糖醋肉, 靠近 Ben Thanh 和 Bui Vien.",
+    eyebrow: "DOYA JJAMBBONG / 도야짬뽕",
+    h1: "胡志明市第1郡韩国餐厅与韩式辣海鲜面",
+    subtitle: "在 Saigon 市中心享用韩式中餐: champong / jjambbong 辣海鲜面、韩式炸酱面、糖醋肉和适合夜宵的热食.",
+    summary:
+      "DOYA JJAMBBONG 位于 77I Bui Thi Xuan, District 1, Ho Chi Minh City, 是一家面向游客、当地客人、韩国客人和中国客人的韩式中餐餐厅.",
+    sections: [
+      {
+        heading: "第1郡 77I Bui Thi Xuan",
+        body: "餐厅靠近 Ben Thanh, Bui Vien, 酒店区和市中心夜生活区域, 适合午餐、晚餐和夜宵."
+      },
+      {
+        heading: "营业时间 10:30 - 23:30",
+        body: "适合搜索 Korean restaurant Ho Chi Minh, 韩国餐厅, 韩式中餐, champong, jjambbong 或辣海鲜面的客人."
+      }
+    ]
+  },
+  menu: {
+    ...pageContent.en.menu,
+    nav: "菜单",
+    title: "菜单 | Champong 辣海鲜面、韩式炸酱面和韩式中餐",
+    description: "查看 DOYA 菜单: champong / jjambbong 辣海鲜面、mi tuong den 韩式炸酱面、tteokbokki、糖醋肉、辣蒜炸鸡和米饭类.",
+    eyebrow: "DOYA 菜单",
+    h1: "菜单",
+    subtitle: "辣汤面、不辣的韩式炸酱面、分享菜和米饭类.",
+    summary: "DOYA 菜单围绕韩式中餐展开, 包括 champong 辣海鲜面、韩式炸酱面、糖醋肉、tteokbokki 和炸鸡类."
+  },
+  "mi-tuong-den-han-quoc-quan-1": {
+    slug: "mi-tuong-den-han-quoc-quan-1",
+    nav: "韩式炸酱面",
+    title: "胡志明市第1郡韩式炸酱面 | Mi Tuong Den Jajangmyeon",
+    description:
+      "在 DOYA JJAMBBONG 吃韩式炸酱面, 也可搜索 mi tuong den, mì tương đen, jajangmyeon 或 Korean black bean noodles, 靠近 Ben Thanh 和 Bui Vien.",
+    eyebrow: "Jajangmyeon / Mi tuong den",
+    h1: "胡志明市第1郡韩式炸酱面",
+    subtitle: "不辣、酱香浓郁, 适合搭配糖醋肉、煎饺或一碗 champong 辣海鲜面.",
+    summary:
+      "DOYA JJAMBBONG 提供韩式炸酱面, 也就是 jajangmyeon 或 mi tuong den. 地址在 77I Bui Thi Xuan, District 1, 靠近 Ben Thanh 和 Bui Vien.",
+    sections: [
+      { heading: "Mi tuong den 是什么?", body: "Mi tuong den 是很多越南客人搜索韩式炸酱面时使用的无声调写法, 对应韩语 jajangmyeon." },
+      { heading: "靠近 Ben Thanh 和 Bui Vien", body: "位于第1郡市中心, 适合游客、酒店客人、办公室午餐和晚餐." },
+      { heading: "推荐搭配", body: "韩式炸酱面适合搭配糖醋肉、煎饺或 champong 辣海鲜面, 一桌人更好点餐." }
+    ]
+  },
+  "champong-korean-chinese-food-ho-chi-minh": {
+    slug: "champong-korean-chinese-food-ho-chi-minh",
+    nav: "Champong 辣海鲜面",
+    title: "Champong Ho Chi Minh | 胡志明市韩式辣海鲜面",
+    description: "在胡志明市第1郡寻找 champong, champon, jjamppong 或 jjambbong? DOYA 提供韩式中餐辣海鲜面.",
+    eyebrow: "Champong / Jjambbong",
+    h1: "胡志明市 Champong 辣海鲜面",
+    subtitle: "Champong, champon, jjamppong 和 jjambbong 都指向这道韩式中餐辣海鲜汤面.",
+    summary:
+      "这个页面面向搜索 champong Ho Chi Minh, jjambbong Saigon, Korean spicy seafood noodles 和韩式中餐的客人.",
+    sections: [
+      { heading: "Champong 就是 jjambbong", body: "不同客人会用 champong, champon, jjamppong 或 jjambbong 搜索韩国辣海鲜面." },
+      { heading: "真实第1郡位置", body: "页面将菜品关键词与 77I Bui Thi Xuan, Ben Thanh, District 1, Ho Chi Minh City 连接起来." }
+    ]
+  },
+  "korean-chinese-food-ho-chi-minh": {
+    slug: "korean-chinese-food-ho-chi-minh",
+    nav: "韩式中餐",
+    title: "胡志明市韩国餐厅 | DOYA 韩式中餐第1郡",
+    description:
+      "在胡志明市找韩国餐厅、韩式中餐、Korean food District 1 或 Korean restaurant near Ben Thanh? DOYA 提供 champong, 炸酱面和糖醋肉.",
+    eyebrow: "Korean Chinese food",
+    h1: "胡志明市韩式中餐",
+    subtitle: "韩国风味的中餐: jjambbong / champong 辣海鲜面、韩式炸酱面、糖醋肉和米饭类.",
+    summary:
+      "DOYA 适合搜索 Korean restaurant Ho Chi Minh, 韩国餐厅第1郡, Korean food near Bui Vien, Korean restaurant near Ben Thanh 和韩式中餐的客人.",
+    sections: [
+      { heading: "不是普通中餐", body: "这是韩国人熟悉的韩式中餐风味, 以红汤辣海鲜面、黑豆酱面和炸物分享菜为主." },
+      { heading: "方便游客理解", body: "页面自然包含 Korean restaurant, Korean food, Chinese food, Korean Chinese food, champong 和 jjambbong 等搜索词." }
+    ]
+  },
+  "korean-food-delivery-ho-chi-minh": {
+    ...pageContent.en["korean-food-delivery-ho-chi-minh"],
+    nav: "预订 / 外卖",
+    title: "胡志明市韩国餐厅预订与外卖 | DOYA JJAMBBONG",
+    h1: "预订或订购 DOYA JJAMBBONG",
+    subtitle: "可通过 KakaoTalk, Zalo 或电话咨询订位、外带和第1郡附近外卖."
+  },
+  "late-night-korean-food-ho-chi-minh": {
+    ...pageContent.en["late-night-korean-food-ho-chi-minh"],
+    nav: "夜宵",
+    title: "胡志明市第1郡韩国夜宵 | DOYA JJAMBBONG",
+    h1: "胡志明市韩国夜宵",
+    subtitle: "在 Saigon 市中心吃热汤面、韩式中餐和分享菜."
+  },
+  "hangover-spicy-noodles-saigon": {
+    ...pageContent.en["hangover-spicy-noodles-saigon"],
+    nav: "醒酒辣面",
+    title: "Saigon 醒酒辣面 | 韩式 Champong 辣海鲜面",
+    h1: "Saigon 韩式醒酒辣海鲜面"
+  },
+  "location-contact": {
+    ...pageContent.en["location-contact"],
+    nav: "位置",
+    title: "位置与联系方式 | DOYA JJAMBBONG 第1郡",
+    h1: "位置与联系方式",
+    subtitle: "前往 77I Bui Thi Xuan, District 1 的 DOYA JJAMBBONG."
+  },
+  about: { ...pageContent.en.about, nav: "关于 DOYA", title: "关于 DOYA JJAMBBONG | 胡志明市韩国餐厅", h1: "关于 DOYA" },
+  faq: { ...pageContent.en.faq, nav: "FAQ", title: "FAQ | DOYA JJAMBBONG 韩国餐厅第1郡", h1: "常见问题" },
+  reviews: { ...pageContent.en.reviews, nav: "评价", title: "评价 | DOYA JJAMBBONG 韩国餐厅第1郡", h1: "评价" },
+  branches: { ...pageContent.en.branches, nav: "分店", title: "DOYA JJAMBBONG 胡志明市分店", h1: "DOYA JJAMBBONG 胡志明市分店" },
+  "return-policy": { ...pageContent.en["return-policy"], nav: "退换政策", title: "退换政策 | DOYA JJAMBBONG", h1: "退换政策" }
 };
