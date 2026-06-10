@@ -17,6 +17,7 @@ export type BlogPost = {
 };
 
 const sharedDate = "2026-05-20";
+const seoExpansionDate = "2026-06-10";
 
 export const blogPosts: BlogPost[] = [
   {
@@ -1207,6 +1208,335 @@ export const blogPosts: BlogPost[] = [
       }
     ],
     cta: "Use the menu page to choose jajangmyeon, tangsuyuk, mandu, and jjambbong before visiting or ordering."
+  },
+  {
+    locale: "zh",
+    slug: "hu-zhi-ming-han-guo-can-ting-di-1-qu",
+    title: "胡志明市韩国餐厅第1郡 | DOYA JJAMBBONG 靠近滨城市场和裴援街",
+    description:
+      "寻找胡志明韩国餐厅、第1郡韩国料理、滨城市场韩国餐厅或裴援街韩国餐厅? DOYA JJAMBBONG 提供韩式辣海鲜面、炸酱面和糖醋肉.",
+    eyebrow: "胡志明韩国餐厅",
+    date: seoExpansionDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-menu-spread.jpg",
+    imageAlt: "胡志明市第1郡 DOYA JJAMBBONG 韩国餐厅菜单",
+    keywords: [
+      "胡志明市韩国餐厅",
+      "胡志明韩国餐厅",
+      "第1郡韩国餐厅",
+      "胡志明市韩国料理",
+      "滨城市场韩国餐厅",
+      "裴援街韩国餐厅",
+      "Bui Vien Korean restaurant",
+      "Ben Thanh Korean food"
+    ],
+    intro:
+      `DOYA JJAMBBONG 位于 ${site.address}. 如果你在胡志明市第1郡寻找韩国餐厅、韩式中餐、辣海鲜面或韩式炸酱面, 这里的位置对游客和住在市中心的客人都很方便.`,
+    sections: [
+      {
+        heading: "为什么适合搜索胡志明韩国餐厅的客人",
+        body:
+          "很多中国客人会用胡志明韩国餐厅、胡志明市韩国料理、第1郡韩国餐厅来搜索. DOYA 页面把位置、菜单、Google Maps、预订和外卖入口放在一起, 方便快速决定是否到店."
+      },
+      {
+        heading: "靠近滨城市场、裴援街和市中心酒店",
+        body:
+          "77I Bui Thi Xuan 距离 Ben Thanh、Bui Vien 和第1郡酒店区都比较方便. 对旅行者来说, 吃完饭继续去市中心、夜生活区域或回酒店都容易安排."
+      },
+      {
+        heading: "第一次来可以这样点",
+        body:
+          "如果想吃辣, 可以点 DOYA jjambbong 或海鲜 champong. 如果不想吃辣, 可以点韩式炸酱面. 多人用餐时, 糖醋肉、煎饺和辣蒜炸鸡都适合分享."
+      }
+    ],
+    cta: "打开菜单页面查看图片, 或用 Google Maps、Zalo、KakaoTalk、电话联系 DOYA 预订和点餐."
+  },
+  {
+    locale: "zh",
+    slug: "hu-zhi-ming-champong-la-hai-xian-mian",
+    title: "胡志明 Champong 辣海鲜面 | 韩式 Jjambbong 在第1郡",
+    description:
+      "胡志明市第1郡 champong、jjambbong、jjamppong、韩式辣海鲜面搜索指南. DOYA JJAMBBONG 靠近 Ben Thanh 和 Bui Vien.",
+    eyebrow: "Champong 辣海鲜面",
+    date: seoExpansionDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "胡志明第1郡韩式 champong 辣海鲜面",
+    keywords: [
+      "胡志明 Champong",
+      "胡志明辣海鲜面",
+      "胡志明韩式海鲜面",
+      "胡志明韩国辣海鲜面",
+      "Jjambbong Ho Chi Minh",
+      "Champong District 1",
+      "韩国海鲜面胡志明",
+      "韩式辣汤面胡志明"
+    ],
+    intro:
+      "Champong、jjamppong 和 jjambbong 都常被用来搜索韩式辣海鲜汤面. DOYA JJAMBBONG 在胡志明市第1郡提供红汤海鲜面, 适合想吃热汤、辣味和韩式中餐的客人.",
+    sections: [
+      {
+        heading: "Champong 和 jjambbong 是什么关系?",
+        body:
+          "不同客人会用不同拼写搜索同一道菜. Champong、jjamppong、jjambbong 通常都指韩国中餐里的辣海鲜汤面. DOYA 页面保留这些关键词, 让中国客人更容易找到."
+      },
+      {
+        heading: "适合什么时候吃?",
+        body:
+          "辣海鲜面适合午餐、晚餐、夜宵, 也适合喝酒后想吃热汤的时候. 如果同行有人不吃辣, 可以搭配韩式炸酱面或糖醋肉."
+      },
+      {
+        heading: "第1郡位置优势",
+        body:
+          "DOYA 位于 Bui Thi Xuan, 靠近 Ben Thanh、Bui Vien 和酒店区. 搜索胡志明辣海鲜面或第1郡韩国餐厅时, 位置和菜单都很直接."
+      }
+    ],
+    cta: "查看 champong 页面和菜单详情, 选择 DOYA 海鲜 jjambbong、经典 jjambbong 或白汤海鲜面."
+  },
+  {
+    locale: "zh",
+    slug: "hu-zhi-ming-han-shi-zha-jiang-mian",
+    title: "胡志明韩式炸酱面 | Jajangmyeon 与 Mi Tuong Den 第1郡指南",
+    description:
+      "在胡志明第1郡寻找韩式炸酱面、jajangmyeon、mi tuong den 或 Korean black bean noodles? DOYA JJAMBBONG 提供不辣的黑豆酱面.",
+    eyebrow: "韩式炸酱面",
+    date: seoExpansionDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-jajangmyeon.jpg",
+    imageAlt: "胡志明第1郡 DOYA 韩式炸酱面 jajangmyeon",
+    keywords: [
+      "胡志明韩式炸酱面",
+      "胡志明韩国炸酱面",
+      "韩国炸酱面第一郡",
+      "韩式黑酱面胡志明",
+      "Jajangmyeon 胡志明",
+      "Mi tuong den 韩式",
+      "Korean black bean noodles District 1"
+    ],
+    intro:
+      "韩式炸酱面是很多客人不想吃辣时会选择的韩国中餐. 在越南, 这道菜也可能被搜索为 mi tuong den 或 mì tương đen. DOYA 把这些搜索词连接到同一份菜单.",
+    sections: [
+      {
+        heading: "韩式炸酱面不辣, 容易入口",
+        body:
+          "和辣海鲜面不同, jajangmyeon 是黑豆酱风味, 不辣, 适合家庭、儿童、不吃辣的客人, 也适合和朋友一起分享不同口味."
+      },
+      {
+        heading: "为什么要保留 mi tuong den 关键词?",
+        body:
+          "很多在越南生活或旅行的客人会用 mi tuong den 搜索黑酱面. 对中国客人来说, 看到 jajangmyeon、韩式炸酱面和 mi tuong den 放在一起, 更容易确认是同一道菜."
+      },
+      {
+        heading: "推荐搭配",
+        body:
+          "韩式炸酱面适合搭配糖醋肉、煎饺或一碗辣 champong. 一份不辣、一份辛辣, 是韩国中餐很经典的组合."
+      }
+    ],
+    cta: "打开韩式炸酱面页面或菜单详情, 查看价格、图片和预订/外卖联系方式."
+  },
+  {
+    locale: "zh",
+    slug: "ben-thanh-bui-vien-han-guo-ye-xiao",
+    title: "滨城市场和裴援街附近韩国夜宵 | 胡志明第1郡 DOYA",
+    description:
+      "在 Ben Thanh、Bui Vien、胡志明第1郡附近寻找韩国夜宵、辣海鲜面、韩式中餐或饮酒后热汤? DOYA JJAMBBONG 营业到 23:30.",
+    eyebrow: "第1郡韩国夜宵",
+    date: seoExpansionDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-seafood-jjambbong-soup.jpg",
+    imageAlt: "滨城市场和裴援街附近韩国夜宵 DOYA jjambbong 汤",
+    keywords: [
+      "胡志明夜宵韩国餐厅",
+      "滨城市场韩国夜宵",
+      "裴援街韩国餐厅",
+      "Bui Vien Korean food",
+      "Ben Thanh Korean restaurant",
+      "胡志明醒酒汤面",
+      "胡志明辣海鲜面夜宵"
+    ],
+    intro:
+      "旅行中晚上想吃热汤、辣面或韩国中餐时, 位置和营业时间很重要. DOYA JJAMBBONG 位于第1郡中心区域, 每天营业到 23:30, 适合晚餐、夜宵和饮酒后热汤.",
+    sections: [
+      {
+        heading: "靠近游客常去区域",
+        body:
+          "Ben Thanh、Bui Vien、Pham Ngu Lao 和第1郡酒店区附近的客人, 可以用 Google Maps 很快确认路线. 页面也保留中文关键词, 方便从搜索直接进入."
+      },
+      {
+        heading: "夜宵推荐菜单",
+        body:
+          "想吃热汤可以点 jjambbong 或海鲜 jjambbong 汤. 想要不辣可以点韩式炸酱面. 多人一起吃, 糖醋肉、煎饺和辣蒜炸鸡都适合分享."
+      },
+      {
+        heading: "预订和外卖",
+        body:
+          "如果时间较晚, 建议先通过 Zalo、KakaoTalk 或电话确认座位和菜单. 页面上的按钮可以直接联系店铺."
+      }
+    ],
+    cta: "在出发前打开位置页面, 用 Google Maps 确认 77I Bui Thi Xuan 的路线."
+  },
+  {
+    locale: "ja",
+    slug: "ho-chi-minh-kankoku-ryori-district-1",
+    title: "ホーチミン1区の韓国料理 | ベンタイン市場・ブイビエン近くの DOYA",
+    description:
+      "ホーチミン 韓国料理、ホーチミン 韓国料理 1区、ベンタイン市場 韓国料理、ブイビエン 韓国料理を探す日本人旅行者向けの DOYA JJAMBBONG ガイド.",
+    eyebrow: "ホーチミン 韓国料理",
+    date: seoExpansionDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-menu-spread.jpg",
+    imageAlt: "ホーチミン1区 DOYA JJAMBBONG 韓国料理メニュー",
+    keywords: [
+      "ホーチミン 韓国料理",
+      "ホーチミン 韓国料理 1区",
+      "ホーチミン 韓国中華",
+      "ベンタイン市場 韓国料理",
+      "ブイビエン 韓国料理",
+      "ホーチミン 韓国料理 おすすめ",
+      "Korean restaurant District 1"
+    ],
+    intro:
+      `DOYA JJAMBBONG は ${site.address} にある韓国中華レストランです。ホーチミン1区で韓国料理、チャンポン、ジャージャー麺、タンスユクを探す日本人旅行者にも分かりやすい場所です。`,
+    sections: [
+      {
+        heading: "1区で韓国料理を探す時に便利",
+        body:
+          "ホーチミン 韓国料理、韓国料理 1区、ベンタイン市場 韓国料理のように検索する方は、場所、メニュー写真、営業時間、Google Maps がすぐ見られるページが必要です。DOYA はその情報をまとめています。"
+      },
+      {
+        heading: "ベンタイン市場とブイビエンから行きやすい",
+        body:
+          "77I Bui Thi Xuan は中心部にあり、ホテル、観光エリア、夜の外出の前後にも寄りやすい立地です。タクシーや Grab でも説明しやすい住所です。"
+      },
+      {
+        heading: "初めてならこの組み合わせ",
+        body:
+          "辛い料理が好きならチャンポン、辛くない料理ならジャージャー麺。グループならタンスユクや焼き餃子を追加すると韓国中華らしい食事になります。"
+      }
+    ],
+    cta: "メニュー写真を見て、Google Maps、Zalo、KakaoTalk、電話から予約や注文を確認できます。"
+  },
+  {
+    locale: "ja",
+    slug: "ho-chi-minh-champong-korean-seafood-noodles",
+    title: "ホーチミン チャンポン | 韓国式海鮮ラーメン Jjambbong",
+    description:
+      "ホーチミンでチャンポン、韓国チャンポン、韓国式海鮮ラーメン、jjambbong、champong を探す方向けの DOYA JJAMBBONG 第1郡ガイド.",
+    eyebrow: "ホーチミン チャンポン",
+    date: seoExpansionDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "ホーチミン1区の韓国式チャンポン DOYA jjambbong",
+    keywords: [
+      "ホーチミン チャンポン",
+      "韓国チャンポン ホーチミン",
+      "辛いチャンポン ホーチミン",
+      "韓国式海鮮ラーメン ホーチミン",
+      "Jjambbong Ho Chi Minh",
+      "Champong Ho Chi Minh",
+      "辛い海鮮麺 ホーチミン"
+    ],
+    intro:
+      "日本語ではチャンポン、英語では champong、jjamppong、jjambbong と検索されることがあります。DOYA JJAMBBONG はホーチミン1区で韓国式の辛い海鮮麺を提供しています.",
+    sections: [
+      {
+        heading: "チャンポンは韓国中華の辛い海鮮麺",
+        body:
+          "DOYA のチャンポンは、赤い辛口スープ、海鮮、野菜、韓国中華の香りを合わせた一杯です。日本の長崎ちゃんぽんとは違い、韓国式の辛いスープ麺です。"
+      },
+      {
+        heading: "検索表記をまとめて拾う",
+        body:
+          "ホーチミン チャンポン、韓国式海鮮ラーメン、jjambbong、champong は、旅行者が同じ料理を探す時に使う表記です。ページ内で自然に接続しています。"
+      },
+      {
+        heading: "辛さが不安な時",
+        body:
+          "辛い料理が苦手な方は、ジャージャー麺やタンスユクと組み合わせると食べやすくなります。グループなら辛い麺と辛くない麺を一緒に注文できます。"
+      }
+    ],
+    cta: "チャンポンの詳細ページで写真、メニュー、場所を確認してから来店できます。"
+  },
+  {
+    locale: "ja",
+    slug: "ho-chi-minh-jajangmyeon-korean-black-bean-noodles",
+    title: "ホーチミン ジャージャー麺 | 韓国式 Jajangmyeon と Mi Tuong Den",
+    description:
+      "ホーチミンで韓国式ジャージャー麺、Jajangmyeon、Korean black bean noodles、mi tuong den を探す方へ。DOYA は第1郡にあります.",
+    eyebrow: "韓国式ジャージャー麺",
+    date: seoExpansionDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-jajangmyeon.jpg",
+    imageAlt: "ホーチミン第1郡 DOYA 韓国式ジャージャー麺 jajangmyeon",
+    keywords: [
+      "ホーチミン ジャージャー麺",
+      "韓国ジャージャー麺 ホーチミン",
+      "韓国式ジャージャー麺 ホーチミン",
+      "Jajangmyeon Ho Chi Minh",
+      "Korean black bean noodles",
+      "Mi tuong den 韓国式"
+    ],
+    intro:
+      "韓国式ジャージャー麺は、黒味噌ソースで食べる韓国中華の定番麺です。ベトナムでは mi tuong den と検索されることもあり、DOYA では同じ料理として案内しています.",
+    sections: [
+      {
+        heading: "辛くない韓国中華メニュー",
+        body:
+          "ジャージャー麺はチャンポンのような辛いスープではなく、黒豆味噌ソースのまろやかな麺です。辛いものが苦手な方や家族連れにも選びやすいメニューです。"
+      },
+      {
+        heading: "Jajangmyeon と mi tuong den",
+        body:
+          "Jajangmyeon は韓国語由来の表記で、mi tuong den はベトナムで検索されやすい表記です。ホーチミンで探す時は両方のキーワードが役に立ちます。"
+      },
+      {
+        heading: "おすすめの食べ方",
+        body:
+          "ジャージャー麺にはタンスユク、焼き餃子、チャンポンがよく合います。辛くない麺と辛いスープ麺を一緒に頼むとバランスが良いです。"
+      }
+    ],
+    cta: "ジャージャー麺ページとメニュー詳細で、写真、価格、場所、注文方法を確認できます。"
+  },
+  {
+    locale: "ja",
+    slug: "ben-thanh-bui-vien-korean-late-night-food",
+    title: "ベンタイン市場・ブイビエン近くの深夜韓国料理 | DOYA JJAMBBONG",
+    description:
+      "ベンタイン市場、ブイビエン、ホーチミン1区で深夜の韓国料理、チャンポン、飲んだ後の辛い海鮮麺を探す方へ。DOYA は 23:30 まで営業.",
+    eyebrow: "深夜の韓国料理",
+    date: seoExpansionDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-seafood-jjambbong-soup.jpg",
+    imageAlt: "ベンタイン市場とブイビエン近くの深夜韓国料理 DOYA チャンポン鍋",
+    keywords: [
+      "ホーチミン 深夜 韓国料理",
+      "ブイビエン 韓国料理",
+      "ベンタイン市場 韓国料理",
+      "ホーチミン 夜食 韓国料理",
+      "飲んだ後 食事 ホーチミン",
+      "ホーチミン 辛い海鮮麺",
+      "late night Korean food Saigon"
+    ],
+    intro:
+      "ホーチミン旅行中、夜遅めに熱いスープや辛い麺が食べたくなることがあります。DOYA JJAMBBONG は1区中心部で、夕食、夜食、飲んだ後の食事に使いやすい韓国中華レストランです.",
+    sections: [
+      {
+        heading: "ベンタイン市場・ブイビエンからアクセスしやすい",
+        body:
+          "観光や夜の外出の後、Google Maps で 77I Bui Thi Xuan を開けばルートを確認できます。ホテル街や中心部から移動しやすい場所です。"
+      },
+      {
+        heading: "夜食に合うメニュー",
+        body:
+          "温かいスープならチャンポンやチャンポン鍋、辛くない料理ならジャージャー麺。グループならタンスユクや焼き餃子を追加すると満足感があります。"
+      },
+      {
+        heading: "遅い時間は事前確認がおすすめ",
+        body:
+          "営業時間は 10:30 - 23:30 ですが、遅い時間の来店や持ち帰りは Zalo、KakaoTalk、電話で先に確認すると安心です。"
+      }
+    ],
+    cta: "場所ページから Google Maps を開き、来店前に電話や Zalo で確認できます。"
   }
 ];
 
