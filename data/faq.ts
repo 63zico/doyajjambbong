@@ -51,6 +51,21 @@ export const faqs: Record<Locale, FaqItem[]> = {
       question: "Is it good for tourists?",
       answer:
         "Yes. The restaurant is easy to understand for tourists looking for Korean restaurant Ho Chi Minh, jjambbong in Saigon, or Korean food near Bui Thi Xuan."
+    },
+    {
+      question: "Is DOYA near Ben Thanh Market and Bui Vien?",
+      answer:
+        "Yes. DOYA is in District 1 at 77I Bui Thi Xuan, convenient for guests searching Korean restaurant near Ben Thanh Market, Korean food near Bui Vien, or Korean noodles near Pham Ngu Lao."
+    },
+    {
+      question: "What should first-time visitors order?",
+      answer:
+        "A simple first order is signature jjambbong or champong for spicy seafood noodles, jajangmyeon for a non-spicy Korean black bean noodle, and tangsuyuk for sharing."
+    },
+    {
+      question: "Can I find jajangmyeon and tangsuyuk here?",
+      answer:
+        "Yes. DOYA serves jajangmyeon, also searched as Korean black bean noodles or mi tuong den, plus tangsuyuk, the Korean sweet and sour pork often paired with jjambbong."
     }
   ],
   vi: [
@@ -175,6 +190,18 @@ export const faqs: Record<Locale, FaqItem[]> = {
     {
       question: "中国客人适合来吃吗?",
       answer: "适合. 中文页面会说明 champong 辣海鲜面、韩式炸酱面、糖醋肉和位置, 方便中国客人快速点餐."
+    },
+    {
+      question: "DOYA 靠近 Ben Thanh 和 Bui Vien 吗?",
+      answer: "靠近. DOYA 位于胡志明市第1郡 77I Bui Thi Xuan, 适合搜索滨城市场附近韩国餐厅、Bui Vien 附近韩国餐厅或范五老街附近韩国餐厅的客人."
+    },
+    {
+      question: "第一次来应该点什么?",
+      answer: "第一次来可以点招牌 jjambbong / champong 辣海鲜面, 不想吃辣可以点韩式炸酱面, 如果多人用餐可以加糖醋肉一起分享."
+    },
+    {
+      question: "这里有韩式炸酱面和糖醋肉吗?",
+      answer: "有. DOYA 提供韩式炸酱面 jajangmyeon、韩国黑豆面、糖醋肉 tangsuyuk 和多种韩式中餐菜单."
     }
   ],
   ja: [
@@ -212,6 +239,21 @@ export const faqs: Record<Locale, FaqItem[]> = {
       question: "日本人旅行者にも使いやすいですか?",
       answer:
         "はい。日本語ページではホーチミン 韓国料理、チャンポン、ジャージャー麺、場所、注文方法を分かりやすく案内しています。"
+    },
+    {
+      question: "ベンタイン市場やブイビエンから近いですか?",
+      answer:
+        "はい。DOYA はホーチミン1区の 77I Bui Thi Xuan にあり、ベンタイン市場、ブイビエン、ファングーラオ周辺からアクセスしやすい韓国料理店です。"
+    },
+    {
+      question: "初めてなら何を注文すればいいですか?",
+      answer:
+        "辛い麺が好きなら看板のチャンポン、辛くない麺なら韓国式ジャージャー麺、複数人ならタンスユクを一緒に注文するのがおすすめです。"
+    },
+    {
+      question: "ジャージャー麺やタンスユクはありますか?",
+      answer:
+        "あります。DOYA では韓国式ジャージャー麺、Jajangmyeon、韓国式タンスユク、チャンポンなど韓国中華の代表メニューを提供しています。"
     }
   ]
 };

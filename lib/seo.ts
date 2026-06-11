@@ -135,6 +135,84 @@ const baseKeywords = [
   "호치민 채식 가능 식당"
 ];
 
+const localeKeywordMap: Record<Locale, string[]> = {
+  vi: [],
+  ko: [],
+  en: [
+    "Korean restaurant District 1 Ho Chi Minh",
+    "Korean restaurant in District 1",
+    "Korean food District 1 Ho Chi Minh",
+    "Korean-Chinese restaurant District 1",
+    "Korean Chinese restaurant Saigon",
+    "Korean food near Ben Thanh Market",
+    "Korean restaurant near Bui Vien walking street",
+    "Korean food near Pham Ngu Lao",
+    "Korean spicy seafood noodles District 1",
+    "jjambbong District 1",
+    "jjamppong District 1",
+    "champong near Ben Thanh",
+    "jajangmyeon District 1",
+    "Korean black bean noodles near Ben Thanh",
+    "tangsuyuk Ho Chi Minh",
+    "late night Korean food District 1",
+    "Korean hangover soup Saigon",
+    "where to eat Korean food after drinks in Saigon",
+    "Korean noodles near Bui Vien",
+    "Korean restaurant open late District 1"
+  ],
+  zh: [
+    "胡志明市韩国餐厅",
+    "胡志明市第1郡韩国餐厅",
+    "胡志明市一区韩国餐厅",
+    "第1郡韩国料理",
+    "胡志明市韩式中餐",
+    "第1郡韩式中餐",
+    "胡志明市韩国中餐",
+    "胡志明市韩式辣海鲜面",
+    "胡志明市辣海鲜面",
+    "胡志明市 champong",
+    "胡志明市 jjambbong",
+    "第1郡 champong",
+    "第1郡 jjambbong",
+    "胡志明市韩式炸酱面",
+    "胡志明市炸酱面",
+    "第1郡韩式炸酱面",
+    "韩国黑豆面 胡志明市",
+    "韩国糖醋肉 胡志明市",
+    "滨城市场附近韩国餐厅",
+    "Bui Vien 附近韩国餐厅",
+    "范五老街附近韩国餐厅",
+    "胡志明市韩国夜宵",
+    "第1郡韩国夜宵",
+    "胡志明市醒酒辣面",
+    "胡志明市深夜韩国餐厅"
+  ],
+  ja: [
+    "ホーチミン 韓国料理",
+    "ホーチミン1区 韓国料理",
+    "ホーチミン 韓国料理 1区",
+    "ホーチミン 韓国料理店",
+    "ホーチミン 韓国中華",
+    "ホーチミン 韓国式中華",
+    "ホーチミン チャンポン",
+    "ホーチミン 辛いチャンポン",
+    "ホーチミン 韓国式海鮮ラーメン",
+    "ホーチミン 辛い海鮮麺",
+    "ホーチミン ジャージャー麺",
+    "ホーチミン 韓国式ジャージャー麺",
+    "ホーチミン Jajangmyeon",
+    "ホーチミン タンスユク",
+    "ベンタイン市場 韓国料理",
+    "ベンタイン市場近く 韓国料理",
+    "ブイビエン 韓国料理",
+    "ブイビエン近く 韓国料理",
+    "ファングーラオ 韓国料理",
+    "ホーチミン 深夜 韓国料理",
+    "ホーチミン 夜食 韓国料理",
+    "ホーチミン 韓国料理 デリバリー"
+  ]
+};
+
 const pageKeywordMap: Partial<Record<PageSlug, string[]>> = {
   "": [
     "Korean restaurant Ho Chi Minh",
@@ -258,10 +336,76 @@ const pageKeywordMap: Partial<Record<PageSlug, string[]>> = {
   branches: ["Doya Jjambbong branches", "Doya Jjambbong Sky Garden", "Doya Jjambbong Thao Dien"]
 };
 
+const pageLocaleKeywordMap: Partial<Record<PageSlug, Partial<Record<Locale, string[]>>>> = {
+  "": {
+    en: [
+      "best Korean restaurant District 1 Ho Chi Minh",
+      "Korean restaurant near Ben Thanh and Bui Vien",
+      "Korean-Chinese food District 1 Saigon"
+    ],
+    zh: ["胡志明市第1郡韩国餐厅", "滨城市场附近韩国餐厅", "Bui Vien 附近韩国餐厅", "胡志明市韩式中餐"],
+    ja: ["ホーチミン1区 韓国料理", "ベンタイン市場 韓国料理", "ブイビエン 韓国料理", "ホーチミン 韓国中華"]
+  },
+  menu: {
+    en: ["DOYA JJAMBBONG menu English", "Korean Chinese menu District 1", "champong jajangmyeon tangsuyuk menu"],
+    zh: ["DOYA 菜单", "胡志明市韩国餐厅菜单", "韩式炸酱面菜单", "辣海鲜面菜单", "糖醋肉菜单"],
+    ja: ["DOYA メニュー", "ホーチミン 韓国料理 メニュー", "チャンポン メニュー", "ジャージャー麺 メニュー", "タンスユク メニュー"]
+  },
+  "mi-tuong-den-han-quoc-quan-1": {
+    en: ["jajangmyeon Ho Chi Minh", "jajangmyeon District 1", "Korean black bean noodles Saigon", "non spicy Korean noodles District 1"],
+    zh: ["胡志明市韩式炸酱面", "第1郡韩式炸酱面", "韩国黑豆面 胡志明市", "不辣韩国面 胡志明市"],
+    ja: ["ホーチミン ジャージャー麺", "ホーチミン 韓国式ジャージャー麺", "ホーチミン 黒味噌麺", "辛くない韓国料理 ホーチミン"]
+  },
+  "signature-jjambbong": {
+    en: ["signature jjambbong District 1", "spicy seafood jjambbong Ho Chi Minh", "Korean spicy seafood soup Saigon"],
+    zh: ["招牌辣海鲜面 胡志明市", "胡志明市韩式辣海鲜面", "第1郡辣海鲜汤面"],
+    ja: ["看板チャンポン ホーチミン", "ホーチミン 辛い海鮮チャンポン", "韓国式辛い海鮮麺 ホーチミン"]
+  },
+  "champong-korean-chinese-food-ho-chi-minh": {
+    en: ["champong Ho Chi Minh", "champong District 1", "jjamppong Saigon", "jjambbong near Ben Thanh"],
+    zh: ["胡志明市 champong", "第1郡 champong", "胡志明市 jjambbong", "韩国辣海鲜面 胡志明市"],
+    ja: ["ホーチミン チャンポン", "ホーチミン 韓国チャンポン", "ホーチミン 韓国式海鮮ラーメン", "ホーチミン 辛い海鮮麺"]
+  },
+  "korean-chinese-food-ho-chi-minh": {
+    en: ["Korean Chinese food District 1", "Korean-Chinese restaurant near Ben Thanh", "Korean food and Chinese food Ho Chi Minh"],
+    zh: ["胡志明市韩式中餐", "第1郡韩式中餐", "胡志明市韩国中餐", "韩国餐厅第1郡"],
+    ja: ["ホーチミン 韓国中華", "ホーチミン 韓国式中華", "ホーチミン1区 韓国料理", "韓国料理と中華 ホーチミン"]
+  },
+  "korean-food-delivery-ho-chi-minh": {
+    en: ["Korean food delivery District 1", "Korean food reservation Ho Chi Minh", "jjambbong delivery District 1", "KakaoTalk Korean food order"],
+    zh: ["胡志明市韩国外卖", "第1郡韩国外卖", "韩国餐厅预订 胡志明市", "辣海鲜面外卖 胡志明市"],
+    ja: ["ホーチミン 韓国料理 デリバリー", "ホーチミン 韓国料理 予約", "チャンポン デリバリー ホーチミン", "Zalo 韓国料理 注文"]
+  },
+  "late-night-korean-food-ho-chi-minh": {
+    en: ["late night Korean food District 1", "Korean restaurant open late Saigon", "food after drinking near Bui Vien", "late night noodles Ho Chi Minh"],
+    zh: ["胡志明市韩国夜宵", "第1郡韩国夜宵", "Bui Vien 附近夜宵", "深夜韩国餐厅 胡志明市"],
+    ja: ["ホーチミン 深夜 韓国料理", "ホーチミン 夜食 韓国料理", "ブイビエン 夜食 韓国料理", "深夜営業 韓国料理 ホーチミン"]
+  },
+  "hangover-spicy-noodles-saigon": {
+    en: ["Korean hangover soup Saigon", "spicy noodles after drinking Ho Chi Minh", "hangover jjambbong District 1"],
+    zh: ["胡志明市醒酒辣面", "酒后辣海鲜面 胡志明市", "第1郡醒酒汤面"],
+    ja: ["ホーチミン 締め 韓国料理", "ホーチミン 飲んだ後 辛い麺", "ホーチミン 辛い海鮮麺"]
+  },
+  "location-contact": {
+    en: ["Korean restaurant 77I Bui Thi Xuan", "Korean food near Bui Thi Xuan", "Korean restaurant near Pham Ngu Lao"],
+    zh: ["77I Bui Thi Xuan 韩国餐厅", "Bui Thi Xuan 韩国餐厅", "滨城市场附近韩国餐厅", "范五老街附近韩国餐厅"],
+    ja: ["77I Bui Thi Xuan 韓国料理", "Bui Thi Xuan 韓国料理", "ベンタイン市場近く 韓国料理", "ファングーラオ 韓国料理"]
+  }
+};
+
+function uniqueKeywords(keywords: string[]) {
+  return Array.from(new Set(keywords.filter(Boolean)));
+}
+
 export function metadataFor(locale: Locale, slug: PageSlug): Metadata {
   const page = pageContent[locale][slug];
   const languages = Object.fromEntries(site.locales.map((lang) => [lang, absoluteUrl(lang, slug)]));
-  const keywords = [...baseKeywords, ...(pageKeywordMap[slug] ?? [])];
+  const keywords = uniqueKeywords([
+    ...baseKeywords,
+    ...localeKeywordMap[locale],
+    ...(pageKeywordMap[slug] ?? []),
+    ...(pageLocaleKeywordMap[slug]?.[locale] ?? [])
+  ]);
 
   return {
     title: page.title,
@@ -313,6 +457,8 @@ export function metadataFor(locale: Locale, slug: PageSlug): Metadata {
 }
 
 export function restaurantJsonLd(locale: Locale) {
+  const keywords = uniqueKeywords([...baseKeywords, ...localeKeywordMap[locale]]);
+
   return {
     "@context": "https://schema.org",
     "@type": "Restaurant",
@@ -382,8 +528,8 @@ export function restaurantJsonLd(locale: Locale) {
       "Korean-Chinese food",
       "late-night food",
       "food delivery District 1"
-    ],
-    keywords: baseKeywords.join(", "),
+    ].concat(localeKeywordMap[locale]),
+    keywords: keywords.join(", "),
     acceptsReservations: true,
     contactPoint: [
       {

@@ -551,6 +551,35 @@ function searchIntentCopy(locale: Locale) {
     };
   }
 
+  if (locale === "zh") {
+    return {
+      eyebrow: "Google 搜索关键词",
+      title: "把中国客人常搜的韩国餐厅关键词连接到 DOYA",
+      body:
+        "胡志明市韩国餐厅、第1郡韩式中餐、胡志明市韩式炸酱面、champong 辣海鲜面、滨城市场附近韩国餐厅等搜索意图会连接到清楚的菜单和位置页面。",
+      links: [
+        {
+          title: "胡志明市 Champong 辣海鲜面",
+          body: "适合搜索 champong、jjambbong、jjamppong、韩式辣海鲜面、第1郡辣面 的客人。",
+          href: localizedPath(locale, "champong-korean-chinese-food-ho-chi-minh"),
+          label: "查看辣海鲜面"
+        },
+        {
+          title: "韩式炸酱面 / Jajangmyeon",
+          body: "适合搜索 韩式炸酱面、韩国黑豆面、jajangmyeon、mi tuong den、不辣韩国面 的客人。",
+          href: localizedPath(locale, "mi-tuong-den-han-quoc-quan-1"),
+          label: "查看炸酱面"
+        },
+        {
+          title: "胡志明市第1郡韩国餐厅",
+          body: "适合搜索 胡志明市韩国餐厅、滨城市场附近韩国餐厅、Bui Vien 附近韩国餐厅、韩式中餐 的客人。",
+          href: localizedPath(locale, "korean-chinese-food-ho-chi-minh"),
+          label: "查看韩式中餐"
+        }
+      ]
+    };
+  }
+
   if (locale === "ja") {
     return {
       eyebrow: "Google 検索キーワード",

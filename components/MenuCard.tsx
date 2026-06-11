@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MenuItem } from "@/data/menu";
+import { localizedMenuCardCopy, localizedMenuCardUi } from "@/data/menu-localization";
 import { Locale } from "@/lib/site";
 
 function spiceLabel(spice: MenuItem["spice"], locale: Locale) {
@@ -14,20 +15,32 @@ function spiceLabel(spice: MenuItem["spice"], locale: Locale) {
     return "Không cay";
   }
 
+  const localizedUi = localizedMenuCardUi[locale];
+  if (localizedUi) {
+    if (spice >= 2) return localizedUi.spicy;
+    return localizedUi.mild;
+  }
+
   if (spice >= 2) return "Spicy";
   return "Mild";
 }
 
 export function MenuCard({ item, locale }: { item: MenuItem; locale: Locale }) {
-  const displayName = locale === "vi" ? item.vietnameseName ?? item.name : item.name;
-  const secondaryName = locale === "ko" ? item.koreanName : item.koreanName ?? item.name;
+  const localizedCopy = localizedMenuCardCopy[locale]?.[item.name];
+  const displayName =
+    localizedCopy?.name ?? (locale === "vi" ? item.vietnameseName ?? item.name : item.name);
+  const secondaryName =
+    localizedCopy?.secondaryName ??
+    (locale === "ko" ? item.koreanName : item.koreanName ?? item.name);
   const description =
-    locale === "vi"
+    localizedCopy?.description ??
+    (locale === "vi"
       ? item.descriptionVi ?? item.description
       : locale === "ko"
         ? item.descriptionKo ?? item.description
-        : item.description;
+        : item.description);
   const detailLabel = locale === "vi" ? "Xem chi tiết" : locale === "ko" ? "자세히 보기" : "View details";
+  const localizedDetailLabel = localizedMenuCardUi[locale]?.details;
   return (
     <article className="group overflow-hidden rounded-lg border border-ink/10 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-glow">
       <div className="relative aspect-[4/3] overflow-hidden bg-soy">
@@ -73,7 +86,7 @@ export function MenuCard({ item, locale }: { item: MenuItem; locale: Locale }) {
             href={`/${locale}/menu/${item.detailSlug}`}
             className="mt-5 inline-flex rounded-md border border-ink/10 bg-cream px-3 py-2 text-xs font-black text-ink hover:border-chili hover:text-chili"
           >
-            {detailLabel}
+            {localizedDetailLabel ?? detailLabel}
           </Link>
         ) : null}
       </div>
