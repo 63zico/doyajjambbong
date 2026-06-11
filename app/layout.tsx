@@ -7,6 +7,11 @@ export const metadata: Metadata = {
     default: "DOYA JJAMBBONG",
     template: "%s"
   },
+  verification: {
+    other: {
+      "naver-site-verification": "52df357e375644d62210beb83c6dcd419b2b7962"
+    }
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
