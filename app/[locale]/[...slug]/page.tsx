@@ -637,8 +637,184 @@ function searchIntentCopy(locale: Locale) {
   };
 }
 
+function competitiveSearchLinks(locale: Locale) {
+  if (locale === "ko") {
+    return [
+      {
+        title: "Best Champong District 1",
+        body: "champong District 1, jjambbong near Ben Thanh, Korean spicy seafood noodles 검색을 직접 겨냥합니다.",
+        href: localizedPath(locale, "best-champong-district-1-ho-chi-minh"),
+        label: "1군 champong 보기"
+      },
+      {
+        title: "Mi tuong den near Bui Vien",
+        body: "부이비엔, 팜응우라오, 벤탄 근처에서 mi tuong den, jajangmyeon, 짜장면을 찾는 손님용입니다.",
+        href: localizedPath(locale, "mi-tuong-den-quan-1-gan-bui-vien"),
+        label: "부이비엔 짜장면"
+      },
+      {
+        title: "Korean noodles near Ben Thanh",
+        body: "벤탄시장 근처 Korean noodles, jjambbong, jajangmyeon 검색을 도야 위치와 연결합니다.",
+        href: localizedPath(locale, "korean-noodles-near-ben-thanh-market"),
+        label: "벤탄 근처 한식면"
+      },
+      {
+        title: "Jajangmyeon & Jjambbong",
+        body: "짜장면과 짬뽕을 같이 찾는 Korean Chinese noodles District 1 검색 의도를 받습니다.",
+        href: localizedPath(locale, "jajangmyeon-jjambbong-district-1"),
+        label: "짜장면 짬뽕 조합"
+      },
+      {
+        title: "Korean restaurant near Bui Vien",
+        body: "부이비엔 워킹스트리트 근처 한식당, 야식, 해장 검색을 도야 위치로 연결합니다.",
+        href: localizedPath(locale, "korean-restaurant-near-bui-vien-walking-street"),
+        label: "부이비엔 한식당"
+      }
+    ];
+  }
+
+  if (locale === "vi") {
+    return [
+      {
+        title: "Best champong District 1",
+        body: "Nhan thang vao tim kiem champong District 1, jjambbong near Ben Thanh va Korean spicy seafood noodles.",
+        href: localizedPath(locale, "best-champong-district-1-ho-chi-minh"),
+        label: "Xem best champong Q1"
+      },
+      {
+        title: "Mi tuong den gan Bui Vien",
+        body: "Danh cho khach tim mi tuong den Quan 1, jajangmyeon gan Bui Vien, Pham Ngu Lao hoac Ben Thanh.",
+        href: localizedPath(locale, "mi-tuong-den-quan-1-gan-bui-vien"),
+        label: "Xem mi tuong den"
+      },
+      {
+        title: "Korean noodles gan Ben Thanh",
+        body: "Ket noi tim kiem Korean noodles near Ben Thanh Market voi thuc don jjambbong va jajangmyeon cua DOYA.",
+        href: localizedPath(locale, "korean-noodles-near-ben-thanh-market"),
+        label: "Xem mi Han gan Ben Thanh"
+      },
+      {
+        title: "Jajangmyeon va jjambbong",
+        body: "Danh cho khach tim Korean Chinese noodles, jajangmyeon va jjambbong tai District 1.",
+        href: localizedPath(locale, "jajangmyeon-jjambbong-district-1"),
+        label: "Xem cap mon Han-Trung"
+      },
+      {
+        title: "Korean restaurant gan Bui Vien",
+        body: "Danh cho khach tim Korean restaurant near Bui Vien Walking Street, Pham Ngu Lao va an khuya Quan 1.",
+        href: localizedPath(locale, "korean-restaurant-near-bui-vien-walking-street"),
+        label: "Xem gan Bui Vien"
+      }
+    ];
+  }
+
+  if (locale === "zh") {
+    return [
+      {
+        title: "第1郡 Champong",
+        body: "直接对应 champong District 1, jjambbong near Ben Thanh 和韩式辣海鲜面搜索.",
+        href: localizedPath(locale, "best-champong-district-1-ho-chi-minh"),
+        label: "查看第1郡 Champong"
+      },
+      {
+        title: "Bui Vien 附近韩式炸酱面",
+        body: "适合搜索 mi tuong den, jajangmyeon, 韩式炸酱面和 Bui Vien 附近韩国面食的客人.",
+        href: localizedPath(locale, "mi-tuong-den-quan-1-gan-bui-vien"),
+        label: "查看 Bui Vien 炸酱面"
+      },
+      {
+        title: "滨城市场附近韩式面",
+        body: "连接 Korean noodles near Ben Thanh Market, jjambbong 和 jajangmyeon 搜索.",
+        href: localizedPath(locale, "korean-noodles-near-ben-thanh-market"),
+        label: "查看滨城市场韩式面"
+      },
+      {
+        title: "Jajangmyeon 和 Jjambbong",
+        body: "适合同时搜索韩式炸酱面、辣海鲜面和 Korean Chinese noodles District 1 的客人.",
+        href: localizedPath(locale, "jajangmyeon-jjambbong-district-1"),
+        label: "查看炸酱面和辣海鲜面"
+      },
+      {
+        title: "Bui Vien 附近韩国餐厅",
+        body: "连接 Bui Vien Walking Street, Pham Ngu Lao 和第1郡韩国夜宵搜索.",
+        href: localizedPath(locale, "korean-restaurant-near-bui-vien-walking-street"),
+        label: "查看 Bui Vien 韩国餐厅"
+      }
+    ];
+  }
+
+  if (locale === "ja") {
+    return [
+      {
+        title: "ホーチミン1区 チャンポン",
+        body: "champong District 1, jjambbong near Ben Thanh, 韓国式海鮮ラーメンの検索に対応します。",
+        href: localizedPath(locale, "best-champong-district-1-ho-chi-minh"),
+        label: "1区チャンポンを見る"
+      },
+      {
+        title: "ブイビエン近くジャージャー麺",
+        body: "mi tuong den, jajangmyeon, 韓国式ジャージャー麺をブイビエン・ファングーラオ近くの検索へ接続します。",
+        href: localizedPath(locale, "mi-tuong-den-quan-1-gan-bui-vien"),
+        label: "ジャージャー麺を見る"
+      },
+      {
+        title: "ベンタイン市場近く韓国麺",
+        body: "Korean noodles near Ben Thanh Market, チャンポン, ジャージャー麺の検索向けページです。",
+        href: localizedPath(locale, "korean-noodles-near-ben-thanh-market"),
+        label: "ベンタイン近く韓国麺"
+      },
+      {
+        title: "ジャージャー麺とチャンポン",
+        body: "Jajangmyeon, Jjambbong, Korean Chinese noodles District 1 を同じページで案内します。",
+        href: localizedPath(locale, "jajangmyeon-jjambbong-district-1"),
+        label: "韓国中華麺を見る"
+      },
+      {
+        title: "ブイビエン近く韓国料理",
+        body: "Bui Vien Walking Street, Pham Ngu Lao, 夜遅めの韓国料理検索に対応します。",
+        href: localizedPath(locale, "korean-restaurant-near-bui-vien-walking-street"),
+        label: "ブイビエン近くを見る"
+      }
+    ];
+  }
+
+  return [
+    {
+      title: "Best champong District 1",
+      body: "A focused page for champong District 1, jjambbong near Ben Thanh, and Korean spicy seafood noodles.",
+      href: localizedPath(locale, "best-champong-district-1-ho-chi-minh"),
+      label: "Open District 1 champong"
+    },
+    {
+      title: "Mi tuong den near Bui Vien",
+      body: "For guests searching mi tuong den Quan 1, jajangmyeon near Bui Vien, Pham Ngu Lao, or Ben Thanh.",
+      href: localizedPath(locale, "mi-tuong-den-quan-1-gan-bui-vien"),
+      label: "Open Bui Vien noodles"
+    },
+    {
+      title: "Korean noodles near Ben Thanh",
+      body: "Connects Korean noodles near Ben Thanh Market with DOYA's jjambbong and jajangmyeon menu.",
+      href: localizedPath(locale, "korean-noodles-near-ben-thanh-market"),
+      label: "Open Ben Thanh noodles"
+    },
+    {
+      title: "Jajangmyeon and jjambbong",
+      body: "For Korean Chinese noodles searches that compare black bean noodles and spicy seafood noodles.",
+      href: localizedPath(locale, "jajangmyeon-jjambbong-district-1"),
+      label: "Open noodle pairing"
+    },
+    {
+      title: "Korean restaurant near Bui Vien",
+      body: "For guests searching Korean restaurant near Bui Vien Walking Street, Pham Ngu Lao, or late-night District 1 food.",
+      href: localizedPath(locale, "korean-restaurant-near-bui-vien-walking-street"),
+      label: "Open Bui Vien guide"
+    }
+  ];
+}
+
 function SearchIntentLinks({ locale }: { locale: Locale }) {
   const copy = searchIntentCopy(locale);
+  const links = [...copy.links, ...competitiveSearchLinks(locale)];
 
   return (
     <section className="bg-bone">
@@ -649,7 +825,7 @@ function SearchIntentLinks({ locale }: { locale: Locale }) {
           <p className="mt-4 leading-7 text-ink/70">{copy.body}</p>
         </div>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {copy.links.map((link) => (
+          {links.map((link) => (
             <article key={link.href} className="rounded-lg border border-ink/10 bg-white p-6">
               <h3 className="text-xl font-black text-ink">{link.title}</h3>
               <p className="mt-3 text-sm leading-6 text-ink/70">{link.body}</p>
@@ -683,6 +859,11 @@ function TextSections({ locale, slug }: { locale: Locale; slug: PageSlug }) {
 const miTuongDenLinkPages: PageSlug[] = [
   "",
   "menu",
+  "best-champong-district-1-ho-chi-minh",
+  "mi-tuong-den-quan-1-gan-bui-vien",
+  "jajangmyeon-jjambbong-district-1",
+  "korean-noodles-near-ben-thanh-market",
+  "korean-restaurant-near-bui-vien-walking-street",
   "korean-chinese-food-ho-chi-minh",
   "korean-food-delivery-ho-chi-minh",
   "about"

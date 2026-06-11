@@ -257,6 +257,49 @@ const pageKeywordMap: Partial<Record<PageSlug, string[]>> = {
   ],
   "signature-jjambbong": ["signature jjambbong", "champong", "Korean spicy seafood noodle soup", "Mì cay Hàn Quốc"],
   "champong-korean-chinese-food-ho-chi-minh": ["champong Ho Chi Minh", "champon District 1", "jjamppong Saigon", "Mì cay hải sản"],
+  "best-champong-district-1-ho-chi-minh": [
+    "best champong District 1",
+    "champong District 1 Ho Chi Minh",
+    "jjambbong near Ben Thanh",
+    "jjamppong District 1",
+    "Korean spicy seafood noodles District 1",
+    "mì cay hải sản Quận 1",
+    "champong near Bui Vien"
+  ],
+  "mi-tuong-den-quan-1-gan-bui-vien": [
+    "mi tuong den Quan 1",
+    "mì tương đen gần Bùi Viện",
+    "jajangmyeon near Bui Vien",
+    "Korean black bean noodles near Bui Vien",
+    "mì tương đen Hàn Quốc Quận 1",
+    "jajangmyeon District 1",
+    "non spicy Korean noodles District 1"
+  ],
+  "jajangmyeon-jjambbong-district-1": [
+    "jajangmyeon and jjambbong District 1",
+    "Korean Chinese noodles District 1",
+    "Korean black bean noodles and spicy seafood noodles",
+    "jajangmyeon jjambbong Ho Chi Minh",
+    "짜장면 짬뽕 호치민",
+    "mì tương đen và champong"
+  ],
+  "korean-noodles-near-ben-thanh-market": [
+    "Korean noodles near Ben Thanh Market",
+    "Korean food near Ben Thanh Market",
+    "jjambbong near Ben Thanh",
+    "jajangmyeon near Ben Thanh",
+    "Korean restaurant near Ben Thanh",
+    "mì Hàn gần chợ Bến Thành"
+  ],
+  "korean-restaurant-near-bui-vien-walking-street": [
+    "Korean restaurant near Bui Vien Walking Street",
+    "Korean food near Pham Ngu Lao",
+    "Korean food near Bui Vien",
+    "late night Korean food District 1",
+    "jjambbong near Bui Vien",
+    "jajangmyeon near Bui Vien",
+    "quán Hàn gần Bùi Viện"
+  ],
   "korean-chinese-food-ho-chi-minh": [
     "Korean restaurant Ho Chi Minh",
     "Korean restaurant District 1",
@@ -365,6 +408,41 @@ const pageLocaleKeywordMap: Partial<Record<PageSlug, Partial<Record<Locale, stri
     en: ["champong Ho Chi Minh", "champong District 1", "jjamppong Saigon", "jjambbong near Ben Thanh"],
     zh: ["胡志明市 champong", "第1郡 champong", "胡志明市 jjambbong", "韩国辣海鲜面 胡志明市"],
     ja: ["ホーチミン チャンポン", "ホーチミン 韓国チャンポン", "ホーチミン 韓国式海鮮ラーメン", "ホーチミン 辛い海鮮麺"]
+  },
+  "best-champong-district-1-ho-chi-minh": {
+    en: ["best champong District 1", "champong near Ben Thanh", "jjambbong near Bui Vien", "Korean spicy seafood noodles District 1"],
+    vi: ["champong Quận 1", "mì cay hải sản Quận 1", "mì jjambbong gần Bến Thành", "champong gần Bùi Viện"],
+    ko: ["호치민 1군 champong", "호치민 1군 짬뽕", "벤탄 근처 짬뽕", "부이비엔 근처 짬뽕"],
+    zh: ["胡志明市第1郡 champong", "第1郡韩式辣海鲜面", "滨城市场附近辣海鲜面", "Bui Vien 附近 champong"],
+    ja: ["ホーチミン1区 チャンポン", "ベンタイン市場近く チャンポン", "ブイビエン近く チャンポン", "ホーチミン 韓国式海鮮ラーメン"]
+  },
+  "mi-tuong-den-quan-1-gan-bui-vien": {
+    en: ["mi tuong den Quan 1", "jajangmyeon near Bui Vien", "Korean black bean noodles near Pham Ngu Lao"],
+    vi: ["mì tương đen Quận 1", "mi tuong den gan Bui Vien", "mì tương đen gần Phạm Ngũ Lão", "jajangmyeon gần Bến Thành"],
+    ko: ["부이비엔 근처 짜장면", "호치민 1군 짜장면", "벤탄 근처 짜장면", "mi tuong den 한식"],
+    zh: ["Bui Vien 附近韩式炸酱面", "第1郡韩式炸酱面", "胡志明市韩国黑豆面", "不辣韩国面 Bui Vien"],
+    ja: ["ブイビエン近く ジャージャー麺", "ホーチミン1区 韓国式ジャージャー麺", "ベンタイン近く Jajangmyeon", "辛くない韓国麺 ホーチミン"]
+  },
+  "jajangmyeon-jjambbong-district-1": {
+    en: ["jajangmyeon and jjambbong District 1", "Korean Chinese noodles Ho Chi Minh", "black bean noodles and spicy seafood noodles"],
+    vi: ["jajangmyeon và jjambbong Quận 1", "mì tương đen và mì cay Hàn Quốc", "Korean Chinese noodles Quận 1"],
+    ko: ["호치민 짜장면 짬뽕", "호치민 1군 짜장면 짬뽕", "한국식 중화요리 호치민", "Korean Chinese noodles District 1"],
+    zh: ["胡志明市炸酱面和辣海鲜面", "第1郡韩式中餐面", "jajangmyeon jjambbong 胡志明市"],
+    ja: ["ホーチミン ジャージャー麺 チャンポン", "ホーチミン1区 韓国中華麺", "Jajangmyeon Jjambbong District 1"]
+  },
+  "korean-noodles-near-ben-thanh-market": {
+    en: ["Korean noodles near Ben Thanh Market", "Korean restaurant near Ben Thanh Market", "jjambbong near Ben Thanh"],
+    vi: ["mì Hàn gần chợ Bến Thành", "mì cay Hàn Quốc gần Bến Thành", "mì tương đen gần Bến Thành"],
+    ko: ["벤탄시장 근처 한국식 면요리", "벤탄 근처 짬뽕", "벤탄 근처 짜장면", "호치민 벤탄 한식당"],
+    zh: ["滨城市场附近韩式面", "滨城市场附近韩国餐厅", "滨城市场附近韩式炸酱面", "Ben Thanh 韩式辣海鲜面"],
+    ja: ["ベンタイン市場近く 韓国麺", "ベンタイン市場 韓国料理", "ベンタイン近く チャンポン", "ベンタイン近く ジャージャー麺"]
+  },
+  "korean-restaurant-near-bui-vien-walking-street": {
+    en: ["Korean restaurant near Bui Vien Walking Street", "Korean food near Pham Ngu Lao", "late night Korean food near Bui Vien"],
+    vi: ["quán Hàn gần Bùi Viện", "món Hàn gần Phạm Ngũ Lão", "ăn khuya Hàn Quốc Quận 1", "mì cay gần Bùi Viện"],
+    ko: ["부이비엔 근처 한식당", "팜응우라오 근처 한식", "호치민 1군 야식", "부이비엔 근처 짬뽕"],
+    zh: ["Bui Vien 附近韩国餐厅", "范五老街附近韩国餐厅", "第1郡韩国夜宵", "Bui Vien 附近韩式中餐"],
+    ja: ["ブイビエン近く 韓国料理", "ファングーラオ 韓国料理", "ホーチミン1区 夜食 韓国料理", "ブイビエン近く 韓国中華"]
   },
   "korean-chinese-food-ho-chi-minh": {
     en: ["Korean Chinese food District 1", "Korean-Chinese restaurant near Ben Thanh", "Korean food and Chinese food Ho Chi Minh"],

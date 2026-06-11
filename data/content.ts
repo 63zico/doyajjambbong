@@ -27,6 +27,11 @@ export const navLabels: Record<Locale, Record<PageSlug, string>> = {
     "mi-tuong-den-han-quoc-quan-1": "Mì tương đen",
     "signature-jjambbong": "Jjambbong đặc trưng",
     "champong-korean-chinese-food-ho-chi-minh": "Champong Quận 1",
+    "best-champong-district-1-ho-chi-minh": "Best champong Q1",
+    "mi-tuong-den-quan-1-gan-bui-vien": "Mì tương đen Bùi Viện",
+    "jajangmyeon-jjambbong-district-1": "Jajangmyeon & jjambbong",
+    "korean-noodles-near-ben-thanh-market": "Mì Hàn gần Bến Thành",
+    "korean-restaurant-near-bui-vien-walking-street": "Món Hàn gần Bùi Viện",
     "korean-chinese-food-ho-chi-minh": "Món Hàn-Trung",
     "korean-food-delivery-ho-chi-minh": "Đặt bàn / Giao hàng",
     "late-night-korean-food-ho-chi-minh": "Ăn khuya",
@@ -44,6 +49,11 @@ export const navLabels: Record<Locale, Record<PageSlug, string>> = {
     "mi-tuong-den-han-quoc-quan-1": "짜장면",
     "signature-jjambbong": "대표 짬뽕",
     "champong-korean-chinese-food-ho-chi-minh": "champong 검색",
+    "best-champong-district-1-ho-chi-minh": "1군 champong",
+    "mi-tuong-den-quan-1-gan-bui-vien": "부이비엔 짜장면",
+    "jajangmyeon-jjambbong-district-1": "짜장면 짬뽕",
+    "korean-noodles-near-ben-thanh-market": "벤탄 근처 한식면",
+    "korean-restaurant-near-bui-vien-walking-street": "부이비엔 한식당",
     "korean-chinese-food-ho-chi-minh": "한국식 중화요리",
     "korean-food-delivery-ho-chi-minh": "예약/배달",
     "late-night-korean-food-ho-chi-minh": "호치민 야식",
@@ -61,6 +71,11 @@ export const navLabels: Record<Locale, Record<PageSlug, string>> = {
     "mi-tuong-den-han-quoc-quan-1": "Black Bean Noodles",
     "signature-jjambbong": "Signature Jjambbong",
     "champong-korean-chinese-food-ho-chi-minh": "Champong",
+    "best-champong-district-1-ho-chi-minh": "Best Champong D1",
+    "mi-tuong-den-quan-1-gan-bui-vien": "Mi Tuong Den Bui Vien",
+    "jajangmyeon-jjambbong-district-1": "Jajangmyeon & Jjambbong",
+    "korean-noodles-near-ben-thanh-market": "Noodles Near Ben Thanh",
+    "korean-restaurant-near-bui-vien-walking-street": "Near Bui Vien",
     "korean-chinese-food-ho-chi-minh": "Korean Chinese Food",
     "korean-food-delivery-ho-chi-minh": "Reservation / Delivery",
     "late-night-korean-food-ho-chi-minh": "Late Night",
@@ -78,6 +93,11 @@ export const navLabels: Record<Locale, Record<PageSlug, string>> = {
     "mi-tuong-den-han-quoc-quan-1": "韩式炸酱面",
     "signature-jjambbong": "招牌辣海鲜面",
     "champong-korean-chinese-food-ho-chi-minh": "Champong 辣海鲜面",
+    "best-champong-district-1-ho-chi-minh": "第1郡 Champong",
+    "mi-tuong-den-quan-1-gan-bui-vien": "Bui Vien 炸酱面",
+    "jajangmyeon-jjambbong-district-1": "炸酱面和辣海鲜面",
+    "korean-noodles-near-ben-thanh-market": "滨城市场韩式面",
+    "korean-restaurant-near-bui-vien-walking-street": "Bui Vien 韩国餐厅",
     "korean-chinese-food-ho-chi-minh": "韩式中餐",
     "korean-food-delivery-ho-chi-minh": "预订 / 外卖",
     "late-night-korean-food-ho-chi-minh": "夜宵",
@@ -95,6 +115,11 @@ export const navLabels: Record<Locale, Record<PageSlug, string>> = {
     "mi-tuong-den-han-quoc-quan-1": "韓国式ジャージャー麺",
     "signature-jjambbong": "看板チャンポン",
     "champong-korean-chinese-food-ho-chi-minh": "チャンポン",
+    "best-champong-district-1-ho-chi-minh": "1区チャンポン",
+    "mi-tuong-den-quan-1-gan-bui-vien": "ブイビエン近くジャージャー麺",
+    "jajangmyeon-jjambbong-district-1": "ジャージャー麺とチャンポン",
+    "korean-noodles-near-ben-thanh-market": "ベンタイン近く韓国麺",
+    "korean-restaurant-near-bui-vien-walking-street": "ブイビエン近く韓国料理",
     "korean-chinese-food-ho-chi-minh": "韓国中華",
     "korean-food-delivery-ho-chi-minh": "予約 / デリバリー",
     "late-night-korean-food-ho-chi-minh": "深夜の韓国料理",
@@ -1143,3 +1168,770 @@ pageContent.ja = {
       "食品は注文後に調理するため、調理開始後のお客様都合による返品・返金は原則できません。注文違い、品不足、品質の問題がある場合は、当日中に電話、Zalo、Facebook、メールでご連絡ください。"
   }
 };
+
+const competitiveLandingPages: Record<Locale, Partial<Record<PageSlug, PageContent>>> = {
+  vi: {
+    "best-champong-district-1-ho-chi-minh": {
+      slug: "best-champong-district-1-ho-chi-minh",
+      nav: "Best champong Q1",
+      title: "Best Champong District 1 Ho Chi Minh | DOYA JJAMBBONG",
+      description:
+        "Tìm best champong District 1, jjambbong Ho Chi Minh hoặc mì cay hải sản gần Bến Thành? DOYA phục vụ champong Hàn-Trung tại 77I Bùi Thị Xuân.",
+      eyebrow: "Champong District 1",
+      h1: "Best champong tại District 1 cho khách tìm mì cay Hàn Quốc",
+      subtitle:
+        "Một trang dành riêng cho khách gõ champong District 1, jjambbong Ho Chi Minh, jjamppong Saigon hoặc Korean spicy seafood noodles.",
+      summary:
+        "DOYA JJAMBBONG nằm tại 77I Bùi Thị Xuân, Quận 1, gần Bến Thành, Bùi Viện và khu khách sạn trung tâm. Trang này gom các tìm kiếm về champong, champon, jjambbong và mì cay hải sản Hàn Quốc vào đúng món nổi bật của DOYA.",
+      sections: [
+        {
+          heading: "Champong, jjamppong và jjambbong là cùng một nhu cầu tìm kiếm",
+          body:
+            "Khách nước ngoài có thể gõ champong, jjamppong, jjambbong hoặc Korean spicy seafood noodles. Nội dung này giúp Google hiểu DOYA phù hợp với các cách viết đó."
+        },
+        {
+          heading: "Tập trung vào Quận 1, không đánh rộng toàn thành phố",
+          body:
+            "DOYA có lợi thế vị trí thật ở Bùi Thị Xuân, gần Bến Thành, Bùi Viện, Phạm Ngũ Lão và các khách sạn District 1."
+        },
+        {
+          heading: "Gợi ý gọi món",
+          body:
+            "Nếu muốn vị cay hải sản, chọn DOYA Seafood Jjambbong. Nếu đi nhóm, gọi thêm tangsuyuk hoặc mandu để cân bằng vị cay."
+        }
+      ]
+    },
+    "mi-tuong-den-quan-1-gan-bui-vien": {
+      slug: "mi-tuong-den-quan-1-gan-bui-vien",
+      nav: "Mì tương đen Bùi Viện",
+      title: "Mì tương đen Quận 1 gần Bùi Viện | Jajangmyeon DOYA",
+      description:
+        "Tìm mì tương đen Quận 1, mi tuong den gần Bùi Viện hoặc jajangmyeon gần Bến Thành? DOYA phục vụ mì tương đen Hàn Quốc không cay.",
+      eyebrow: "Mi tuong den near Bui Vien",
+      h1: "Mì tương đen Quận 1 gần Bùi Viện",
+      subtitle:
+        "Món Hàn không cay, dễ ăn, hợp với khách du lịch, khách Việt và nhóm đi ăn quanh Bùi Viện, Bến Thành.",
+      summary:
+        "Mì tương đen Hàn Quốc còn được tìm bằng mi tuong den, mì tương đen, jajangmyeon hoặc Korean black bean noodles. DOYA đặt trang này cho khách đang ở Quận 1, Bùi Viện, Phạm Ngũ Lão và Bến Thành.",
+      sections: [
+        {
+          heading: "Không cay, dễ gọi cho nhóm",
+          body:
+            "Mì tương đen là món sốt đậu đen kiểu Hàn Quốc. Món này dễ ăn hơn champong cay và phù hợp khi trong nhóm có người không ăn cay."
+        },
+        {
+          heading: "Gần khu nightlife và khách sạn",
+          body:
+            "Từ Bùi Viện, Phạm Ngũ Lão, Bến Thành và các khách sạn Quận 1, khách có thể dùng Google Maps để đến DOYA nhanh hơn."
+        },
+        {
+          heading: "Từ khóa cần thắng",
+          body:
+            "Trang này tập trung vào mi tuong den Quan 1, mì tương đen Hàn Quốc, jajangmyeon District 1 và Korean black bean noodles near Bui Vien."
+        }
+      ]
+    },
+    "jajangmyeon-jjambbong-district-1": {
+      slug: "jajangmyeon-jjambbong-district-1",
+      nav: "Jajangmyeon & jjambbong",
+      title: "Jajangmyeon và Jjambbong District 1 | Korean Chinese Noodles",
+      description:
+        "Ăn jajangmyeon và jjambbong tại District 1 Ho Chi Minh. DOYA phục vụ mì tương đen Hàn Quốc, champong hải sản cay và món Hàn-Trung.",
+      eyebrow: "Jajangmyeon + Jjambbong",
+      h1: "Jajangmyeon và jjambbong tại District 1",
+      subtitle:
+        "Một món không cay, một món cay hải sản. Đây là cặp gọi món dễ hiểu nhất trong Korean Chinese food.",
+      summary:
+        "Nếu khách phân vân giữa Korean black bean noodles và Korean spicy seafood noodles, DOYA giúp chọn nhanh: jajangmyeon cho vị không cay, jjambbong hoặc champong cho nước dùng cay nóng.",
+      sections: [
+        {
+          heading: "Cặp món Korean Chinese food kinh điển",
+          body:
+            "Jajangmyeon là mì sốt đậu đen, còn jjambbong là mì cay hải sản. Cả hai đều là món Hàn-Trung quen thuộc với người Hàn."
+        },
+        {
+          heading: "Phù hợp khách lần đầu",
+          body:
+            "Khách lần đầu có thể gọi một tô mì tương đen, một tô champong và một phần tangsuyuk để thử đủ vị."
+        },
+        {
+          heading: "Địa điểm District 1 rõ ràng",
+          body:
+            "Trang nhấn mạnh 77I Bùi Thị Xuân, District 1 để cạnh tranh các tìm kiếm có vị trí như jajangmyeon District 1 và jjambbong near Ben Thanh."
+        }
+      ]
+    },
+    "korean-noodles-near-ben-thanh-market": {
+      slug: "korean-noodles-near-ben-thanh-market",
+      nav: "Mì Hàn gần Bến Thành",
+      title: "Korean Noodles near Ben Thanh Market | DOYA District 1",
+      description:
+        "Tìm Korean noodles near Ben Thanh Market, mì cay Hàn Quốc hoặc mì tương đen gần Bến Thành? DOYA ở 77I Bùi Thị Xuân, Quận 1.",
+      eyebrow: "Near Ben Thanh Market",
+      h1: "Korean noodles near Ben Thanh Market",
+      subtitle:
+        "Champong cay, mì tương đen không cay và món Hàn-Trung cho khách ở quanh Bến Thành và khách sạn Quận 1.",
+      summary:
+        "Khách du lịch thường tìm Korean food near Ben Thanh Market, Korean noodles near Ben Thanh hoặc Korean restaurant District 1. DOYA kết nối các tìm kiếm đó với thực đơn mì Hàn-Trung rõ ràng.",
+      sections: [
+        {
+          heading: "Cho khách ở quanh Bến Thành",
+          body:
+            "Từ Bến Thành, khu khách sạn và các tuyến đường trung tâm, DOYA là điểm ăn mì Hàn Quốc dễ tìm bằng bản đồ."
+        },
+        {
+          heading: "Mì cay và mì không cay",
+          body:
+            "Champong phù hợp người thích cay. Mì tương đen phù hợp người muốn món đậm vị nhưng không cay."
+        },
+        {
+          heading: "Tăng độ liên quan địa phương",
+          body:
+            "Trang dùng các từ khóa Ben Thanh Market, District 1, Korean noodles, jjambbong và jajangmyeon trong cùng ngữ cảnh."
+        }
+      ]
+    },
+    "korean-restaurant-near-bui-vien-walking-street": {
+      slug: "korean-restaurant-near-bui-vien-walking-street",
+      nav: "Món Hàn gần Bùi Viện",
+      title: "Korean Restaurant near Bui Vien Walking Street | DOYA JJAMBBONG",
+      description:
+        "Tìm Korean restaurant near Bui Vien Walking Street, Korean food near Pham Ngu Lao hoặc món Hàn ăn khuya Quận 1? DOYA phục vụ đến 23:30.",
+      eyebrow: "Near Bui Vien",
+      h1: "Korean restaurant near Bui Vien Walking Street",
+      subtitle:
+        "Một lựa chọn món Hàn-Trung nóng hổi gần khu nightlife Quận 1, phù hợp trước hoặc sau khi đi chơi.",
+      summary:
+        "DOYA nằm tại Bùi Thị Xuân, gần Bùi Viện, Phạm Ngũ Lão và trung tâm Quận 1. Trang này tập trung vào Korean restaurant near Bui Vien, Korean food near Pham Ngu Lao và late night Korean food District 1.",
+      sections: [
+        {
+          heading: "Sau khi đi chơi vẫn có món nóng",
+          body:
+            "Jjambbong cay, mì tương đen, tangsuyuk và cơm nóng là các lựa chọn rõ ràng khi khách muốn ăn tối muộn."
+        },
+        {
+          heading: "Không chỉ cho khách Hàn",
+          body:
+            "Nội dung dùng tiếng Anh, tiếng Việt và tên món phổ biến để khách quốc tế hiểu nhanh mà không cần biết tiếng Hàn."
+        },
+        {
+          heading: "Tín hiệu địa phương mạnh",
+          body:
+            "Bui Vien, Pham Ngu Lao, Ben Thanh, Bui Thi Xuan và District 1 được nhắc rõ để Google hiểu phạm vi tìm kiếm gần quán."
+        }
+      ]
+    }
+  },
+  ko: {
+    "best-champong-district-1-ho-chi-minh": {
+      slug: "best-champong-district-1-ho-chi-minh",
+      nav: "1군 champong",
+      title: "호치민 1군 Champong | 도야짬뽕 Korean Spicy Seafood Noodles",
+      description:
+        "호치민 1군에서 champong, jjambbong, jjamppong, 한국식 매운 해물짬뽕을 찾는 손님을 위한 도야짬뽕 검색 랜딩 페이지입니다.",
+      eyebrow: "Champong District 1",
+      h1: "호치민 1군 champong 검색을 도야짬뽕으로 연결",
+      subtitle:
+        "외국인이 champong, champon, jjamppong, jjambbong으로 검색해도 도야 대표 짬뽕을 찾을 수 있게 만든 페이지입니다.",
+      summary:
+        "도야짬뽕은 77I Bui Thi Xuan, District 1에 위치한 한국식 중화요리 식당입니다. 벤탄, 부이비엔, 팜응우라오, 1군 호텔 근처에서 매운 해물짬뽕을 찾는 검색 의도를 정확히 받습니다.",
+      sections: [
+        {
+          heading: "champong 표기까지 흡수",
+          body:
+            "한국어 짬뽕은 외국인 검색에서 champong, champon, jjamppong, jjambbong으로 다양하게 입력됩니다. 이 페이지는 그 표기를 한곳으로 모읍니다."
+        },
+        {
+          heading: "1군 위치 키워드 강화",
+          body:
+            "District 1, Ben Thanh, Bui Vien, Bui Thi Xuan을 본문에 자연스럽게 넣어 넓은 호치민 검색보다 가까운 손님을 먼저 노립니다."
+        },
+        {
+          heading: "대표 메뉴 연결",
+          body:
+            "매운 해물 국물을 찾는 손님은 DOYA Seafood Jjambbong, 덜 매운 메뉴가 필요하면 짜장면이나 탕수육을 함께 고를 수 있습니다."
+        }
+      ]
+    },
+    "mi-tuong-den-quan-1-gan-bui-vien": {
+      slug: "mi-tuong-den-quan-1-gan-bui-vien",
+      nav: "부이비엔 짜장면",
+      title: "부이비엔 근처 짜장면 | Mi Tuong Den Quận 1 DOYA",
+      description:
+        "부이비엔, 팜응우라오, 벤탄 근처에서 mi tuong den, mì tương đen, jajangmyeon, 한국식 짜장면을 찾는 손님을 위한 도야짬뽕 페이지입니다.",
+      eyebrow: "Mi tuong den near Bui Vien",
+      h1: "부이비엔 근처 한국식 짜장면",
+      subtitle:
+        "맵지 않고 든든한 한국식 짜장면을 찾는 외국인, 베트남 손님, 한국 손님에게 맞춘 검색 페이지입니다.",
+      summary:
+        "mi tuong den은 베트남 손님이 한국식 짜장면을 찾을 때 자주 쓰는 검색어입니다. 도야짬뽕은 부이비엔, 팜응우라오, 벤탄에서 접근하기 쉬운 1군 위치에 있습니다.",
+      sections: [
+        {
+          heading: "mi tuong den과 jajangmyeon 동시 대응",
+          body:
+            "검색어가 베트남어 무성조, 영어, 한국어로 갈라지기 때문에 mi tuong den, mì tương đen, jajangmyeon, 짜장면을 함께 사용합니다."
+        },
+        {
+          heading: "맵지 않은 메뉴로 전환",
+          body:
+            "champong이 부담스러운 손님에게 짜장면은 가장 안전한 선택입니다. 탕수육과 같이 주문하기 좋습니다."
+        },
+        {
+          heading: "부이비엔 주변 검색 대응",
+          body:
+            "Bui Vien, Pham Ngu Lao, Ben Thanh, District 1 키워드를 넣어 관광객의 근처 검색을 노립니다."
+        }
+      ]
+    },
+    "jajangmyeon-jjambbong-district-1": {
+      slug: "jajangmyeon-jjambbong-district-1",
+      nav: "짜장면 짬뽕",
+      title: "호치민 1군 짜장면 짬뽕 | Jajangmyeon Jjambbong District 1",
+      description:
+        "호치민 1군에서 짜장면과 짬뽕, jajangmyeon, jjambbong, Korean Chinese noodles를 함께 찾는 손님을 위한 도야짬뽕 페이지입니다.",
+      eyebrow: "Jajangmyeon + Jjambbong",
+      h1: "호치민 1군 짜장면과 짬뽕",
+      subtitle:
+        "맵지 않은 짜장면과 매운 해물짬뽕을 한 번에 고를 수 있는 한국식 중화요리 조합입니다.",
+      summary:
+        "외국인 손님은 Korean black bean noodles와 Korean spicy seafood noodles를 따로 검색합니다. 이 페이지는 jajangmyeon과 jjambbong을 같은 식사 선택지로 연결합니다.",
+      sections: [
+        {
+          heading: "처음 오는 손님에게 쉬운 조합",
+          body:
+            "한 명은 짬뽕, 한 명은 짜장면을 고르고 탕수육을 나눠 먹는 조합은 한국식 중화요리를 처음 먹는 손님에게도 이해가 쉽습니다."
+        },
+        {
+          heading: "영문 검색어 반영",
+          body:
+            "jajangmyeon District 1, jjambbong near Ben Thanh, Korean Chinese noodles Ho Chi Minh 같은 검색을 한 페이지에서 받습니다."
+        },
+        {
+          heading: "현장 위치와 메뉴를 함께 설명",
+          body:
+            "구글은 메뉴명만 있는 페이지보다 실제 주소, 근처 지역, 주문 상황이 함께 있는 페이지를 더 이해하기 쉽습니다."
+        }
+      ]
+    },
+    "korean-noodles-near-ben-thanh-market": {
+      slug: "korean-noodles-near-ben-thanh-market",
+      nav: "벤탄 근처 한식면",
+      title: "벤탄시장 근처 Korean Noodles | 도야짬뽕 1군",
+      description:
+        "벤탄시장 근처에서 Korean noodles, jjambbong, jajangmyeon, 한국식 짬뽕과 짜장면을 찾는 손님을 위한 도야짬뽕 위치 페이지입니다.",
+      eyebrow: "Near Ben Thanh Market",
+      h1: "벤탄시장 근처 한국식 면요리",
+      subtitle:
+        "벤탄, 부이티쑤언, 1군 호텔 근처에서 짬뽕과 짜장면을 찾는 손님에게 맞춘 페이지입니다.",
+      summary:
+        "도야짬뽕은 벤탄시장 주변에서 Korean noodles near Ben Thanh Market, Korean restaurant District 1, jjambbong Ho Chi Minh을 검색하는 손님에게 명확한 선택지가 되도록 구성했습니다.",
+      sections: [
+        {
+          heading: "벤탄 근처 로컬 검색",
+          body:
+            "Ben Thanh Market, Bui Thi Xuan, District 1을 함께 사용해 관광객과 호텔 손님의 근처 검색을 받습니다."
+        },
+        {
+          heading: "짬뽕과 짜장 모두 대응",
+          body:
+            "매운 국물이 필요하면 짬뽕, 맵지 않은 메뉴가 필요하면 짜장면으로 선택지를 나눕니다."
+        },
+        {
+          heading: "구글 지도와 연결",
+          body:
+            "검색 후 바로 지도, 전화, Zalo, KakaoTalk으로 이어지도록 위치 정보와 주문 경로를 유지합니다."
+        }
+      ]
+    },
+    "korean-restaurant-near-bui-vien-walking-street": {
+      slug: "korean-restaurant-near-bui-vien-walking-street",
+      nav: "부이비엔 한식당",
+      title: "부이비엔 근처 한식당 | Korean Restaurant near Bui Vien",
+      description:
+        "부이비엔 워킹스트리트, 팜응우라오, 벤탄 근처에서 Korean restaurant, Korean food, 짬뽕, 짜장면을 찾는 손님을 위한 도야짬뽕 페이지입니다.",
+      eyebrow: "Near Bui Vien",
+      h1: "부이비엔 근처 한국식 중화요리",
+      subtitle:
+        "늦은 시간에도 뜨거운 짬뽕, 짜장면, 탕수육을 찾는 여행객과 1군 손님을 위한 페이지입니다.",
+      summary:
+        "이 페이지는 Korean restaurant near Bui Vien Walking Street, Korean food near Pham Ngu Lao, late night Korean food District 1 검색을 도야짬뽕으로 연결합니다.",
+      sections: [
+        {
+          heading: "야식과 해장 검색 대응",
+          body:
+            "부이비엔 근처에서 술 마신 뒤 뜨거운 국물이나 든든한 한식을 찾는 손님에게 짬뽕과 짜장면을 연결합니다."
+        },
+        {
+          heading: "외국인이 이해하는 표현",
+          body:
+            "Korean restaurant, Korean food, Korean Chinese food, jjambbong, jajangmyeon을 함께 사용해 검색어 차이를 줄입니다."
+        },
+        {
+          heading: "1군 실제 주소 강조",
+          body:
+            "77I Bui Thi Xuan 주소와 Bui Vien, Pham Ngu Lao, Ben Thanh의 거리감을 계속 보여주는 것이 핵심입니다."
+        }
+      ]
+    }
+  },
+  en: {
+    "best-champong-district-1-ho-chi-minh": {
+      slug: "best-champong-district-1-ho-chi-minh",
+      nav: "Best Champong D1",
+      title: "Best Champong District 1 Ho Chi Minh | DOYA JJAMBBONG",
+      description:
+        "Looking for best champong District 1, jjambbong Ho Chi Minh, or Korean spicy seafood noodles near Ben Thanh? DOYA serves Korean-Chinese noodles on Bui Thi Xuan.",
+      eyebrow: "Champong District 1",
+      h1: "Best champong in District 1 for Korean spicy seafood noodles",
+      subtitle:
+        "A focused guide for guests searching champong, champon, jjamppong, jjambbong, or Korean spicy seafood noodles in central Ho Chi Minh City.",
+      summary:
+        "DOYA JJAMBBONG is at 77I Bui Thi Xuan, District 1, close to Ben Thanh, Bui Vien, Pham Ngu Lao, and central hotels. This page connects champong and jjambbong searches to DOYA's spicy seafood noodle bowls.",
+      sections: [
+        {
+          heading: "Champong, jjamppong, and jjambbong search intent",
+          body:
+            "Guests spell Korean 짬뽕 in several ways. This page helps Google connect champong, champon, jjamppong, and jjambbong to the same Korean spicy seafood noodle experience."
+        },
+        {
+          heading: "Focused on District 1",
+          body:
+            "Instead of competing across all of Ho Chi Minh City, DOYA targets high-intent nearby searches around Bui Thi Xuan, Ben Thanh, Bui Vien, and District 1 hotels."
+        },
+        {
+          heading: "What to order",
+          body:
+            "Choose DOYA Seafood Jjambbong for a spicy seafood broth. Add tangsuyuk or mandu when sharing with friends."
+        }
+      ]
+    },
+    "mi-tuong-den-quan-1-gan-bui-vien": {
+      slug: "mi-tuong-den-quan-1-gan-bui-vien",
+      nav: "Mi Tuong Den Bui Vien",
+      title: "Mi Tuong Den Quan 1 near Bui Vien | Korean Black Bean Noodles",
+      description:
+        "Find mi tuong den Quan 1, mì tương đen near Bui Vien, jajangmyeon, or Korean black bean noodles near Ben Thanh at DOYA JJAMBBONG.",
+      eyebrow: "Mi tuong den near Bui Vien",
+      h1: "Mi tuong den in Quan 1 near Bui Vien",
+      subtitle:
+        "A non-spicy Korean black bean noodle option for tourists, Vietnamese guests, and groups near Bui Vien, Pham Ngu Lao, and Ben Thanh.",
+      summary:
+        "Mi tuong den, mì tương đen, jajangmyeon, and Korean black bean noodles all point to the same Korean-Chinese comfort food. DOYA targets those searches from a real District 1 location.",
+      sections: [
+        {
+          heading: "Non-spicy Korean noodles",
+          body:
+            "Jajangmyeon is a black bean sauce noodle dish. It is easier for non-spicy eaters than champong and works well for mixed groups."
+        },
+        {
+          heading: "Close to Bui Vien and Pham Ngu Lao",
+          body:
+            "Guests staying around Bui Vien Walking Street, Pham Ngu Lao, Ben Thanh, or central hotels can reach DOYA by Google Maps."
+        },
+        {
+          heading: "Keywords this page targets",
+          body:
+            "Mi tuong den Quan 1, mì tương đen Hàn Quốc, jajangmyeon District 1, Korean black bean noodles near Bui Vien, and non-spicy Korean noodles."
+        }
+      ]
+    },
+    "jajangmyeon-jjambbong-district-1": {
+      slug: "jajangmyeon-jjambbong-district-1",
+      nav: "Jajangmyeon & Jjambbong",
+      title: "Jajangmyeon and Jjambbong District 1 | Korean Chinese Noodles",
+      description:
+        "Eat jajangmyeon and jjambbong in District 1 Ho Chi Minh. DOYA serves Korean black bean noodles, spicy seafood champong, and Korean-Chinese classics.",
+      eyebrow: "Jajangmyeon + Jjambbong",
+      h1: "Jajangmyeon and jjambbong in District 1",
+      subtitle:
+        "One non-spicy black bean noodle dish, one spicy seafood noodle soup. The easiest Korean-Chinese pairing for first-time guests.",
+      summary:
+        "Guests often search Korean black bean noodles and Korean spicy seafood noodles separately. DOYA connects jajangmyeon and jjambbong as two core Korean-Chinese choices at one District 1 restaurant.",
+      sections: [
+        {
+          heading: "The classic Korean-Chinese noodle pair",
+          body:
+            "Jajangmyeon is black bean noodles. Jjambbong, also searched as champong, is spicy seafood noodle soup."
+        },
+        {
+          heading: "Easy first order",
+          body:
+            "For two or more people, order one jajangmyeon, one jjambbong, and tangsuyuk to try the core Korean-Chinese flavors."
+        },
+        {
+          heading: "District 1 local relevance",
+          body:
+            "This page combines menu terms with location terms such as District 1, Ben Thanh, Bui Vien, and Bui Thi Xuan."
+        }
+      ]
+    },
+    "korean-noodles-near-ben-thanh-market": {
+      slug: "korean-noodles-near-ben-thanh-market",
+      nav: "Noodles Near Ben Thanh",
+      title: "Korean Noodles near Ben Thanh Market | DOYA District 1",
+      description:
+        "Find Korean noodles near Ben Thanh Market, Korean spicy seafood noodles, jjambbong, or jajangmyeon at DOYA on Bui Thi Xuan, District 1.",
+      eyebrow: "Near Ben Thanh Market",
+      h1: "Korean noodles near Ben Thanh Market",
+      subtitle:
+        "Spicy champong, non-spicy black bean noodles, and Korean-Chinese dishes for guests near Ben Thanh and District 1 hotels.",
+      summary:
+        "Tourists search Korean food near Ben Thanh Market, Korean noodles near Ben Thanh, and Korean restaurant District 1. DOYA gives those searches a clear noodle-focused landing page.",
+      sections: [
+        {
+          heading: "For guests around Ben Thanh",
+          body:
+            "DOYA is easy to find from Ben Thanh, central hotels, Bui Thi Xuan, and nearby District 1 streets."
+        },
+        {
+          heading: "Spicy and non-spicy choices",
+          body:
+            "Champong is the spicy seafood option. Jajangmyeon is the black bean noodle option for guests who do not want spice."
+        },
+        {
+          heading: "Local SEO focus",
+          body:
+            "This page connects Ben Thanh Market, District 1, Korean noodles, jjambbong, champong, and jajangmyeon in one search-friendly context."
+        }
+      ]
+    },
+    "korean-restaurant-near-bui-vien-walking-street": {
+      slug: "korean-restaurant-near-bui-vien-walking-street",
+      nav: "Near Bui Vien",
+      title: "Korean Restaurant near Bui Vien Walking Street | DOYA JJAMBBONG",
+      description:
+        "Looking for a Korean restaurant near Bui Vien Walking Street, Korean food near Pham Ngu Lao, or late-night Korean food in District 1? DOYA is open until 23:30.",
+      eyebrow: "Near Bui Vien",
+      h1: "Korean restaurant near Bui Vien Walking Street",
+      subtitle:
+        "Hot Korean-Chinese noodles and share dishes near District 1 nightlife, hotels, Bui Vien, and Pham Ngu Lao.",
+      summary:
+        "DOYA is on Bui Thi Xuan, close to Bui Vien, Pham Ngu Lao, Ben Thanh, and central District 1. This page targets Korean restaurant near Bui Vien, Korean food near Pham Ngu Lao, and late-night Korean food District 1.",
+      sections: [
+        {
+          heading: "Hot food after a night out",
+          body:
+            "Spicy jjambbong, black bean noodles, tangsuyuk, and rice dishes work well for late dinners and post-drinks meals."
+        },
+        {
+          heading: "Readable for international guests",
+          body:
+            "The page uses English menu names, Korean-Chinese terms, and nearby landmarks so visitors can quickly understand what DOYA serves."
+        },
+        {
+          heading: "Strong neighborhood signals",
+          body:
+            "Bui Vien, Pham Ngu Lao, Ben Thanh, Bui Thi Xuan, and District 1 appear together to strengthen local search relevance."
+        }
+      ]
+    }
+  },
+  zh: {
+    "best-champong-district-1-ho-chi-minh": {
+      slug: "best-champong-district-1-ho-chi-minh",
+      nav: "第1郡 Champong",
+      title: "胡志明市第1郡 Champong 辣海鲜面 | DOYA JJAMBBONG",
+      description:
+        "在胡志明市第1郡搜索 champong, jjambbong, jjamppong 或韩式辣海鲜面? DOYA 位于 77I Bui Thi Xuan, 靠近 Ben Thanh 和 Bui Vien.",
+      eyebrow: "Champong District 1",
+      h1: "胡志明市第1郡 Champong 辣海鲜面",
+      subtitle:
+        "为搜索 champong, champon, jjamppong, jjambbong 和 Korean spicy seafood noodles 的客人准备的页面.",
+      summary:
+        "DOYA JJAMBBONG 位于 77I Bui Thi Xuan, District 1, 靠近 Ben Thanh, Bui Vien, Pham Ngu Lao 和市中心酒店. 这个页面把不同拼写的 champong 搜索连接到 DOYA 的韩式辣海鲜面.",
+      sections: [
+        {
+          heading: "不同拼写, 同一道韩式辣海鲜面",
+          body:
+            "中国客人和外国客人可能会输入 champong, champon, jjamppong 或 jjambbong. 这些搜索都指向韩式辣海鲜汤面."
+        },
+        {
+          heading: "主打第1郡近距离搜索",
+          body:
+            "相比全胡志明市的大关键词, DOYA 更适合先赢 District 1, Ben Thanh, Bui Vien 和 Bui Thi Xuan 附近搜索."
+        },
+        {
+          heading: "推荐点餐",
+          body:
+            "想吃辣海鲜汤面可以选 DOYA Seafood Jjambbong. 如果多人一起吃, 可以加糖醋肉或煎饺."
+        }
+      ]
+    },
+    "mi-tuong-den-quan-1-gan-bui-vien": {
+      slug: "mi-tuong-den-quan-1-gan-bui-vien",
+      nav: "Bui Vien 炸酱面",
+      title: "Bui Vien 附近韩式炸酱面 | Mi Tuong Den 第1郡",
+      description:
+        "在 Bui Vien, Pham Ngu Lao, Ben Thanh 附近搜索 mi tuong den, mì tương đen, jajangmyeon 或韩式炸酱面, 可前往 DOYA JJAMBBONG.",
+      eyebrow: "Mi tuong den near Bui Vien",
+      h1: "Bui Vien 附近韩式炸酱面",
+      subtitle:
+        "不辣、酱香浓郁, 适合游客、中国客人、越南客人和不想吃辣的客人.",
+      summary:
+        "Mi tuong den 是很多越南客人搜索韩式炸酱面时使用的写法, 也对应 jajangmyeon 和 Korean black bean noodles. DOYA 位于第1郡, 靠近 Bui Vien, Pham Ngu Lao 和 Ben Thanh.",
+      sections: [
+        {
+          heading: "不辣的韩国面",
+          body:
+            "韩式炸酱面使用黑豆酱, 口味浓郁但不辣. 如果不想吃 champong 辣海鲜面, 炸酱面是更安全的选择."
+        },
+        {
+          heading: "靠近 Bui Vien 和 Pham Ngu Lao",
+          body:
+            "住在步行街、范五老街、滨城市场或第1郡酒店的客人, 可以通过 Google Maps 快速找到 DOYA."
+        },
+        {
+          heading: "目标关键词",
+          body:
+            "这个页面集中覆盖 mi tuong den Quan 1, 韩式炸酱面 胡志明市, jajangmyeon District 1 和 Korean black bean noodles near Bui Vien."
+        }
+      ]
+    },
+    "jajangmyeon-jjambbong-district-1": {
+      slug: "jajangmyeon-jjambbong-district-1",
+      nav: "炸酱面和辣海鲜面",
+      title: "第1郡 Jajangmyeon 和 Jjambbong | 韩式中餐面",
+      description:
+        "在胡志明市第1郡吃 jajangmyeon 韩式炸酱面和 jjambbong 辣海鲜面. DOYA 提供韩式中餐经典菜单.",
+      eyebrow: "Jajangmyeon + Jjambbong",
+      h1: "第1郡 Jajangmyeon 和 Jjambbong",
+      subtitle:
+        "一个是不辣的黑豆酱面, 一个是辣海鲜汤面. 第一次吃韩式中餐时很容易选择.",
+      summary:
+        "很多客人会分别搜索 Korean black bean noodles 和 Korean spicy seafood noodles. DOYA 把 jajangmyeon 和 jjambbong 连接到同一家第1郡韩式中餐餐厅.",
+      sections: [
+        {
+          heading: "韩式中餐经典组合",
+          body:
+            "Jajangmyeon 是韩式炸酱面, jjambbong 或 champong 是辣海鲜汤面. 两个菜单一起点最容易理解韩国中餐风味."
+        },
+        {
+          heading: "第一次来怎么点",
+          body:
+            "两个人以上可以点一份炸酱面, 一份辣海鲜面, 再加糖醋肉分享."
+        },
+        {
+          heading: "第1郡本地搜索",
+          body:
+            "页面把菜单名和 District 1, Ben Thanh, Bui Vien, Bui Thi Xuan 放在一起, 方便 Google 理解地点相关性."
+        }
+      ]
+    },
+    "korean-noodles-near-ben-thanh-market": {
+      slug: "korean-noodles-near-ben-thanh-market",
+      nav: "滨城市场韩式面",
+      title: "滨城市场附近韩式面 | Korean Noodles near Ben Thanh",
+      description:
+        "在滨城市场附近搜索 Korean noodles, 韩式辣海鲜面, jjambbong 或韩式炸酱面? DOYA 位于 Bui Thi Xuan 第1郡.",
+      eyebrow: "Near Ben Thanh Market",
+      h1: "滨城市场附近韩式面",
+      subtitle:
+        "为在 Ben Thanh, 第1郡酒店和市中心附近寻找韩国面食的客人准备.",
+      summary:
+        "游客经常搜索 Korean food near Ben Thanh Market, Korean noodles near Ben Thanh 或 Korean restaurant District 1. DOYA 用这个页面连接滨城市场附近的韩式面需求.",
+      sections: [
+        {
+          heading: "适合滨城市场附近客人",
+          body:
+            "从 Ben Thanh, Bui Thi Xuan, 第1郡酒店和市中心街区前往 DOYA 都比较方便."
+        },
+        {
+          heading: "辣和不辣都可以",
+          body:
+            "Champong 是辣海鲜面, 韩式炸酱面是不辣黑豆酱面, 适合不同口味."
+        },
+        {
+          heading: "本地 SEO 重点",
+          body:
+            "这个页面把 Ben Thanh Market, District 1, Korean noodles, jjambbong, champong 和 jajangmyeon 放在同一语境中."
+        }
+      ]
+    },
+    "korean-restaurant-near-bui-vien-walking-street": {
+      slug: "korean-restaurant-near-bui-vien-walking-street",
+      nav: "Bui Vien 韩国餐厅",
+      title: "Bui Vien 步行街附近韩国餐厅 | DOYA JJAMBBONG",
+      description:
+        "在 Bui Vien Walking Street 附近搜索韩国餐厅、Korean food near Pham Ngu Lao 或第1郡韩国夜宵? DOYA 每天营业至 23:30.",
+      eyebrow: "Near Bui Vien",
+      h1: "Bui Vien 步行街附近韩国餐厅",
+      subtitle:
+        "靠近第1郡夜生活区、酒店区和 Pham Ngu Lao 的韩式中餐热食选择.",
+      summary:
+        "DOYA 位于 Bui Thi Xuan, 靠近 Bui Vien, Pham Ngu Lao, Ben Thanh 和第1郡中心. 这个页面覆盖 Korean restaurant near Bui Vien, Korean food near Pham Ngu Lao 和 late night Korean food District 1.",
+      sections: [
+        {
+          heading: "夜晚也适合吃热食",
+          body:
+            "辣海鲜面、韩式炸酱面、糖醋肉和米饭类适合晚餐、夜宵或酒后想吃热汤的客人."
+        },
+        {
+          heading: "方便外国客人理解",
+          body:
+            "页面同时使用英文菜单名、韩式中餐词汇和附近地标, 让游客更快知道 DOYA 提供什么."
+        },
+        {
+          heading: "加强附近地标信号",
+          body:
+            "Bui Vien, Pham Ngu Lao, Ben Thanh, Bui Thi Xuan 和 District 1 同时出现, 提高本地搜索相关性."
+        }
+      ]
+    }
+  },
+  ja: {
+    "best-champong-district-1-ho-chi-minh": {
+      slug: "best-champong-district-1-ho-chi-minh",
+      nav: "1区チャンポン",
+      title: "ホーチミン1区 チャンポン | DOYA JJAMBBONG",
+      description:
+        "ホーチミン1区でチャンポン、champong、jjambbong、jjamppong、韓国式海鮮ラーメンを探す方へ。DOYA は Bui Thi Xuan にあります。",
+      eyebrow: "Champong District 1",
+      h1: "ホーチミン1区のチャンポン",
+      subtitle:
+        "チャンポン、champong、jjamppong、jjambbong と検索する日本人旅行者・外国人旅行者向けのページです。",
+      summary:
+        "DOYA JJAMBBONG は 77I Bui Thi Xuan, District 1 にあり、ベンタイン市場、ブイビエン、ファングーラオ、1区ホテル街からアクセスしやすい韓国中華レストランです。",
+      sections: [
+        {
+          heading: "表記違いを同じ料理へ接続",
+          body:
+            "韓国の 짬뽕 は、日本語ではチャンポン、英語検索では champong、jjamppong、jjambbong と入力されることがあります。"
+        },
+        {
+          heading: "1区の近く検索を狙うページ",
+          body:
+            "ホーチミン全体ではなく、District 1、Ben Thanh、Bui Vien、Bui Thi Xuan 近くの検索意図に集中しています。"
+        },
+        {
+          heading: "おすすめ注文",
+          body:
+            "辛い海鮮スープ麺なら DOYA Seafood Jjambbong。複数人ならタンスユクや餃子と合わせると選びやすくなります。"
+        }
+      ]
+    },
+    "mi-tuong-den-quan-1-gan-bui-vien": {
+      slug: "mi-tuong-den-quan-1-gan-bui-vien",
+      nav: "ブイビエン近くジャージャー麺",
+      title: "ブイビエン近く韓国式ジャージャー麺 | Mi Tuong Den 1区",
+      description:
+        "ブイビエン、ファングーラオ、ベンタイン近くで mi tuong den、jajangmyeon、韓国式ジャージャー麺を探すなら DOYA JJAMBBONG。",
+      eyebrow: "Mi tuong den near Bui Vien",
+      h1: "ブイビエン近くの韓国式ジャージャー麺",
+      subtitle:
+        "辛くない黒味噌ソースの麺。旅行者、日本人、ベトナム人、辛い料理が苦手な方にも選びやすい一品です。",
+      summary:
+        "Mi tuong den は、ベトナムで韓国式ジャージャー麺を探す時によく使われる表記です。DOYA は Bui Vien、Pham Ngu Lao、Ben Thanh に近い1区の韓国中華レストランです。",
+      sections: [
+        {
+          heading: "辛くない韓国麺",
+          body:
+            "韓国式ジャージャー麺は黒豆味噌ソースの麺です。チャンポンほど辛くないため、辛い料理が苦手な方にも向いています。"
+        },
+        {
+          heading: "ブイビエンとファングーラオ近く",
+          body:
+            "ウォーキングストリート、ファングーラオ、ベンタイン、1区ホテル街から Google Maps でアクセスしやすい場所です。"
+        },
+        {
+          heading: "狙う検索語",
+          body:
+            "mi tuong den Quan 1、韓国式ジャージャー麺 ホーチミン、jajangmyeon District 1、Korean black bean noodles near Bui Vien を意識しています。"
+        }
+      ]
+    },
+    "jajangmyeon-jjambbong-district-1": {
+      slug: "jajangmyeon-jjambbong-district-1",
+      nav: "ジャージャー麺とチャンポン",
+      title: "ホーチミン1区 Jajangmyeon と Jjambbong | 韓国中華麺",
+      description:
+        "ホーチミン1区で韓国式ジャージャー麺とチャンポンを食べるなら DOYA。Jajangmyeon, Jjambbong, 韓国中華の案内ページ。",
+      eyebrow: "Jajangmyeon + Jjambbong",
+      h1: "ホーチミン1区のジャージャー麺とチャンポン",
+      subtitle:
+        "辛くない黒味噌麺と辛い海鮮スープ麺。初めての韓国中華でも選びやすい組み合わせです。",
+      summary:
+        "韓国式ジャージャー麺は Jajangmyeon、辛い海鮮麺は Jjambbong または Champong と検索されます。DOYA はこの2つを1区の同じ店舗で案内します。",
+      sections: [
+        {
+          heading: "韓国中華の定番2品",
+          body:
+            "Jajangmyeon は黒味噌ソースの麺、Jjambbong は辛い海鮮スープ麺です。2品を一緒に注文すると韓国中華らしさが分かりやすくなります。"
+        },
+        {
+          heading: "初めてならこの組み合わせ",
+          body:
+            "2人以上ならジャージャー麺、チャンポン、タンスユクを一緒に頼むのがおすすめです。"
+        },
+        {
+          heading: "1区の検索に合わせる",
+          body:
+            "District 1、Ben Thanh、Bui Vien、Bui Thi Xuan とメニュー名を同じページ内で自然に結びます。"
+        }
+      ]
+    },
+    "korean-noodles-near-ben-thanh-market": {
+      slug: "korean-noodles-near-ben-thanh-market",
+      nav: "ベンタイン近く韓国麺",
+      title: "ベンタイン市場近く韓国麺 | Korean Noodles near Ben Thanh",
+      description:
+        "ベンタイン市場近くで韓国麺、チャンポン、韓国式海鮮ラーメン、ジャージャー麺を探すなら DOYA JJAMBBONG 1区。",
+      eyebrow: "Near Ben Thanh Market",
+      h1: "ベンタイン市場近くの韓国麺",
+      subtitle:
+        "ベンタイン、市中心部ホテル、1区観光エリアから行きやすい韓国中華の麺メニュー。",
+      summary:
+        "旅行者は Korean food near Ben Thanh Market、Korean noodles near Ben Thanh、Korean restaurant District 1 と検索します。DOYA はその検索に対してチャンポンとジャージャー麺を案内します。",
+      sections: [
+        {
+          heading: "ベンタイン周辺の旅行者へ",
+          body:
+            "Ben Thanh、Bui Thi Xuan、1区ホテル街、市中心部から Google Maps で探しやすい場所です。"
+        },
+        {
+          heading: "辛い麺と辛くない麺",
+          body:
+            "チャンポンは辛い海鮮麺、ジャージャー麺は辛くない黒味噌麺です。グループでも選びやすい構成です。"
+        },
+        {
+          heading: "ローカル SEO の狙い",
+          body:
+            "Ben Thanh Market、District 1、Korean noodles、jjambbong、champong、jajangmyeon を同じ文脈で使います。"
+        }
+      ]
+    },
+    "korean-restaurant-near-bui-vien-walking-street": {
+      slug: "korean-restaurant-near-bui-vien-walking-street",
+      nav: "ブイビエン近く韓国料理",
+      title: "ブイビエン近く韓国料理 | Korean Restaurant near Bui Vien",
+      description:
+        "ブイビエン、ファングーラオ近くで韓国料理、韓国中華、チャンポン、夜食を探す方へ。DOYA は毎日 23:30 まで営業。",
+      eyebrow: "Near Bui Vien",
+      h1: "ブイビエン近くの韓国料理",
+      subtitle:
+        "1区の夜遊びエリア、ホテル街、ファングーラオ近くで温かい韓国中華を食べたい時に。",
+      summary:
+        "DOYA は Bui Thi Xuan にあり、Bui Vien、Pham Ngu Lao、Ben Thanh、1区中心部からアクセスしやすい韓国中華レストランです。このページは Korean restaurant near Bui Vien と late night Korean food District 1 を狙います。",
+      sections: [
+        {
+          heading: "夜遅めにも温かい食事",
+          body:
+            "辛いチャンポン、ジャージャー麺、タンスユク、ご飯ものは、夕食や飲んだ後の食事に使いやすいメニューです。"
+        },
+        {
+          heading: "外国人にも分かりやすい表記",
+          body:
+            "Korean restaurant、Korean food、Korean Chinese food、jjambbong、jajangmyeon を同時に使い、検索語の違いを吸収します。"
+        },
+        {
+          heading: "近く検索の地名を強化",
+          body:
+            "Bui Vien、Pham Ngu Lao、Ben Thanh、Bui Thi Xuan、District 1 を同じページで明確に示します。"
+        }
+      ]
+    }
+  }
+};
+
+for (const locale of Object.keys(competitiveLandingPages) as Locale[]) {
+  Object.assign(pageContent[locale], competitiveLandingPages[locale]);
+}
