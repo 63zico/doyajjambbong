@@ -11,6 +11,7 @@ const nextConfig = {
     root: projectRoot
   },
   experimental: {
+    cpus: 1,
     optimizePackageImports: []
   }
 };
