@@ -10,6 +10,7 @@ import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { MapBlock } from "@/components/MapBlock";
 import { MenuCard } from "@/components/MenuCard";
+import { blogPath } from "@/data/blog";
 import { pageContent } from "@/data/content";
 import { faqs } from "@/data/faq";
 import { menuCategoryLabels, menuCategoryOrder, menuItems } from "@/data/menu";
@@ -362,11 +363,130 @@ function InnerPage({ locale, slug }: { locale: Locale; slug: PageSlug }) {
       {slug !== "menu" && slug !== "faq" && slug !== "reviews" && slug !== "mi-tuong-den-han-quoc-quan-1" ? (
         <TextSections locale={locale} slug={slug} />
       ) : null}
+      <BlogClusterLinks locale={locale} slug={slug} />
       {slug === "about" ? <WhyDoya locale={locale} /> : null}
       <SeoLocalSection locale={locale} />
       <SearchIntentLinks locale={locale} />
     </main>
   );
+}
+
+type BlogClusterLink = {
+  title: string;
+  body: string;
+  href: string;
+};
+
+function BlogClusterLinks({ locale, slug }: { locale: Locale; slug: PageSlug }) {
+  const links = blogClusterLinks(locale, slug);
+  if (!links.length) return null;
+
+  return (
+    <section className="bg-cream">
+      <div className="mx-auto max-w-7xl px-4 py-12">
+        <div className="max-w-3xl">
+          <p className="text-sm font-black uppercase tracking-wide text-chili">DOYA search guides</p>
+          <h2 className="mt-2 text-3xl font-black text-ink">Related keyword guides</h2>
+          <p className="mt-4 leading-7 text-ink/70">
+            These articles connect this page with the matching champong, jjambbong, jajangmyeon, mi tuong den, Ben Thanh, and Bui Vien searches.
+          </p>
+        </div>
+        <div className="mt-7 grid gap-4 md:grid-cols-3">
+          {links.map((link) => (
+            <Link key={link.href} href={link.href} className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm hover:border-chili">
+              <h3 className="text-lg font-black leading-tight text-ink">{link.title}</h3>
+              <p className="mt-3 text-sm leading-6 text-ink/70">{link.body}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function blogClusterLinks(locale: Locale, slug: PageSlug): BlogClusterLink[] {
+  const champongPages: PageSlug[] = [
+    "",
+    "signature-jjambbong",
+    "champong-korean-chinese-food-ho-chi-minh",
+    "best-champong-district-1-ho-chi-minh",
+    "korean-noodles-near-ben-thanh-market",
+    "korean-restaurant-near-bui-vien-walking-street",
+    "late-night-korean-food-ho-chi-minh",
+    "hangover-spicy-noodles-saigon"
+  ];
+  const blackBeanPages: PageSlug[] = [
+    "mi-tuong-den-han-quoc-quan-1",
+    "mi-tuong-den-quan-1-gan-bui-vien",
+    "jajangmyeon-jjambbong-district-1",
+    "korean-noodles-near-ben-thanh-market",
+    "menu"
+  ];
+
+  const enLinks: BlogClusterLink[] = [
+    {
+      title: "What is champong? Jjambbong vs jjamppong",
+      body: "Explains the spellings tourists use when searching Korean spicy seafood noodles in District 1.",
+      href: blogPath("en", "what-is-champong-jjambbong-vs-jjamppong")
+    },
+    {
+      title: "Best Korean noodles near Ben Thanh Market",
+      body: "Connects Ben Thanh searches with champong, jajangmyeon, and the DOYA District 1 location.",
+      href: blogPath("en", "best-korean-noodles-near-ben-thanh-market")
+    },
+    {
+      title: "Where to eat jajangmyeon in District 1",
+      body: "Targets Korean black bean noodles, jajangmyeon, and mi tuong den searches around Bui Vien and Ben Thanh.",
+      href: blogPath("en", "where-to-eat-jajangmyeon-district-1")
+    }
+  ];
+
+  if (locale === "en") {
+    if (champongPages.includes(slug) || blackBeanPages.includes(slug)) return enLinks;
+    return [];
+  }
+
+  if (locale === "vi" && blackBeanPages.includes(slug)) {
+    return [
+      {
+        title: "Mi tuong den la gi? Jajangmyeon Han Quoc",
+        body: "Vietnamese guide for mi tuong den, jajangmyeon, Korean black bean noodles, and District 1 searches.",
+        href: blogPath("vi", "mi-tuong-den-la-gi-jajangmyeon-han-quoc")
+      }
+    ];
+  }
+
+  if (locale === "ko" && champongPages.includes(slug)) {
+    return [
+      {
+        title: "Bui Vien hangover jjambbong guide",
+        body: "Korean guide for Bui Vien hangover food, late-night jjambbong, and District 1 Korean-Chinese food.",
+        href: blogPath("ko", "bui-vien-hangover-jjambbong-district-1")
+      }
+    ];
+  }
+
+  if (locale === "ja" && champongPages.includes(slug)) {
+    return [
+      {
+        title: "Ho Chi Minh District 1 champong guide",
+        body: "Japanese guide for champong, jjambbong, Korean seafood noodles, Bui Vien, and Ben Thanh searches.",
+        href: blogPath("ja", "ho-chi-minh-district-1-champong-guide")
+      }
+    ];
+  }
+
+  if (locale === "zh" && blackBeanPages.includes(slug)) {
+    return [
+      {
+        title: "Hu Zhi Ming District 1 Korean jajangmyeon guide",
+        body: "Chinese guide for Korean black bean noodles, jajangmyeon, mi tuong den, Bui Vien, and Ben Thanh searches.",
+        href: blogPath("zh", "jajangmyeon-mi-tuong-den-hu-zhi-ming-di-1-jun")
+      }
+    ];
+  }
+
+  return [];
 }
 
 function heroImageForSlug(slug: PageSlug) {

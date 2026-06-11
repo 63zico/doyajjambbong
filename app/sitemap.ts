@@ -32,7 +32,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${site.baseUrl}${blogPath(locale)}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
-    priority: 0.85
+    priority: 0.85,
+    alternates: {
+      languages: {
+        ...Object.fromEntries(site.locales.map((lang) => [lang, `${site.baseUrl}${blogPath(lang)}`])),
+        "x-default": `${site.baseUrl}${blogPath(site.defaultLocale as Locale)}`
+      }
+    }
   }));
 
   const blogPages = blogPosts.map((post) => ({

@@ -3,9 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { JsonLd } from "@/components/JsonLd";
 import { StickyCta } from "@/components/ConversionSections";
 import { blogPath, getBlogPosts } from "@/data/blog";
-import { Locale, site } from "@/lib/site";
+import { Locale, localizedPath, site } from "@/lib/site";
 
 type PageParams = {
   locale: string;
@@ -61,9 +62,13 @@ export async function generateMetadata({ params }: { params: Promise<PageParams>
   return {
     title: copy.title,
     description: copy.description,
+    metadataBase: new URL(site.baseUrl),
     alternates: {
       canonical: `${site.baseUrl}${blogPath(locale)}`,
-      languages: Object.fromEntries(site.locales.map((lang) => [lang, `${site.baseUrl}${blogPath(lang)}`]))
+      languages: {
+        ...Object.fromEntries(site.locales.map((lang) => [lang, `${site.baseUrl}${blogPath(lang)}`])),
+        "x-default": `${site.baseUrl}${blogPath(site.defaultLocale as Locale)}`
+      }
     },
     openGraph: {
       title: copy.title,
@@ -80,9 +85,60 @@ export default async function BlogIndexPage({ params }: { params: Promise<PagePa
   const locale = rawLocale as Locale;
   const copy = blogCopy[locale] ?? blogCopy[site.defaultLocale as Locale];
   const posts = getBlogPosts(locale);
+  const blogUrl = `${site.baseUrl}${blogPath(locale)}`;
+  const blogItemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${blogUrl}#itemlist`,
+    name: copy.h1,
+    description: copy.description,
+    url: blogUrl,
+    inLanguage: locale,
+    numberOfItems: posts.length,
+    itemListElement: posts.map((post, index) => {
+      const postUrl = `${site.baseUrl}${blogPath(locale, post.slug)}`;
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        url: postUrl,
+        name: post.title,
+        item: {
+          "@type": "BlogPosting",
+          "@id": `${postUrl}#blogposting`,
+          headline: post.title,
+          description: post.description,
+          url: postUrl,
+          image: `${site.baseUrl}${post.image}`,
+          datePublished: post.date,
+          inLanguage: locale,
+          keywords: post.keywords.join(", ")
+        }
+      };
+    })
+  };
+  const blogBreadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${site.baseUrl}${localizedPath(locale)}`
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: blogUrl
+      }
+    ]
+  };
 
   return (
     <>
+      <JsonLd data={blogItemListJsonLd} />
+      <JsonLd data={blogBreadcrumbJsonLd} />
       <Header locale={locale} slug="about" activeSection="blog" />
       <main>
         <section className="noise bg-cream">

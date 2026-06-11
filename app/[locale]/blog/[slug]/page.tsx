@@ -7,7 +7,7 @@ import { StickyCta } from "@/components/ConversionSections";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
-import { blogPath, blogPosts, getBlogPost } from "@/data/blog";
+import { blogPath, blogPosts, getBlogPost, type BlogPost } from "@/data/blog";
 import { restaurantJsonLd } from "@/lib/seo";
 import { Locale, localizedPath, site } from "@/lib/site";
 
@@ -33,6 +33,9 @@ export async function generateMetadata({ params }: { params: Promise<PageParams>
     title: post.title,
     description: post.description,
     keywords: post.keywords,
+    metadataBase: new URL(site.baseUrl),
+    authors: [{ name: site.name, url: `${site.baseUrl}${localizedPath(locale, "about")}` }],
+    category: post.eyebrow,
     alternates: {
       canonical: `${site.baseUrl}${blogPath(locale, post.slug)}`
     },
@@ -67,30 +70,51 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
   const post = getBlogPost(locale, slug);
   if (!site.locales.includes(locale) || !post) notFound();
 
+  const postUrl = `${site.baseUrl}${blogPath(locale, post.slug)}`;
+  const imageUrl = `${site.baseUrl}${post.image}`;
   const articleJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
+    "@id": `${postUrl}#blogposting`,
     headline: post.title,
     description: post.description,
-    image: `${site.baseUrl}${post.image}`,
+    image: [imageUrl],
     datePublished: post.date,
     dateModified: post.date,
+    inLanguage: locale,
+    articleSection: post.eyebrow,
+    isPartOf: {
+      "@type": "Blog",
+      "@id": `${site.baseUrl}${blogPath(locale)}#blog`,
+      name: `${site.name} Blog`,
+      url: `${site.baseUrl}${blogPath(locale)}`
+    },
     author: {
       "@type": "Organization",
-      name: site.name
+      name: site.name,
+      url: `${site.baseUrl}${localizedPath(locale, "about")}`
     },
     publisher: {
       "@type": "Organization",
-      name: site.name
+      name: site.name,
+      logo: {
+        "@type": "ImageObject",
+        url: `${site.baseUrl}/images/doya-header-logo.jpg`
+      }
     },
-    mainEntityOfPage: `${site.baseUrl}${blogPath(locale, post.slug)}`,
-    keywords: post.keywords.join(", ")
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": postUrl
+    },
+    keywords: post.keywords.join(", "),
+    about: post.keywords.map((keyword) => ({ "@type": "Thing", name: keyword }))
   };
 
   return (
     <>
       <JsonLd data={restaurantJsonLd(locale)} />
       <JsonLd data={articleJsonLd} />
+      <JsonLd data={blogPostBreadcrumbJsonLd(locale, post)} />
       <Header locale={locale} slug="about" activeSection="blog" />
       <main>
         <article>
@@ -152,6 +176,33 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
       <StickyCta locale={locale} />
     </>
   );
+}
+
+function blogPostBreadcrumbJsonLd(locale: Locale, post: BlogPost) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${site.baseUrl}${localizedPath(locale)}`
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: `${site.baseUrl}${blogPath(locale)}`
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `${site.baseUrl}${blogPath(locale, post.slug)}`
+      }
+    ]
+  };
 }
 
 function RelatedBlogLinks({ locale, slug }: { locale: Locale; slug: string }) {
