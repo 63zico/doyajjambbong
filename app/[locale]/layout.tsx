@@ -14,5 +14,9 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   if (!site.locales.includes(locale as Locale)) notFound();
-  return <div className="min-h-screen bg-bone">{children}</div>;
+  return (
+    <div lang={locale} data-locale={locale} className="min-h-screen bg-bone">
+      {children}
+    </div>
+  );
 }

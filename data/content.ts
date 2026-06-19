@@ -392,11 +392,11 @@ export const pageContent = {
     "": {
       slug: "",
       nav: "홈",
-      title: "도야짬뽕 | 호치민 1군 Korean restaurant champong 맛집",
+      title: "도야짬뽕 | 호치민 1군 한국식 중화요리·짬뽕 맛집",
       description:
-        "도야짬뽕은 호치민 1군에서 Korean restaurant, champong, jjambbong, mi tuong den 짜장면, 탕수육, 야식 메뉴를 찾는 손님을 위한 한국식 중화요리 식당입니다.",
+        "도야짬뽕은 호치민 1군에서 짬뽕, 짜장면, 탕수육, 한국식 중화요리와 야식 메뉴를 찾는 손님을 위한 식당입니다.",
       eyebrow: "DOYA JJAMBBONG / 도야짬뽕",
-      h1: "호치민 1군 한국식 매운 해물짬뽕",
+      h1: "도야짬뽕: 호치민 1군 한국식 중화요리",
       subtitle: "짬뽕, 짜장면, 탕수육, 늦은 밤에도 부담 없이 먹기 좋은 한국식 중화요리.",
       summary:
         "도야짬뽕은 호치민 1군에서 Korean restaurant, Korean food District 1, champong, jjambbong, mi tuong den 검색으로 들어오는 외국인 손님도 쉽게 찾을 수 있는 한국식 중화요리 식당입니다.",
@@ -826,11 +826,11 @@ pageContent.zh = {
   "": {
     slug: "",
     nav: "首页",
-    title: "DOYA JJAMBBONG | 胡志明市第1郡韩国餐厅, Champong 辣海鲜面",
+    title: "DOYA JJAMBBONG | 胡志明市第1郡韩国餐厅与 Champong 辣海鲜面",
     description:
       "DOYA JJAMBBONG 是胡志明市第1郡的韩国餐厅, 主打韩式中餐、champong 辣海鲜面、jjambbong、mi tuong den 韩式炸酱面、糖醋肉, 靠近 Ben Thanh 和 Bui Vien.",
     eyebrow: "DOYA JJAMBBONG / 도야짬뽕",
-    h1: "胡志明市第1郡韩国餐厅与韩式辣海鲜面",
+    h1: "DOYA JJAMBBONG：胡志明市第1郡韩国餐厅与韩式辣海鲜面",
     subtitle: "在 Saigon 市中心享用韩式中餐: champong / jjambbong 辣海鲜面、韩式炸酱面、糖醋肉和适合夜宵的热食.",
     summary:
       "DOYA JJAMBBONG 位于 77I Bui Thi Xuan, District 1, Ho Chi Minh City, 是一家面向游客、当地客人、韩国客人和中国客人的韩式中餐餐厅.",
@@ -946,7 +946,7 @@ pageContent.ja = {
     description:
       "DOYA JJAMBBONG はホーチミン1区の韓国料理・韓国中華レストラン。チャンポン、韓国式海鮮ラーメン、ジャージャー麺、タンスユクをベンタイン市場やブイビエン近くで楽しめます。",
     eyebrow: "DOYA JJAMBBONG / 도야짬뽕",
-    h1: "ホーチミン1区の韓国料理と韓国中華チャンポン",
+    h1: "DOYA JJAMBBONG｜ホーチミン1区の韓国料理・韓国中華チャンポン",
     subtitle: "ベンタイン市場、ブイビエン、Bui Thi Xuan 近くで、辛い海鮮チャンポン、ジャージャー麺、タンスユクを気軽にどうぞ。",
     summary:
       "DOYA JJAMBBONG は 77I Bui Thi Xuan, District 1, Ho Chi Minh City にある韓国中華レストランです。ホーチミン 韓国料理、ホーチミン チャンポン、ホーチミン ジャージャー麺、ベンタイン市場 韓国料理を探す日本人旅行者にも分かりやすい場所です。",
