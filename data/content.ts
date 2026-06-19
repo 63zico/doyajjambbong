@@ -616,12 +616,12 @@ export const pageContent = {
     "": {
       slug: "",
       nav: "Home",
-      title: "DOYA JJAMBBONG | Korean Restaurant, Champong and Mi Tuong Den in Ho Chi Minh",
-      description: "DOYA JJAMBBONG is a Korean restaurant in District 1 serving Korean food, Korean-Chinese champong or jjambbong, mi tuong den jajangmyeon, and tangsuyuk near Ben Thanh and Bui Vien.",
+      title: "DOYA JJAMBBONG | DOYA Korean Restaurant in Ho Chi Minh City",
+      description: "DOYA Korean Restaurant, also known as DOYA JJAMBBONG, serves Korean-Chinese champong or jjambbong, jajangmyeon, and tangsuyuk in District 1 near Ben Thanh and Bui Vien.",
       eyebrow: "DOYA JJAMBBONG / 도야짬뽕",
-      h1: "Korean Spicy Seafood Noodles in Ho Chi Minh City",
-      subtitle: "Authentic Korean-Chinese jjambbong, also searched as champong or champon, plus jajangmyeon and comfort food in District 1, Saigon.",
-      summary: "DOYA JJAMBBONG is a Korean restaurant and Korean-Chinese restaurant in District 1, Ho Chi Minh City, specializing in Korean food, Chinese food, spicy seafood jjambbong or champong, mi tuong den jajangmyeon, and late-night comfort food near Ben Thanh and Bui Vien.",
+      h1: "DOYA Korean Restaurant in Ho Chi Minh City",
+      subtitle: "DOYA JJAMBBONG serves authentic Korean-Chinese jjambbong, also searched as champong or champon, plus jajangmyeon and comfort food in District 1, Saigon.",
+      summary: "DOYA Korean Restaurant is DOYA JJAMBBONG, a Korean-Chinese restaurant in District 1, Ho Chi Minh City. We specialize in Korean food, spicy seafood jjambbong or champong, jajangmyeon, tangsuyuk, and late-night comfort food near Ben Thanh and Bui Vien.",
       sections: [
         { heading: "Located at 77I Bui Thi Xuan, District 1", body: "Find DOYA near Ben Thanh, tourist streets, hotels, and the central nightlife area." },
         { heading: "Open 10:30 AM to 11:30 PM", body: "A practical stop for lunch, dinner, late meals, spicy noodles, and Korean hangover comfort food." }
