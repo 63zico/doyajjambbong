@@ -24,6 +24,210 @@ const storeGuideDate = "2026-06-20";
 
 export const blogPosts: BlogPost[] = [
   {
+    locale: "vi",
+    slug: "mat-tien-doya-jjambbong-gan-bui-vien",
+    title: "Quan an Han Quoc gan Bui Vien: tim DOYA JJAMBBONG tren Bui Thi Xuan",
+    description:
+      "Tim quan an Han Quoc gan Bui Vien? Xem mat tien DOYA JJAMBBONG tren Bui Thi Xuan, Quan 1, roi ghe thu mi cay jjambbong, mi tuong den va mon Han-Trung.",
+    eyebrow: "Huong dan den cua hang Quan 1",
+    date: storeGuideDate,
+    readTime: "4 phut",
+    image: "/images/store/doya-district-1-neon-night.png",
+    imageAlt: "Mat tien neon DOYA JJAMBBONG ve dem tai Quan 1, Ho Chi Minh City",
+    gallery: [
+      {
+        src: "/images/store/doya-district-1-streetfront-day.png",
+        alt: "Mat tien DOYA JJAMBBONG tren Bui Thi Xuan, Quan 1"
+      },
+      {
+        src: "/images/store/doya-district-1-exterior-sunset.png",
+        alt: "Cua hang DOYA JJAMBBONG Quan 1 luc chieu muon"
+      }
+    ],
+    keywords: [
+      "quan an Han Quoc gan Bui Vien",
+      "DOYA JJAMBBONG",
+      "mi cay Han Quoc Quan 1",
+      "quan an Han Quoc Quan 1",
+      "quan an gan Ben Thanh",
+      "Bui Thi Xuan restaurant",
+      "jjambbong Ho Chi Minh"
+    ],
+    intro:
+      "Khi tim quan an Han Quoc gan Bui Vien, biet truoc mat tien that cua hang se giup ban de den hon. DOYA JJAMBBONG nam tren duong Bui Thi Xuan, Quan 1, gan Bui Vien Walking Street, cho Ben Thanh, Pham Ngu Lao va cac khach san trung tam.",
+    sections: [
+      {
+        heading: "Dau moc de nhan ra DOYA o Quan 1",
+        body:
+          "Bang hieu DOYA JJAMBBONG mau do va logo mi Han Quoc huong ra duong Bui Thi Xuan. Khach di Grab, taxi hoac di bo tu khu trung tam deu co the de dang nhan ra cua hang tu ben ngoai."
+      },
+      {
+        heading: "De tim tu Bui Vien va Ben Thanh",
+        body:
+          "Bui Vien noi tieng voi nightlife, con Ben Thanh la khu du lich dong khach. DOYA nam giua cac diem den nay, phu hop cho bua an nong truoc hoac sau khi di choi. Hay tim DOYA JJAMBBONG tren Google Maps va den 77I Bui Thi Xuan, phuong Ben Thanh, Quan 1."
+      },
+      {
+        heading: "Nen goi mon gi khi den",
+        body:
+          "Thu seafood jjambbong neu muon mi nuoc cay kieu Han-Trung, hoac chon mi tuong den jajangmyeon neu muon mon mi khong cay. Tangsuyuk la mon chia se hop ly khi trong nhom co nguoi an cay va khong an cay."
+      }
+    ],
+    cta: "Tim bang hieu DOYA JJAMBBONG mau do tren Bui Thi Xuan va thu jjambbong, jajangmyeon hoac tangsuyuk tai Quan 1."
+  },
+  {
+    locale: "ko",
+    slug: "bui-vien-geuncheo-doya-jjambbong-maejang",
+    title: "부이비엔 근처 한국식당: Bui Thi Xuan의 도야짬뽕 찾는 법",
+    description:
+      "부이비엔 근처 한국식당을 찾고 있나요? 호치민 1군 Bui Thi Xuan의 도야짬뽕 실제 외관과 짬뽕, 짜장면, 탕수육 메뉴를 안내합니다.",
+    eyebrow: "호치민 1군 매장 안내",
+    date: storeGuideDate,
+    readTime: "4분",
+    image: "/images/store/doya-district-1-neon-night.png",
+    imageAlt: "호치민 1군 밤의 도야짬뽕 네온 간판과 매장 외관",
+    gallery: [
+      {
+        src: "/images/store/doya-district-1-streetfront-day.png",
+        alt: "호치민 1군 Bui Thi Xuan 거리의 도야짬뽕 매장 외관"
+      },
+      {
+        src: "/images/store/doya-district-1-exterior-sunset.png",
+        alt: "해질녘 호치민 1군 도야짬뽕 매장 전경"
+      }
+    ],
+    keywords: [
+      "부이비엔 근처 한국식당",
+      "호치민 도야짬뽕",
+      "호치민 1군 짬뽕",
+      "호치민 한국식 중국집",
+      "벤탄시장 근처 한식",
+      "Bui Thi Xuan 맛집",
+      "호치민 짜장면"
+    ],
+    intro:
+      "부이비엔 근처 한국식당을 찾을 때는 실제 매장 외관을 알고 있으면 마지막 이동이 훨씬 편합니다. 도야짬뽕은 호치민 1군 Bui Thi Xuan에 있으며 부이비엔 워킹스트리트, 벤탄시장, 팜응우라오, 1군 중심 호텔가에서 이동하기 좋습니다.",
+    sections: [
+      {
+        heading: "1군에서 도야짬뽕을 알아보는 법",
+        body:
+          "Bui Thi Xuan 거리 쪽으로 보이는 빨간 DOYA JJAMBBONG 간판과 한국식 면 로고가 매장 표지입니다. Grab, 택시, 도보로 1군 중심을 이동할 때도 외관을 보면 쉽게 찾을 수 있습니다."
+      },
+      {
+        heading: "부이비엔과 벤탄시장 사이에서 찾기 쉬운 위치",
+        body:
+          "부이비엔은 야간 거리로, 벤탄시장은 대표 관광지로 잘 알려져 있습니다. 도야짬뽕은 두 지역에서 접근하기 좋은 곳에 있어 관광 후 또는 저녁 약속 전후에 뜨거운 식사를 하기 좋습니다. Google Maps에서 DOYA JJAMBBONG을 검색하고 77I Bui Thi Xuan, Ben Thanh Ward, District 1을 목적지로 설정하세요."
+      },
+      {
+        heading: "도착해서 주문하기 좋은 메뉴",
+        body:
+          "매운 국물면을 원하면 해물짬뽕을, 맵지 않은 한국식 중화요리를 원하면 짜장면을 추천합니다. 탕수육은 매운 메뉴와 맵지 않은 메뉴를 함께 먹는 테이블에 잘 맞는 나눔 메뉴입니다."
+      }
+    ],
+    cta: "Bui Thi Xuan의 빨간 도야짬뽕 간판을 찾고, 호치민 1군에서 짬뽕, 짜장면, 탕수육을 즐겨보세요."
+  },
+  {
+    locale: "zh",
+    slug: "bui-vien-fujin-doya-men-dian",
+    title: "Bui Vien 附近韩国餐厅：如何找到 DOYA JJAMBBONG 第1郡门店",
+    description:
+      "想找 Bui Vien 附近的韩国餐厅？查看 DOYA JJAMBBONG 在第1郡 Bui Thi Xuan 的真实门店外观，再来品尝 jjambbong、韩式炸酱面和糖醋肉。",
+    eyebrow: "第1郡门店指南",
+    date: storeGuideDate,
+    readTime: "4分钟",
+    image: "/images/store/doya-district-1-neon-night.png",
+    imageAlt: "胡志明市第1郡夜晚的 DOYA JJAMBBONG 霓虹门店外观",
+    gallery: [
+      {
+        src: "/images/store/doya-district-1-streetfront-day.png",
+        alt: "胡志明市第1郡 Bui Thi Xuan 街上的 DOYA JJAMBBONG 门店外观"
+      },
+      {
+        src: "/images/store/doya-district-1-exterior-sunset.png",
+        alt: "傍晚的 DOYA JJAMBBONG 第1郡门店外观"
+      }
+    ],
+    keywords: [
+      "Bui Vien 附近韩国餐厅",
+      "DOYA JJAMBBONG",
+      "胡志明市第1郡韩国餐厅",
+      "胡志明市韩式中餐",
+      "滨城市场附近韩国餐厅",
+      "Bui Thi Xuan 餐厅",
+      "胡志明市 jjambbong"
+    ],
+    intro:
+      "在 Bui Vien 附近寻找韩国餐厅时，提前知道真实门店外观会让最后一段路更轻松。DOYA JJAMBBONG 位于胡志明市第1郡 Bui Thi Xuan，靠近 Bui Vien 步行街、滨城市场、Pham Ngu Lao 和市中心酒店区。",
+    sections: [
+      {
+        heading: "第1郡容易辨认的韩式中餐地标",
+        body:
+          "红色的 DOYA JJAMBBONG 招牌和韩式面条标志面向 Bui Thi Xuan 街。无论乘坐 Grab、出租车还是步行经过第1郡中心，都能从街上认出这家餐厅。"
+      },
+      {
+        heading: "从 Bui Vien 和滨城市场都容易到达",
+        body:
+          "Bui Vien 以夜生活闻名，滨城市场则是热门旅游地。DOYA 位于这两个区域之间，适合逛完街后或夜晚出门前吃一顿热食。在 Google Maps 搜索 DOYA JJAMBBONG，并将 77I Bui Thi Xuan, Ben Thanh Ward, District 1 设为目的地。"
+      },
+      {
+        heading: "到店后可以点什么",
+        body:
+          "想吃辣汤面可以选海鲜 jjambbong；想吃不辣的韩式面条可以选韩式炸酱面 jajangmyeon。糖醋肉适合多人分享，尤其适合同时有人想吃辣和不想吃辣的餐桌。"
+      }
+    ],
+    cta: "在 Bui Thi Xuan 找到红色的 DOYA JJAMBBONG 招牌后，来第1郡品尝 jjambbong、炸酱面或糖醋肉。"
+  },
+  {
+    locale: "ja",
+    slug: "bui-vien-chikaku-doya-tenpo",
+    title: "ブイビエン近くの韓国料理：DOYA JJAMBBONG 1区店舗の行き方",
+    description:
+      "ブイビエン近くの韓国料理を探す方へ。Bui Thi Xuan にある DOYA JJAMBBONG 1区店舗の外観と、チャンポン、ジャージャー麺、タンスユクを紹介します。",
+    eyebrow: "ホーチミン1区 店舗ガイド",
+    date: storeGuideDate,
+    readTime: "4分",
+    image: "/images/store/doya-district-1-neon-night.png",
+    imageAlt: "ホーチミン1区の夜に光る DOYA JJAMBBONG ネオン店舗外観",
+    gallery: [
+      {
+        src: "/images/store/doya-district-1-streetfront-day.png",
+        alt: "ホーチミン1区 Bui Thi Xuan 通りの DOYA JJAMBBONG 店舗外観"
+      },
+      {
+        src: "/images/store/doya-district-1-exterior-sunset.png",
+        alt: "夕方のホーチミン1区 DOYA JJAMBBONG 店舗外観"
+      }
+    ],
+    keywords: [
+      "ブイビエン 近く 韓国料理",
+      "DOYA JJAMBBONG",
+      "ホーチミン1区 韓国料理",
+      "ホーチミン 韓国中華",
+      "ベンタイン市場 近く 韓国料理",
+      "Bui Thi Xuan レストラン",
+      "ホーチミン チャンポン"
+    ],
+    intro:
+      "ブイビエン近くの韓国料理を探す時、実際の店舗外観を知っていると最後の移動が分かりやすくなります。DOYA JJAMBBONG はホーチミン1区の Bui Thi Xuan にあり、ブイビエン通り、ベンタイン市場、ファングーラオ、中心部のホテルから行きやすい場所です。",
+    sections: [
+      {
+        heading: "1区で見つけやすい韓国中華の目印",
+        body:
+          "赤い DOYA JJAMBBONG の看板と韓国麺のロゴが Bui Thi Xuan 通りに面しています。Grab、タクシー、徒歩で1区中心部を移動する時も、通りから店舗を見つけやすい外観です。"
+      },
+      {
+        heading: "ブイビエンとベンタイン市場からアクセスしやすい場所",
+        body:
+          "ブイビエンはナイトライフのエリア、ベンタイン市場は代表的な観光地です。DOYA はその間から行きやすく、観光の後や夜の外出前後に温かい食事を楽しめます。Google Maps で DOYA JJAMBBONG を検索し、77I Bui Thi Xuan, Ben Thanh Ward, District 1 を目的地に設定してください。"
+      },
+      {
+        heading: "到着後におすすめのメニュー",
+        body:
+          "辛い韓国中華のスープ麺なら海鮮チャンポン、辛くない麺ならジャージャー麺がおすすめです。タンスユクは辛い料理と辛くない料理を一緒に食べるグループに合うシェアメニューです。"
+      }
+    ],
+    cta: "Bui Thi Xuan の赤い DOYA JJAMBBONG 看板を目印に、ホーチミン1区でチャンポン、ジャージャー麺、タンスユクを楽しんでください。"
+  },
+  {
     locale: "en",
     slug: "korean-restaurant-near-bui-vien-doya-storefront",
     title: "Korean Restaurant near Bui Vien: Find DOYA JJAMBBONG on Bui Thi Xuan",
