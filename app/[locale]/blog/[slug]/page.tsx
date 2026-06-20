@@ -78,7 +78,7 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
     "@id": `${postUrl}#blogposting`,
     headline: post.title,
     description: post.description,
-    image: [imageUrl],
+    image: [imageUrl, ...(post.gallery ?? []).map((image) => `${site.baseUrl}${image.src}`)],
     datePublished: post.date,
     dateModified: post.date,
     inLanguage: locale,
@@ -149,6 +149,15 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
                     </section>
                   ))}
                 </div>
+                {post.gallery?.length ? (
+                  <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                    {post.gallery.map((image) => (
+                      <div key={image.src} className="relative aspect-[4/3] overflow-hidden rounded-lg border border-ink/10 bg-soy">
+                        <Image src={image.src} alt={image.alt} fill sizes="(min-width: 640px) 50vw, 100vw" className="object-cover" />
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
                 <div className="mt-8 rounded-md bg-cream p-5">
                   <p className="text-base font-black text-ink">{post.cta}</p>
                 </div>

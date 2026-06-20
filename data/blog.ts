@@ -10,6 +10,7 @@ export type BlogPost = {
   readTime: string;
   image: string;
   imageAlt: string;
+  gallery?: { src: string; alt: string }[];
   keywords: string[];
   intro: string;
   sections: { heading: string; body: string }[];
@@ -19,8 +20,60 @@ export type BlogPost = {
 const sharedDate = "2026-05-20";
 const seoExpansionDate = "2026-06-10";
 const contentClusterDate = "2026-06-11";
+const storeGuideDate = "2026-06-20";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "en",
+    slug: "korean-restaurant-near-bui-vien-doya-storefront",
+    title: "Korean Restaurant near Bui Vien: Find DOYA JJAMBBONG on Bui Thi Xuan",
+    description:
+      "Looking for a Korean restaurant near Bui Vien? See the DOYA JJAMBBONG storefront on Bui Thi Xuan in District 1, then plan your visit for jjambbong, jajangmyeon, and Korean-Chinese food.",
+    eyebrow: "District 1 Store Guide",
+    date: storeGuideDate,
+    readTime: "4 min",
+    image: "/images/store/doya-district-1-neon-night.png",
+    imageAlt: "DOYA JJAMBBONG neon storefront at night in District 1 Ho Chi Minh City",
+    gallery: [
+      {
+        src: "/images/store/doya-district-1-streetfront-day.png",
+        alt: "DOYA JJAMBBONG storefront on Bui Thi Xuan in District 1 Ho Chi Minh City"
+      },
+      {
+        src: "/images/store/doya-district-1-exterior-sunset.png",
+        alt: "DOYA JJAMBBONG District 1 exterior in the late afternoon"
+      }
+    ],
+    keywords: [
+      "Korean restaurant near Bui Vien",
+      "DOYA JJAMBBONG",
+      "Doya Jjambbong Ho Chi Minh",
+      "Korean restaurant District 1",
+      "Korean food near Ben Thanh",
+      "Bui Thi Xuan restaurant",
+      "jjambbong Ho Chi Minh"
+    ],
+    intro:
+      "When you are looking for a Korean restaurant near Bui Vien, knowing what the real storefront looks like makes the last few minutes of the trip much easier. DOYA JJAMBBONG is on Bui Thi Xuan in District 1, a short ride from Bui Vien Walking Street, Ben Thanh Market, Pham Ngu Lao, and central Ho Chi Minh hotels.",
+    sections: [
+      {
+        heading: "A clear District 1 landmark for Korean-Chinese food",
+        body:
+          "The red DOYA JJAMBBONG sign and Korean noodle logo face Bui Thi Xuan, so guests can recognize the restaurant from the street. This matters when you are arriving by Grab, taxi, or on foot after exploring the central District 1 area."
+      },
+      {
+        heading: "Easy to find after Bui Vien or Ben Thanh",
+        body:
+          "Bui Vien is known for nightlife and Ben Thanh is one of the city’s busiest visitor areas. DOYA sits between those central travel zones and gives guests a practical place for a hot meal before or after an evening out. Search DOYA JJAMBBONG on Google Maps and use 77I Bui Thi Xuan, Ben Thanh Ward, District 1 as the destination."
+      },
+      {
+        heading: "What to order when you arrive",
+        body:
+          "Try the seafood jjambbong if you want spicy Korean-Chinese noodle soup, or choose jajangmyeon when you want Korean black bean noodles without the heat. Tangsuyuk is a good sharing dish for a table, especially when your group wants both spicy and non-spicy options."
+      }
+    ],
+    cta: "Find the red DOYA JJAMBBONG storefront on Bui Thi Xuan, then order jjambbong, jajangmyeon, or tangsuyuk in District 1."
+  },
   {
     locale: "en",
     slug: "what-is-champong-jjambbong-vs-jjamppong",
