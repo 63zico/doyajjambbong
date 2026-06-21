@@ -21,8 +21,193 @@ const sharedDate = "2026-05-20";
 const seoExpansionDate = "2026-06-10";
 const contentClusterDate = "2026-06-11";
 const storeGuideDate = "2026-06-20";
+const doyaCoinDate = "2026-06-21";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "en",
+    slug: "doya-coin-rewards-district-1",
+    title: "DOYA COIN Rewards in District 1: Collect Coins, Play Games, and Redeem Gifts",
+    description:
+      "Discover the DOYA COIN in-store reward program at DOYA JJAMBBONG in District 1. Spend 250,000 VND to collect a coin, play games, and redeem food and drink gifts near Bui Vien.",
+    eyebrow: "DOYA JJAMBBONG Rewards",
+    date: doyaCoinDate,
+    readTime: "3 min",
+    image: "/images/events/doya-coin-rewards-en.png",
+    imageAlt: "DOYA COIN rewards poster for DOYA JJAMBBONG District 1",
+    keywords: [
+      "DOYA COIN",
+      "DOYA JJAMBBONG rewards",
+      "Korean restaurant promotion District 1",
+      "restaurant rewards Ho Chi Minh",
+      "Korean food near Bui Vien",
+      "District 1 dining promotion"
+    ],
+    intro:
+      "DOYA COIN is the in-store reward program at DOYA JJAMBBONG in District 1, Ho Chi Minh City. Collect coins when you dine, use them in small games, or exchange them for drinks and Korean-Chinese comfort food gifts.",
+    sections: [
+      {
+        heading: "Collect 1 DOYA COIN for every 250,000 VND spent",
+        body:
+          "For every 250,000 VND spent at DOYA JJAMBBONG, receive one DOYA COIN. Keep your coins to build toward a reward, or use them for a little extra fun during your next visit near Bui Vien and Ben Thanh."
+      },
+      {
+        heading: "Use coins for games at the restaurant",
+        body:
+          "Use 1 coin to play rock-paper-scissors for a chance to win 2 coins. Use 3 coins to try the lucky wheel and win from the available prizes. Ask the team in store about the current game participation."
+      },
+      {
+        heading: "Redeem coins for food and drink gifts",
+        body:
+          "2 coins can be exchanged for one Coke. With 5 coins, choose four fried dumplings or one Tiger beer. With 10 coins, choose five pieces of sweet and sour pork or one highball. With 15 coins, redeem one bottle of soju."
+      },
+      {
+        heading: "Important in-store terms",
+        body:
+          "DOYA COIN is for in-store use and cannot be exchanged for cash. Lost coins cannot be replaced, and rewards may change without prior notice."
+      }
+    ],
+    cta:
+      "Ask the DOYA JJAMBBONG team about DOYA COIN when you visit 77I Bui Thi Xuan, Ben Thanh Ward, District 1."
+  },
+  {
+    locale: "vi",
+    slug: "doya-coin-doi-qua-quan-1",
+    title: "DOYA COIN Quan 1: Tich coin, doi qua va choi tro may man",
+    description:
+      "Kham pha chuong trinh DOYA COIN tai DOYA JJAMBBONG Quan 1: hoa don tu 250.000d nhan 1 coin, doi qua an uong va tham gia tro choi may man gan Bui Vien.",
+    eyebrow: "Uu dai DOYA JJAMBBONG",
+    date: doyaCoinDate,
+    readTime: "3 phut",
+    image: "/images/events/doya-coin-rewards-vi.png",
+    imageAlt: "Poster uu dai DOYA COIN tai DOYA JJAMBBONG Quan 1",
+    keywords: [
+      "DOYA COIN",
+      "uu dai DOYA JJAMBBONG",
+      "quan an Han Quoc Quan 1",
+      "tich diem doi qua",
+      "mi cay Han Quoc gan Bui Vien",
+      "khuyen mai nha hang Quan 1"
+    ],
+    intro:
+      "DOYA COIN la chuong trinh tich coin tai DOYA JJAMBBONG Quan 1. Khi dung bua tai quan, ban co the tich coin, doi qua an uong hoac thu van may voi cac tro choi tai cua hang.",
+    sections: [
+      {
+        heading: "Hoa don tu 250.000d tang 1 DOYA COIN",
+        body:
+          "Hoa don tu 250.000d tai DOYA JJAMBBONG duoc tang 1 DOYA COIN. Ban co the tich coin de doi qua trong cac lan ghe quan gan Bui Vien va cho Ben Thanh."
+      },
+      {
+        heading: "Dung coin de choi game tai quan",
+        body:
+          "Dung 1 coin de choi keo-bua-bao va co co hoi nhan 2 coin. Dung 3 coin de tham gia vong quay may man voi cac phan qua dang co tai cua hang."
+      },
+      {
+        heading: "Qua doi thuong bang DOYA COIN",
+        body:
+          "2 coin doi 1 lon Coca-Cola. 5 coin doi 4 vien ha cao chien hoac 1 chai Tiger. 10 coin doi 5 mieng thit heo chien gion sot chua ngot hoac 1 ly highball. 15 coin doi 1 chai soju."
+      },
+      {
+        heading: "Luu y khi su dung coin",
+        body:
+          "Coin chi su dung truc tiep tai cua hang, khong quy doi thanh tien mat va coin bi mat se khong duoc cap lai. Qua tang co the duoc thay doi tuy theo tinh hinh thuc te."
+      }
+    ],
+    cta:
+      "Ghe DOYA JJAMBBONG tai 77I Bui Thi Xuan, phuong Ben Thanh, Quan 1 va hoi nhan vien ve DOYA COIN trong lan dung bua tiep theo."
+  },
+  {
+    locale: "ko",
+    slug: "doya-coin-1gun-jeoklip-gyohwan-ibenteu",
+    title: "도야짬뽕 1군 DOYA COIN 이벤트: 코인 적립, 선물 교환, 게임",
+    description:
+      "호치민 1군 도야짬뽕 DOYA COIN 이벤트를 소개합니다. 25만 동 주문 시 코인 1개 적립, 게임 참여, 콜라·군만두·탕수육·소주 선물 교환까지 확인하세요.",
+    eyebrow: "도야짬뽕 1군점 이벤트",
+    date: doyaCoinDate,
+    readTime: "3분",
+    image: "/images/events/doya-coin-rewards-ko.png",
+    imageAlt: "도야짬뽕 1군점 DOYA COIN 적립과 선물 교환 이벤트 포스터",
+    keywords: [
+      "DOYA COIN",
+      "도야짬뽕 이벤트",
+      "호치민 1군 한식당 이벤트",
+      "호치민 코인 적립",
+      "부이비엔 근처 한식",
+      "호치민 짬뽕 프로모션"
+    ],
+    intro:
+      "DOYA COIN은 호치민 1군 도야짬뽕 매장에서 적립하고 사용하는 리워드 이벤트입니다. 식사 후 코인을 모아 선물로 교환하거나, 가위바위보와 행운의 룰렛 게임에 참여할 수 있습니다.",
+    sections: [
+      {
+        heading: "25만 동 주문 시 DOYA COIN 1개 적립",
+        body:
+          "도야짬뽕에서 25만 동 이상 주문하면 DOYA COIN 1개를 받습니다. 부이비엔과 벤탄시장 근처에서 식사한 뒤 코인을 모아 다음 방문 때 선물 교환에 사용할 수 있습니다."
+      },
+      {
+        heading: "코인으로 매장 게임 참여하기",
+        body:
+          "코인 1개로 가위바위보 게임에 도전하면 이겼을 때 2코인을 받을 수 있습니다. 코인 3개로는 행운의 룰렛에 참여해 매장에 준비된 다양한 선물에 도전할 수 있습니다."
+      },
+      {
+        heading: "DOYA COIN 교환 선물",
+        body:
+          "2코인은 콜라 1캔, 5코인은 군만두 4개 또는 타이거 맥주 1병, 10코인은 탕수육 5조각 또는 하이볼 1잔, 15코인은 소주 1병으로 교환할 수 있습니다."
+      },
+      {
+        heading: "이벤트 이용 전 확인할 점",
+        body:
+          "코인은 매장에서만 사용할 수 있으며 현금으로 교환할 수 없습니다. 분실한 코인은 재발급되지 않고, 교환 선물은 별도 안내 없이 변경될 수 있습니다."
+      }
+    ],
+    cta:
+      "호치민 1군 77I Bui Thi Xuan의 도야짬뽕에 방문해 DOYA COIN 이벤트를 직원에게 문의해 보세요."
+  },
+  {
+    locale: "zh",
+    slug: "doya-coin-di-1-jun-jiangli-huodong",
+    title: "DOYA JJAMBBONG 第1郡 DOYA COIN 活动：集币换礼与幸运游戏",
+    description:
+      "了解胡志明市第1郡 DOYA JJAMBBONG 的 DOYA COIN 活动：消费满 250,000 越盾获 1 枚金币，可参与游戏并兑换可乐、炸饺子、糖醋里脊和烧酒等礼品。",
+    eyebrow: "DOYA JJAMBBONG 奖励活动",
+    date: doyaCoinDate,
+    readTime: "3分钟",
+    image: "/images/events/doya-coin-rewards-zh.png",
+    imageAlt: "DOYA JJAMBBONG 第1郡 DOYA COIN 集币换礼活动海报",
+    keywords: [
+      "DOYA COIN",
+      "DOYA JJAMBBONG 活动",
+      "胡志明市第1郡韩国餐厅",
+      "集币换礼",
+      "Bui Vien 附近韩国餐厅",
+      "胡志明市餐厅优惠"
+    ],
+    intro:
+      "DOYA COIN 是 DOYA JJAMBBONG 第1郡门店的集币奖励活动。到店用餐后可以积累金币，兑换餐饮礼品，或参加猜拳和幸运转盘游戏。",
+    sections: [
+      {
+        heading: "消费满 250,000 越盾即可获得 1 枚 DOYA COIN",
+        body:
+          "在 DOYA JJAMBBONG 单笔消费满 250,000 越盾，即可获得 1 枚 DOYA COIN。您可以在靠近 Bui Vien 和滨城市场的下一次用餐时继续积累并兑换礼品。"
+      },
+      {
+        heading: "使用金币参加店内游戏",
+        body:
+          "使用 1 枚金币可参加猜拳游戏，获胜可得到 2 枚金币。使用 3 枚金币可参加幸运转盘，赢取门店当期准备的惊喜奖品。"
+      },
+      {
+        heading: "DOYA COIN 可兑换的礼品",
+        body:
+          "2 枚金币可换 1 罐可乐。5 枚金币可换 4 个炸饺子或 1 瓶虎牌啤酒。10 枚金币可换 5 块糖醋里脊或 1 杯 Highball。15 枚金币可换 1 瓶真露烧酒。"
+      },
+      {
+        heading: "使用规则",
+        body:
+          "金币仅限门店内使用，不能兑换现金；遗失的金币无法补发。活动礼品可能会根据实际情况调整，恕不另行通知。"
+      }
+    ],
+    cta:
+      "到胡志明市第1郡 Ben Thanh 坊 Bui Thi Xuan 街 77I 号的 DOYA JJAMBBONG 用餐时，向店员咨询 DOYA COIN 活动。"
+  },
   {
     locale: "vi",
     slug: "mat-tien-doya-jjambbong-gan-bui-vien",
