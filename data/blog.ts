@@ -795,7 +795,7 @@ export const blogPosts: BlogPost[] = [
     imageAlt: "호치민 야식으로 좋은 도야짬뽕 기본 짬뽕",
     keywords: ["호치민 야식 맛집", "호치민 1군 야식", "호치민 해장 맛집", "late night Korean food", "Korean hangover soup", "심야 짬뽕"],
     intro:
-      "여행 중 늦은 시간에 뜨거운 국물이나 매운 면이 생각날 때가 있습니다. 도야짬뽕은 10:30부터 23:30까지 운영해 저녁 식사와 늦은 식사에 맞는 메뉴를 제공합니다.",
+      "여행 중 늦은 시간에 뜨거운 국물이나 매운 면이 생각날 때가 있습니다. 도야짬뽕은 10:30부터 새벽 03:30까지 운영해 저녁 식사와 늦은 식사에 맞는 메뉴를 제공합니다.",
     sections: [
       {
         heading: "야식 검색에 잘 맞는 메뉴",
@@ -1040,7 +1040,7 @@ export const blogPosts: BlogPost[] = [
     slug: "quan-an-khuya-han-quoc-sai-gon",
     title: "Quán ăn khuya Hàn Quốc ở Sài Gòn: mì cay, jjambbong và món nóng Quận 1",
     description:
-      "DOYA JJAMBBONG mở cửa đến 23:30, phù hợp cho khách tìm quán ăn khuya Hàn Quốc, mì cay hải sản và món Hàn-Trung tại Quận 1.",
+      "DOYA JJAMBBONG mở cửa đến 03:30, phù hợp cho khách tìm quán ăn khuya Hàn Quốc, mì cay hải sản và món Hàn-Trung tại Quận 1.",
     eyebrow: "Ăn khuya Quận 1",
     date: sharedDate,
     readTime: "3 min",
@@ -1053,7 +1053,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Mở cửa cho bữa tối muộn",
         body:
-          "DOYA phục vụ từ 10:30 đến 23:30, phù hợp cho bữa trưa, bữa tối và bữa ăn muộn tại trung tâm Sài Gòn."
+          "DOYA phục vụ từ 10:30 đến 03:30, phù hợp cho bữa trưa, bữa tối và bữa ăn muộn tại trung tâm Sài Gòn."
       },
       {
         heading: "Mì cay và món chia sẻ",
@@ -1282,7 +1282,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Open for late meals",
         body:
-          "DOYA is open daily from 10:30 AM to 11:30 PM, making it useful for lunch, dinner, and late meals in District 1."
+          "DOYA is open daily from 10:30 AM to 3:30 AM, making it useful for lunch, dinner, and late meals in District 1."
       },
       {
         heading: "Hangover-friendly menu choices",
@@ -1439,7 +1439,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "The search intent is simple",
         body:
-          "People searching where to eat after drinking usually want something open, hot, filling, and easy to reach. DOYA is open daily from 10:30 AM to 11:30 PM in District 1."
+          "People searching where to eat after drinking usually want something open, hot, filling, and easy to reach. DOYA is open daily from 10:30 AM to 3:30 AM in District 1."
       },
       {
         heading: "Korean hangover soup keywords",
@@ -2068,7 +2068,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ben-thanh-bui-vien-han-guo-ye-xiao",
     title: "滨城市场和裴援街附近韩国夜宵 | 胡志明第1郡 DOYA",
     description:
-      "在 Ben Thanh、Bui Vien、胡志明第1郡附近寻找韩国夜宵、辣海鲜面、韩式中餐或饮酒后热汤? DOYA JJAMBBONG 营业到 23:30.",
+      "在 Ben Thanh、Bui Vien、胡志明第1郡附近寻找韩国夜宵、辣海鲜面、韩式中餐或饮酒后热汤? DOYA JJAMBBONG 营业到凌晨 03:30.",
     eyebrow: "第1郡韩国夜宵",
     date: seoExpansionDate,
     readTime: "4 min",
@@ -2084,7 +2084,7 @@ export const blogPosts: BlogPost[] = [
       "胡志明辣海鲜面夜宵"
     ],
     intro:
-      "旅行中晚上想吃热汤、辣面或韩国中餐时, 位置和营业时间很重要. DOYA JJAMBBONG 位于第1郡中心区域, 每天营业到 23:30, 适合晚餐、夜宵和饮酒后热汤.",
+      "旅行中晚上想吃热汤、辣面或韩国中餐时, 位置和营业时间很重要. DOYA JJAMBBONG 位于第1郡中心区域, 每天营业到凌晨 03:30, 适合晚餐、夜宵和饮酒后热汤.",
     sections: [
       {
         heading: "靠近游客常去区域",
@@ -2231,7 +2231,7 @@ export const blogPosts: BlogPost[] = [
     slug: "ben-thanh-bui-vien-korean-late-night-food",
     title: "ベンタイン市場・ブイビエン近くの深夜韓国料理 | DOYA JJAMBBONG",
     description:
-      "ベンタイン市場、ブイビエン、ホーチミン1区で深夜の韓国料理、チャンポン、飲んだ後の辛い海鮮麺を探す方へ。DOYA は 23:30 まで営業.",
+      "ベンタイン市場、ブイビエン、ホーチミン1区で深夜の韓国料理、チャンポン、飲んだ後の辛い海鮮麺を探す方へ。DOYA は深夜 03:30 まで営業.",
     eyebrow: "深夜の韓国料理",
     date: seoExpansionDate,
     readTime: "4 min",
@@ -2262,7 +2262,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "遅い時間は事前確認がおすすめ",
         body:
-          "営業時間は 10:30 - 23:30 ですが、遅い時間の来店や持ち帰りは Zalo、KakaoTalk、電話で先に確認すると安心です。"
+          "営業時間は 10:30 - 03:30 ですが、遅い時間の来店や持ち帰りは Zalo、KakaoTalk、電話で先に確認すると安心です。"
       }
     ],
     cta: "場所ページから Google Maps を開き、来店前に電話や Zalo で確認できます。"

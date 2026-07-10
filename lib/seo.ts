@@ -563,7 +563,7 @@ export function restaurantJsonLd(locale: Locale) {
         "@type": "OpeningHoursSpecification",
         dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         opens: "10:30",
-        closes: "23:30"
+        closes: "03:30"
       }
     ],
     cuisine: "Korean-Chinese, Korean, Noodles, Seafood",

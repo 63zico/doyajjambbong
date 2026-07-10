@@ -80,7 +80,7 @@ export function MapBlock({ locale }: { locale: Locale }) {
             <p>{copy.body1}</p>
             <p>{copy.body2}</p>
             <p>
-              {copy.hours}: <strong>10:30 - 23:30</strong>
+              {copy.hours}: <strong>10:30 - 03:30</strong>
               <br />
               {copy.phone}: <strong>{site.phone}</strong>
             </p>

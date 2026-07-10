@@ -153,7 +153,7 @@ export const pageContent = {
             "DOYA phù hợp cho khách tìm món Hàn gần Bùi Thị Xuân, Bến Thành, khách sạn, khu du lịch và khu nightlife trung tâm."
         },
         {
-          heading: "Mở cửa từ 10:30 đến 23:30",
+          heading: "Mở cửa từ 10:30 đến 03:30",
           body:
             "Một lựa chọn dễ ghé cho bữa trưa, bữa tối, món cay ấm bụng và mì giải rượu kiểu Hàn tại Sài Gòn."
         }
@@ -402,7 +402,7 @@ export const pageContent = {
         "도야짬뽕은 호치민 1군에서 Korean restaurant, Korean food District 1, champong, jjambbong, mi tuong den 검색으로 들어오는 외국인 손님도 쉽게 찾을 수 있는 한국식 중화요리 식당입니다.",
       sections: [
         { heading: "77I Bùi Thị Xuân 1군 위치", body: "Bui Thi Xuan, 벤탄, 여행자 거리, 호텔, 나이트라이프 지역에서 찾기 쉬운 한국식 중화요리 식당입니다." },
-        { heading: "10:30부터 23:30까지 영업", body: "점심, 저녁, 야식, 해장용 매운 국물 메뉴를 찾는 손님에게 잘 맞습니다." }
+        { heading: "10:30부터 새벽 03:30까지 영업", body: "점심, 저녁, 야식, 해장용 매운 국물 메뉴를 찾는 손님에게 잘 맞습니다." }
       ]
     },
     menu: {
@@ -525,7 +525,7 @@ export const pageContent = {
       slug: "location-contact",
       nav: "위치 / 연락처",
       title: "도야짬뽕 호치민 1군 위치 | 77I Bùi Thị Xuân, 전화번호, 지도",
-      description: "도야짬뽕 호치민 1군 77I Bùi Thị Xuân 위치, 전화번호 0843377788, 영업시간 10:30-23:30, 지도와 배달 링크를 확인하세요.",
+      description: "도야짬뽕 호치민 1군 77I Bùi Thị Xuân 위치, 전화번호 0843377788, 영업시간 10:30-03:30, 지도와 배달 링크를 확인하세요.",
       eyebrow: "위치 안내",
       h1: "위치와 연락처",
       subtitle: "호치민 1군 도야짬뽕으로 바로 길찾기.",
@@ -624,7 +624,7 @@ export const pageContent = {
       summary: "DOYA Korean Restaurant is DOYA JJAMBBONG, a Korean-Chinese restaurant in District 1, Ho Chi Minh City. We specialize in Korean food, spicy seafood jjambbong or champong, jajangmyeon, tangsuyuk, and late-night comfort food near Ben Thanh and Bui Vien.",
       sections: [
         { heading: "Located at 77I Bui Thi Xuan, District 1", body: "Find DOYA near Ben Thanh, tourist streets, hotels, and the central nightlife area." },
-        { heading: "Open 10:30 AM to 11:30 PM", body: "A practical stop for lunch, dinner, late meals, spicy noodles, and Korean hangover comfort food." }
+        { heading: "Open 10:30 AM to 3:30 AM", body: "A practical stop for lunch, dinner, late meals, spicy noodles, and Korean hangover comfort food." }
       ]
     },
     menu: {
@@ -840,7 +840,7 @@ pageContent.zh = {
         body: "餐厅靠近 Ben Thanh, Bui Vien, 酒店区和市中心夜生活区域, 适合午餐、晚餐和夜宵."
       },
       {
-        heading: "营业时间 10:30 - 23:30",
+        heading: "营业时间 10:30 - 03:30",
         body: "适合搜索 Korean restaurant Ho Chi Minh, 韩国餐厅, 韩式中餐, champong, jjambbong 或辣海鲜面的客人."
       }
     ]
@@ -956,7 +956,7 @@ pageContent.ja = {
         body: "ホテル、観光エリア、バー街からアクセスしやすい Bui Thi Xuan にあります。ホーチミン 韓国料理 1区、ブイビエン 韓国料理、ベンタイン市場 韓国料理の検索意図に合わせたページです。"
       },
       {
-        heading: "毎日 10:30 - 23:30",
+        heading: "毎日 10:30 - 03:30",
         body: "ランチ、夕食、夜遅めの食事、飲んだ後の辛いスープ麺に使いやすい営業時間です。チャンポン、ジャージャー麺、韓国式中華料理を中心に提供しています。"
       }
     ]
@@ -1076,7 +1076,7 @@ pageContent.ja = {
     nav: "深夜の韓国料理",
     title: "ホーチミン 深夜 韓国料理 | 1区のチャンポンと韓国中華",
     description:
-      "ホーチミン1区で夜遅めの韓国料理、飲んだ後の辛い海鮮麺、チャンポン、ジャージャー麺を探す方へ。DOYA は毎日 23:30 まで営業。",
+      "ホーチミン1区で夜遅めの韓国料理、飲んだ後の辛い海鮮麺、チャンポン、ジャージャー麺を探す方へ。DOYA は毎日深夜 03:30 まで営業。",
     eyebrow: "Late Night District 1",
     h1: "ホーチミン1区の深夜韓国料理",
     subtitle: "観光後、仕事後、飲んだ後に食べやすい熱い麺とシェア料理。",
@@ -1296,7 +1296,7 @@ const competitiveLandingPages: Record<Locale, Partial<Record<PageSlug, PageConte
       nav: "Món Hàn gần Bùi Viện",
       title: "Korean Restaurant near Bui Vien Walking Street | DOYA JJAMBBONG",
       description:
-        "Tìm Korean restaurant near Bui Vien Walking Street, Korean food near Pham Ngu Lao hoặc món Hàn ăn khuya Quận 1? DOYA phục vụ đến 23:30.",
+        "Tìm Korean restaurant near Bui Vien Walking Street, Korean food near Pham Ngu Lao hoặc món Hàn ăn khuya Quận 1? DOYA phục vụ đến 03:30.",
       eyebrow: "Near Bui Vien",
       h1: "Korean restaurant near Bui Vien Walking Street",
       subtitle:
@@ -1600,7 +1600,7 @@ const competitiveLandingPages: Record<Locale, Partial<Record<PageSlug, PageConte
       nav: "Near Bui Vien",
       title: "Korean Restaurant near Bui Vien Walking Street | DOYA JJAMBBONG",
       description:
-        "Looking for a Korean restaurant near Bui Vien Walking Street, Korean food near Pham Ngu Lao, or late-night Korean food in District 1? DOYA is open until 23:30.",
+        "Looking for a Korean restaurant near Bui Vien Walking Street, Korean food near Pham Ngu Lao, or late-night Korean food in District 1? DOYA is open until 03:30.",
       eyebrow: "Near Bui Vien",
       h1: "Korean restaurant near Bui Vien Walking Street",
       subtitle:
@@ -1752,7 +1752,7 @@ const competitiveLandingPages: Record<Locale, Partial<Record<PageSlug, PageConte
       nav: "Bui Vien 韩国餐厅",
       title: "Bui Vien 步行街附近韩国餐厅 | DOYA JJAMBBONG",
       description:
-        "在 Bui Vien Walking Street 附近搜索韩国餐厅、Korean food near Pham Ngu Lao 或第1郡韩国夜宵? DOYA 每天营业至 23:30.",
+        "在 Bui Vien Walking Street 附近搜索韩国餐厅、Korean food near Pham Ngu Lao 或第1郡韩国夜宵? DOYA 每天营业至凌晨 03:30.",
       eyebrow: "Near Bui Vien",
       h1: "Bui Vien 步行街附近韩国餐厅",
       subtitle:
@@ -1904,7 +1904,7 @@ const competitiveLandingPages: Record<Locale, Partial<Record<PageSlug, PageConte
       nav: "ブイビエン近く韓国料理",
       title: "ブイビエン近く韓国料理 | Korean Restaurant near Bui Vien",
       description:
-        "ブイビエン、ファングーラオ近くで韓国料理、韓国中華、チャンポン、夜食を探す方へ。DOYA は毎日 23:30 まで営業。",
+        "ブイビエン、ファングーラオ近くで韓国料理、韓国中華、チャンポン、夜食を探す方へ。DOYA は毎日深夜 03:30 まで営業。",
       eyebrow: "Near Bui Vien",
       h1: "ブイビエン近くの韓国料理",
       subtitle:

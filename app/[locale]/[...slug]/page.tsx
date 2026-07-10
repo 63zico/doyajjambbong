@@ -140,7 +140,7 @@ function HomePage({ locale }: { locale: Locale }) {
 function heroActionCopy(locale: Locale) {
   if (locale === "ko") {
     return [
-      { label: "오늘 영업", value: "10:30 - 23:30", href: localizedPath(locale, "location-contact") },
+      { label: "오늘 영업", value: "10:30 - 03:30", href: localizedPath(locale, "location-contact") },
       { label: "위치", value: "벤탄 · 부이비엔 근처 1군", href: site.links.googleMaps },
       { label: "전화", value: site.phone, href: `tel:${site.phone}` },
       { label: "예약/배달", value: "Zalo · 카카오톡 문의", href: localizedPath(locale, "korean-food-delivery-ho-chi-minh") }
@@ -149,7 +149,7 @@ function heroActionCopy(locale: Locale) {
 
   if (locale === "vi") {
     return [
-      { label: "Mở cửa hôm nay", value: "10:30 - 23:30", href: localizedPath(locale, "location-contact") },
+      { label: "Mở cửa hôm nay", value: "10:30 - 03:30", href: localizedPath(locale, "location-contact") },
       { label: "Vị trí", value: "Quận 1 · gần Bến Thành", href: site.links.googleMaps },
       { label: "Gọi ngay", value: site.phone, href: `tel:${site.phone}` },
       { label: "Đặt bàn/giao hàng", value: "Zalo · KakaoTalk", href: localizedPath(locale, "korean-food-delivery-ho-chi-minh") }
@@ -157,7 +157,7 @@ function heroActionCopy(locale: Locale) {
   }
 
   return [
-    { label: "Open today", value: "10:30 - 23:30", href: localizedPath(locale, "location-contact") },
+    { label: "Open today", value: "10:30 - 03:30", href: localizedPath(locale, "location-contact") },
     { label: "Location", value: "District 1 · near Ben Thanh", href: site.links.googleMaps },
     { label: "Call", value: site.phone, href: `tel:${site.phone}` },
     { label: "Reserve/order", value: "Zalo · KakaoTalk", href: localizedPath(locale, "korean-food-delivery-ho-chi-minh") }

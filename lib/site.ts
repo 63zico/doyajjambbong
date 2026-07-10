@@ -9,8 +9,8 @@ export const site = {
   phone: "0843377788",
   email: "mokpofnb@gmail.com",
   priceRange: "$$",
-  openingHours: "Mo-Su 10:30-23:30",
-  openingHoursText: "Daily 10:30 AM - 11:30 PM",
+  openingHours: "Mo-Su 10:30-03:30",
+  openingHoursText: "Daily 10:30 AM - 3:30 AM",
   mapEmbed:
     "https://www.google.com/maps?q=77I%20Bui%20Thi%20Xuan%20Ben%20Thanh%20District%201%20Ho%20Chi%20Minh%20DOYA%20JJAMBBONG&output=embed",
   links: {

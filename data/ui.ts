@@ -40,7 +40,7 @@ export const uiCopy: Record<
   }
 > = {
   vi: {
-    badges: ["Phong cách Hàn-Trung", "Quận 1 Sài Gòn", "10:30 - 23:30"],
+    badges: ["Phong cách Hàn-Trung", "Quận 1 Sài Gòn", "10:30 - 03:30"],
     cta: {
       menu: "Xem thực đơn",
       directions: "Chỉ đường",
@@ -106,7 +106,7 @@ export const uiCopy: Record<
     },
     trust: [
       ["77I Bùi Thị Xuân", "Gần Bến Thành, dễ ghé khi ở Quận 1"],
-      ["10:30 - 23:30", "Phù hợp bữa trưa, bữa tối và ăn khuya"],
+      ["10:30 - 03:30", "Phù hợp bữa trưa, bữa tối và ăn khuya"],
       ["3 cách đặt", "KakaoTalk, Zalo hoặc gọi điện để đặt nhanh"],
       ["Combo dễ gọi", "Jjambbong, mì tương đen jajangmyeon và tangsuyuk ăn chung rất hợp"]
     ],
@@ -122,7 +122,7 @@ export const uiCopy: Record<
     }
   },
   ko: {
-    badges: ["한국식 중화요리", "호치민 1군", "10:30 - 23:30"],
+    badges: ["한국식 중화요리", "호치민 1군", "10:30 - 03:30"],
     cta: {
       menu: "메뉴 보기",
       directions: "길찾기",
@@ -188,7 +188,7 @@ export const uiCopy: Record<
     },
     trust: [
       ["77I Bùi Thị Xuân", "벤탄 근처라 1군에서 들르기 쉬움"],
-      ["10:30 - 23:30", "점심, 저녁, 늦은 식사까지 가능"],
+      ["10:30 - 03:30", "점심, 저녁, 새벽 식사까지 가능"],
       ["주문 방법 3가지", "카카오톡, Zalo, 전화로 바로 문의 가능"],
       ["추천 조합", "짬뽕, 짜장, 탕수육을 함께 주문하기 좋음"]
     ],
@@ -204,7 +204,7 @@ export const uiCopy: Record<
     }
   },
   en: {
-    badges: ["Korean-Chinese Franchise Style", "District 1 Saigon", "10:30 AM - 11:30 PM"],
+    badges: ["Korean-Chinese Franchise Style", "District 1 Saigon", "10:30 AM - 3:30 AM"],
     cta: {
       menu: "View Menu",
       directions: "Get Directions",
@@ -270,7 +270,7 @@ export const uiCopy: Record<
     },
     trust: [
       ["77I Bùi Thị Xuân", "Easy stop near Ben Thanh in District 1"],
-      ["10:30 - 23:30", "Open for lunch, dinner, and late meals"],
+      ["10:30 - 03:30", "Open for lunch, dinner, and late-night meals"],
       ["3 order paths", "Use KakaoTalk, Zalo, or phone to order"],
       ["Easy combo", "Jjambbong, jajang, and tangsuyuk pair well"]
     ],
@@ -286,7 +286,7 @@ export const uiCopy: Record<
     }
   },
   zh: {
-    badges: ["韩式中餐", "胡志明市第1郡", "10:30 - 23:30"],
+    badges: ["韩式中餐", "胡志明市第1郡", "10:30 - 03:30"],
     cta: {
       menu: "查看菜单",
       directions: "导航",
@@ -352,7 +352,7 @@ export const uiCopy: Record<
     },
     trust: [
       ["77I Bui Thi Xuan", "第1郡 Ben Thanh 附近"],
-      ["10:30 - 23:30", "午餐、晚餐和夜宵都方便"],
+      ["10:30 - 03:30", "午餐、晚餐和深夜用餐都方便"],
       ["3种点餐方式", "KakaoTalk, Zalo 或电话"],
       ["推荐组合", "Jjambbong, 炸酱面和糖醋肉很适合一起点"]
     ],
@@ -368,7 +368,7 @@ export const uiCopy: Record<
     }
   },
   ja: {
-    badges: ["韓国中華", "ホーチミン1区", "10:30 - 23:30"],
+    badges: ["韓国中華", "ホーチミン1区", "10:30 - 03:30"],
     cta: {
       menu: "メニューを見る",
       directions: "Google Maps",
@@ -434,7 +434,7 @@ export const uiCopy: Record<
     },
     trust: [
       ["77I Bui Thi Xuan", "1区 Ben Thanh 近く"],
-      ["10:30 - 23:30", "ランチ、夕食、夜遅めの食事に対応"],
+      ["10:30 - 03:30", "ランチ、夕食、深夜の食事に対応"],
       ["3つの注文方法", "KakaoTalk、Zalo、電話"],
       ["おすすめ組み合わせ", "チャンポン、ジャージャー麺、タンスユク"]
     ],

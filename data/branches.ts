@@ -16,7 +16,7 @@ export const hoChiMinhBranches: Branch[] = [
     address: "77I Bùi Thị Xuân, P. Bến Thành, Quận 1, TP. Hồ Chí Minh",
     phone: "0843377788",
     keywords: ["Doya Jjambbong District 1", "Doya champong District 1", "도야짬뽕 1군", "Korean food near Bui Thi Xuan", "Chinese food near Ben Thanh"],
-    hours: "Daily 10:30 AM - 11:30 PM"
+    hours: "Daily 10:30 AM - 3:30 AM"
   },
   {
     name: "DOYA JJAMBBONG Sky Garden District 7",
