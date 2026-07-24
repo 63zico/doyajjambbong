@@ -23,8 +23,309 @@ const contentClusterDate = "2026-06-11";
 const storeGuideDate = "2026-06-20";
 const doyaCoinDate = "2026-06-21";
 const luggageStorageDate = "2026-07-24";
+const veganMenuDate = "2026-07-24";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "vi",
+    slug: "mon-chay-vegan-quan-1-doya-jjambbong",
+    title: "Món chay và vegan options Quận 1: nấm đông cô jjambbong, mì tương đen và đậu hũ Mapo",
+    description:
+      "Tìm món chay Quận 1 hoặc vegan options gần Bến Thành, Bùi Viện? DOYA JJAMBBONG có thể tư vấn nấm đông cô jjambbong, mì tương đen đổi sang nấm và đậu hũ Mapo không thịt.",
+    eyebrow: "Món chay / Vegan options",
+    date: veganMenuDate,
+    readTime: "4 phút",
+    image: "/images/menu/doya-shiitake-mushroom-jjambbong.png",
+    imageAlt: "Nấm đông cô jjambbong cay tại DOYA JJAMBBONG Quận 1 cho khách tìm món chay",
+    gallery: [
+      {
+        src: "/images/menu/doya-jajangmyeon.jpg",
+        alt: "Mì tương đen có thể hỏi đổi sang nấm đông cô tại DOYA JJAMBBONG"
+      },
+      {
+        src: "/images/menu/doya-mapo-tofu.jpg",
+        alt: "Đậu hũ Mapo có thể hỏi làm không thịt tại DOYA JJAMBBONG"
+      },
+      {
+        src: "/images/menu/doya-mapo-tofu-rice.jpg",
+        alt: "Cơm đậu hũ Mapo tại DOYA JJAMBBONG Quận 1"
+      }
+    ],
+    keywords: [
+      "món chay Quận 1",
+      "vegan options Ho Chi Minh",
+      "vegan Korean restaurant District 1",
+      "mì chay Hàn Quốc",
+      "mì tương đen chay",
+      "đậu hũ Mapo không thịt"
+    ],
+    intro:
+      "Khách ăn chay hoặc cần vegan options ở Quận 1 thường muốn biết món nào có thể điều chỉnh trước khi đến quán. Tại DOYA JJAMBBONG, bạn có thể hỏi nhân viên về nấm đông cô jjambbong, mì tương đen đổi sang nấm đông cô và đậu hũ Mapo làm không thịt.",
+    sections: [
+      {
+        heading: "1. Nấm đông cô jjambbong",
+        body:
+          "Nếu bạn muốn món cay nóng nhưng không dùng hải sản hoặc thịt, hãy hỏi về jjambbong nấm đông cô. Nấm đông cô tạo vị đậm và hợp với nước dùng cay kiểu Hàn-Trung."
+      },
+      {
+        heading: "2. Mì tương đen đổi sang nấm đông cô",
+        body:
+          "Mì tương đen là món dễ hiểu với khách tìm jajangmyeon hoặc Korean black bean noodles. Khi cần lựa chọn chay, hãy nói rõ muốn đổi phần thịt sang nấm đông cô và hỏi lại thành phần sốt trước khi đặt."
+      },
+      {
+        heading: "3. Đậu hũ Mapo không thịt",
+        body:
+          "Đậu hũ Mapo và cơm đậu hũ Mapo có thể hỏi làm không thịt. Đây là lựa chọn hợp với khách muốn món cay, có đậu hũ, dùng cùng cơm hoặc ăn chung với nhóm."
+      },
+      {
+        heading: "Hãy xác nhận trước khi gọi món",
+        body:
+          "Vì tiêu chuẩn vegetarian và vegan có thể khác nhau, khách nên nói rõ no meat, no seafood, no egg, vegan hoặc món chay khi gọi món. Nhân viên sẽ kiểm tra khả năng điều chỉnh theo nguyên liệu và tình trạng bếp trong ngày."
+      }
+    ],
+    cta:
+      "Khi đến DOYA JJAMBBONG tại 77I Bùi Thị Xuân, Quận 1, hãy hỏi nhân viên về món chay hoặc nhắn Zalo trước để xác nhận vegan options."
+  },
+  {
+    locale: "en",
+    slug: "vegan-options-ho-chi-minh-district-1-doya-jjambbong",
+    title: "Vegan Options in Ho Chi Minh District 1: Shiitake Jjambbong, Jajangmyeon, and Mapo Tofu",
+    description:
+      "Looking for vegan options in Ho Chi Minh District 1 near Ben Thanh or Bui Vien? DOYA JJAMBBONG can guide guests on shiitake mushroom jjambbong, jajangmyeon with mushroom, and Mapo tofu without meat.",
+    eyebrow: "Vegan / Vegetarian Options",
+    date: veganMenuDate,
+    readTime: "4 min",
+    image: "/images/menu/doya-shiitake-mushroom-jjambbong.png",
+    imageAlt: "Shiitake mushroom jjambbong at DOYA JJAMBBONG District 1 for vegan options in Ho Chi Minh",
+    gallery: [
+      {
+        src: "/images/menu/doya-jajangmyeon.jpg",
+        alt: "Jajangmyeon black bean noodles that guests can ask to change to shiitake mushroom"
+      },
+      {
+        src: "/images/menu/doya-mapo-tofu.jpg",
+        alt: "Mapo tofu at DOYA JJAMBBONG that guests can ask to prepare without meat"
+      },
+      {
+        src: "/images/menu/doya-mapo-tofu-rice.jpg",
+        alt: "Mapo tofu rice at DOYA JJAMBBONG District 1"
+      }
+    ],
+    keywords: [
+      "vegan options Ho Chi Minh",
+      "vegan food District 1",
+      "vegan Korean restaurant Ho Chi Minh",
+      "vegetarian Korean food District 1",
+      "vegan jajangmyeon Ho Chi Minh",
+      "vegan mapo tofu District 1"
+    ],
+    intro:
+      "Finding vegan options in Ho Chi Minh District 1 can be tricky when you want Korean-Chinese food, spicy noodles, or a hot meal near Ben Thanh and Bui Vien. At DOYA JJAMBBONG, guests can ask the team about three practical vegan-friendly adjustments: shiitake mushroom jjambbong, jajangmyeon changed to shiitake mushroom, and Mapo tofu prepared without meat.",
+    sections: [
+      {
+        heading: "1. Shiitake mushroom jjambbong",
+        body:
+          "For guests who want a spicy Korean-Chinese noodle bowl without seafood or meat, ask about shiitake mushroom jjambbong. Shiitake gives the bowl a deeper flavor while keeping the hot noodle experience close to classic jjambbong."
+      },
+      {
+        heading: "2. Jajangmyeon changed to shiitake mushroom",
+        body:
+          "Jajangmyeon, also searched as Korean black bean noodles or mi tuong den, can be a useful option for guests who prefer a less spicy dish. Ask the team to change the meat to shiitake mushroom and confirm the sauce ingredients before ordering."
+      },
+      {
+        heading: "3. Mapo tofu without meat",
+        body:
+          "Mapo tofu and Mapo tofu rice can be requested without meat. This works well for guests who want tofu, spice, and rice rather than a noodle dish."
+      },
+      {
+        heading: "Confirm your vegan standard before ordering",
+        body:
+          "Vegan and vegetarian standards can be different for each guest. Please tell the team clearly if you need no meat, no seafood, no egg, or vegan preparation, and confirm what is available that day before ordering."
+      }
+    ],
+    cta:
+      "Visit DOYA JJAMBBONG at 77I Bui Thi Xuan, District 1, or message on Zalo before visiting to confirm vegan options."
+  },
+  {
+    locale: "ko",
+    slug: "ho-chi-minh-vegan-menu-doya-jjambbong",
+    title: "호치민 비건 메뉴: 표고버섯짬뽕, 표고버섯 짜장면, 고기 뺀 마파두부",
+    description:
+      "호치민 1군에서 비건 메뉴, 채식 가능 식당, 벤탄시장 근처 비건 한식 메뉴를 찾는 손님을 위한 도야짬뽕 안내. 표고버섯짬뽕, 표고버섯으로 변경한 짜장면, 고기 뺀 마파두부를 문의하세요.",
+    eyebrow: "비건 / 채식 메뉴",
+    date: veganMenuDate,
+    readTime: "4분",
+    image: "/images/menu/doya-shiitake-mushroom-jjambbong.png",
+    imageAlt: "호치민 1군 비건 메뉴로 문의 가능한 도야짬뽕 표고버섯짬뽕",
+    gallery: [
+      {
+        src: "/images/menu/doya-jajangmyeon.jpg",
+        alt: "표고버섯으로 변경 문의가 가능한 도야짜장 짜장면"
+      },
+      {
+        src: "/images/menu/doya-mapo-tofu.jpg",
+        alt: "고기 빼고 주문 문의가 가능한 도야짬뽕 마파두부"
+      },
+      {
+        src: "/images/menu/doya-mapo-tofu-rice.jpg",
+        alt: "호치민 1군 도야짬뽕 마파두부밥"
+      }
+    ],
+    keywords: [
+      "호치민 비건 메뉴",
+      "호치민 1군 비건",
+      "호치민 채식 메뉴",
+      "벤탄시장 비건 식당",
+      "부이비엔 채식 가능 식당",
+      "비건 짜장면 호치민"
+    ],
+    intro:
+      "호치민 1군에서 비건 메뉴나 채식 가능한 식당을 찾는 손님이라면, 도야짬뽕에서 주문 전 재료 변경 가능 여부를 문의할 수 있습니다. 대표적으로 표고버섯짬뽕, 짜장면의 고기 부분을 표고버섯으로 변경, 마파두부의 고기 제외 요청이 가능합니다.",
+    sections: [
+      {
+        heading: "1. 표고버섯짬뽕",
+        body:
+          "매운 국물과 면을 원하지만 해산물이나 고기를 피하고 싶은 손님은 표고버섯짬뽕을 문의해보세요. 표고버섯은 향과 감칠맛이 있어 한국식 짬뽕 스타일의 매운 국물과 잘 어울립니다."
+      },
+      {
+        heading: "2. 짜장면은 표고버섯으로 변경 문의",
+        body:
+          "짜장면은 맵지 않은 메뉴라 비건이나 채식 손님이 먼저 보기 좋은 메뉴입니다. 주문할 때 고기 대신 표고버섯으로 변경 가능한지, 소스와 토핑에 동물성 재료가 들어가는지 직원에게 확인하면 좋습니다."
+      },
+      {
+        heading: "3. 마파두부는 고기 빼고 가능",
+        body:
+          "마파두부와 마파두부밥은 고기 제외 요청을 할 수 있습니다. 두부와 매콤한 소스를 좋아하는 손님, 면보다 밥 메뉴를 원하는 손님에게 잘 맞는 선택지입니다."
+      },
+      {
+        heading: "엄격한 비건 기준은 주문 전 확인",
+        body:
+          "비건 기준은 사람마다 다를 수 있습니다. 고기 제외, 해산물 제외, 계란 제외, 육수 확인, 소스 확인처럼 필요한 조건을 짧게 말하면 직원이 당일 재료와 조리 가능 여부를 더 빠르게 안내할 수 있습니다."
+      }
+    ],
+    cta:
+      "호치민 1군 도야짬뽕에서 비건 메뉴나 채식 변경이 필요하면 방문 전 Zalo, 카카오톡, 전화로 먼저 문의하세요."
+  },
+  {
+    locale: "zh",
+    slug: "hu-zhi-ming-shi-su-shi-vegan-menu-doya",
+    title: "胡志明市素食与纯素菜单：香菇辣海鲜面、香菇炸酱面和无肉麻婆豆腐",
+    description:
+      "在胡志明市第1郡寻找素食、纯素选项或韩国餐厅 vegan options？DOYA JJAMBBONG 可咨询香菇 jjambbong、香菇炸酱面和无肉麻婆豆腐。",
+    eyebrow: "素食 / 纯素选项",
+    date: veganMenuDate,
+    readTime: "4 分钟",
+    image: "/images/menu/doya-shiitake-mushroom-jjambbong.png",
+    imageAlt: "胡志明市第1郡 DOYA JJAMBBONG 可咨询的香菇 jjambbong 素食选项",
+    gallery: [
+      {
+        src: "/images/menu/doya-jajangmyeon.jpg",
+        alt: "DOYA JJAMBBONG 可咨询改成香菇的韩式炸酱面"
+      },
+      {
+        src: "/images/menu/doya-mapo-tofu.jpg",
+        alt: "DOYA JJAMBBONG 可咨询不放肉的麻婆豆腐"
+      },
+      {
+        src: "/images/menu/doya-mapo-tofu-rice.jpg",
+        alt: "胡志明市第1郡 DOYA JJAMBBONG 麻婆豆腐饭"
+      }
+    ],
+    keywords: [
+      "胡志明市素食",
+      "胡志明市纯素餐厅",
+      "胡志明第1郡素食",
+      "韩国餐厅素食 胡志明市",
+      "纯素炸酱面",
+      "无肉麻婆豆腐"
+    ],
+    intro:
+      "在胡志明市第1郡寻找素食或纯素选项时，游客常常需要先确认食材。DOYA JJAMBBONG 位于 Bui Thi Xuan，客人可在点餐前咨询香菇 jjambbong、炸酱面改香菇，以及麻婆豆腐不放肉的做法。",
+    sections: [
+      {
+        heading: "1. 香菇 jjambbong",
+        body:
+          "如果想吃热辣的韩式中餐面，但不想使用海鲜或肉类，可以向店员咨询香菇 jjambbong。香菇的香味和口感适合搭配辣汤面。"
+      },
+      {
+        heading: "2. 炸酱面可咨询改成香菇",
+        body:
+          "韩式炸酱面也常被搜索为 jajangmyeon、Korean black bean noodles 或 mi tuong den。需要素食时，请向店员确认是否可以把肉类部分改成香菇，并确认酱料成分。"
+      },
+      {
+        heading: "3. 麻婆豆腐可咨询不放肉",
+        body:
+          "麻婆豆腐和麻婆豆腐饭可以咨询不放肉的做法。适合想吃豆腐、辣味和米饭的客人。"
+      },
+      {
+        heading: "纯素要求请点餐前确认",
+        body:
+          "每位客人的素食或纯素标准不同。请清楚说明不吃肉、不吃海鲜、不吃蛋、纯素或需要确认酱料，店员会根据当天食材和厨房情况回复。"
+      }
+    ],
+    cta:
+      "到胡志明市第1郡 77I Bui Thi Xuan 的 DOYA JJAMBBONG 用餐前，可通过 Zalo 或电话先确认素食和纯素选项。"
+  },
+  {
+    locale: "ja",
+    slug: "ho-chi-minh-vegan-menu-doya-jjambbong-ja",
+    title: "ホーチミンのビーガン対応メニュー：椎茸チャンポン、椎茸ジャージャー麺、肉なし麻婆豆腐",
+    description:
+      "ホーチミン1区でビーガン、ベジタリアン、韓国料理の vegan options を探す方へ。DOYA JJAMBBONG では椎茸チャンポン、椎茸に変更したジャージャー麺、肉なし麻婆豆腐を相談できます。",
+    eyebrow: "ビーガン / ベジタリアン",
+    date: veganMenuDate,
+    readTime: "4分",
+    image: "/images/menu/doya-shiitake-mushroom-jjambbong.png",
+    imageAlt: "ホーチミン1区 DOYA JJAMBBONG のビーガン対応として相談できる椎茸チャンポン",
+    gallery: [
+      {
+        src: "/images/menu/doya-jajangmyeon.jpg",
+        alt: "椎茸に変更できるか相談できる DOYA JJAMBBONG のジャージャー麺"
+      },
+      {
+        src: "/images/menu/doya-mapo-tofu.jpg",
+        alt: "肉なしで相談できる DOYA JJAMBBONG の麻婆豆腐"
+      },
+      {
+        src: "/images/menu/doya-mapo-tofu-rice.jpg",
+        alt: "ホーチミン1区 DOYA JJAMBBONG の麻婆豆腐ご飯"
+      }
+    ],
+    keywords: [
+      "ホーチミン ビーガン",
+      "ホーチミン1区 ビーガン",
+      "ホーチミン ベジタリアン",
+      "ベンタイン市場 ビーガン",
+      "ブイビエン ベジタリアン",
+      "ビーガン ジャージャー麺"
+    ],
+    intro:
+      "ホーチミン1区でビーガンやベジタリアン対応の韓国中華を探す時は、注文前に食材を確認できる店が便利です。DOYA JJAMBBONG では、椎茸チャンポン、ジャージャー麺の具材を椎茸へ変更、麻婆豆腐を肉なしにする相談ができます。",
+    sections: [
+      {
+        heading: "1. 椎茸チャンポン",
+        body:
+          "辛い麺を食べたいけれど肉や海鮮を避けたい方は、椎茸チャンポンについてスタッフに相談してください。椎茸の香りと旨味は、韓国式の辛いスープ麺と相性が良いです。"
+      },
+      {
+        heading: "2. ジャージャー麺は椎茸に変更を相談",
+        body:
+          "ジャージャー麺は辛くない韓国中華メニューとして選びやすい一品です。肉の部分を椎茸に変更できるか、ソースやトッピングの内容を注文前に確認してください。"
+      },
+      {
+        heading: "3. 麻婆豆腐は肉なしで相談可能",
+        body:
+          "麻婆豆腐と麻婆豆腐ご飯は、肉なしで作れるか相談できます。豆腐、辛味、ご飯を合わせたい方に向いたメニューです。"
+      },
+      {
+        heading: "厳格なビーガン基準は事前確認を",
+        body:
+          "ビーガンやベジタリアンの基準は人によって異なります。肉なし、海鮮なし、卵なし、スープやソースの確認など、必要な条件をスタッフに伝えてから注文してください。"
+      }
+    ],
+    cta:
+      "ホーチミン1区の DOYA JJAMBBONG でビーガン対応メニューを希望する場合は、来店前に Zalo、KakaoTalk、電話で確認してください。"
+  },
   {
     locale: "en",
     slug: "luggage-storage-ho-chi-minh-district-1-doya",
