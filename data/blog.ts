@@ -22,8 +22,249 @@ const seoExpansionDate = "2026-06-10";
 const contentClusterDate = "2026-06-11";
 const storeGuideDate = "2026-06-20";
 const doyaCoinDate = "2026-06-21";
+const luggageStorageDate = "2026-07-24";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "en",
+    slug: "luggage-storage-ho-chi-minh-district-1-doya",
+    title: "Luggage Storage in Ho Chi Minh District 1 near Ben Thanh and Bui Vien",
+    description:
+      "Looking for luggage storage in Ho Chi Minh District 1? DOYA JJAMBBONG near Ben Thanh and Bui Vien offers a practical stop for Korean food and temporary bag storage during your trip.",
+    eyebrow: "District 1 Travel Guide",
+    date: luggageStorageDate,
+    readTime: "4 min",
+    image: "/images/store/doya-district-1-streetfront-day.png",
+    imageAlt: "DOYA JJAMBBONG storefront on Bui Thi Xuan for luggage storage in Ho Chi Minh District 1",
+    gallery: [
+      {
+        src: "/images/store/doya-district-1-interior-neon-wall.png",
+        alt: "Interior neon wall at DOYA JJAMBBONG District 1 near Ben Thanh"
+      },
+      {
+        src: "/images/store/doya-district-1-interior-tables-lanterns.png",
+        alt: "Dining tables inside DOYA JJAMBBONG near Bui Vien and Pham Ngu Lao"
+      },
+      {
+        src: "/images/store/doya-district-1-neon-night.png",
+        alt: "DOYA JJAMBBONG neon storefront at night for late-night Korean food in District 1"
+      }
+    ],
+    keywords: [
+      "luggage storage Ho Chi Minh",
+      "luggage storage District 1",
+      "bag storage near Ben Thanh Market",
+      "luggage storage near Bui Vien",
+      "Korean restaurant luggage storage Ho Chi Minh",
+      "where to store luggage in Saigon"
+    ],
+    intro:
+      "If you are moving between hotel checkout, Ben Thanh Market, Bui Vien, and an evening flight, finding a place for luggage storage in Ho Chi Minh District 1 can make the day much easier. DOYA JJAMBBONG is a Korean-Chinese restaurant on Bui Thi Xuan where travelers can stop for a meal and ask the team about temporary bag storage while dining.",
+    sections: [
+      {
+        heading: "A useful stop between Ben Thanh, Bui Vien, and Pham Ngu Lao",
+        body:
+          "DOYA JJAMBBONG is located at 77I Bui Thi Xuan in District 1, close to Ben Thanh Market, Bui Vien Walking Street, Pham Ngu Lao, and many central hotels. That location is convenient when you have a suitcase or backpack and want Korean food before checking in, after checkout, or before a late-night plan."
+      },
+      {
+        heading: "Ask the team about temporary luggage storage",
+        body:
+          "Guests can ask the DOYA team about temporary luggage or bag storage at the restaurant. Availability can depend on space, timing, and store conditions, so it is best to message or call ahead if you are carrying large suitcases."
+      },
+      {
+        heading: "Eat while your bags are nearby",
+        body:
+          "Instead of searching for a separate locker first, travelers can plan a meal with jjambbong, jajangmyeon, tangsuyuk, or Korean comfort food, then continue to Ben Thanh, Bui Vien, or the airport route after confirming bag storage with staff."
+      },
+      {
+        heading: "Good for late arrivals and late departures",
+        body:
+          "DOYA is open daily from 10:30 AM to 3:30 AM, so it can work for late meals, after-drinks food, and travelers with awkward check-in or flight times. For luggage storage, always confirm the current availability directly with the restaurant."
+      }
+    ],
+    cta:
+      "Search DOYA JJAMBBONG on Google Maps or visit 77I Bui Thi Xuan, Ben Thanh Ward, District 1, and ask the team about luggage storage when you dine."
+  },
+  {
+    locale: "ko",
+    slug: "ho-chi-minh-jim-bogwan-1gun-doya",
+    title: "호치민 짐보관, 1군 벤탄시장·부이비엔 근처 도야짬뽕 이용 가이드",
+    description:
+      "호치민 1군 짐보관, 벤탄시장 짐보관, 부이비엔 캐리어 보관을 찾는 여행자를 위한 도야짬뽕 안내. 식사 전후 임시 짐보관은 매장 상황에 따라 직원에게 확인하세요.",
+    eyebrow: "호치민 여행 가이드",
+    date: luggageStorageDate,
+    readTime: "4분",
+    image: "/images/store/doya-district-1-streetfront-day.png",
+    imageAlt: "호치민 1군 짐보관 검색 시 찾기 쉬운 도야짬뽕 Bui Thi Xuan 매장 외관",
+    gallery: [
+      {
+        src: "/images/store/doya-district-1-interior-neon-wall.png",
+        alt: "호치민 1군 도야짬뽕 실내 네온 좌석 공간"
+      },
+      {
+        src: "/images/store/doya-district-1-interior-tables-lanterns.png",
+        alt: "부이비엔과 벤탄시장 근처 도야짬뽕 내부 테이블 공간"
+      },
+      {
+        src: "/images/store/doya-district-1-neon-night.png",
+        alt: "호치민 새벽 식사와 캐리어 보관 문의가 가능한 도야짬뽕 야간 외관"
+      }
+    ],
+    keywords: [
+      "호치민 짐보관",
+      "호치민 1군 짐보관",
+      "벤탄시장 짐보관",
+      "부이비엔 짐보관",
+      "호치민 캐리어 보관",
+      "호치민 짐 맡기는 곳"
+    ],
+    intro:
+      "호텔 체크아웃 후 벤탄시장, 부이비엔, 팜응우라오를 돌아다녀야 할 때 가장 불편한 것이 캐리어입니다. 도야짬뽕은 호치민 1군 Bui Thi Xuan에 있는 한국식 중화요리 매장으로, 식사 전후 임시 짐보관이 필요한 여행자는 매장 직원에게 가능 여부를 확인할 수 있습니다.",
+    sections: [
+      {
+        heading: "벤탄시장, 부이비엔, 팜응우라오에서 이동하기 쉬운 위치",
+        body:
+          "도야짬뽕은 77I Bui Thi Xuan, Ben Thanh Ward, District 1에 있습니다. 벤탄시장, 부이비엔 워킹스트리트, 팜응우라오, 1군 호텔 구역에서 이동하기 좋아 호치민 짐보관이나 캐리어 보관 장소를 찾는 여행 동선과 잘 맞습니다."
+      },
+      {
+        heading: "임시 짐보관은 매장 상황에 따라 확인",
+        body:
+          "식사하러 방문하는 손님은 캐리어, 백팩, 쇼핑백 등 임시 짐보관 가능 여부를 직원에게 문의할 수 있습니다. 단, 보관 가능 여부는 매장 공간, 시간대, 혼잡도에 따라 달라질 수 있어 큰 캐리어가 있다면 방문 전 전화나 Zalo로 먼저 확인하는 것을 추천합니다."
+      },
+      {
+        heading: "짐을 들고 다니기 전 뜨거운 한 끼",
+        body:
+          "짐보관만 검색하다 보면 식사 동선이 애매해질 수 있습니다. 도야짬뽕에서는 짬뽕, 짜장면, 탕수육, 한국식 중식 메뉴를 먹고, 직원에게 짐 관련 안내를 받은 뒤 벤탄시장, 부이비엔, 공항 이동 동선으로 이어가기 좋습니다."
+      },
+      {
+        heading: "새벽 03:30까지 영업",
+        body:
+          "도야짬뽕은 매일 10:30부터 새벽 03:30까지 운영합니다. 늦은 체크인, 늦은 비행기, 부이비엔 방문 전후 식사에도 맞기 때문에 호치민 1군에서 짐보관과 식사를 함께 고려하는 여행자에게 실용적인 선택지가 될 수 있습니다."
+      }
+    ],
+    cta:
+      "호치민 1군에서 짐보관이 필요하면 Google Maps에서 DOYA JJAMBBONG을 검색하고, 77I Bui Thi Xuan 방문 전 직원에게 보관 가능 여부를 확인하세요."
+  },
+  {
+    locale: "zh",
+    slug: "hu-zhi-ming-shi-xingli-jicun-doya",
+    title: "胡志明市行李寄存：第1郡滨城市场和 Bui Vien 附近 DOYA 指南",
+    description:
+      "在胡志明市第1郡寻找行李寄存、滨城市场行李寄存或 Bui Vien 附近寄存行李？DOYA JJAMBBONG 位于市中心，适合用餐时咨询临时行李寄存。",
+    eyebrow: "胡志明市旅行指南",
+    date: luggageStorageDate,
+    readTime: "4 分钟",
+    image: "/images/store/doya-district-1-streetfront-day.png",
+    imageAlt: "胡志明市第1郡 DOYA JJAMBBONG 门店外观，靠近滨城市场可咨询行李寄存",
+    gallery: [
+      {
+        src: "/images/store/doya-district-1-interior-neon-wall.png",
+        alt: "DOYA JJAMBBONG 第1郡餐厅内部霓虹座位区"
+      },
+      {
+        src: "/images/store/doya-district-1-interior-tables-lanterns.png",
+        alt: "Bui Vien 和滨城市场附近 DOYA JJAMBBONG 餐厅内部桌位"
+      },
+      {
+        src: "/images/store/doya-district-1-neon-night.png",
+        alt: "胡志明市第1郡 DOYA JJAMBBONG 夜晚门店外观"
+      }
+    ],
+    keywords: [
+      "胡志明市行李寄存",
+      "胡志明第1郡行李寄存",
+      "滨城市场行李寄存",
+      "Bui Vien 行李寄存",
+      "胡志明市寄存行李",
+      "胡志明市韩国餐厅 行李寄存"
+    ],
+    intro:
+      "在胡志明市旅行时，如果酒店退房后还想去滨城市场、Bui Vien 步行街或第1郡中心区，行李寄存会变得很重要。DOYA JJAMBBONG 位于 Bui Thi Xuan 街，客人可在用餐时向店员咨询临时行李寄存的可能性。",
+    sections: [
+      {
+        heading: "靠近滨城市场、Bui Vien 和 Pham Ngu Lao",
+        body:
+          "DOYA JJAMBBONG 地址是 77I Bui Thi Xuan, Ben Thanh Ward, District 1。这里靠近滨城市场、Bui Vien 步行街、Pham Ngu Lao 和市中心酒店区，适合拖着行李在第1郡移动的游客安排用餐和短暂停留。"
+      },
+      {
+        heading: "临时行李寄存请先向店员确认",
+        body:
+          "到店用餐的客人可以询问是否可临时寄存行李、背包或购物袋。是否可以寄存会根据店内空间、用餐时段和现场情况而变化，如果是大型行李箱，建议先通过电话或 Zalo 联系确认。"
+      },
+      {
+        heading: "用餐和行李安排放在同一站",
+        body:
+          "游客不一定要先找独立寄存柜再吃饭。可以在 DOYA 品尝 jjambbong 辣海鲜面、韩式炸酱面、糖醋肉等韩式中餐，再根据店员说明安排下一段去滨城市场、Bui Vien 或机场的路线。"
+      },
+      {
+        heading: "营业到凌晨 03:30",
+        body:
+          "DOYA 每天 10:30 至凌晨 03:30 营业，适合午餐、晚餐、夜宵和晚班飞机前后的用餐安排。关于行李寄存，请以当天店内实际可用空间和员工回复为准。"
+      }
+    ],
+    cta:
+      "在 Google Maps 搜索 DOYA JJAMBBONG，前往胡志明市第1郡 77I Bui Thi Xuan，并在用餐时向店员咨询行李寄存。"
+  },
+  {
+    locale: "ja",
+    slug: "ho-chi-minh-nimotsu-azukari-doya",
+    title: "ホーチミン 荷物預かり：1区ベンタイン市場・ブイビエン近くの DOYA",
+    description:
+      "ホーチミン1区で荷物預かり、ベンタイン市場近くのスーツケース預かり、ブイビエン近くの荷物置き場を探す方へ。DOYA JJAMBBONG で食事時に一時預かりを相談できます。",
+    eyebrow: "ホーチミン旅行ガイド",
+    date: luggageStorageDate,
+    readTime: "4分",
+    image: "/images/store/doya-district-1-streetfront-day.png",
+    imageAlt: "ホーチミン1区で荷物預かりを相談できる DOYA JJAMBBONG 店舗外観",
+    gallery: [
+      {
+        src: "/images/store/doya-district-1-interior-neon-wall.png",
+        alt: "ホーチミン1区 DOYA JJAMBBONG の店内ネオン席"
+      },
+      {
+        src: "/images/store/doya-district-1-interior-tables-lanterns.png",
+        alt: "ベンタイン市場とブイビエン近くの DOYA JJAMBBONG 店内テーブル"
+      },
+      {
+        src: "/images/store/doya-district-1-neon-night.png",
+        alt: "ホーチミン1区 DOYA JJAMBBONG の夜の外観"
+      }
+    ],
+    keywords: [
+      "ホーチミン 荷物預かり",
+      "ホーチミン1区 荷物預かり",
+      "ベンタイン市場 荷物預かり",
+      "ブイビエン 荷物預かり",
+      "ホーチミン スーツケース預かり",
+      "サイゴン 荷物預かり"
+    ],
+    intro:
+      "ホテルのチェックアウト後にベンタイン市場、ブイビエン、ファングーラオを歩くなら、スーツケースやバッグの置き場所が問題になります。DOYA JJAMBBONG はホーチミン1区 Bui Thi Xuan にある韓国中華レストランで、食事の際に一時的な荷物預かりについてスタッフに相談できます。",
+    sections: [
+      {
+        heading: "ベンタイン市場、ブイビエン、ファングーラオに近い立地",
+        body:
+          "DOYA JJAMBBONG は 77I Bui Thi Xuan, Ben Thanh Ward, District 1 にあります。ベンタイン市場、ブイビエン通り、ファングーラオ、1区中心部のホテルから行きやすく、荷物を持った旅行者の食事スポットとして使いやすい場所です。"
+      },
+      {
+        heading: "荷物の一時預かりはスタッフに確認",
+        body:
+          "食事で来店する方は、スーツケース、バックパック、買い物袋などの一時預かりが可能かスタッフに確認できます。店内スペース、時間帯、混雑状況によって対応が変わるため、大きな荷物がある場合は事前に電話や Zalo で確認すると安心です。"
+      },
+      {
+        heading: "食事と荷物の相談を同じ場所で",
+        body:
+          "ロッカーだけを探すより、食事の予定と合わせると移動が楽になります。DOYA ではチャンポン、ジャージャー麺、タンスユクなどを食べてから、ベンタイン市場、ブイビエン、空港方面へ移動しやすいです。"
+      },
+      {
+        heading: "深夜 03:30 まで営業",
+        body:
+          "DOYA は毎日 10:30 から深夜 03:30 まで営業しています。遅いチェックイン、夜便、ブイビエン前後の食事にも合わせやすいですが、荷物預かりは当日の店内状況とスタッフの案内を必ず確認してください。"
+      }
+    ],
+    cta:
+      "Google Maps で DOYA JJAMBBONG を検索し、ホーチミン1区 77I Bui Thi Xuan で食事の際に荷物預かりについて相談してください。"
+  },
   {
     locale: "en",
     slug: "doya-coin-rewards-district-1",
