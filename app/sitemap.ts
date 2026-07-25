@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { blogPath, blogPosts } from "@/data/blog";
+import { blogPath, blogPosts, getBlogAlternatePosts } from "@/data/blog";
 import { menuDetailSlugs, menuDetailUrl } from "@/data/menu-details";
 import { absoluteUrl, Locale, paths, site } from "@/lib/site";
 
@@ -41,12 +41,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }));
 
-  const blogPages = blogPosts.map((post) => ({
-    url: `${site.baseUrl}${blogPath(post.locale, post.slug)}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "monthly" as const,
-    priority: 0.75
-  }));
+  const blogPages = blogPosts.map((post) => {
+    const alternatePosts = getBlogAlternatePosts(post);
+
+    return {
+      url: `${site.baseUrl}${blogPath(post.locale, post.slug)}`,
+      lastModified: new Date(post.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+      ...(alternatePosts.length
+        ? {
+            alternates: {
+              languages: {
+                ...Object.fromEntries(alternatePosts.map((alternatePost) => [alternatePost.locale, `${site.baseUrl}${blogPath(alternatePost.locale, alternatePost.slug)}`])),
+                "x-default": `${site.baseUrl}${blogPath(site.defaultLocale as Locale, alternatePosts.find((alternatePost) => alternatePost.locale === site.defaultLocale)?.slug ?? post.slug)}`
+              }
+            }
+          }
+        : {})
+    };
+  });
 
   const menuDetailPages = site.locales.flatMap((locale) =>
     menuDetailSlugs.map((slug) => ({

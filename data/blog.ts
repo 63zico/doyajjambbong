@@ -11,6 +11,8 @@ export type BlogPost = {
   image: string;
   imageAlt: string;
   gallery?: { src: string; alt: string }[];
+  alternateGroup?: string;
+  faq?: { question: string; answer: string }[];
   keywords: string[];
   intro: string;
   sections: { heading: string; body: string }[];
@@ -24,8 +26,227 @@ const storeGuideDate = "2026-06-20";
 const doyaCoinDate = "2026-06-21";
 const luggageStorageDate = "2026-07-24";
 const veganMenuDate = "2026-07-24";
+const rainyDayJjambbongDate = "2026-07-25";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "ko",
+    slug: "rainy-day-jjambbong-ho-chi-minh",
+    title: "비 오는 날 짬뽕이 생각나는 이유 5가지 | 호치민 1군 도야짬뽕",
+    description:
+      "호치민에서 비 오는 날 음식, 따뜻한 국물, 짬뽕, 배달 음식을 찾는다면 읽기 좋은 가이드. 도야짬뽕에서 얼큰한 짬뽕을 매장 방문 또는 5km 무료 배달로 즐겨보세요.",
+    eyebrow: "비 오는 날 음식",
+    date: rainyDayJjambbongDate,
+    readTime: "5분",
+    image: "/images/blog/rainy-day-jjambbong-bowl-hands.jpg",
+    imageAlt: "비 오는 날 호치민에서 먹기 좋은 따뜻한 도야짬뽕 한 그릇",
+    gallery: [
+      { src: "/images/blog/rainy-day-jjambbong-table.jpg", alt: "호치민 비 오는 날 음식으로 좋은 얼큰한 짬뽕" },
+      { src: "/images/blog/rainy-day-spicy-noodle-bowl.jpg", alt: "비 오는 날 따뜻한 국물과 면을 함께 즐기는 짬뽕" },
+      { src: "/images/blog/doya-jjambbong-serving-bowl.jpg", alt: "도야짬뽕 직원이 따뜻한 짬뽕을 준비하는 모습" }
+    ],
+    alternateGroup: "rainy-day-jjambbong",
+    keywords: ["호치민 맛집", "호치민 한식당", "호치민 짬뽕", "비 오는 날 음식", "호치민 배달 음식", "호치민 따뜻한 국물", "부이비엔 짬뽕", "벤탄시장 한식당"],
+    intro:
+      "호치민의 비 오는 날은 이동이 번거롭고, 습한 공기 때문에 따뜻한 국물 음식이 더 생각납니다. 그럴 때 짬뽕은 매운 국물, 면, 채소, 고기와 해산물을 한 그릇으로 즐길 수 있어 부담 없이 떠올리기 좋은 메뉴입니다.",
+    sections: [
+      {
+        heading: "1. 따뜻한 국물이 주는 편안함",
+        body:
+          "비가 오면 차가운 음료나 가벼운 간식보다 따뜻한 국물이 더 끌릴 때가 많습니다. 짬뽕은 뜨거운 국물과 면이 함께 있어 식사 한 끼로 든든하고, 비 오는 날 실내에서 천천히 먹기 좋습니다."
+      },
+      {
+        heading: "2. 얼큰한 맛과 비 오는 날의 분위기",
+        body:
+          "비 오는 날에는 평소보다 향이 진하고 매콤한 음식이 더 잘 어울립니다. 짬뽕의 얼큰한 국물은 흐린 날씨와 잘 맞고, 과장된 건강 표현 없이도 기분 전환이 되는 음식으로 느껴집니다."
+      },
+      {
+        heading: "3. 면, 고기, 해산물, 채소를 한 그릇으로",
+        body:
+          "짬뽕은 면만 먹는 메뉴가 아니라 채소, 고기, 해산물, 국물을 함께 즐기는 한 그릇 음식입니다. 여러 메뉴를 따로 고르기 귀찮은 날에도 선택이 쉽고, 혼자 먹거나 같이 나눠 먹기에도 좋습니다."
+      },
+      {
+        heading: "4. 외출하기 싫은 날 배달로 먹기 좋음",
+        body:
+          "호치민에서 비가 많이 오는 날에는 Grab을 기다리거나 길을 걷는 것 자체가 번거로울 수 있습니다. 도야짬뽕은 매장 반경 5km 이내 무료 배달이 가능하니, 비 오는 날에는 매장 번호 또는 Zalo로 주문 가능 여부를 확인해보세요."
+      },
+      {
+        heading: "5. 친구, 가족과 함께 즐기기 좋은 메뉴",
+        body:
+          "짬뽕은 혼자 먹어도 좋지만 짜장면, 탕수육, 군만두 같은 메뉴와 함께 주문하면 친구나 가족과 나눠 먹기 좋습니다. 비 때문에 외출 계획이 바뀐 날에도 집이나 숙소에서 따뜻한 식사를 만들기 쉽습니다."
+      },
+      {
+        heading: "호치민에서 비 오는 날 먹기 좋은 짬뽕",
+        body:
+          "호치민 1군에서 비 오는 날 음식, 호치민 짬뽕, 호치민 배달 음식을 찾는다면 위치와 주문 편의성이 중요합니다. 도야짬뽕은 77i Bui Thi Xuan, District 1에 있어 벤탄시장, 부이비엔, 팜응우라오, 1군 호텔 구역에서 접근하기 쉽습니다."
+      },
+      {
+        heading: "도야짬뽕 방문과 배달 주문",
+        body:
+          "도야짬뽕은 호치민 한식당과 한국식 중화요리를 찾는 손님에게 짬뽕, 짜장면, 탕수육을 안내합니다. 메뉴가 궁금하면 전체 메뉴, 위치 안내, 부이비엔 근처 한식당 글을 함께 확인하고, 비 오는 날에는 전화 또는 Zalo 084 337 7788로 배달을 문의하세요."
+      }
+    ],
+    faq: [
+      { question: "호치민에서 비 오는 날 짬뽕 배달이 가능한가요?", answer: "도야짬뽕은 매장 반경 5km 이내 무료 배달이 가능합니다. 비 오는 날에는 전화 또는 Zalo 084 337 7788로 현재 배달 가능 여부를 확인하세요." },
+      { question: "도야짬뽕은 어디에 있나요?", answer: "도야짬뽕은 77i Bui Thi Xuan, District 1, Ho Chi Minh City에 있습니다. 벤탄시장과 부이비엔 근처에서 이동하기 좋습니다." },
+      { question: "비 오는 날 짬뽕 말고 같이 먹기 좋은 메뉴가 있나요?", answer: "짜장면, 탕수육, 군만두처럼 맵지 않거나 나눠 먹기 좋은 메뉴와 함께 주문하기 좋습니다." },
+      { question: "운영시간은 어떻게 확인하나요?", answer: "사이트에 표시된 최신 매장 정보 기준으로 확인하거나, 방문 전 전화 또는 Zalo 084 337 7788로 문의하는 것이 가장 정확합니다." }
+    ],
+    cta:
+      "밖에 나가기 싫은 비 오는 날, 따뜻하고 얼큰한 짬뽕을 집에서 즐겨보세요. 도야짬뽕은 매장 반경 5km 이내 무료 배달이 가능합니다. 전화 또는 Zalo: 084 337 7788"
+  },
+  {
+    locale: "vi",
+    slug: "mon-ngon-ngay-mua-mi-cay-han-quoc-quan-1",
+    title: "5 lý do mì cay Hàn Quốc hợp với ngày mưa ở TP.HCM",
+    description:
+      "Tìm món ngon ngày mưa, mì cay Hàn Quốc hoặc giao đồ ăn Quận 1? DOYA JJAMBBONG gợi ý vì sao một tô jjambbong nóng cay hợp với ngày mưa ở TP.HCM.",
+    eyebrow: "Món ngon ngày mưa",
+    date: rainyDayJjambbongDate,
+    readTime: "5 phút",
+    image: "/images/blog/rainy-day-jjambbong-bowl-hands.jpg",
+    imageAlt: "Tô mì cay Hàn Quốc nóng tại DOYA JJAMBBONG cho ngày mưa ở Quận 1",
+    gallery: [
+      { src: "/images/blog/rainy-day-jjambbong-table.jpg", alt: "Mì cay Hàn Quốc jjambbong trên bàn cho món ngon ngày mưa" },
+      { src: "/images/blog/rainy-day-spicy-noodle-bowl.jpg", alt: "Tô mì cay nóng với rau và nước dùng đỏ" },
+      { src: "/images/blog/doya-jjambbong-serving-bowl.jpg", alt: "Nhân viên DOYA JJAMBBONG phục vụ tô mì nóng" }
+    ],
+    alternateGroup: "rainy-day-jjambbong",
+    keywords: ["món ngon ngày mưa", "mì cay Hàn Quốc", "quán ăn Hàn Quốc Quận 1", "giao đồ ăn Quận 1", "món nóng ngày mưa", "jjambbong Ho Chi Minh", "Korean food in Ho Chi Minh City"],
+    intro:
+      "Ngày mưa ở TP.HCM thường khiến việc ra ngoài trở nên bất tiện. Khi đó, một tô mì cay Hàn Quốc nóng, có nước dùng đậm vị, rau, mì, thịt và hải sản là lựa chọn dễ hiểu cho bữa trưa, bữa tối hoặc một bữa ăn giao tận nơi.",
+    sections: [
+      { heading: "1. Nước dùng nóng tạo cảm giác dễ chịu", body: "Khi trời mưa, nhiều người muốn một món nóng hơn là đồ ăn nhẹ. Jjambbong có nước dùng nóng và mì, phù hợp khi bạn muốn một bữa ăn đầy đủ nhưng không cần gọi quá nhiều món." },
+      { heading: "2. Vị cay hợp với không khí ngày mưa", body: "Món cay thường hợp với cảm giác ẩm ướt trong ngày mưa. Vị cay của mì Hàn-Trung giúp bữa ăn rõ vị hơn, nhưng vẫn nên chọn mức cay phù hợp với khẩu vị của bạn." },
+      { heading: "3. Một tô có mì, rau, thịt và hải sản", body: "Một tô jjambbong không chỉ có mì. Bạn có thể thưởng thức nước dùng, rau, thịt, hải sản và sợi mì trong cùng một món, tiện cho những ngày không muốn suy nghĩ quá nhiều về thực đơn." },
+      { heading: "4. Phù hợp để đặt giao khi ngại ra ngoài", body: "Ngày mưa ở Quận 1 có thể khiến việc đi lại chậm hơn. DOYA JJAMBBONG có thể giao miễn phí trong bán kính 5km quanh cửa hàng; hãy gọi hoặc nhắn Zalo 084 337 7788 để hỏi tình trạng giao món trong ngày." },
+      { heading: "5. Dễ ăn cùng bạn bè và gia đình", body: "Nếu ăn nhóm, bạn có thể gọi jjambbong cùng mì tương đen, tangsuyuk hoặc mandu chiên. Cách gọi này hợp với khách muốn vừa có món cay nóng vừa có món dễ chia sẻ." },
+      { heading: "Mì cay Hàn Quốc cho ngày mưa ở Quận 1", body: "Nếu bạn tìm món ngon ngày mưa, quán ăn Hàn Quốc Quận 1, mì cay Hàn Quốc hoặc giao đồ ăn Quận 1, vị trí của DOYA ở 77i Bùi Thị Xuân rất thuận tiện gần Bến Thành, Bùi Viện và khu khách sạn trung tâm." },
+      { heading: "Đặt DOYA JJAMBBONG khi trời mưa", body: "DOYA JJAMBBONG phục vụ jjambbong, mì tương đen, tangsuyuk và các món Hàn-Trung dễ gọi. Khi trời mưa, bạn có thể xem menu, chỉ đường hoặc nhắn Zalo để hỏi giao món trong bán kính 5km." }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG có giao hàng ngày mưa không?", answer: "Có thể giao miễn phí trong bán kính 5km quanh cửa hàng. Vui lòng gọi hoặc nhắn Zalo 084 337 7788 để xác nhận tình trạng giao món." },
+      { question: "Địa chỉ DOYA JJAMBBONG ở đâu?", answer: "DOYA JJAMBBONG ở 77i Bùi Thị Xuân, District 1, Ho Chi Minh City, gần Bến Thành và Bùi Viện." },
+      { question: "Món nào hợp để gọi cùng jjambbong?", answer: "Mì tương đen, tangsuyuk và mandu chiên là các món dễ gọi cùng khi ăn nhóm." },
+      { question: "Có nên hỏi trước giờ mở cửa không?", answer: "Bạn nên xem thông tin mới nhất trên website hoặc liên hệ trực tiếp qua số điện thoại/Zalo 084 337 7788 trước khi đến." }
+    ],
+    cta:
+      "Ngày mưa không muốn ra ngoài? Hãy gọi hoặc nhắn Zalo 084 337 7788 để hỏi giao mì cay Hàn Quốc từ DOYA JJAMBBONG trong bán kính 5km quanh cửa hàng."
+  },
+  {
+    locale: "en",
+    slug: "rainy-day-food-ho-chi-minh-jjambbong",
+    title: "Rainy Day Food in Ho Chi Minh: 5 Reasons Jjambbong Works So Well",
+    description:
+      "Looking for rainy day food in Ho Chi Minh, warm soup, spicy noodles, or District 1 delivery? Here are five simple reasons jjambbong is a natural rainy-day choice.",
+    eyebrow: "Rainy Day Food",
+    date: rainyDayJjambbongDate,
+    readTime: "5 min",
+    image: "/images/blog/rainy-day-jjambbong-bowl-hands.jpg",
+    imageAlt: "Warm jjambbong bowl served at DOYA JJAMBBONG for rainy day food in Ho Chi Minh",
+    gallery: [
+      { src: "/images/blog/rainy-day-jjambbong-table.jpg", alt: "Spicy Korean jjambbong noodles on a table for a rainy day meal" },
+      { src: "/images/blog/rainy-day-spicy-noodle-bowl.jpg", alt: "Hot spicy noodle soup with vegetables for rainy day food Ho Chi Minh" },
+      { src: "/images/blog/doya-jjambbong-serving-bowl.jpg", alt: "DOYA JJAMBBONG team serving a hot noodle bowl" }
+    ],
+    alternateGroup: "rainy-day-jjambbong",
+    keywords: ["rainy day food Ho Chi Minh", "Korean food in Ho Chi Minh City", "District 1 Korean restaurant", "Ho Chi Minh delivery food", "spicy noodles District 1", "jjambbong Ho Chi Minh", "warm soup Ho Chi Minh"],
+    intro:
+      "When rain changes your plans in Ho Chi Minh City, food becomes part of the comfort. Jjambbong, a spicy Korean-Chinese noodle soup, fits that moment because it is warm, flavorful, filling, and easy to order for delivery when you would rather stay inside.",
+    sections: [
+      { heading: "1. Warm broth feels right on a rainy day", body: "Rainy days often make people look for a hot bowl rather than a cold drink or a light snack. Jjambbong brings broth and noodles together, so it feels like a complete meal without needing a complicated order." },
+      { heading: "2. Spicy flavor matches the rainy mood", body: "Spicy food often feels more satisfying when the weather is gray and wet. Jjambbong has a bold broth and a deep Korean-Chinese flavor, but guests can still choose based on their own spice comfort." },
+      { heading: "3. Noodles, meat, seafood, and vegetables in one bowl", body: "A bowl of jjambbong is more than noodles. It brings together vegetables, meat, seafood, broth, and chewy noodles, which makes it practical when you want one clear choice for lunch, dinner, or a late meal." },
+      { heading: "4. Good for delivery when you do not want to go out", body: "Heavy rain can make District 1 traffic and walking less appealing. DOYA JJAMBBONG can offer free delivery within 5km of the restaurant, so call or message Zalo at 084 337 7788 to confirm delivery on rainy days." },
+      { heading: "5. Easy to share with friends and family", body: "Jjambbong works well alone, but it also pairs naturally with jajangmyeon, tangsuyuk, and fried mandu. If rain changes a group plan, a Korean-Chinese meal is easy to share at home, in a hotel, or at the restaurant." },
+      { heading: "Rainy day jjambbong in Ho Chi Minh", body: "If you are searching rainy day food Ho Chi Minh, Korean food in Ho Chi Minh City, District 1 Korean restaurant, or Ho Chi Minh delivery food, DOYA JJAMBBONG is located at 77i Bui Thi Xuan, District 1, close to Ben Thanh, Bui Vien, and central hotels." },
+      { heading: "Visit or order from DOYA JJAMBBONG", body: "DOYA JJAMBBONG serves jjambbong, jajangmyeon, tangsuyuk, and Korean-Chinese comfort food. On rainy days, check the menu, get directions, or call/Zalo 084 337 7788 for delivery within 5km of the restaurant." }
+    ],
+    faq: [
+      { question: "Does DOYA JJAMBBONG deliver on rainy days?", answer: "DOYA JJAMBBONG can offer free delivery within 5km of the restaurant. Please call or message Zalo at 084 337 7788 to confirm current delivery availability." },
+      { question: "Where is DOYA JJAMBBONG located?", answer: "DOYA JJAMBBONG is at 77i Bui Thi Xuan, District 1, Ho Chi Minh City, near Ben Thanh, Bui Vien, and central hotels." },
+      { question: "What can I order with jjambbong?", answer: "Jajangmyeon, tangsuyuk, and fried mandu are easy dishes to order with jjambbong for sharing." },
+      { question: "How should I check opening hours?", answer: "Use the latest store information shown on the website or contact DOYA directly by phone/Zalo at 084 337 7788 before visiting." }
+    ],
+    cta:
+      "Staying in because of the rain? Enjoy a warm, spicy bowl of jjambbong at home. DOYA JJAMBBONG offers free delivery within 5km of the restaurant. Call or Zalo: 084 337 7788"
+  },
+  {
+    locale: "ja",
+    slug: "ho-chi-minh-ame-no-hi-champong",
+    title: "ホーチミンで雨の日にチャンポンが食べたくなる5つの理由",
+    description:
+      "ホーチミンで雨の日の食事、温かいスープ、韓国式チャンポン、1区のデリバリーを探す方へ。DOYA JJAMBBONG の雨の日向けガイドです。",
+    eyebrow: "雨の日の食事",
+    date: rainyDayJjambbongDate,
+    readTime: "5分",
+    image: "/images/blog/rainy-day-jjambbong-bowl-hands.jpg",
+    imageAlt: "ホーチミンの雨の日に食べたい DOYA JJAMBBONG の温かいチャンポン",
+    gallery: [
+      { src: "/images/blog/rainy-day-jjambbong-table.jpg", alt: "雨の日の食事に合う韓国式チャンポン" },
+      { src: "/images/blog/rainy-day-spicy-noodle-bowl.jpg", alt: "野菜と赤いスープの温かい辛い麺" },
+      { src: "/images/blog/doya-jjambbong-serving-bowl.jpg", alt: "DOYA JJAMBBONG のスタッフが温かい麺を提供する様子" }
+    ],
+    alternateGroup: "rainy-day-jjambbong",
+    keywords: ["ホーチミン 雨の日 食事", "ホーチミン チャンポン", "ホーチミン 韓国料理", "ホーチミン1区 デリバリー", "ブイビエン 韓国料理", "ベンタイン市場 韓国料理", "Korean food in Ho Chi Minh City"],
+    intro:
+      "ホーチミンで雨が降ると、外に出るのが少し面倒になり、温かいスープや辛い麺が食べたくなることがあります。韓国式チャンポンは、スープ、麺、野菜、肉、海鮮を一杯で楽しめるので、雨の日の食事に選びやすいメニューです。",
+    sections: [
+      { heading: "1. 温かいスープが雨の日に合う", body: "雨の日は冷たいものより、温かいスープのある食事が欲しくなることがあります。チャンポンはスープと麺が一緒になっていて、ランチにも夕食にも使いやすい一杯です。" },
+      { heading: "2. 辛い味と雨の日の雰囲気", body: "曇った空や雨音の日には、少しはっきりした味の料理が合います。韓国式チャンポンの辛いスープは、雨の日の気分に自然になじみます。" },
+      { heading: "3. 麺、肉、海鮮、野菜を一杯で", body: "チャンポンは麺だけでなく、野菜、肉、海鮮、スープを一緒に楽しめる料理です。いろいろ注文するのが面倒な日にも、分かりやすい選択肢になります。" },
+      { heading: "4. 外に出たくない日はデリバリー", body: "ホーチミンの雨の日は移動がしにくいこともあります。DOYA JJAMBBONG は店舗から5km以内の無料デリバリーに対応できます。雨の日は電話または Zalo 084 337 7788 で配達状況を確認してください。" },
+      { heading: "5. 友人や家族とも食べやすい", body: "チャンポンは一人でも楽しめますが、ジャージャー麺、タンスユク、揚げ餃子と一緒に注文すると、友人や家族と分けやすい食事になります。" },
+      { heading: "ホーチミンで雨の日に食べたいチャンポン", body: "ホーチミンで雨の日の食事、ホーチミン チャンポン、ホーチミン 韓国料理、1区デリバリーを探すなら、DOYA JJAMBBONG は 77i Bui Thi Xuan, District 1 にあり、ベンタイン市場やブイビエンから行きやすい場所です。" },
+      { heading: "DOYA JJAMBBONG で食事または注文", body: "DOYA JJAMBBONG ではチャンポン、ジャージャー麺、タンスユクなどの韓国中華を楽しめます。雨の日はメニューや場所を確認し、電話または Zalo 084 337 7788 で5km以内の配達を相談してください。" }
+    ],
+    faq: [
+      { question: "雨の日に DOYA JJAMBBONG のデリバリーはできますか？", answer: "店舗から5km以内は無料デリバリーに対応できます。現在の配達状況は電話または Zalo 084 337 7788 で確認してください。" },
+      { question: "DOYA JJAMBBONG はどこにありますか？", answer: "住所は 77i Bui Thi Xuan, District 1, Ho Chi Minh City です。ベンタイン市場やブイビエンから行きやすい場所です。" },
+      { question: "チャンポンと一緒に注文しやすい料理は？", answer: "ジャージャー麺、タンスユク、揚げ餃子などが一緒に注文しやすいメニューです。" },
+      { question: "営業時間はどこで確認できますか？", answer: "サイト上の最新店舗情報を見るか、来店前に電話または Zalo 084 337 7788 で確認してください。" }
+    ],
+    cta:
+      "雨で外に出たくない日は、温かく辛いチャンポンを部屋で楽しんでください。DOYA JJAMBBONG は店舗から5km以内の無料デリバリーに対応できます。電話または Zalo: 084 337 7788"
+  },
+  {
+    locale: "zh",
+    slug: "hu-zhi-ming-yu-tian-jjambbong",
+    title: "胡志明市雨天吃韩式辣海鲜面的5个理由",
+    description:
+      "在胡志明市寻找雨天美食、热汤、韩式辣海鲜面或第1郡外卖？了解为什么 jjambbong 适合雨天，并查看 DOYA JJAMBBONG 的到店与配送信息。",
+    eyebrow: "雨天美食",
+    date: rainyDayJjambbongDate,
+    readTime: "5 分钟",
+    image: "/images/blog/rainy-day-jjambbong-bowl-hands.jpg",
+    imageAlt: "胡志明市雨天适合享用的 DOYA JJAMBBONG 热辣海鲜面",
+    gallery: [
+      { src: "/images/blog/rainy-day-jjambbong-table.jpg", alt: "适合雨天的韩式辣海鲜面 jjambbong" },
+      { src: "/images/blog/rainy-day-spicy-noodle-bowl.jpg", alt: "红色热汤和蔬菜的辣汤面" },
+      { src: "/images/blog/doya-jjambbong-serving-bowl.jpg", alt: "DOYA JJAMBBONG 店员端出热汤面" }
+    ],
+    alternateGroup: "rainy-day-jjambbong",
+    keywords: ["胡志明市雨天美食", "胡志明市韩餐", "胡志明市韩式辣海鲜面", "第1郡韩国餐厅", "胡志明市外卖", "Bui Vien 韩国餐厅", "Korean food in Ho Chi Minh City"],
+    intro:
+      "胡志明市下雨时，出门会变得麻烦，很多人会想吃热汤、辣味和比较有饱足感的食物。韩式 jjambbong 辣海鲜面把热汤、面、蔬菜、肉和海鲜放在一碗里，是雨天容易想到的韩式中餐。",
+    sections: [
+      { heading: "1. 热汤带来舒适的用餐感", body: "雨天常常让人想吃热的东西。Jjambbong 有热汤和面条，适合午餐、晚餐或夜晚想吃一碗热食的时候。" },
+      { heading: "2. 辣味适合雨天氛围", body: "阴雨天气里，味道更明确的食物会更有吸引力。韩式辣海鲜面的汤底有辣味和香气，适合雨天慢慢享用。" },
+      { heading: "3. 一碗里有面、肉、海鲜和蔬菜", body: "Jjambbong 不只是面条，也包含蔬菜、肉、海鲜和汤。当天不想复杂点菜时，一碗就能满足一顿饭的需求。" },
+      { heading: "4. 不想出门时适合外卖", body: "胡志明市雨天交通和步行都可能不方便。DOYA JJAMBBONG 可在门店5km范围内免费配送，雨天请通过电话或 Zalo 084 337 7788 确认配送情况。" },
+      { heading: "5. 适合和朋友、家人一起吃", body: "Jjambbong 可以单独吃，也适合搭配韩式炸酱面、糖醋肉和炸饺子。雨天计划改变时，在家、酒店或店内一起分享都很方便。" },
+      { heading: "胡志明市雨天适合吃的 jjambbong", body: "如果你搜索胡志明市雨天美食、胡志明市韩餐、第1郡韩国餐厅或胡志明市外卖，DOYA JJAMBBONG 位于 77i Bui Thi Xuan, District 1，靠近滨城市场、Bui Vien 和市中心酒店区。" },
+      { heading: "到 DOYA JJAMBBONG 用餐或点外卖", body: "DOYA JJAMBBONG 提供 jjambbong、韩式炸酱面、糖醋肉等韩式中餐。雨天可查看菜单和位置，或通过电话/Zalo 084 337 7788 咨询5km范围内配送。" }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG 雨天可以外卖吗？", answer: "门店5km范围内可免费配送。请通过电话或 Zalo 084 337 7788 确认当天配送情况。" },
+      { question: "DOYA JJAMBBONG 地址在哪里？", answer: "地址是 77i Bui Thi Xuan, District 1, Ho Chi Minh City，靠近滨城市场和 Bui Vien。" },
+      { question: "Jjambbong 适合和什么一起点？", answer: "韩式炸酱面、糖醋肉和炸饺子都适合一起点，尤其适合多人分享。" },
+      { question: "营业时间如何确认？", answer: "请查看网站上的最新门店信息，或到店前通过电话/Zalo 084 337 7788 直接确认。" }
+    ],
+    cta:
+      "雨天不想出门时，可以在家享用热辣的 jjambbong。DOYA JJAMBBONG 门店5km范围内可免费配送。电话或 Zalo: 084 337 7788"
+  },
   {
     locale: "vi",
     slug: "mon-chay-vegan-quan-1-doya-jjambbong",
@@ -2817,6 +3038,11 @@ export function getBlogPosts(locale: Locale) {
 
 export function getBlogPost(locale: Locale, slug: string) {
   return blogPosts.find((post) => post.locale === locale && post.slug === slug);
+}
+
+export function getBlogAlternatePosts(post: BlogPost) {
+  if (!post.alternateGroup) return [];
+  return blogPosts.filter((candidate) => candidate.alternateGroup === post.alternateGroup);
 }
 
 export function blogPath(locale: Locale, slug?: string) {

@@ -7,7 +7,7 @@ import { StickyCta } from "@/components/ConversionSections";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
-import { blogPath, blogPosts, getBlogPost, type BlogPost } from "@/data/blog";
+import { blogPath, blogPosts, getBlogAlternatePosts, getBlogPost, type BlogPost } from "@/data/blog";
 import { restaurantJsonLd } from "@/lib/seo";
 import { Locale, localizedPath, site } from "@/lib/site";
 
@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<PageParams>
   const locale = rawLocale as Locale;
   const post = getBlogPost(locale, slug);
   if (!post) return {};
+  const alternatePosts = getBlogAlternatePosts(post);
 
   return {
     title: post.title,
@@ -37,7 +38,15 @@ export async function generateMetadata({ params }: { params: Promise<PageParams>
     authors: [{ name: site.name, url: `${site.baseUrl}${localizedPath(locale, "about")}` }],
     category: post.eyebrow,
     alternates: {
-      canonical: `${site.baseUrl}${blogPath(locale, post.slug)}`
+      canonical: `${site.baseUrl}${blogPath(locale, post.slug)}`,
+      ...(alternatePosts.length
+        ? {
+            languages: {
+              ...Object.fromEntries(alternatePosts.map((alternatePost) => [alternatePost.locale, `${site.baseUrl}${blogPath(alternatePost.locale, alternatePost.slug)}`])),
+              "x-default": `${site.baseUrl}${blogPath(site.defaultLocale as Locale, alternatePosts.find((alternatePost) => alternatePost.locale === site.defaultLocale)?.slug ?? post.slug)}`
+            }
+          }
+        : {})
     },
     openGraph: {
       title: post.title,
@@ -114,6 +123,7 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
     <>
       <JsonLd data={restaurantJsonLd(locale)} />
       <JsonLd data={articleJsonLd} />
+      {post.faq?.length ? <JsonLd data={blogPostFaqJsonLd(post)} /> : null}
       <JsonLd data={blogPostBreadcrumbJsonLd(locale, post)} />
       <Header locale={locale} slug="about" activeSection="blog" />
       <main>
@@ -161,6 +171,7 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
                 <div className="mt-8 rounded-md bg-cream p-5">
                   <p className="text-base font-black text-ink">{post.cta}</p>
                 </div>
+                {post.faq?.length ? <BlogFaqSection post={post} /> : null}
                 <RelatedBlogLinks locale={locale} slug={post.slug} />
               </div>
 
@@ -212,6 +223,39 @@ function blogPostBreadcrumbJsonLd(locale: Locale, post: BlogPost) {
       }
     ]
   };
+}
+
+function blogPostFaqJsonLd(post: BlogPost) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: (post.faq ?? []).map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer
+      }
+    }))
+  };
+}
+
+function BlogFaqSection({ post }: { post: BlogPost }) {
+  if (!post.faq?.length) return null;
+
+  return (
+    <section className="mt-8">
+      <h2 className="text-3xl font-black text-ink">FAQ</h2>
+      <div className="mt-4 space-y-3">
+        {post.faq.map((faq) => (
+          <details key={faq.question} className="rounded-lg border border-ink/10 bg-bone p-5">
+            <summary className="cursor-pointer text-lg font-black text-ink">{faq.question}</summary>
+            <p className="mt-3 leading-7 text-ink/70">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 function RelatedBlogLinks({ locale, slug }: { locale: Locale; slug: string }) {
