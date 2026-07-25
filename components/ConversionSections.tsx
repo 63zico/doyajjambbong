@@ -77,20 +77,6 @@ export function TrustStrip({ locale }: { locale: Locale }) {
 }
 
 export function StickyCta({ locale }: { locale: Locale }) {
-  const copy = uiCopy[locale].cta;
-  return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-ink/10 bg-bone/95 p-2 backdrop-blur md:hidden">
-      <div className="grid grid-cols-3 gap-2">
-        <Link href={site.links.kakao} className="rounded-md bg-[#FEE500] px-3 py-3 text-center text-xs font-black text-[#191600]">
-          {copy.kakao}
-        </Link>
-        <Link href={site.links.delivery} className="rounded-md bg-chili px-3 py-3 text-center text-xs font-black text-white">
-          {copy.zalo}
-        </Link>
-        <Link href={phoneHref} className="rounded-md bg-ink px-3 py-3 text-center text-xs font-black text-cream">
-          {copy.phoneOrder}
-        </Link>
-      </div>
-    </div>
-  );
+  void locale;
+  return null;
 }
