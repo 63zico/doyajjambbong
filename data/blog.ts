@@ -29,8 +29,189 @@ const veganMenuDate = "2026-07-24";
 const rainyDayJjambbongDate = "2026-07-25";
 const coldNoodlesDate = "2026-07-27";
 const koreanChineseRestaurantDate = "2026-07-27";
+const deliveryClusterDate = "2026-07-27";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "ko",
+    slug: "ho-chi-minh-food-delivery-doya-jjambbong",
+    title: "호치민 배달 음식 찾을 때: 1군 짬뽕·짜장면·탕수육 배달 도야짬뽕",
+    description:
+      "호치민 배달, 호치민 1군 배달 음식, 짬뽕 배달, 짜장면 배달, 탕수육 포장을 찾는 손님을 위한 도야짬뽕 주문 안내.",
+    eyebrow: "호치민 배달 음식",
+    date: deliveryClusterDate,
+    readTime: "5분",
+    image: "/images/menu/doya-menu-spread.jpg",
+    imageAlt: "호치민 배달 음식으로 주문하기 좋은 도야짬뽕 짬뽕 짜장면 탕수육",
+    gallery: [
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "호치민 짬뽕 배달 메뉴 도야 해물짬뽕" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "호치민 짜장면 배달 문의 가능한 도야짜장" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "호치민 탕수육 포장과 배달 문의 메뉴" }
+    ],
+    alternateGroup: "ho-chi-minh-food-delivery",
+    keywords: ["호치민 배달", "호치민 배달 음식", "호치민 1군 배달", "호치민 짬뽕 배달", "호치민 짜장면 배달", "호치민 탕수육 배달", "호치민 한식 배달", "부이비엔 배달 음식", "벤탄시장 배달"],
+    intro:
+      "호치민에서 배달 음식을 찾을 때는 위치, 메뉴, 연락 방법이 바로 보여야 합니다. 도야짬뽕은 호치민 1군 77i Bùi Thị Xuân에 있는 한국식 중화요리 매장으로, 짬뽕, 짜장면, 탕수육, 군만두 같은 메뉴를 전화 또는 Zalo로 문의할 수 있습니다.",
+    sections: [
+      { heading: "호치민 배달 검색은 지역과 메뉴를 같이 잡아야 합니다", body: "손님은 보통 호치민 배달처럼 넓게 검색한 뒤 호치민 1군 배달, 부이비엔 배달 음식, 벤탄시장 근처 배달처럼 위치를 좁힙니다. 도야짬뽕 페이지에서는 지역명과 짬뽕, 짜장면, 탕수육 메뉴명을 함께 연결해 실제 주문 의도에 맞췄습니다." },
+      { heading: "짬뽕은 배달 음식으로 왜 많이 찾을까", body: "숙소나 집에서 따뜻하고 얼큰한 국물이 먹고 싶을 때 짬뽕은 이해하기 쉬운 메뉴입니다. 해산물, 채소, 면, 국물을 한 번에 먹을 수 있어 혼자 주문해도 좋고, 여러 명이 함께 먹을 때도 메뉴 조합을 만들기 쉽습니다." },
+      { heading: "짜장면과 탕수육은 같이 주문하기 좋은 조합", body: "매운 음식을 부담스러워하는 사람이 있다면 짜장면을 함께 고르기 좋습니다. 탕수육, 군만두, 볶음밥 같은 메뉴는 나눠 먹기 좋아서 호텔, 사무실, 집에서 단체 주문을 할 때도 편합니다." },
+      { heading: "주문 전 보내면 좋은 정보", body: "배달 문의를 할 때는 메뉴명, 수량, 주소, 호텔명 또는 건물명, 원하는 시간, 연락 가능한 번호를 함께 보내면 확인이 빠릅니다. 비 오는 날이나 피크 시간에는 전화 또는 Zalo로 현재 배달 가능 여부를 먼저 확인하는 것이 좋습니다." },
+      { heading: "도야짬뽕 배달 가능 범위", body: "도야짬뽕은 매장 반경 5km 이내 무료 배달이 가능합니다. 실제 가능 여부는 시간대와 위치에 따라 달라질 수 있으니 전화 또는 Zalo 084 337 7788로 먼저 문의하세요." }
+    ],
+    faq: [
+      { question: "도야짬뽕은 호치민 배달이 되나요?", answer: "매장 반경 5km 이내 무료 배달이 가능합니다. 전화 또는 Zalo 084 337 7788로 현재 배달 가능 여부를 확인하세요." },
+      { question: "배달로 주문하기 좋은 메뉴는 무엇인가요?", answer: "짬뽕, 짜장면, 탕수육, 군만두, 볶음밥처럼 한국식 중화요리 메뉴가 주문하기 쉽습니다." },
+      { question: "부이비엔이나 벤탄시장 근처도 배달 가능한가요?", answer: "위치가 매장 반경 5km 이내라면 가능할 수 있습니다. 정확한 주소를 보내고 배달 가능 여부를 확인하세요." },
+      { question: "어떻게 주문하면 되나요?", answer: "전화 또는 Zalo 084 337 7788로 메뉴명, 수량, 주소, 연락처를 보내면 됩니다." }
+    ],
+    cta:
+      "호치민 1군에서 짬뽕, 짜장면, 탕수육 배달 음식을 찾는다면 도야짬뽕으로 문의하세요. 전화 또는 Zalo: 084 337 7788"
+  },
+  {
+    locale: "vi",
+    slug: "giao-do-an-ho-chi-minh-quan-1-doya",
+    title: "Giao đồ ăn Quận 1: mì cay Hàn Quốc, mì tương đen và tangsuyuk từ DOYA",
+    description:
+      "Tìm giao đồ ăn Hồ Chí Minh, giao đồ ăn Quận 1, mì cay Hàn Quốc giao hàng hoặc món Hàn gần Bùi Viện? Xem cách đặt món tại DOYA JJAMBBONG.",
+    eyebrow: "Giao đồ ăn Quận 1",
+    date: deliveryClusterDate,
+    readTime: "5 phút",
+    image: "/images/menu/doya-menu-spread.jpg",
+    imageAlt: "Giao đồ ăn Quận 1 từ DOYA JJAMBBONG với mì cay Hàn Quốc, mì tương đen và tangsuyuk",
+    gallery: [
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "Mì cay Hàn Quốc giao hàng Quận 1 tại DOYA" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "Mì tương đen Hàn Quốc có thể hỏi giao hàng tại Quận 1" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "Tangsuyuk món Hàn-Trung dễ gọi giao hàng" }
+    ],
+    alternateGroup: "ho-chi-minh-food-delivery",
+    keywords: ["giao đồ ăn Hồ Chí Minh", "giao đồ ăn Quận 1", "mì cay Hàn Quốc giao hàng", "mì tương đen giao hàng", "tangsuyuk Quận 1", "quán ăn Hàn Quốc giao hàng", "món Hàn giao hàng Bùi Viện"],
+    intro:
+      "Khi bạn ở khách sạn, văn phòng hoặc nhà tại trung tâm TP.HCM, một bữa ăn Hàn Quốc giao tận nơi có thể rất tiện. DOYA JJAMBBONG nằm tại 77i Bùi Thị Xuân, Quận 1 và nhận hỏi món qua điện thoại hoặc Zalo.",
+    sections: [
+      { heading: "Khách thường tìm giao đồ ăn theo khu vực", body: "Những từ khóa như giao đồ ăn Quận 1, giao đồ ăn gần Bùi Viện hoặc món Hàn giao hàng thường có ý định đặt món rõ hơn. Vì vậy trang này tập trung vào vị trí Quận 1, Bến Thành, Bùi Viện và các món dễ gọi của DOYA." },
+      { heading: "Mì cay Hàn Quốc cho bữa trưa hoặc bữa tối", body: "Jjambbong là món mì nước cay kiểu Hàn-Trung, hợp khi bạn muốn món nóng, có nước dùng, mì, rau và hải sản. Nếu không muốn ra ngoài lúc mưa hoặc nắng nóng, hãy gọi hoặc nhắn Zalo để hỏi giao món." },
+      { heading: "Mì tương đen và tangsuyuk dễ gọi theo nhóm", body: "Mì tương đen không cay như jjambbong nên phù hợp với nhiều khách. Tangsuyuk, mandu chiên và cơm chiên là các món dễ chia sẻ khi đặt cho nhóm bạn, gia đình hoặc văn phòng." },
+      { heading: "Thông tin nên gửi khi đặt món", body: "Bạn nên gửi tên món, số lượng, địa chỉ, tên khách sạn hoặc tòa nhà, thời gian mong muốn và số điện thoại. Thông tin càng rõ thì nhân viên càng dễ xác nhận đơn." },
+      { heading: "Khu vực giao hàng của DOYA", body: "DOYA JJAMBBONG có thể giao miễn phí trong bán kính 5km quanh cửa hàng. Vui lòng gọi hoặc nhắn Zalo 084 337 7788 để xác nhận tình trạng giao hàng trong ngày." }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG có giao đồ ăn Quận 1 không?", answer: "Có thể giao miễn phí trong bán kính 5km quanh cửa hàng. Hãy gọi hoặc nhắn Zalo 084 337 7788 để xác nhận." },
+      { question: "Có thể đặt món nào giao hàng?", answer: "Jjambbong, mì tương đen, tangsuyuk, mandu chiên, cơm chiên và các món Hàn-Trung là nhóm món dễ hỏi giao hàng." },
+      { question: "Gần Bùi Viện hoặc Bến Thành có giao không?", answer: "Nếu địa chỉ nằm trong bán kính 5km từ cửa hàng, DOYA có thể hỗ trợ. Hãy gửi địa chỉ cụ thể để kiểm tra." },
+      { question: "Đặt món bằng cách nào?", answer: "Bạn có thể gọi điện hoặc nhắn Zalo 084 337 7788 với tên món, số lượng, địa chỉ và số điện thoại." }
+    ],
+    cta:
+      "Muốn đặt mì cay Hàn Quốc hoặc món Hàn-Trung tại Quận 1? Gọi hoặc nhắn Zalo DOYA JJAMBBONG: 084 337 7788"
+  },
+  {
+    locale: "en",
+    slug: "ho-chi-minh-food-delivery-korean-jjambbong",
+    title: "Ho Chi Minh Food Delivery: Korean Jjambbong, Jajangmyeon and Tangsuyuk in District 1",
+    description:
+      "Looking for Ho Chi Minh food delivery, Korean food delivery in District 1, jjambbong delivery or jajangmyeon near Bui Vien? Here is how to order from DOYA JJAMBBONG.",
+    eyebrow: "Ho Chi Minh Food Delivery",
+    date: deliveryClusterDate,
+    readTime: "5 min",
+    image: "/images/menu/doya-menu-spread.jpg",
+    imageAlt: "Korean food delivery in District 1 from DOYA JJAMBBONG with jjambbong, jajangmyeon and tangsuyuk",
+    gallery: [
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "Jjambbong delivery in Ho Chi Minh District 1" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "Jajangmyeon Korean black bean noodles for delivery" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "Tangsuyuk Korean sweet and sour pork for takeaway and delivery" }
+    ],
+    alternateGroup: "ho-chi-minh-food-delivery",
+    keywords: ["Ho Chi Minh food delivery", "Korean food delivery District 1", "jjambbong delivery Ho Chi Minh", "jajangmyeon delivery Saigon", "tangsuyuk delivery District 1", "Korean restaurant delivery near Bui Vien", "District 1 takeaway"],
+    intro:
+      "If you are staying near Bui Vien, Ben Thanh, Pham Ngu Lao, or a District 1 hotel, Korean food delivery can be the easiest way to eat well without leaving your room. DOYA JJAMBBONG is a Korean-Chinese restaurant at 77i Bui Thi Xuan, District 1.",
+    sections: [
+      { heading: "Searches usually combine food and location", body: "Guests rarely search only for delivery. They search Korean food delivery District 1, jjambbong delivery Ho Chi Minh, jajangmyeon delivery Saigon, or food delivery near Bui Vien. This guide connects those searches to real ordering details." },
+      { heading: "Jjambbong for warm spicy noodle delivery", body: "Jjambbong is a spicy Korean-Chinese noodle soup with broth, noodles, vegetables, and seafood. It is a natural choice when you want something warm, filling, and easy to understand from a menu photo." },
+      { heading: "Jajangmyeon and tangsuyuk for sharing", body: "If your group has mixed spice preferences, order jajangmyeon with jjambbong. Tangsuyuk, fried mandu, and fried rice are simple sharing dishes for hotel rooms, offices, and families." },
+      { heading: "What to send before ordering", body: "Send the dish names, quantity, delivery address, hotel or building name, preferred time, and phone number. Clear details help the team confirm availability and timing faster." },
+      { heading: "Delivery area", body: "DOYA JJAMBBONG can offer free delivery within 5km of the restaurant. Please call or message Zalo at 084 337 7788 to confirm current delivery availability." }
+    ],
+    faq: [
+      { question: "Does DOYA JJAMBBONG offer delivery in District 1?", answer: "DOYA JJAMBBONG can offer free delivery within 5km of the restaurant. Call or message Zalo at 084 337 7788 to confirm." },
+      { question: "What dishes are good for delivery?", answer: "Jjambbong, jajangmyeon, tangsuyuk, fried mandu, and fried rice are easy choices for takeaway or delivery." },
+      { question: "Can DOYA deliver near Bui Vien or Ben Thanh?", answer: "If the address is within 5km of the restaurant, delivery may be available. Send the exact address to check." },
+      { question: "How do I order?", answer: "Call or message Zalo 084 337 7788 with dish names, quantity, address, and contact number." }
+    ],
+    cta:
+      "Want Korean food delivery in District 1? Call or Zalo DOYA JJAMBBONG at 084 337 7788 and ask about jjambbong, jajangmyeon, tangsuyuk, takeaway, or delivery."
+  },
+  {
+    locale: "zh",
+    slug: "hu-zhi-ming-han-can-wai-mai-doya",
+    title: "胡志明市外卖：第1郡韩式辣海鲜面、炸酱面和糖醋肉",
+    description:
+      "在胡志明市寻找外卖、第1郡韩餐外卖、韩式辣海鲜面或炸酱面？DOYA JJAMBBONG 提供到店、打包和5km范围配送咨询。",
+    eyebrow: "胡志明市外卖",
+    date: deliveryClusterDate,
+    readTime: "5分钟",
+    image: "/images/menu/doya-menu-spread.jpg",
+    imageAlt: "胡志明市第1郡 DOYA JJAMBBONG 韩餐外卖菜单",
+    gallery: [
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "胡志明市韩式辣海鲜面外卖" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "第1郡韩式炸酱面外卖咨询" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "糖醋肉打包和外卖菜单" }
+    ],
+    alternateGroup: "ho-chi-minh-food-delivery",
+    keywords: ["胡志明市外卖", "第1郡外卖", "胡志明市韩餐外卖", "韩式辣海鲜面外卖", "韩式炸酱面外卖", "Bui Vien 韩餐外卖", "滨城市场附近外卖"],
+    intro:
+      "在胡志明市第1郡住宿、办公或旅行时，外卖常常比出门更方便。DOYA JJAMBBONG 位于 77i Bui Thi Xuan, District 1，提供韩式中餐菜单，可通过电话或 Zalo 咨询打包和配送。",
+    sections: [
+      { heading: "外卖搜索通常和地点一起出现", body: "客人常搜索胡志明市外卖、第1郡外卖、Bui Vien 附近外卖或滨城市场附近餐厅。DOYA 的页面把位置、菜单和联系方式放在一起，方便快速判断是否适合下单。" },
+      { heading: "韩式辣海鲜面适合想吃热汤时点", body: "Jjambbong 是韩式中餐里的辣海鲜汤面，有面条、蔬菜、海鲜和热汤。下雨天、晚上或不想出门时，很多客人会想点这种热汤面。" },
+      { heading: "炸酱面和糖醋肉适合多人分享", body: "如果有人不太能吃辣，可以点韩式炸酱面。糖醋肉、煎饺、炒饭等菜单适合多人一起分享，也适合酒店房间或办公室点餐。" },
+      { heading: "下单前建议发送的信息", body: "请发送菜名、数量、详细地址、酒店或大楼名称、希望送达时间和联系电话。信息越清楚，店员越容易确认配送情况。" },
+      { heading: "DOYA 配送范围", body: "DOYA JJAMBBONG 可在门店5km范围内免费配送。实际配送情况可能因时间和地址不同而变化，请通过电话或 Zalo 084 337 7788 确认。" }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG 可以外卖吗？", answer: "门店5km范围内可免费配送。请通过电话或 Zalo 084 337 7788 确认当天配送情况。" },
+      { question: "哪些菜单适合外卖？", answer: "韩式辣海鲜面、韩式炸酱面、糖醋肉、煎饺和炒饭都适合咨询打包或外卖。" },
+      { question: "Bui Vien 或滨城市场附近可以送吗？", answer: "如果地址在门店5km范围内，可能可以配送。请发送准确地址确认。" },
+      { question: "怎么下单？", answer: "通过电话或 Zalo 084 337 7788 发送菜名、数量、地址和联系电话即可咨询。" }
+    ],
+    cta:
+      "想在胡志明市第1郡点韩餐外卖？请联系 DOYA JJAMBBONG 电话/Zalo：084 337 7788。"
+  },
+  {
+    locale: "ja",
+    slug: "ho-chi-minh-korean-food-delivery-doya",
+    title: "ホーチミンのデリバリー：1区で韓国チャンポン・ジャージャー麺を注文",
+    description:
+      "ホーチミンでデリバリー、1区の韓国料理、チャンポン配達、ジャージャー麺やタンスユクのテイクアウトを探す方向けの DOYA JJAMBBONG 注文ガイド。",
+    eyebrow: "ホーチミン デリバリー",
+    date: deliveryClusterDate,
+    readTime: "5分",
+    image: "/images/menu/doya-menu-spread.jpg",
+    imageAlt: "ホーチミン1区 DOYA JJAMBBONG 韓国料理デリバリーメニュー",
+    gallery: [
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "ホーチミン1区 チャンポン デリバリー" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "韓国式ジャージャー麺 デリバリー 問い合わせ" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "タンスユク テイクアウトとデリバリー" }
+    ],
+    alternateGroup: "ho-chi-minh-food-delivery",
+    keywords: ["ホーチミン デリバリー", "ホーチミン1区 デリバリー", "ホーチミン 韓国料理 デリバリー", "チャンポン デリバリー", "韓国式ジャージャー麺 ホーチミン", "ブイビエン 韓国料理", "ベンタイン市場 デリバリー"],
+    intro:
+      "ホーチミン1区のホテルや部屋で食事をしたい時、韓国料理のデリバリーは便利な選択です。DOYA JJAMBBONG は 77i Bui Thi Xuan, District 1 にある韓国中華レストランで、電話または Zalo から配達やテイクアウトを相談できます。",
+    sections: [
+      { heading: "デリバリー検索は場所と料理名が重要", body: "旅行者はホーチミン デリバリーだけでなく、ホーチミン1区 デリバリー、ブイビエン 韓国料理、チャンポン デリバリーのように場所と料理名を一緒に検索します。このページでは1区と代表メニューを自然に結びつけています。" },
+      { heading: "温かい麺が食べたい時はチャンポン", body: "韓国式チャンポンは辛いスープ、麺、野菜、海鮮を一緒に楽しめる料理です。雨の日や夜、外に出たくない時にも注文しやすいメニューです。" },
+      { heading: "ジャージャー麺とタンスユクはシェア向き", body: "辛い料理が苦手な人がいる時は韓国式ジャージャー麺が選びやすいです。タンスユク、揚げ餃子、炒飯はグループや家族で分けやすいメニューです。" },
+      { heading: "注文前に送るとよい情報", body: "料理名、数量、住所、ホテル名または建物名、希望時間、連絡先を送ると確認がスムーズです。雨の日や混雑時間は先に配達状況を確認してください。" },
+      { heading: "DOYA の配達範囲", body: "DOYA JJAMBBONG は店舗から5km以内の無料デリバリーに対応できます。実際の可否は時間と住所によるため、電話または Zalo 084 337 7788 で確認してください。" }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG はデリバリーできますか？", answer: "店舗から5km以内は無料デリバリーに対応できます。電話または Zalo 084 337 7788 で確認してください。" },
+      { question: "デリバリーに向いているメニューは？", answer: "チャンポン、韓国式ジャージャー麺、タンスユク、揚げ餃子、炒飯などが注文しやすいメニューです。" },
+      { question: "ブイビエンやベンタイン市場近くも配達できますか？", answer: "店舗から5km以内であれば対応できる場合があります。正確な住所を送って確認してください。" },
+      { question: "注文方法は？", answer: "電話または Zalo 084 337 7788 に料理名、数量、住所、連絡先を送ってください。" }
+    ],
+    cta:
+      "ホーチミン1区で韓国料理デリバリーを探している方は、DOYA JJAMBBONG に電話または Zalo でお問い合わせください：084 337 7788"
+  },
   {
     locale: "ko",
     slug: "ho-chi-minh-chinese-restaurant-jjambbong-jajangmyeon",
