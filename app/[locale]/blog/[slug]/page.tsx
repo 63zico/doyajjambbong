@@ -81,13 +81,16 @@ export default async function BlogPostPage({ params }: { params: Promise<PagePar
 
   const postUrl = `${site.baseUrl}${blogPath(locale, post.slug)}`;
   const imageUrl = `${site.baseUrl}${post.image}`;
+  const articleImages = Array.from(
+    new Set([imageUrl, ...(post.gallery ?? []).map((image) => `${site.baseUrl}${image.src}`)])
+  );
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "@id": `${postUrl}#blogposting`,
     headline: post.title,
     description: post.description,
-    image: [imageUrl, ...(post.gallery ?? []).map((image) => `${site.baseUrl}${image.src}`)],
+    image: articleImages,
     datePublished: post.date,
     dateModified: post.date,
     inLanguage: locale,
@@ -261,7 +264,8 @@ function BlogFaqSection({ post }: { post: BlogPost }) {
 function RelatedBlogLinks({ locale, slug }: { locale: Locale; slug: string }) {
   const isBlackBeanPost = slug.includes("mi-tuong-den") || slug.includes("jajangmyeon") || slug.includes("korean-black-bean-noodles");
   const isChampongPost = /champong|jjambbong|jjamppong|korean-noodles|ben-thanh|bui-vien|hangover/.test(slug);
-  if (!isBlackBeanPost && !isChampongPost) return null;
+  const isColdNoodlePost = /cold-noodles|mi-lanh|cold-noodle|leng-mian|korean-cold-noodles|reimen/.test(slug);
+  if (!isBlackBeanPost && !isChampongPost && !isColdNoodlePost) return null;
 
   const labelMap: Record<Locale, string[]> = {
     vi: ["Mì tương đen Hàn Quốc Quận 1", "Món jajangmyeon", "Tangsuyuk ăn cùng mì tương đen", "Xem toàn bộ menu", "Địa chỉ DOYA", "Đọc tiếp"],
@@ -277,13 +281,28 @@ function RelatedBlogLinks({ locale, slug }: { locale: Locale; slug: string }) {
     zh: ["第1郡 Champong 指南", "海鲜辣汤面菜单", "滨城市场附近韩式面", "Bui Vien 附近韩国餐厅", "DOYA 位置", "相关页面"],
     ja: ["1区チャンポンガイド", "海鮮jjambbongメニュー", "ベンタイン近く韓国麺", "ブイビエン近く韓国料理", "DOYAの場所", "関連ページ"]
   };
-  const labels = isChampongPost && !isBlackBeanPost ? champongLabelMap[locale] : labelMap[locale];
+  const coldNoodleLabelMap: Record<Locale, string[]> = {
+    vi: ["Thực đơn DOYA", "Mì Hàn gần Bến Thành", "Món Hàn gần Bùi Viện", "Đặt bàn / giao hàng", "Địa chỉ DOYA", "Trang liên quan"],
+    ko: ["도야 전체 메뉴", "벤탄 근처 한식면", "부이비엔 근처 한식당", "예약/배달 안내", "도야 위치", "관련 페이지"],
+    en: ["View DOYA menu", "Korean noodles near Ben Thanh", "Korean food near Bui Vien", "Reservation / delivery", "DOYA location", "Related pages"],
+    zh: ["查看 DOYA 菜单", "滨城市场附近韩式面", "Bui Vien 附近韩国餐厅", "预订 / 外卖", "DOYA 地址", "相关页面"],
+    ja: ["DOYA メニュー", "ベンタイン近くの韓国麺", "ブイビエン近くの韓国料理", "予約 / デリバリー", "DOYA の場所", "関連ページ"]
+  };
+  const labels = isColdNoodlePost ? coldNoodleLabelMap[locale] : isChampongPost && !isBlackBeanPost ? champongLabelMap[locale] : labelMap[locale];
 
   const links =
-    isChampongPost && !isBlackBeanPost
+    isColdNoodlePost
       ? [
-          { label: labels[0], href: localizedPath(locale, "best-champong-district-1-ho-chi-minh") },
-          { label: labels[1], href: `/${locale}/menu/seafood-jjambbong-champong` },
+          { label: labels[0], href: `/${locale}/menu` },
+          { label: labels[1], href: localizedPath(locale, "korean-noodles-near-ben-thanh-market") },
+          { label: labels[2], href: localizedPath(locale, "korean-restaurant-near-bui-vien-walking-street") },
+          { label: labels[3], href: localizedPath(locale, "korean-food-delivery-ho-chi-minh") },
+          { label: labels[4], href: localizedPath(locale, "location-contact") }
+        ]
+      : isChampongPost && !isBlackBeanPost
+        ? [
+            { label: labels[0], href: localizedPath(locale, "best-champong-district-1-ho-chi-minh") },
+            { label: labels[1], href: `/${locale}/menu/seafood-jjambbong-champong` },
           { label: labels[2], href: localizedPath(locale, "korean-noodles-near-ben-thanh-market") },
           { label: labels[3], href: localizedPath(locale, "korean-restaurant-near-bui-vien-walking-street") },
           { label: labels[4], href: localizedPath(locale, "location-contact") }

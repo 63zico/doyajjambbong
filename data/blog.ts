@@ -27,8 +27,179 @@ const doyaCoinDate = "2026-06-21";
 const luggageStorageDate = "2026-07-24";
 const veganMenuDate = "2026-07-24";
 const rainyDayJjambbongDate = "2026-07-25";
+const coldNoodlesDate = "2026-07-27";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "vi",
+    slug: "mi-lanh-quan-1-kieu-han-trung-doya",
+    title: "Mì lạnh Quận 1 kiểu Hàn-Trung: món mát dễ ăn ở DOYA JJAMBBONG",
+    description:
+      "Tìm mì lạnh Quận 1, món Hàn mát lạnh hoặc cold noodles ở TP.HCM? DOYA JJAMBBONG giới thiệu món mì lạnh kiểu Hàn-Trung với nước dùng mát, thịt bò, hải sản và rau.",
+    eyebrow: "Mì lạnh Quận 1",
+    date: coldNoodlesDate,
+    readTime: "5 phút",
+    image: "/images/blog/doya-cold-noodles-quan-1.jpg",
+    imageAlt: "Mì lạnh kiểu Hàn-Trung tại DOYA JJAMBBONG Quận 1 với thịt bò, tôm, bào ngư, rau và đá lạnh",
+    gallery: [
+      { src: "/images/blog/doya-cold-noodles-quan-1.jpg", alt: "Tô mì lạnh Quận 1 tại DOYA JJAMBBONG" }
+    ],
+    alternateGroup: "cold-noodles-quan-1",
+    keywords: ["mì lạnh Quận 1", "mì lạnh Hàn Quốc", "món Hàn mát lạnh", "cold noodles District 1", "Korean cold noodles Ho Chi Minh", "quán ăn Hàn Quốc Quận 1", "DOYA JJAMBBONG"],
+    intro:
+      "Khi thời tiết TP.HCM nóng hoặc bạn muốn đổi vị sau những món cay, một tô mì lạnh kiểu Hàn-Trung là lựa chọn rất dễ ăn. Món này có nước dùng mát, sợi mì dai, thịt bò, tôm, bào ngư, trứng, rau và đá lạnh, hợp cho bữa trưa, bữa tối hoặc sau khi đi chơi ở Quận 1.",
+    sections: [
+      { heading: "Mì lạnh kiểu Hàn-Trung là gì?", body: "Mì lạnh tại DOYA JJAMBBONG lấy cảm hứng từ phong cách Hàn-Trung: nước dùng mát, vị thanh, sợi mì dai và topping đầy màu sắc. Đây không phải món cay nặng như jjambbong, mà là một lựa chọn nhẹ hơn khi bạn muốn ăn mát." },
+      { heading: "Vì sao món này hợp với Quận 1?", body: "Quận 1 có nhiều khách du lịch, dân văn phòng và người đi chơi gần Bến Thành, Bùi Viện, Phạm Ngũ Lão. Khi trời nóng hoặc vừa đi bộ nhiều, mì lạnh Quận 1 là từ khóa rất tự nhiên vì khách thường muốn món mát, nhanh và dễ ăn." },
+      { heading: "Topping cân bằng: thịt bò, hải sản và rau", body: "Một tô mì lạnh có thể có thịt bò, tôm, bào ngư, trứng, dưa leo, cà rốt, cà chua và rau tím. Topping đa dạng giúp món ăn nhìn hấp dẫn và dễ chia sẻ khi đi cùng bạn bè." },
+      { heading: "Ăn cùng món nào ở DOYA?", body: "Nếu muốn một bữa đầy đủ hơn, bạn có thể gọi mì lạnh cùng mandu chiên, tangsuyuk hoặc một món cay như jjambbong để cả bàn có món nóng và món mát." },
+      { heading: "Đến DOYA JJAMBBONG hoặc hỏi món trước", body: "DOYA JJAMBBONG nằm tại 77i Bùi Thị Xuân, District 1, Ho Chi Minh City. Trước khi đến, bạn có thể xem menu hoặc nhắn Zalo/gọi 084 337 7788 để hỏi món mì lạnh và tình trạng phục vụ trong ngày." }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG có mì lạnh Quận 1 không?", answer: "Có thể hỏi món mì lạnh kiểu Hàn-Trung tại DOYA JJAMBBONG. Vui lòng gọi hoặc nhắn Zalo 084 337 7788 để xác nhận tình trạng phục vụ trong ngày." },
+      { question: "Mì lạnh có cay không?", answer: "Mì lạnh thường nhẹ và mát hơn các món cay như jjambbong. Nếu bạn nhạy cảm với vị cay, hãy hỏi nhân viên trước khi gọi." },
+      { question: "Địa chỉ DOYA JJAMBBONG ở đâu?", answer: "DOYA JJAMBBONG ở 77i Bùi Thị Xuân, District 1, Ho Chi Minh City, gần Bến Thành, Bùi Viện và khu khách sạn trung tâm." },
+      { question: "Mì lạnh nên ăn cùng món gì?", answer: "Mandu chiên, tangsuyuk, jjambbong hoặc mì tương đen đều dễ gọi cùng khi đi nhóm." }
+    ],
+    cta:
+      "Muốn thử mì lạnh Quận 1 kiểu Hàn-Trung? Ghé DOYA JJAMBBONG tại 77i Bùi Thị Xuân hoặc gọi/Zalo 084 337 7788 để hỏi món trước khi đến."
+  },
+  {
+    locale: "en",
+    slug: "cold-noodles-district-1-korean-chinese-style",
+    title: "Cold Noodles in District 1: Korean-Chinese Style at DOYA JJAMBBONG",
+    description:
+      "Looking for cold noodles in District 1, Korean cold noodles, or a refreshing Korean-Chinese dish in Ho Chi Minh City? Here is what to know about DOYA JJAMBBONG's cold noodle bowl.",
+    eyebrow: "Cold Noodles District 1",
+    date: coldNoodlesDate,
+    readTime: "5 min",
+    image: "/images/blog/doya-cold-noodles-quan-1.jpg",
+    imageAlt: "Korean-Chinese style cold noodles at DOYA JJAMBBONG District 1 with beef, shrimp, abalone, vegetables, and ice",
+    gallery: [
+      { src: "/images/blog/doya-cold-noodles-quan-1.jpg", alt: "Cold noodles in District 1 served at DOYA JJAMBBONG" }
+    ],
+    alternateGroup: "cold-noodles-quan-1",
+    keywords: ["cold noodles District 1", "Korean cold noodles Ho Chi Minh", "Korean-Chinese cold noodles", "Korean food in Ho Chi Minh City", "District 1 Korean restaurant", "refreshing noodles Saigon", "DOYA JJAMBBONG"],
+    intro:
+      "Not every Korean-Chinese meal has to be hot and spicy. On warm days in Ho Chi Minh City, a cold noodle bowl can be a refreshing choice: chilled broth, chewy noodles, beef, shrimp, abalone, egg, fresh vegetables, and ice in one bowl.",
+    sections: [
+      { heading: "What are Korean-Chinese style cold noodles?", body: "This cold noodle bowl is inspired by Korean-Chinese dining: a cool broth, chewy noodles, colorful toppings, and a clean finish. It is a lighter option when you want Korean food in District 1 without choosing a spicy soup." },
+      { heading: "Why cold noodles make sense in District 1", body: "District 1 is full of hotels, office workers, and travelers walking around Ben Thanh, Bui Vien, and Pham Ngu Lao. After a hot afternoon, cold noodles are easy to search for, easy to understand, and easy to eat." },
+      { heading: "Beef, seafood, vegetables, and texture", body: "The bowl brings together beef, shrimp, abalone, egg, cucumber, carrot, tomato, purple cabbage, sprouts, noodles, and ice. The mix gives the dish color, texture, and a clean contrast to heavier fried or spicy dishes." },
+      { heading: "What to order with cold noodles", body: "Cold noodles pair well with fried mandu, tangsuyuk, jajangmyeon, or a spicy jjambbong for the table. It works especially well when one person wants something cool and another wants something hot." },
+      { heading: "Visit DOYA JJAMBBONG in District 1", body: "DOYA JJAMBBONG is located at 77i Bui Thi Xuan, District 1, Ho Chi Minh City. Before visiting, call or message Zalo at 084 337 7788 to confirm the cold noodle menu and current availability." }
+    ],
+    faq: [
+      { question: "Does DOYA JJAMBBONG serve cold noodles?", answer: "You can ask DOYA JJAMBBONG about the Korean-Chinese style cold noodle bowl. Please call or message Zalo at 084 337 7788 to confirm current availability." },
+      { question: "Are cold noodles spicy?", answer: "Cold noodles are generally cooler and lighter than spicy jjambbong. Ask the team before ordering if you prefer non-spicy food." },
+      { question: "Where is DOYA JJAMBBONG?", answer: "DOYA JJAMBBONG is at 77i Bui Thi Xuan, District 1, Ho Chi Minh City, near Ben Thanh, Bui Vien, and central hotels." },
+      { question: "What goes well with cold noodles?", answer: "Fried mandu, tangsuyuk, jajangmyeon, and jjambbong are easy dishes to order together for sharing." }
+    ],
+    cta:
+      "Looking for cold noodles in District 1? Visit DOYA JJAMBBONG at 77i Bui Thi Xuan or call/Zalo 084 337 7788 before you come."
+  },
+  {
+    locale: "ko",
+    slug: "ho-chi-minh-district-1-cold-noodles-doya",
+    title: "호치민 1군 냉면: 중국스타일 한국 냉면을 찾는다면 도야짬뽕",
+    description:
+      "호치민 1군에서 냉면, 한국 냉면, 시원한 면요리, 중국스타일 한국 냉면을 찾는 손님을 위한 도야짬뽕 냉면 안내.",
+    eyebrow: "호치민 1군 냉면",
+    date: coldNoodlesDate,
+    readTime: "5분",
+    image: "/images/blog/doya-cold-noodles-quan-1.jpg",
+    imageAlt: "도야짬뽕 호치민 1군 중국스타일 한국 냉면 한 그릇",
+    gallery: [
+      { src: "/images/blog/doya-cold-noodles-quan-1.jpg", alt: "소고기, 새우, 전복, 채소와 얼음이 올라간 도야짬뽕 냉면" }
+    ],
+    alternateGroup: "cold-noodles-quan-1",
+    keywords: ["호치민 냉면", "호치민 1군 냉면", "호치민 한국 냉면", "중국스타일 한국 냉면", "호치민 한식당", "호치민 시원한 음식", "도야짬뽕"],
+    intro:
+      "호치민에서 매운 짬뽕이나 짜장면도 좋지만, 더운 날에는 시원한 면요리가 생각날 때가 있습니다. 도야짬뽕의 중국스타일 한국 냉면은 차가운 육수, 쫄깃한 면, 소고기, 새우, 전복, 계란, 채소와 얼음을 한 그릇에 담아 가볍게 먹기 좋은 메뉴입니다.",
+    sections: [
+      { heading: "중국스타일 한국 냉면이란?", body: "일반적인 평양냉면이나 함흥냉면과는 다른 방향의 시원한 면요리입니다. 한국식 중화요리 감성에 차가운 육수와 다양한 토핑을 더해, 매운 국물 메뉴가 부담스러운 날에도 선택하기 쉽습니다." },
+      { heading: "호치민 1군에서 냉면 검색이 필요한 이유", body: "벤탄시장, 부이비엔, 팜응우라오 근처를 걷다 보면 덥고 습한 날씨 때문에 시원한 음식이 필요해집니다. 그래서 호치민 1군 냉면, 호치민 한국 냉면 같은 검색어는 여행객과 교민 모두에게 자연스러운 검색 의도입니다." },
+      { heading: "소고기, 해산물, 채소가 올라간 한 그릇", body: "도야 냉면은 소고기, 새우, 전복, 계란 지단, 오이, 당근, 토마토, 적양배추, 새싹채소 등 다양한 토핑을 올려 색감과 식감을 함께 즐길 수 있습니다." },
+      { heading: "같이 먹기 좋은 도야 메뉴", body: "냉면만 먹어도 좋지만 군만두, 탕수육, 짜장면, 짬뽕과 같이 주문하면 테이블 조합이 더 좋아집니다. 한 명은 시원한 면, 한 명은 얼큰한 국물을 원할 때 특히 잘 맞습니다." },
+      { heading: "도야짬뽕 방문 전 확인", body: "도야짬뽕은 호치민 1군 77i Bui Thi Xuan에 있습니다. 냉면 주문 가능 여부는 방문 전 전화 또는 Zalo 084 337 7788로 확인하면 가장 정확합니다." }
+    ],
+    faq: [
+      { question: "도야짬뽕에 냉면이 있나요?", answer: "중국스타일 한국 냉면 메뉴는 방문 전 전화 또는 Zalo 084 337 7788로 당일 가능 여부를 확인하는 것이 좋습니다." },
+      { question: "이 냉면은 매운 메뉴인가요?", answer: "짬뽕처럼 뜨겁고 매운 국물 메뉴보다는 시원하고 가볍게 먹기 좋은 면요리입니다. 매운맛이 걱정된다면 주문 전 직원에게 문의하세요." },
+      { question: "도야짬뽕 위치는 어디인가요?", answer: "주소는 77i Bui Thi Xuan, District 1, Ho Chi Minh City입니다. 벤탄시장, 부이비엔, 1군 호텔가에서 이동하기 좋습니다." },
+      { question: "냉면과 같이 먹기 좋은 메뉴는?", answer: "군만두, 탕수육, 짜장면, 짬뽕을 함께 주문하기 좋습니다." }
+    ],
+    cta:
+      "호치민 1군에서 시원한 중국스타일 한국 냉면을 찾는다면 도야짬뽕으로 오세요. 방문 전 전화 또는 Zalo: 084 337 7788"
+  },
+  {
+    locale: "zh",
+    slug: "di-yi-jun-han-shi-leng-mian-doya",
+    title: "胡志明市第1郡韩式冷面：DOYA JJAMBBONG 的中式韩餐风味",
+    description:
+      "在胡志明市第1郡寻找韩式冷面、冷面、清爽韩餐或 Korean cold noodles？了解 DOYA JJAMBBONG 的中式韩餐风格冷面。",
+    eyebrow: "第1郡韩式冷面",
+    date: coldNoodlesDate,
+    readTime: "5 分钟",
+    image: "/images/blog/doya-cold-noodles-quan-1.jpg",
+    imageAlt: "DOYA JJAMBBONG 第1郡韩式冷面，配牛肉、虾、鲍鱼、蔬菜和冰块",
+    gallery: [
+      { src: "/images/blog/doya-cold-noodles-quan-1.jpg", alt: "胡志明市第1郡 DOYA JJAMBBONG 的中式韩餐风格冷面" }
+    ],
+    alternateGroup: "cold-noodles-quan-1",
+    keywords: ["胡志明市冷面", "第1郡韩式冷面", "胡志明市韩餐", "Korean cold noodles Ho Chi Minh", "District 1 Korean restaurant", "清爽韩餐", "DOYA JJAMBBONG"],
+    intro:
+      "在胡志明市天气炎热的时候，有时比起热汤和辣味，更想吃一碗清爽的冷面。DOYA JJAMBBONG 的中式韩餐风格冷面有冰凉汤底、弹牙面条、牛肉、虾、鲍鱼、鸡蛋和多种蔬菜，适合想换口味的时候。",
+    sections: [
+      { heading: "什么是中式韩餐风格冷面？", body: "这道冷面结合了韩式中餐的用餐风格：冰凉汤底、面条、海鲜、肉类和颜色丰富的蔬菜。它比热辣的 jjambbong 更清爽，适合想吃韩餐但不想吃热汤的时候。" },
+      { heading: "为什么适合第1郡？", body: "第1郡有很多游客、上班族和住在酒店的客人。逛完滨城市场、Bui Vien 或 Pham Ngu Lao 后，搜索第1郡韩式冷面或胡志明市冷面是很自然的需求。" },
+      { heading: "牛肉、海鲜和蔬菜的组合", body: "一碗冷面里可以看到牛肉、虾、鲍鱼、鸡蛋、黄瓜、胡萝卜、番茄、紫甘蓝和芽菜。多种配料让口感更丰富，也很适合拍照分享。" },
+      { heading: "适合搭配什么菜？", body: "冷面可以搭配炸饺子、糖醋肉、韩式炸酱面或一碗热辣 jjambbong。几个人一起用餐时，冷热搭配会更舒服。" },
+      { heading: "到 DOYA JJAMBBONG 前先确认", body: "DOYA JJAMBBONG 位于 77i Bui Thi Xuan, District 1, Ho Chi Minh City。到店前可通过电话或 Zalo 084 337 7788 确认冷面当天是否供应。" }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG 有韩式冷面吗？", answer: "可向 DOYA JJAMBBONG 咨询中式韩餐风格冷面。建议到店前通过电话或 Zalo 084 337 7788 确认当天供应情况。" },
+      { question: "这道冷面辣吗？", answer: "冷面通常比 jjambbong 更清爽、更轻。若不吃辣，点餐前可先询问店员。" },
+      { question: "DOYA JJAMBBONG 在哪里？", answer: "地址是 77i Bui Thi Xuan, District 1, Ho Chi Minh City，靠近滨城市场、Bui Vien 和市中心酒店区。" },
+      { question: "冷面适合搭配什么？", answer: "炸饺子、糖醋肉、韩式炸酱面和 jjambbong 都适合一起点。" }
+    ],
+    cta:
+      "想在胡志明市第1郡吃清爽韩式冷面？欢迎到 DOYA JJAMBBONG，或先通过电话/Zalo 084 337 7788 咨询。"
+  },
+  {
+    locale: "ja",
+    slug: "ho-chi-minh-ik-ku-korean-cold-noodles",
+    title: "ホーチミン1区の韓国冷麺：DOYA JJAMBBONG の韓国中華スタイル",
+    description:
+      "ホーチミン1区で韓国冷麺、冷たい麺、韓国料理、Korean cold noodles を探す方へ。DOYA JJAMBBONG の韓国中華スタイル冷麺を紹介します。",
+    eyebrow: "ホーチミン1区 韓国冷麺",
+    date: coldNoodlesDate,
+    readTime: "5分",
+    image: "/images/blog/doya-cold-noodles-quan-1.jpg",
+    imageAlt: "DOYA JJAMBBONG の韓国中華スタイル冷麺、牛肉、海老、アワビ、野菜と氷入り",
+    gallery: [
+      { src: "/images/blog/doya-cold-noodles-quan-1.jpg", alt: "ホーチミン1区 DOYA JJAMBBONG の韓国冷麺" }
+    ],
+    alternateGroup: "cold-noodles-quan-1",
+    keywords: ["ホーチミン 冷麺", "ホーチミン1区 韓国冷麺", "ホーチミン 韓国料理", "Korean cold noodles Ho Chi Minh", "District 1 Korean restaurant", "冷たい麺 ホーチミン", "DOYA JJAMBBONG"],
+    intro:
+      "ホーチミンの暑い日には、辛いスープや揚げ物だけでなく、冷たい麺が食べたくなることがあります。DOYA JJAMBBONG の韓国中華スタイル冷麺は、冷たいスープ、コシのある麺、牛肉、海老、アワビ、卵、野菜、氷を一杯で楽しめるメニューです。",
+    sections: [
+      { heading: "韓国中華スタイル冷麺とは？", body: "一般的な韓国冷麺とは少し違い、韓国中華の雰囲気に冷たいスープと多彩なトッピングを合わせた一杯です。辛いチャンポンより軽く食べたい日に選びやすい料理です。" },
+      { heading: "ホーチミン1区で冷麺が合う理由", body: "1区にはベンタイン市場、ブイビエン、ホテル街があり、歩く時間も長くなりがちです。暑い日や観光の合間には、ホーチミン 冷麺、韓国冷麺、冷たい麺と検索したくなる場面があります。" },
+      { heading: "牛肉、海鮮、野菜のバランス", body: "牛肉、海老、アワビ、卵、きゅうり、にんじん、トマト、紫キャベツ、スプラウトなどを一緒に楽しめます。彩りがよく、食感も豊かです。" },
+      { heading: "一緒に頼みたいメニュー", body: "冷麺には揚げ餃子、タンスユク、ジャージャー麺、辛いチャンポンも合わせやすいです。グループで冷たい料理と温かい料理を分ける時にも便利です。" },
+      { heading: "来店前に確認", body: "DOYA JJAMBBONG は 77i Bui Thi Xuan, District 1, Ho Chi Minh City にあります。冷麺の提供状況は、来店前に電話または Zalo 084 337 7788 で確認してください。" }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG に韓国冷麺はありますか？", answer: "韓国中華スタイル冷麺については、来店前に電話または Zalo 084 337 7788 で当日の提供状況を確認してください。" },
+      { question: "冷麺は辛いですか？", answer: "チャンポンのような熱く辛いスープより、冷たく軽く食べやすい麺料理です。辛さが気になる場合は注文前にスタッフへ確認してください。" },
+      { question: "お店はどこにありますか？", answer: "住所は 77i Bui Thi Xuan, District 1, Ho Chi Minh City です。ベンタイン市場やブイビエンから行きやすい場所です。" },
+      { question: "冷麺と一緒に頼みやすい料理は？", answer: "揚げ餃子、タンスユク、ジャージャー麺、チャンポンなどが合わせやすいです。" }
+    ],
+    cta:
+      "ホーチミン1区で冷たい韓国麺を探している方は、DOYA JJAMBBONG へ。来店前の確認は電話または Zalo: 084 337 7788"
+  },
   {
     locale: "ko",
     slug: "rainy-day-jjambbong-ho-chi-minh",
