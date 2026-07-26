@@ -13,12 +13,12 @@ const mainPaths: PageSlug[] = [
   "about"
 ];
 
-const languageShortLabel: Record<Locale, string> = {
-  vi: "VN Vietnam",
-  ko: "KR 한국",
-  en: "US English",
-  zh: "CN 中文",
-  ja: "JP 日本語"
+const languageOptions: Record<Locale, { flag: string; label: string; code: string }> = {
+  vi: { flag: "🇻🇳", label: "Tiếng Việt", code: "VI" },
+  ko: { flag: "🇰🇷", label: "한국어", code: "KO" },
+  en: { flag: "🇬🇧", label: "English", code: "EN" },
+  zh: { flag: "🇨🇳", label: "中文 (中国)", code: "CN" },
+  ja: { flag: "🇯🇵", label: "日本語", code: "JP" }
 };
 
 const blogLabel: Record<Locale, string> = {
@@ -75,20 +75,7 @@ export function Header({ locale, slug, activeSection }: { locale: Locale; slug: 
         </nav>
 
         <div className="flex items-center gap-2">
-          <div className="hidden rounded-full border border-ink/10 bg-white p-1 sm:flex" aria-label="Language switcher">
-            {site.locales.map((lang) => (
-              <Link
-                key={lang}
-                href={localizedPath(lang, slug)}
-                hrefLang={lang}
-                className={`rounded-full px-3 py-1 text-xs font-black ${
-                  lang === locale ? "bg-chili text-white" : "text-ink/60 hover:text-ink"
-                }`}
-              >
-                {languageShortLabel[lang]}
-              </Link>
-            ))}
-          </div>
+          <LanguageSwitcher locale={locale} slug={slug} />
           <Link
             href={site.links.googleMaps}
             className="rounded-md bg-chili px-4 py-2 text-sm font-black text-white shadow-glow hover:bg-flame"
@@ -96,21 +83,6 @@ export function Header({ locale, slug, activeSection }: { locale: Locale; slug: 
             {copy.directions}
           </Link>
         </div>
-      </div>
-
-      <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 pb-2 sm:hidden" aria-label="Language switcher">
-        {site.locales.map((lang) => (
-          <Link
-            key={lang}
-            href={localizedPath(lang, slug)}
-            hrefLang={lang}
-            className={`shrink-0 rounded-full px-3 py-1 text-xs font-black ${
-              lang === locale ? "bg-chili text-white" : "border border-ink/10 bg-white text-ink/60"
-            }`}
-          >
-            {languageShortLabel[lang]}
-          </Link>
-        ))}
       </div>
 
       <div className="mx-auto flex max-w-7xl gap-2 overflow-x-auto px-4 pb-3 lg:hidden">
@@ -135,5 +107,41 @@ export function Header({ locale, slug, activeSection }: { locale: Locale; slug: 
         </Link>
       </div>
     </header>
+  );
+}
+
+function LanguageSwitcher({ locale, slug }: { locale: Locale; slug: PageSlug }) {
+  const current = languageOptions[locale];
+
+  return (
+    <details className="group relative">
+      <summary
+        className="flex cursor-pointer list-none items-center gap-1.5 rounded-full border border-white/70 bg-white/80 px-2.5 py-1.5 text-sm font-black text-ink shadow-sm outline-none transition hover:bg-white [&::-webkit-details-marker]:hidden"
+        aria-label="Language switcher"
+      >
+        <span className="grid h-6 w-6 place-items-center rounded-full text-base leading-none shadow-sm">{current.flag}</span>
+        <span className="hidden sm:inline">{current.code}</span>
+        <span className="text-xs text-ink/60 transition group-open:rotate-180">⌄</span>
+      </summary>
+      <div className="absolute right-0 top-11 z-50 w-44 overflow-hidden rounded-3xl border border-white/80 bg-white/95 p-2 shadow-2xl backdrop-blur">
+        {site.locales.map((lang) => {
+          const option = languageOptions[lang];
+
+          return (
+            <Link
+              key={lang}
+              href={localizedPath(lang, slug)}
+              hrefLang={lang}
+              className={`flex items-center gap-3 rounded-2xl px-3 py-2 text-sm font-bold transition ${
+                lang === locale ? "bg-chili/10 text-chili" : "text-ink hover:bg-bone"
+              }`}
+            >
+              <span className="grid h-7 w-7 shrink-0 place-items-center rounded-full text-lg leading-none shadow-sm">{option.flag}</span>
+              <span>{option.label}</span>
+            </Link>
+          );
+        })}
+      </div>
+    </details>
   );
 }
