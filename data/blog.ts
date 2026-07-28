@@ -33,8 +33,367 @@ const deliveryClusterDate = "2026-07-27";
 const district1BestRestaurantDate = "2026-07-28";
 const vietnameseBlackBeanNoodlesDate = "2026-07-28";
 const champongSeoClusterDate = "2026-07-28";
+const doyaJjambbongDifferenceDate = "2026-07-28";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "ko",
+    slug: "ho-chi-minh-jjambbong-restaurant-doya-difference",
+    title: "호치민 짬뽕 맛집, 도야짬뽕이 다른 짬뽕집과 다른 점",
+    description:
+      "호치민 짬뽕 맛집을 찾는다면 도야짬뽕의 웍 조리, 불향, 진한 한국식 국물, 푸짐한 건더기와 다양한 짬뽕 메뉴를 확인하세요.",
+    eyebrow: "호치민 짬뽕 맛집",
+    date: doyaJjambbongDifferenceDate,
+    readTime: "5분",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "호치민 짬뽕 맛집 도야짬뽕 해물짬뽕",
+    gallery: [
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "호치민 소고기짬뽕 도야짬뽕" },
+      { src: "/images/menu/doya-white-seafood-jjambbong.jpg", alt: "도야짬뽕 해물백짬뽕" },
+      { src: "/images/menu/doya-cream-jjambbong.jpg", alt: "도야짬뽕 크림짬뽕" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "도야짬뽕 마라짬뽕과 매운 짬뽕 메뉴" }
+    ],
+    alternateGroup: "doya-jjambbong-difference",
+    keywords: [
+      "호치민 짬뽕 맛집",
+      "호치민 짬뽕",
+      "호치민 1군 짬뽕",
+      "호치민 한식당",
+      "호치민 중국집",
+      "도야짬뽕",
+      "해물짬뽕",
+      "소고기짬뽕",
+      "백짬뽕",
+      "크림짬뽕",
+      "마라짬뽕"
+    ],
+    intro:
+      "호치민에서 짬뽕 맛집을 찾는다면 단순히 매운 국물만 볼 것이 아니라, 주문 후 어떻게 조리되는지, 국물의 깊이와 불향이 있는지, 건더기와 선택지가 충분한지를 함께 봐야 합니다. 도야짬뽕은 주문이 들어오면 웍에서 채소, 고기, 해산물을 직접 볶아 한국식 짬뽕의 진한 맛을 내는 1군 한국식 중화요리 매장입니다.",
+    sections: [
+      {
+        heading: "주문 후 웍에서 바로 볶아 만드는 짬뽕",
+        body:
+          "도야짬뽕은 주문이 들어오면 채소, 고기, 해산물을 웍에서 직접 볶아 조리합니다. 미리 섞어둔 국물에 면만 넣는 방식이 아니라 재료를 볶는 과정에서 향과 맛을 끌어올리기 때문에 첫 숟가락부터 한국식 짬뽕다운 인상이 살아납니다."
+      },
+      {
+        heading: "불향과 진한 한국식 짬뽕 국물",
+        body:
+          "짬뽕에서 중요한 것은 매운맛만이 아닙니다. 웍에서 볶은 재료의 향, 해산물의 감칠맛, 진한 빨간 국물이 같이 맞아야 합니다. 도야짬뽕은 한국에서 먹던 짬뽕의 느낌을 살리기 위해 국물의 농도와 불향을 중요하게 잡습니다."
+      },
+      {
+        heading: "돼지고기, 오징어, 조개, 채소까지 푸짐한 건더기",
+        body:
+          "한 그릇 안에 돼지고기, 오징어, 조개, 채소 등 여러 재료가 들어가야 짬뽕을 먹는 만족감이 커집니다. 도야짬뽕은 면과 국물뿐 아니라 건더기를 함께 즐기는 한국식 짬뽕 경험을 중심으로 구성합니다."
+      },
+      {
+        heading: "도야짬뽕부터 백짬뽕, 크림짬뽕, 마라짬뽕까지",
+        body:
+          "기본 도야짬뽕, 소고기짬뽕, 해물짬뽕, 해물백짬뽕, 크림짬뽕, 마라짬뽕처럼 선택지가 넓습니다. 매운 빨간 국물을 좋아하는 손님, 부드러운 크림을 찾는 손님, 덜 매운 백짬뽕을 원하는 손님 모두 메뉴를 고르기 쉽습니다."
+      },
+      {
+        heading: "맵기 조절, 사이즈업, 소고기 추가 가능",
+        body:
+          "짬뽕은 취향이 강한 메뉴라 주문 옵션도 중요합니다. 도야짬뽕에서는 맵기 조절, 사이즈업, 소고기 추가처럼 손님 취향에 맞춘 선택이 가능해 혼밥, 단체 식사, 배달 주문 모두에 맞추기 좋습니다."
+      },
+      {
+        heading: "한국에서 직수입하는 소스와 면으로 한국의 맛 그대로",
+        body:
+          "프리미엄 짬뽕의 핵심은 재료와 기본 맛입니다. 도야짬뽕은 한국에서 직수입하는 소스와 면을 사용해 호치민에서도 한국에서 먹던 짬뽕의 맛을 최대한 그대로 느낄 수 있도록 준비합니다."
+      }
+    ],
+    faq: [
+      { question: "도야짬뽕은 호치민 어디에 있나요?", answer: "도야짬뽕은 77i Bùi Thị Xuân, District 1, Ho Chi Minh City에 있습니다." },
+      { question: "짬뽕 맵기 조절이 가능한가요?", answer: "네. 주문 시 맵기 조절 가능 여부를 직원에게 문의할 수 있습니다." },
+      { question: "어떤 짬뽕 메뉴가 있나요?", answer: "도야짬뽕, 소고기짬뽕, 해물짬뽕, 해물백짬뽕, 크림짬뽕, 마라짬뽕 등 다양한 선택지가 있습니다." },
+      { question: "배달도 가능한가요?", answer: "전화 또는 Zalo 084 337 7788로 문의하면 매장 반경 약 5km 이내 무료 배달 가능 여부를 확인할 수 있습니다." }
+    ],
+    cta:
+      "호치민 짬뽕 맛집을 찾고 있다면 도야짬뽕에서 웍으로 볶아낸 진한 한국식 짬뽕을 확인해보세요. 전화·Zalo: 084 337 7788"
+  },
+  {
+    locale: "vi",
+    slug: "mi-cay-han-quoc-ngon-ho-chi-minh-doya-khac-biet",
+    title: "Mì cay Hàn Quốc ngon ở Hồ Chí Minh: DOYA JJAMBBONG khác gì?",
+    description:
+      "Tìm mì cay Hàn Quốc ngon, champong hoặc jjambbong ở Quận 1? DOYA JJAMBBONG xào rau, thịt và hải sản bằng chảo wok sau khi khách gọi, tạo nước dùng đậm vị kiểu Hàn.",
+    eyebrow: "Mì cay Hàn Quốc ngon",
+    date: doyaJjambbongDifferenceDate,
+    readTime: "5 phút",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "Mì cay Hàn Quốc champong tại DOYA JJAMBBONG Quận 1",
+    gallery: [
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "Mì cay bò Hàn Quốc tại DOYA JJAMBBONG" },
+      { src: "/images/menu/doya-white-seafood-jjambbong.jpg", alt: "Mì trắng hải sản kiểu Hàn tại DOYA" },
+      { src: "/images/menu/doya-cream-jjambbong.jpg", alt: "Cream jjambbong mì kem cay Hàn Quốc" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "Mara jjambbong mì cay Hàn Quốc tại Quận 1" }
+    ],
+    alternateGroup: "doya-jjambbong-difference",
+    keywords: [
+      "mì cay Hàn Quốc ngon",
+      "mì cay Hàn Quốc Quận 1",
+      "champong Ho Chi Minh",
+      "jjambbong Quận 1",
+      "jjamppong Ho Chi Minh",
+      "mì hải sản cay Hàn Quốc",
+      "quán ăn Hàn Quốc Quận 1",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "Khi tìm mì cay Hàn Quốc ngon ở Hồ Chí Minh, nhiều khách không chỉ muốn một tô mì cay mà còn muốn nước dùng nóng, thơm, có nhiều topping và đúng vị Hàn. DOYA JJAMBBONG ở 77i Bùi Thị Xuân, Quận 1 nấu jjambbong bằng cách xào rau, thịt và hải sản bằng chảo wok sau khi khách gọi, rồi kết hợp với nước dùng kiểu Hàn đậm vị.",
+    sections: [
+      {
+        heading: "Xào bằng chảo wok sau khi khách gọi",
+        body:
+          "Điểm khác biệt đầu tiên là cách nấu. Rau, thịt và hải sản được xào trực tiếp bằng chảo wok khi có đơn gọi món. Quá trình này giúp món mì có mùi thơm rõ hơn và tạo cảm giác vừa nấu nóng, không đơn giản chỉ là một tô mì chan nước dùng."
+      },
+      {
+        heading: "Mùi lửa và nước dùng jjambbong kiểu Hàn",
+        body:
+          "Mì cay Hàn Quốc ngon cần nhiều hơn vị cay. Nước dùng phải nóng, đậm, có vị hải sản và mùi thơm từ nguyên liệu được xào. DOYA tập trung vào vị nước dùng đỏ kiểu Hàn-Trung, hợp với khách tìm champong, jjambbong hoặc Korean spicy seafood noodles."
+      },
+      {
+        heading: "Topping nhiều: thịt heo, mực, nghêu và rau",
+        body:
+          "Một tô jjambbong dễ nhớ cần có topping đủ phong phú. DOYA sử dụng thịt heo, mực, nghêu và rau để khách có thể ăn cả mì, nước dùng và phần topping trong cùng một tô."
+      },
+      {
+        heading: "Nhiều lựa chọn jjambbong",
+        body:
+          "Menu có DOYA jjambbong, mì cay bò, mì cay hải sản, mì trắng hải sản, cream jjambbong và mara jjambbong. Nhờ vậy nhóm bạn có thể chọn món cay, món nhẹ hơn hoặc món vị kem tùy khẩu vị."
+      },
+      {
+        heading: "Có thể chọn độ cay, size lớn và thêm bò",
+        body:
+          "Khách có thể hỏi nhân viên về điều chỉnh độ cay, nâng size hoặc thêm bò. Những lựa chọn này giúp món mì phù hợp hơn với người thích cay, người ăn khỏe hoặc nhóm muốn chia sẻ nhiều món."
+      },
+      {
+        heading: "Sốt và mì nhập từ Hàn Quốc",
+        body:
+          "Để giữ vị Hàn rõ hơn, DOYA sử dụng sốt và mì nhập trực tiếp từ Hàn Quốc. Đây là lý do món jjambbong tại DOYA có cảm giác gần với hương vị Hàn Quốc hơn khi ăn ngay tại trung tâm Quận 1."
+      }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG ở đâu?", answer: "Quán ở 77i Bùi Thị Xuân, District 1, Ho Chi Minh City." },
+      { question: "Champong và jjambbong có giống nhau không?", answer: "Có. Đây là các cách gọi khác nhau cho món mì cay hải sản Hàn Quốc." },
+      { question: "Có thể chọn độ cay không?", answer: "Bạn có thể hỏi nhân viên khi gọi món để được tư vấn theo khả năng chuẩn bị trong ngày." },
+      { question: "Có giao hàng không?", answer: "Bạn có thể gọi hoặc nhắn Zalo 084 337 7788 để hỏi takeaway hoặc giao hàng miễn phí trong bán kính khoảng 5km." }
+    ],
+    cta:
+      "Muốn ăn mì cay Hàn Quốc ngon ở Quận 1? Ghé DOYA JJAMBBONG hoặc gọi/Zalo 084 337 7788 để hỏi món và giao hàng."
+  },
+  {
+    locale: "en",
+    slug: "best-jjambbong-ho-chi-minh-doya-difference",
+    title: "Best jjambbong in Ho Chi Minh? What makes DOYA JJAMBBONG different",
+    description:
+      "Looking for the best jjambbong, champong, or Korean spicy seafood noodles in Ho Chi Minh City? DOYA stir-fries vegetables, meat, and seafood in a wok for deep Korean-style broth.",
+    eyebrow: "Best jjambbong Ho Chi Minh",
+    date: doyaJjambbongDifferenceDate,
+    readTime: "5 min",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "Best jjambbong champong Korean spicy seafood noodles at DOYA in Ho Chi Minh City",
+    gallery: [
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "Beef jjambbong at DOYA JJAMBBONG Ho Chi Minh" },
+      { src: "/images/menu/doya-white-seafood-jjambbong.jpg", alt: "White seafood jjambbong at DOYA District 1" },
+      { src: "/images/menu/doya-cream-jjambbong.jpg", alt: "Cream jjambbong Korean-Chinese noodle soup" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "Mara jjambbong spicy Korean noodles at DOYA" }
+    ],
+    alternateGroup: "doya-jjambbong-difference",
+    keywords: [
+      "best jjambbong Ho Chi Minh",
+      "best champong Ho Chi Minh",
+      "Korean spicy seafood noodles",
+      "jjambbong District 1",
+      "champong District 1",
+      "Korean restaurant District 1",
+      "Korean Chinese restaurant Ho Chi Minh",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "When people search for the best jjambbong in Ho Chi Minh City, they are usually looking for more than spicy soup. They want a hot bowl with wok aroma, deep Korean-style broth, generous toppings, and choices that fit different spice levels. DOYA JJAMBBONG in District 1 prepares its Korean spicy seafood noodles by stir-frying vegetables, meat, and seafood in a wok after the order comes in.",
+    sections: [
+      {
+        heading: "Cooked in a wok after you order",
+        body:
+          "DOYA does not position jjambbong as just noodles with spicy broth. Vegetables, meat, and seafood are stir-fried in a wok after the order is placed, helping the bowl carry a warmer aroma and a more layered Korean-Chinese flavor."
+      },
+      {
+        heading: "Wok aroma and deep Korean-style broth",
+        body:
+          "Good jjambbong is about balance: heat, seafood flavor, vegetables, and a red broth with depth. The wok step gives the soup a stronger character, which matters for guests searching champong, jjamppong, jjambbong, or Korean spicy seafood noodles."
+      },
+      {
+        heading: "Generous toppings in one bowl",
+        body:
+          "A satisfying bowl should have more than noodles. DOYA jjambbong includes ingredients such as pork, squid, clams, and vegetables, so guests can enjoy broth, noodles, and toppings together."
+      },
+      {
+        heading: "More jjambbong choices",
+        body:
+          "The menu includes DOYA jjambbong, beef jjambbong, seafood jjambbong, white seafood jjambbong, cream jjambbong, and mara jjambbong. This helps groups choose spicy, mild, creamy, seafood-forward, or beef-forward options."
+      },
+      {
+        heading: "Spice level, size-up, and beef add-on",
+        body:
+          "Jjambbong is personal. Guests can ask about spice adjustment, size-up, and beef add-on options, making the dish easier to match with solo meals, group meals, takeaway, or delivery."
+      },
+      {
+        heading: "Korean-imported sauce and noodles",
+        body:
+          "DOYA uses sauce and noodles imported directly from Korea to keep the flavor closer to the Korean jjambbong experience. For guests in Ho Chi Minh who miss Korean-Chinese noodles, this detail makes the bowl feel more familiar."
+      }
+    ],
+    faq: [
+      { question: "Is jjambbong the same as champong?", answer: "Yes. Champong is a common search spelling for Korean jjambbong or jjamppong, a spicy Korean-Chinese seafood noodle soup." },
+      { question: "Where is DOYA JJAMBBONG?", answer: "DOYA JJAMBBONG is at 77i Bui Thi Xuan, District 1, Ho Chi Minh City." },
+      { question: "Can I choose different jjambbong styles?", answer: "Yes. Options include DOYA jjambbong, beef jjambbong, seafood jjambbong, white seafood jjambbong, cream jjambbong, and mara jjambbong." },
+      { question: "Can I order takeaway or delivery?", answer: "Call or message Zalo 084 337 7788 to ask about takeaway or free delivery within about 5 km." }
+    ],
+    cta:
+      "Looking for jjambbong or champong in Ho Chi Minh City? Visit DOYA JJAMBBONG in District 1 or call/Zalo 084 337 7788."
+  },
+  {
+    locale: "zh",
+    slug: "hu-zhi-ming-shi-han-shi-la-hai-xian-mian-doya-bu-tong",
+    title: "胡志明市韩式辣海鲜面：DOYA JJAMBBONG 和其他店有什么不同？",
+    description:
+      "搜索胡志明市韩式辣海鲜面、champong、jjamppong 或第1郡韩国餐厅？DOYA 下单后用 wok 炒蔬菜、肉类和海鲜，汤底更有韩式风味。",
+    eyebrow: "胡志明市韩式辣海鲜面",
+    date: doyaJjambbongDifferenceDate,
+    readTime: "5分钟",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "胡志明市 DOYA JJAMBBONG 韩式辣海鲜面 champong",
+    gallery: [
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "DOYA 牛肉韩式辣海鲜面" },
+      { src: "/images/menu/doya-white-seafood-jjambbong.jpg", alt: "DOYA 韩式白汤海鲜面" },
+      { src: "/images/menu/doya-cream-jjambbong.jpg", alt: "DOYA 奶油韩式辣海鲜面" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "DOYA 麻辣韩式海鲜面" }
+    ],
+    alternateGroup: "doya-jjambbong-difference",
+    keywords: [
+      "胡志明市韩式辣海鲜面",
+      "champong 胡志明市",
+      "jjamppong 胡志明",
+      "jjambbong 胡志明",
+      "第1郡韩国餐厅",
+      "胡志明市韩国餐厅",
+      "韩式中餐",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "在胡志明市搜索韩式辣海鲜面、champong 或 jjamppong 时，客人通常想找热汤、辣味、海鲜香和真正的韩式中餐味道。DOYA JJAMBBONG 位于第1郡 77i Bui Thi Xuan，下单后用 wok 炒蔬菜、肉类和海鲜，再做成一碗浓郁的韩式辣汤面。",
+    sections: [
+      {
+        heading: "下单后用 wok 现炒",
+        body:
+          "DOYA 的辣海鲜面不是简单把面放进汤里。蔬菜、肉类和海鲜会在客人点单后用 wok 直接翻炒，让香气和味道进入汤底。"
+      },
+      {
+        heading: "有火香的韩式浓汤",
+        body:
+          "一碗好的韩式辣海鲜面需要辣味、海鲜味、蔬菜香和浓汤平衡。现炒步骤让汤更有层次，也更接近韩国中餐店的 jjambbong 风格。"
+      },
+      {
+        heading: "配料丰富",
+        body:
+          "DOYA 的一碗面里有猪肉、鱿鱼、贝类和蔬菜等配料。客人可以同时吃到面条、热汤和丰富配料，而不只是喝辣汤。"
+      },
+      {
+        heading: "多种辣海鲜面选择",
+        body:
+          "菜单有 DOYA 招牌辣海鲜面、牛肉辣海鲜面、海鲜辣海鲜面、白汤海鲜面、奶油辣海鲜面和麻辣风味选择。不同口味的客人都能更容易选择。"
+      },
+      {
+        heading: "可咨询辣度、加大和加牛肉",
+        body:
+          "喜欢更辣、想吃更多或想加牛肉的客人，可以点餐时向店员咨询辣度调整、size up 和加牛肉选项。"
+      },
+      {
+        heading: "韩国直进口酱料和面条",
+        body:
+          "DOYA 使用从韩国直进口的酱料和面条，希望在胡志明市也能呈现更接近韩国的 premium jjambbong 味道。"
+      }
+    ],
+    faq: [
+      { question: "Champong 和 jjamppong 是同一道菜吗？", answer: "是的，通常都指韩式辣海鲜汤面。" },
+      { question: "DOYA JJAMBBONG 在哪里？", answer: "地址是 77i Bui Thi Xuan, District 1, Ho Chi Minh City。" },
+      { question: "有哪些辣海鲜面选择？", answer: "有招牌辣海鲜面、牛肉辣海鲜面、海鲜辣海鲜面、白汤海鲜面、奶油辣海鲜面和麻辣风味选择。" },
+      { question: "可以外带或配送吗？", answer: "可通过电话或 Zalo 084 337 7788 咨询外带和约 5km 范围配送。" }
+    ],
+    cta:
+      "想在胡志明市第1郡吃韩式辣海鲜面？欢迎到 DOYA JJAMBBONG，电话/Zalo：084 337 7788。"
+  },
+  {
+    locale: "ja",
+    slug: "ho-chi-minh-jjambbong-doya-difference",
+    title: "ホーチミンのチャンポンなら DOYA JJAMBBONG：他と違うポイント",
+    description:
+      "ホーチミンでチャンポン、champong、jjamppong、韓国式辛い海鮮麺を探す方へ。DOYA は注文後に野菜・肉・海鮮を wok で炒め、濃い韓国式スープに仕上げます。",
+    eyebrow: "ホーチミン チャンポン",
+    date: doyaJjambbongDifferenceDate,
+    readTime: "5分",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "ホーチミン DOYA JJAMBBONG 韓国式チャンポン champong",
+    gallery: [
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "DOYA 牛肉チャンポン" },
+      { src: "/images/menu/doya-white-seafood-jjambbong.jpg", alt: "DOYA 海鮮白チャンポン" },
+      { src: "/images/menu/doya-cream-jjambbong.jpg", alt: "DOYA クリームチャンポン" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "DOYA マラ風チャンポン" }
+    ],
+    alternateGroup: "doya-jjambbong-difference",
+    keywords: [
+      "ホーチミン チャンポン",
+      "ホーチミン 韓国式チャンポン",
+      "champong ホーチミン",
+      "jjamppong Ho Chi Minh",
+      "jjambbong Ho Chi Minh",
+      "韓国料理 ホーチミン",
+      "ホーチミン1区 韓国料理",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "ホーチミンでチャンポンや champong を探す時、ただ辛いだけではなく、炒めた香り、濃いスープ、具材の多さ、メニューの選びやすさも大切です。DOYA JJAMBBONG は1区 77i Bui Thi Xuan にある韓国中華レストランで、注文後に野菜・肉・海鮮を wok で炒めてから韓国式の辛い海鮮麺に仕上げます。",
+    sections: [
+      {
+        heading: "注文後に wok で炒める",
+        body:
+          "DOYA のチャンポンは、注文後に野菜、肉、海鮮を wok で直接炒めます。この工程によって、スープだけでは出にくい香りと韓国中華らしい深みが出ます。"
+      },
+      {
+        heading: "炒め香と濃い韓国式スープ",
+        body:
+          "韓国式チャンポンは辛さだけでなく、海鮮の旨味、野菜の香り、赤いスープの濃さが大切です。DOYA はそのバランスを意識して、温かく力のある一杯に仕上げます。"
+      },
+      {
+        heading: "豚肉、イカ、貝、野菜の具材",
+        body:
+          "麺とスープだけでなく、豚肉、イカ、貝、野菜などの具材を一緒に楽しめるのがチャンポンの魅力です。食事としての満足感があり、一人でもグループでも選びやすいメニューです。"
+      },
+      {
+        heading: "選べるチャンポンメニュー",
+        body:
+          "DOYA チャンポン、牛肉チャンポン、海鮮チャンポン、海鮮白チャンポン、クリームチャンポン、マラ風チャンポンなど、辛いものが好きな方にも、少しマイルドに食べたい方にも選びやすい構成です。"
+      },
+      {
+        heading: "辛さ調整、サイズアップ、牛肉追加",
+        body:
+          "チャンポンは好みが分かれる料理なので、注文時に辛さ調整、サイズアップ、牛肉追加について相談できます。しっかり食べたい時やグループ注文にも便利です。"
+      },
+      {
+        heading: "韓国から直輸入したソースと麺",
+        body:
+          "DOYA は韓国から直輸入したソースと麺を使用し、ホーチミンでも韓国で食べるような premium jjambbong の味に近づけています。"
+      }
+    ],
+    faq: [
+      { question: "champong と jjamppong は同じですか？", answer: "はい。どちらも韓国式の辛い海鮮麺を探す時に使われる表記です。" },
+      { question: "DOYA JJAMBBONG はどこですか？", answer: "ホーチミン1区 77i Bui Thi Xuan にあります。" },
+      { question: "辛さ調整はできますか？", answer: "注文時にスタッフへ相談できます。当日の準備状況により案内されます。" },
+      { question: "持ち帰りや配達はできますか？", answer: "電話または Zalo 084 337 7788 で持ち帰りや約5km圏内の配達について確認できます。" }
+    ],
+    cta:
+      "ホーチミン1区で韓国式チャンポンを探しているなら DOYA JJAMBBONG へ。電話・Zalo：084 337 7788"
+  },
   {
     locale: "en",
     slug: "champong-ho-chi-minh-district-1-doya",
