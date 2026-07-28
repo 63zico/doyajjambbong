@@ -32,8 +32,344 @@ const koreanChineseRestaurantDate = "2026-07-27";
 const deliveryClusterDate = "2026-07-27";
 const district1BestRestaurantDate = "2026-07-28";
 const vietnameseBlackBeanNoodlesDate = "2026-07-28";
+const champongSeoClusterDate = "2026-07-28";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "en",
+    slug: "champong-ho-chi-minh-district-1-doya",
+    title: "Champong in Ho Chi Minh City: Korean spicy seafood noodles in District 1",
+    description:
+      "Searching for champong, jjamppong, jjambbong, or Korean spicy seafood noodles in Ho Chi Minh City? DOYA JJAMBBONG serves hot Korean-Chinese champong in District 1 near Bui Vien and Ben Thanh.",
+    eyebrow: "Champong District 1",
+    date: champongSeoClusterDate,
+    readTime: "5 min",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "Champong Korean spicy seafood noodles at DOYA JJAMBBONG in District 1 Ho Chi Minh City",
+    gallery: [
+      { src: "/images/blog/doya-jjambbong-serving-bowl.jpg", alt: "A bowl of Korean champong served at DOYA JJAMBBONG" },
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "Classic Korean jjambbong champong noodles in Ho Chi Minh City" },
+      { src: "/images/blog/district-1-best-restaurant-doya-03.jpg", alt: "Spicy seafood champong bowl at a Korean restaurant in District 1" }
+    ],
+    alternateGroup: "champong-seo-guide",
+    keywords: [
+      "champong Ho Chi Minh",
+      "champong District 1",
+      "jjamppong Ho Chi Minh",
+      "jjambbong Ho Chi Minh",
+      "Korean spicy seafood noodles",
+      "Korean noodles District 1",
+      "Korean restaurant District 1",
+      "Korean food near Bui Vien",
+      "Korean restaurant near Ben Thanh",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "If you type champong into Google while staying in Ho Chi Minh City, you are probably looking for the Korean spicy seafood noodle soup also written as jjamppong or jjambbong. DOYA JJAMBBONG in District 1 serves this Korean-Chinese noodle dish with hot broth, noodles, vegetables, and seafood in a central location near Bui Vien, Pham Ngu Lao, and Ben Thanh Market.",
+    sections: [
+      {
+        heading: "What is champong?",
+        body:
+          "Champong is a common English spelling for Korean jjamppong, a spicy seafood noodle soup from Korean-Chinese cuisine. The dish is built around a hot red broth, chewy noodles, seafood flavor, and vegetables, making it one of the easiest Korean noodle dishes to search for when you want something warm and spicy."
+      },
+      {
+        heading: "Champong, jjamppong, jjambbong, and champon",
+        body:
+          "Guests search this dish in many ways: champong, jjamppong, jjambbong, champon, or Korean spicy seafood noodles. The spelling changes, but the intent is usually the same: a hot Korean noodle bowl with a spicy seafood broth."
+      },
+      {
+        heading: "Why search for champong in District 1?",
+        body:
+          "District 1 is where many travelers, office workers, and hotel guests stay. When you are near Bui Vien, Pham Ngu Lao, or Ben Thanh, a clear champong restaurant page helps you find the dish quickly without guessing from a large menu."
+      },
+      {
+        heading: "What to order with champong",
+        body:
+          "Champong pairs well with jajangmyeon for a classic Korean-Chinese noodle combo. Groups often add tangsuyuk or fried mandu, while guests who want a non-spicy choice can order Korean black bean noodles on the side."
+      },
+      {
+        heading: "Where to eat champong in Ho Chi Minh City",
+        body:
+          "DOYA JJAMBBONG is located at 77i Bui Thi Xuan, District 1, Ho Chi Minh City. For dine-in, takeaway, or delivery questions within about 5 km of the restaurant, call or message Zalo at 084 337 7788."
+      }
+    ],
+    faq: [
+      { question: "Is champong the same as jjamppong?", answer: "Yes. Champong is a search spelling many guests use for Korean jjamppong or jjambbong, a spicy Korean-Chinese seafood noodle soup." },
+      { question: "Is champong spicy?", answer: "Champong is usually spicy because it is made with a red seafood broth. If you prefer a milder dish, jajangmyeon is a good Korean-Chinese noodle option." },
+      { question: "Where is DOYA JJAMBBONG?", answer: "DOYA JJAMBBONG is at 77i Bui Thi Xuan, District 1, Ho Chi Minh City, near Bui Vien, Pham Ngu Lao, and Ben Thanh Market." },
+      { question: "Can I order champong for delivery?", answer: "You can call or message Zalo 084 337 7788 to ask about takeaway or free delivery within about 5 km of the restaurant." }
+    ],
+    cta:
+      "Looking for champong in Ho Chi Minh City? Visit DOYA JJAMBBONG in District 1 or call/Zalo 084 337 7788 for dine-in, takeaway, and delivery questions."
+  },
+  {
+    locale: "vi",
+    slug: "champong-quan-1-mi-cay-han-quoc-doya",
+    title: "Champong Quận 1: mì cay hải sản Hàn Quốc tại DOYA JJAMBBONG",
+    description:
+      "Tìm champong, jjambbong, mì cay Hàn Quốc hoặc mì hải sản cay ở Quận 1? DOYA JJAMBBONG phục vụ champong nóng gần Bùi Viện, Phạm Ngũ Lão và Bến Thành.",
+    eyebrow: "Champong Quận 1",
+    date: champongSeoClusterDate,
+    readTime: "5 phút",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "Champong mì cay hải sản Hàn Quốc tại DOYA JJAMBBONG Quận 1",
+    gallery: [
+      { src: "/images/blog/doya-jjambbong-serving-bowl.jpg", alt: "Tô champong Hàn Quốc nóng tại DOYA JJAMBBONG" },
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "Mì cay Hàn Quốc jjambbong ở Quận 1" },
+      { src: "/images/blog/district-1-best-restaurant-doya-03.jpg", alt: "Mì hải sản cay Hàn Quốc tại DOYA Quận 1" }
+    ],
+    alternateGroup: "champong-seo-guide",
+    keywords: [
+      "champong Quận 1",
+      "champong Ho Chi Minh",
+      "mì cay Hàn Quốc",
+      "mì hải sản cay Hàn Quốc",
+      "jjambbong Quận 1",
+      "jjamppong Ho Chi Minh",
+      "quán ăn Hàn Quốc Quận 1",
+      "món Hàn gần Bùi Viện",
+      "món Hàn gần Bến Thành",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "Champong là cách nhiều khách nước ngoài và khách Việt gõ khi tìm món mì cay hải sản Hàn Quốc. Món này cũng được viết là jjambbong hoặc jjamppong. Tại DOYA JJAMBBONG ở 77i Bùi Thị Xuân, Quận 1, bạn có thể ăn một tô mì nóng, cay, có hải sản, rau và sợi mì kiểu Hàn-Trung ngay trung tâm TP.HCM.",
+    sections: [
+      {
+        heading: "Champong là món gì?",
+        body:
+          "Champong là mì cay hải sản kiểu Hàn-Trung. Một tô thường có nước dùng đỏ nóng, sợi mì, rau, vị hải sản và độ cay rõ. Đây là món dễ tìm khi bạn muốn ăn món Hàn nóng, cay và no bụng ở Quận 1."
+      },
+      {
+        heading: "Champong, jjambbong và jjamppong có giống nhau không?",
+        body:
+          "Có. Champong là cách viết dễ gõ, còn jjambbong hoặc jjamppong là cách viết gần với tiếng Hàn hơn. Khi tìm trên Google, các từ này thường chỉ cùng một món mì cay hải sản Hàn Quốc."
+      },
+      {
+        heading: "Vì sao nên tìm champong ở Quận 1?",
+        body:
+          "Quận 1 có nhiều khách sạn, văn phòng và khu đi chơi như Bùi Viện, Phạm Ngũ Lão, Bến Thành. Khi muốn ăn nhanh một tô mì Hàn nóng, vị trí ở trung tâm giúp bạn dễ ghé ăn, mua mang đi hoặc hỏi giao hàng."
+      },
+      {
+        heading: "Ăn champong với món nào ngon?",
+        body:
+          "Nếu đi nhóm, bạn có thể gọi champong cùng mì tương đen jajangmyeon, tangsuyuk hoặc mandu chiên. Một người thích cay có thể ăn champong, người không ăn cay có thể chọn mì tương đen."
+      },
+      {
+        heading: "Ăn champong Hàn Quốc ở đâu tại TP.HCM?",
+        body:
+          "DOYA JJAMBBONG nằm tại 77i Bùi Thị Xuân, District 1, Ho Chi Minh City. Bạn có thể gọi hoặc nhắn Zalo 084 337 7788 để hỏi bàn, takeaway hoặc giao hàng miễn phí trong bán kính khoảng 5km nếu phù hợp."
+      }
+    ],
+    faq: [
+      { question: "Champong có cay không?", answer: "Có. Champong thường là món mì hải sản cay với nước dùng đỏ nóng. Nếu không ăn cay, bạn có thể chọn mì tương đen." },
+      { question: "Champong và jjambbong có phải một món không?", answer: "Có. Đây là các cách viết khác nhau cho món mì cay hải sản Hàn Quốc." },
+      { question: "DOYA JJAMBBONG gần Bùi Viện không?", answer: "Quán nằm ở 77i Bùi Thị Xuân, Quận 1, thuận tiện di chuyển từ Bùi Viện, Phạm Ngũ Lão và Bến Thành." },
+      { question: "Có thể đặt giao hàng champong không?", answer: "Bạn có thể gọi hoặc nhắn Zalo 084 337 7788 để hỏi takeaway hoặc giao hàng trong bán kính khoảng 5km." }
+    ],
+    cta:
+      "Muốn ăn champong Quận 1? Ghé DOYA JJAMBBONG tại 77i Bùi Thị Xuân hoặc gọi/Zalo 084 337 7788 để hỏi món và giao hàng."
+  },
+  {
+    locale: "ko",
+    slug: "champong-ho-chi-minh-doya-jjambbong",
+    title: "Champong 검색으로 찾는 호치민 짬뽕: 1군 도야짬뽕 가이드",
+    description:
+      "champong, jjamppong, jjambbong, 호치민 짬뽕, Korean spicy seafood noodles를 검색하는 손님을 위한 도야짬뽕 1군 짬뽕 안내.",
+    eyebrow: "Champong SEO 가이드",
+    date: champongSeoClusterDate,
+    readTime: "5분",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "호치민 1군 도야짬뽕 champong Korean spicy seafood noodles",
+    gallery: [
+      { src: "/images/blog/doya-jjambbong-serving-bowl.jpg", alt: "도야짬뽕에서 제공하는 champong 짬뽕 한 그릇" },
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "호치민 한국식 짬뽕 classic jjambbong" },
+      { src: "/images/blog/district-1-best-restaurant-doya-03.jpg", alt: "호치민 1군 매운 해물짬뽕 champong" }
+    ],
+    alternateGroup: "champong-seo-guide",
+    keywords: [
+      "champong",
+      "champong Ho Chi Minh",
+      "호치민 champong",
+      "호치민 짬뽕",
+      "호치민 1군 짬뽕",
+      "jjamppong Ho Chi Minh",
+      "jjambbong Ho Chi Minh",
+      "Korean spicy seafood noodles",
+      "호치민 한식당",
+      "도야짬뽕"
+    ],
+    intro:
+      "외국인이 짬뽕을 찾을 때는 한국어보다 champong, jjamppong, jjambbong, Korean spicy seafood noodles 같은 검색어를 많이 씁니다. 도야짬뽕은 호치민 1군 77i Bùi Thị Xuân에 있는 한국식 중화요리 매장으로, 이런 검색 의도를 짬뽕 메뉴와 매장 방문, 포장, 배달 문의로 자연스럽게 연결할 수 있습니다.",
+    sections: [
+      {
+        heading: "Champong은 짬뽕을 찾는 외국인 검색어입니다",
+        body:
+          "한국인은 짬뽕이라고 검색하지만 외국인은 champong, jjamppong, jjambbong처럼 여러 철자로 검색합니다. 모두 매운 해물 국물면을 찾는 의도이므로 페이지 안에서 여러 표현을 자연스럽게 함께 써주는 것이 중요합니다."
+      },
+      {
+        heading: "호치민 1군에서 검색 의도가 강한 이유",
+        body:
+          "부이비엔, 팜응우라오, 벤탄시장 주변은 여행자와 호텔 손님이 많습니다. 이들은 보통 지금 가까운 곳에서 먹을 수 있는 Korean spicy seafood noodles를 찾기 때문에 지역명과 메뉴명을 함께 잡아야 합니다."
+      },
+      {
+        heading: "짬뽕은 혼밥과 단체 식사 모두에 맞습니다",
+        body:
+          "짬뽕은 면, 국물, 해산물, 채소가 한 그릇에 들어가 혼자 먹기 좋고, 단체는 짜장면, 탕수육, 군만두와 함께 주문하기 좋습니다. 매운 메뉴와 안 매운 메뉴를 같이 구성할 수 있어 외국인 손님에게 설명하기 쉽습니다."
+      },
+      {
+        heading: "검색어를 메뉴 페이지와 연결해야 합니다",
+        body:
+          "champong 글에서 해물짬뽕 메뉴, 1군 맛집 글, 배달 글, 비 오는 날 짬뽕 글로 내부 링크가 이어지면 구글이 도야짬뽕 사이트를 짬뽕 주제와 더 강하게 연결해 이해할 수 있습니다."
+      },
+      {
+        heading: "도야짬뽕 위치와 주문",
+        body:
+          "도야짬뽕은 77i Bùi Thị Xuân, District 1, Ho Chi Minh City에 있습니다. 방문, 포장, 배달 문의는 전화 또는 Zalo 084 337 7788로 확인할 수 있고, 매장 반경 약 5km 이내 무료 배달 가능 여부도 문의할 수 있습니다."
+      }
+    ],
+    faq: [
+      { question: "champong과 jjamppong은 같은 말인가요?", answer: "네. 외국인이 짬뽕을 검색할 때 champong, jjamppong, jjambbong처럼 여러 철자를 사용합니다." },
+      { question: "호치민에서 champong 검색하면 어떤 메뉴를 기대하나요?", answer: "대부분 Korean spicy seafood noodles, 즉 매운 해물 짬뽕을 기대합니다." },
+      { question: "도야짬뽕은 어디에 있나요?", answer: "호치민 1군 77i Bùi Thị Xuân에 있으며 부이비엔, 팜응우라오, 벤탄시장 동선에서 이동하기 좋습니다." },
+      { question: "짬뽕 배달도 가능한가요?", answer: "전화 또는 Zalo 084 337 7788로 문의하면 매장 반경 약 5km 이내 무료 배달 가능 여부를 확인할 수 있습니다." }
+    ],
+    cta:
+      "호치민에서 champong 또는 짬뽕을 찾고 있다면 도야짬뽕 1군 매장을 확인해보세요. 전화·Zalo: 084 337 7788"
+  },
+  {
+    locale: "zh",
+    slug: "champong-hu-zhi-ming-di-1-jun-doya",
+    title: "胡志明市 Champong：第1郡韩式辣海鲜面 DOYA JJAMBBONG",
+    description:
+      "搜索 champong、jjamppong、jjambbong、韩式辣海鲜面或胡志明市韩国餐厅？DOYA JJAMBBONG 位于第1郡，靠近 Bui Vien 和滨城市场。",
+    eyebrow: "Champong 韩式辣海鲜面",
+    date: champongSeoClusterDate,
+    readTime: "5分钟",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "胡志明市第1郡 DOYA JJAMBBONG champong 韩式辣海鲜面",
+    gallery: [
+      { src: "/images/blog/doya-jjambbong-serving-bowl.jpg", alt: "DOYA JJAMBBONG 韩式辣海鲜面 champong" },
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "胡志明市韩式 jjambbong 辣海鲜汤面" },
+      { src: "/images/blog/district-1-best-restaurant-doya-03.jpg", alt: "第1郡韩国餐厅辣海鲜面" }
+    ],
+    alternateGroup: "champong-seo-guide",
+    keywords: [
+      "champong 胡志明市",
+      "champong 第1郡",
+      "韩式辣海鲜面",
+      "jjamppong 胡志明",
+      "jjambbong 胡志明",
+      "胡志明市韩国餐厅",
+      "第1郡韩国餐厅",
+      "Bui Vien 韩国餐厅",
+      "滨城市场韩国餐厅",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "Champong 是很多外国客人搜索韩式辣海鲜面的写法，也可以写成 jjamppong 或 jjambbong。DOYA JJAMBBONG 位于胡志明市第1郡 77i Bui Thi Xuan，适合想在 Bui Vien、Pham Ngu Lao、滨城市场附近吃热汤辣面和韩式中餐的客人。",
+    sections: [
+      {
+        heading: "Champong 是什么？",
+        body:
+          "Champong 通常指韩国中餐里的辣海鲜汤面。它有红色热汤、面条、蔬菜和海鲜风味，适合想吃热汤、辣味和面食的客人。"
+      },
+      {
+        heading: "Champong、jjamppong 和 jjambbong 的区别",
+        body:
+          "这些是同一道菜的不同英文写法。客人可能搜索 champong, jjamppong, jjambbong 或 Korean spicy seafood noodles，实际想找的都是韩式辣海鲜面。"
+      },
+      {
+        heading: "为什么适合第1郡搜索？",
+        body:
+          "胡志明市第1郡有很多酒店、游客、办公室和夜生活区域。客人在 Bui Vien、Pham Ngu Lao 或滨城市场附近搜索 champong 时，通常希望快速找到位置清楚、菜单明确的餐厅。"
+      },
+      {
+        heading: "推荐搭配",
+        body:
+          "喜欢辣味可以点 champong，想要不辣的面可以搭配韩式炸酱面。多人用餐时，糖醋肉和煎饺也很适合一起分享。"
+      },
+      {
+        heading: "DOYA JJAMBBONG 地址和订餐",
+        body:
+          "餐厅地址是 77i Bui Thi Xuan, District 1, Ho Chi Minh City。到店、打包或约 5km 范围配送问题，可以拨打电话或 Zalo 084 337 7788 咨询。"
+      }
+    ],
+    faq: [
+      { question: "Champong 和 jjamppong 是同一道菜吗？", answer: "是的。它们通常都指韩式辣海鲜汤面。" },
+      { question: "Champong 辣吗？", answer: "通常是辣的，因为它是红汤海鲜面。不想吃辣的客人可以选择韩式炸酱面。" },
+      { question: "DOYA JJAMBBONG 在哪里？", answer: "位于 77i Bui Thi Xuan, District 1, Ho Chi Minh City，靠近 Bui Vien、Pham Ngu Lao 和滨城市场。" },
+      { question: "可以外带或配送吗？", answer: "可以通过电话或 Zalo 084 337 7788 咨询外带和约 5km 范围配送情况。" }
+    ],
+    cta:
+      "在胡志明市第1郡寻找 champong 或韩式辣海鲜面？欢迎到 DOYA JJAMBBONG，电话/Zalo：084 337 7788。"
+  },
+  {
+    locale: "ja",
+    slug: "champong-ho-chi-minh-1-ku-doya",
+    title: "ホーチミンの Champong：1区で韓国式チャンポンを食べるなら DOYA",
+    description:
+      "ホーチミンで champong、jjamppong、jjambbong、韓国式チャンポン、辛い海鮮麺を探す方向け。DOYA JJAMBBONG は1区 Bui Thi Xuan にあります。",
+    eyebrow: "Champong ホーチミン",
+    date: champongSeoClusterDate,
+    readTime: "5分",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "ホーチミン1区 DOYA JJAMBBONG の champong 韓国式チャンポン",
+    gallery: [
+      { src: "/images/blog/doya-jjambbong-serving-bowl.jpg", alt: "DOYA JJAMBBONG の韓国式チャンポン" },
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "ホーチミンで食べる jjambbong 辛い海鮮麺" },
+      { src: "/images/blog/district-1-best-restaurant-doya-03.jpg", alt: "ホーチミン1区の辛い韓国海鮮麺" }
+    ],
+    alternateGroup: "champong-seo-guide",
+    keywords: [
+      "champong ホーチミン",
+      "ホーチミン チャンポン",
+      "ホーチミン1区 チャンポン",
+      "韓国式チャンポン",
+      "jjamppong Ho Chi Minh",
+      "jjambbong Ho Chi Minh",
+      "韓国料理 ホーチミン",
+      "ブイビエン 韓国料理",
+      "ベンタイン市場 韓国料理",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "ホーチミンで champong と検索する方は、韓国式の辛い海鮮麺、つまり jjamppong や jjambbong を探していることが多いです。DOYA JJAMBBONG はホーチミン1区 77i Bui Thi Xuan にあり、ブイビエン、ファングーラオ、ベンタイン市場周辺からアクセスしやすい韓国中華レストランです。",
+    sections: [
+      {
+        heading: "Champong とは？",
+        body:
+          "Champong は韓国式チャンポンを探す時によく使われる英語表記です。赤い辛口スープ、麺、野菜、海鮮の旨味を一緒に楽しめる韓国中華の代表的な麺料理です。"
+      },
+      {
+        heading: "jjamppong、jjambbong、チャンポンの違い",
+        body:
+          "表記は違いますが、検索意図はほぼ同じです。英語では champong, jjamppong, jjambbong、日本語では韓国式チャンポンや辛い海鮮麺として探されます。"
+      },
+      {
+        heading: "ホーチミン1区で探しやすい理由",
+        body:
+          "1区はホテル、観光地、オフィス、夜のエリアが集まる中心部です。ブイビエンやベンタイン市場近くで温かい麺を食べたい時、場所が分かりやすいページがあると選びやすくなります。"
+      },
+      {
+        heading: "おすすめの組み合わせ",
+        body:
+          "辛い料理が好きならチャンポン、辛くない麺も欲しい場合は韓国式ジャージャー麺がおすすめです。数人で行くならタンスユクや揚げ餃子も一緒に注文しやすいです。"
+      },
+      {
+        heading: "DOYA JJAMBBONG の場所",
+        body:
+          "住所は 77i Bui Thi Xuan, District 1, Ho Chi Minh City です。店内飲食、持ち帰り、約5km圏内の配達については電話または Zalo 084 337 7788 で確認できます。"
+      }
+    ],
+    faq: [
+      { question: "Champong と jjamppong は同じですか？", answer: "はい。どちらも韓国式の辛い海鮮麺を指す検索表記として使われます。" },
+      { question: "韓国式チャンポンは辛いですか？", answer: "通常は辛口です。辛くない麺がよければ韓国式ジャージャー麺も選べます。" },
+      { question: "DOYA JJAMBBONG はどこにありますか？", answer: "ホーチミン1区 77i Bui Thi Xuan にあり、ブイビエン、ファングーラオ、ベンタイン市場からアクセスしやすい場所です。" },
+      { question: "持ち帰りや配達はできますか？", answer: "電話または Zalo 084 337 7788 で持ち帰りや約5km圏内の配達について確認できます。" }
+    ],
+    cta:
+      "ホーチミン1区で champong や韓国式チャンポンを探しているなら、DOYA JJAMBBONG へ。電話・Zalo：084 337 7788"
+  },
   {
     locale: "vi",
     slug: "mi-tuong-den-han-quoc-ngon-quan-1-doya",
