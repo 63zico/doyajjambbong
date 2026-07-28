@@ -31,8 +31,91 @@ const coldNoodlesDate = "2026-07-27";
 const koreanChineseRestaurantDate = "2026-07-27";
 const deliveryClusterDate = "2026-07-27";
 const district1BestRestaurantDate = "2026-07-28";
+const vietnameseBlackBeanNoodlesDate = "2026-07-28";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "vi",
+    slug: "mi-tuong-den-han-quoc-ngon-quan-1-doya",
+    title: "Mì tương đen Hàn Quốc ngon ở Quận 1: ăn jajangmyeon tại DOYA JJAMBBONG",
+    description:
+      "Tìm mì tương đen Hàn Quốc, jajangmyeon, mi tuong den hoặc mì đậu đen Hàn Quốc ở Quận 1? DOYA JJAMBBONG gợi ý món mì tương đen không cay, dễ ăn gần Bùi Viện và Bến Thành.",
+    eyebrow: "Mì tương đen Hàn Quốc",
+    date: vietnameseBlackBeanNoodlesDate,
+    readTime: "5 phút",
+    image: "/images/menu/doya-jajangmyeon.jpg",
+    imageAlt: "Mì tương đen Hàn Quốc jajangmyeon tại DOYA JJAMBBONG Quận 1 gần Bùi Viện và Bến Thành",
+    gallery: [
+      { src: "/images/blog/district-1-best-restaurant-doya-04.jpg", alt: "Tô mì tương đen Hàn Quốc tại DOYA JJAMBBONG Quận 1" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "Tangsuyuk ăn cùng mì tương đen Hàn Quốc" },
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "Jjambbong cay ăn cùng jajangmyeon khi đi nhóm" }
+    ],
+    keywords: [
+      "mì tương đen Hàn Quốc",
+      "mi tuong den han quoc",
+      "mì tương đen ngon",
+      "mì tương đen Quận 1",
+      "jajangmyeon Quận 1",
+      "jajangmyeon Ho Chi Minh",
+      "mì đậu đen Hàn Quốc",
+      "món Hàn không cay",
+      "quán ăn Hàn Quốc Quận 1",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "Mì tương đen Hàn Quốc là món nhiều khách Việt tìm khi muốn ăn món Hàn nhưng không muốn quá cay. Món này còn được gọi là jajangmyeon, mi tuong den hoặc Korean black bean noodles. Tại DOYA JJAMBBONG ở 77i Bùi Thị Xuân, Quận 1, bạn có thể gọi mì tương đen cùng jjambbong, tangsuyuk hoặc mandu để có một bữa Hàn-Trung dễ ăn.",
+    sections: [
+      {
+        heading: "Mì tương đen Hàn Quốc là gì?",
+        body:
+          "Mì tương đen Hàn Quốc là món mì sốt đậu đen kiểu Hàn-Trung. Sốt có màu đen bóng, vị mặn ngọt, thơm và sánh, thường được trộn đều với sợi mì trước khi ăn. Đây là món quen thuộc với người Hàn và cũng rất dễ hiểu với khách Việt khi tìm món Hàn không cay."
+      },
+      {
+        heading: "Jajangmyeon, mi tuong den và mì tương đen có khác nhau không?",
+        body:
+          "Jajangmyeon là tên tiếng Hàn của món này. Mì tương đen là cách gọi tiếng Việt có dấu, còn mi tuong den là cách nhiều người gõ nhanh khi tìm trên Google. Ba cách gọi này thường chỉ cùng một món: mì Hàn Quốc với sốt đậu đen."
+      },
+      {
+        heading: "Vì sao món này hợp với khách ở Quận 1?",
+        body:
+          "Quận 1 có nhiều khách du lịch, văn phòng, khách sạn và khu đi chơi như Bùi Viện, Phạm Ngũ Lão, Bến Thành. Khi muốn tìm một món dễ ăn, không quá cay và no bụng, mì tương đen Hàn Quốc là lựa chọn hợp cho bữa trưa, bữa tối hoặc gọi món về khách sạn."
+      },
+      {
+        heading: "Ăn mì tương đen với món nào ngon?",
+        body:
+          "Mì tương đen thường hợp với tangsuyuk vì vị giòn và sốt chua ngọt giúp cân bằng sốt đậu đen. Nếu đi nhóm, bạn có thể gọi thêm jjambbong cay để có một món nóng, hoặc mandu chiên để dễ chia sẻ."
+      },
+      {
+        heading: "Ăn mì tương đen Hàn Quốc ở đâu tại TP.HCM?",
+        body:
+          "DOYA JJAMBBONG nằm tại 77i Bùi Thị Xuân, District 1, Ho Chi Minh City, gần Bùi Viện, Bến Thành và khu khách sạn trung tâm. Bạn có thể xem menu, đi theo Google Maps hoặc gọi/Zalo 084 337 7788 để hỏi đặt bàn, takeaway hoặc giao hàng trong bán kính 5km."
+      }
+    ],
+    faq: [
+      {
+        question: "Mì tương đen Hàn Quốc có cay không?",
+        answer: "Mì tương đen thường không cay như jjambbong. Đây là lựa chọn dễ ăn cho khách không ăn cay, gia đình hoặc nhóm có nhiều khẩu vị khác nhau."
+      },
+      {
+        question: "Mì tương đen và jajangmyeon là cùng một món không?",
+        answer: "Có. Jajangmyeon là tên tiếng Hàn, còn mì tương đen hoặc mi tuong den là cách khách Việt thường tìm món mì sốt đậu đen Hàn Quốc."
+      },
+      {
+        question: "DOYA JJAMBBONG ở đâu?",
+        answer: "DOYA JJAMBBONG ở 77i Bùi Thị Xuân, District 1, Ho Chi Minh City, gần Bùi Viện, Phạm Ngũ Lão và Bến Thành."
+      },
+      {
+        question: "Mì tương đen nên ăn kèm món gì?",
+        answer: "Tangsuyuk, mandu chiên hoặc một tô jjambbong cay là các món dễ gọi cùng mì tương đen khi đi nhóm."
+      },
+      {
+        question: "Có thể đặt takeaway hoặc giao hàng không?",
+        answer: "Bạn có thể gọi hoặc nhắn Zalo 084 337 7788 để hỏi đặt món, takeaway hoặc giao hàng miễn phí trong bán kính 5km nếu phù hợp."
+      }
+    ],
+    cta:
+      "Muốn ăn mì tương đen Hàn Quốc ở Quận 1? Ghé DOYA JJAMBBONG tại 77i Bùi Thị Xuân hoặc gọi/Zalo 084 337 7788 để hỏi món trước."
+  },
   {
     locale: "ko",
     slug: "ho-chi-minh-district-1-best-restaurant-doya",
