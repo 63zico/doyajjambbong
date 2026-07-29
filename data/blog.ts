@@ -34,8 +34,323 @@ const district1BestRestaurantDate = "2026-07-28";
 const vietnameseBlackBeanNoodlesDate = "2026-07-28";
 const champongSeoClusterDate = "2026-07-28";
 const doyaJjambbongDifferenceDate = "2026-07-28";
+const koreanRestaurantHoChiMinhDate = "2026-07-29";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "ko",
+    slug: "ho-chi-minh-korean-restaurant-doya-jjambbong",
+    title: "호치민 한식당 찾는다면? 1군 도야짬뽕에서 즐기는 한국식 중화요리",
+    description:
+      "호치민 한식당, 호치민 1군 한식당, 부이비엔·벤탄시장 근처 한국음식을 찾는 손님에게 도야짬뽕의 짬뽕, 짜장면, 탕수육, 배달 정보를 안내합니다.",
+    eyebrow: "호치민 한식당",
+    date: koreanRestaurantHoChiMinhDate,
+    readTime: "5분",
+    image: "/images/blog/district-1-best-restaurant-doya-01.jpg",
+    imageAlt: "호치민 한식당 도야짬뽕 1군 한국식 중화요리 메뉴",
+    gallery: [
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "호치민 1군 도야짬뽕 매장 외관" },
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "호치민 한식당 도야짬뽕 해물짬뽕" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "호치민 한식당 한국식 짜장면" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "호치민 1군 한식당 탕수육" }
+    ],
+    alternateGroup: "korean-restaurant-ho-chi-minh",
+    keywords: [
+      "호치민 한식당",
+      "호치민 1군 한식당",
+      "호치민 한국음식",
+      "호치민 한식 맛집",
+      "부이비엔 한식당",
+      "벤탄시장 한식당",
+      "호치민 짬뽕",
+      "호치민 짜장면",
+      "호치민 탕수육",
+      "도야짬뽕"
+    ],
+    intro:
+      "호치민에서 한식당을 검색하는 손님은 보통 익숙한 맛, 접근성 좋은 위치, 메뉴 사진, 배달 가능 여부를 빠르게 확인하고 싶어합니다. 도야짬뽕은 77i Bùi Thị Xuân, District 1에 있는 한국식 중화요리 매장으로, 짬뽕, 짜장면, 탕수육, 군만두처럼 한국인이 익숙한 메뉴를 1군 중심에서 즐길 수 있습니다.",
+    sections: [
+      {
+        heading: "호치민 1군에서 찾기 쉬운 한식당",
+        body:
+          "도야짬뽕은 부이비엔, 팜응우라오, 벤탄시장, 1군 호텔가에서 이동하기 쉬운 위치에 있습니다. 여행자, 교민, 출장 손님이 호치민 한식당 또는 호치민 1군 한식당을 검색했을 때 바로 방문 동선을 잡기 좋습니다."
+      },
+      {
+        heading: "한국식 중화요리라 메뉴 선택이 쉽습니다",
+        body:
+          "일반 한식당과 다르게 도야짬뽕은 한국인이 중국집에서 기대하는 짬뽕, 짜장면, 탕수육, 볶음밥, 군만두 중심의 메뉴를 제공합니다. 매운 국물이 생각나면 짬뽕, 맵지 않은 메뉴가 필요하면 짜장면, 여럿이 나눠 먹을 메뉴가 필요하면 탕수육을 고르면 됩니다."
+      },
+      {
+        heading: "외국인도 검색하는 Korean restaurant 키워드",
+        body:
+          "외국인 손님은 Korean restaurant Ho Chi Minh, Korean food District 1, Korean restaurant near Bui Vien처럼 영어로 검색하는 경우가 많습니다. 도야짬뽕 블로그는 한국어, 베트남어, 영어, 중국어, 일본어 페이지를 연결해 각 언어 검색 의도에 맞게 안내합니다."
+      },
+      {
+        heading: "방문, 포장, 배달 문의까지 연결",
+        body:
+          "매장에서 먹기 어렵다면 전화 또는 Zalo 084 337 7788로 포장과 배달 가능 여부를 문의할 수 있습니다. 매장 반경 약 5km 이내 무료 배달 가능 여부도 위치와 시간대에 따라 확인할 수 있습니다."
+      }
+    ],
+    faq: [
+      { question: "도야짬뽕은 호치민 한식당인가요?", answer: "네. 도야짬뽕은 호치민 1군에 있는 한국식 중화요리 매장으로 짬뽕, 짜장면, 탕수육 같은 한국식 메뉴를 제공합니다." },
+      { question: "도야짬뽕 주소는 어디인가요?", answer: "주소는 77i Bùi Thị Xuân, District 1, Ho Chi Minh City입니다." },
+      { question: "부이비엔이나 벤탄시장 근처에서 가기 좋나요?", answer: "네. 1군 중심에 있어 부이비엔, 팜응우라오, 벤탄시장, 호텔가에서 이동하기 좋습니다." },
+      { question: "배달도 가능한가요?", answer: "전화 또는 Zalo 084 337 7788로 문의하면 매장 반경 약 5km 이내 무료 배달 가능 여부를 확인할 수 있습니다." }
+    ],
+    cta:
+      "호치민 한식당을 찾고 있다면 도야짬뽕에서 짬뽕, 짜장면, 탕수육 조합을 확인해보세요. 전화·Zalo: 084 337 7788"
+  },
+  {
+    locale: "vi",
+    slug: "quan-an-han-quoc-ho-chi-minh-doya-jjambbong",
+    title: "Quán ăn Hàn Quốc ở Hồ Chí Minh: DOYA JJAMBBONG tại Quận 1",
+    description:
+      "Tìm quán ăn Hàn Quốc Hồ Chí Minh, quán Hàn Quốc Quận 1, món Hàn gần Bùi Viện hoặc Bến Thành? DOYA JJAMBBONG phục vụ mì cay Hàn Quốc, mì tương đen và tangsuyuk.",
+    eyebrow: "Quán ăn Hàn Quốc Quận 1",
+    date: koreanRestaurantHoChiMinhDate,
+    readTime: "5 phút",
+    image: "/images/blog/district-1-best-restaurant-doya-01.jpg",
+    imageAlt: "Quán ăn Hàn Quốc DOYA JJAMBBONG ở Quận 1 Hồ Chí Minh",
+    gallery: [
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "Mặt tiền DOYA JJAMBBONG Quận 1" },
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "Mì cay Hàn Quốc tại quán ăn Hàn Quốc Quận 1" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "Mì tương đen Hàn Quốc tại DOYA" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "Tangsuyuk món Hàn-Trung tại DOYA JJAMBBONG" }
+    ],
+    alternateGroup: "korean-restaurant-ho-chi-minh",
+    keywords: [
+      "quán ăn Hàn Quốc Hồ Chí Minh",
+      "quán ăn Hàn Quốc Quận 1",
+      "nhà hàng Hàn Quốc Quận 1",
+      "món Hàn Quốc Quận 1",
+      "món Hàn gần Bùi Viện",
+      "món Hàn gần Bến Thành",
+      "mì cay Hàn Quốc",
+      "mì tương đen Hàn Quốc",
+      "tangsuyuk Quận 1",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "Khi tìm quán ăn Hàn Quốc ở Hồ Chí Minh, khách thường muốn biết quán ở đâu, có món dễ gọi không, có hình món rõ không và có thể đặt mang đi hay giao hàng không. DOYA JJAMBBONG nằm tại 77i Bùi Thị Xuân, Quận 1, phục vụ các món Hàn-Trung như mì cay Hàn Quốc, mì tương đen, tangsuyuk, mandu và cơm chiên.",
+    sections: [
+      {
+        heading: "Quán Hàn Quốc thuận tiện ở Quận 1",
+        body:
+          "Vị trí 77i Bùi Thị Xuân thuận tiện cho khách ở gần Bùi Viện, Phạm Ngũ Lão, Bến Thành và khu khách sạn trung tâm. Nếu bạn đang tìm quán ăn Hàn Quốc Quận 1 hoặc món Hàn gần Bùi Viện, DOYA là lựa chọn dễ di chuyển."
+      },
+      {
+        heading: "Món Hàn-Trung dễ gọi",
+        body:
+          "DOYA tập trung vào các món quen thuộc như jjambbong, champong, mì tương đen jajangmyeon, tangsuyuk, mandu và cơm chiên. Nhờ vậy nhóm khách có thể gọi món cay, món không cay và món chia sẻ cùng lúc."
+      },
+      {
+        heading: "Phù hợp với khách Việt và khách du lịch",
+        body:
+          "Khách Việt thường tìm mì cay Hàn Quốc, mì tương đen Hàn Quốc hoặc quán ăn Hàn Quốc Quận 1. Khách quốc tế có thể tìm Korean restaurant Ho Chi Minh hoặc Korean food District 1. Các trang đa ngôn ngữ giúp khách hiểu menu nhanh hơn."
+      },
+      {
+        heading: "Ăn tại quán, takeaway hoặc giao hàng",
+        body:
+          "Bạn có thể ăn tại quán, hỏi mang đi hoặc nhắn Zalo 084 337 7788 để hỏi giao hàng. Trong bán kính khoảng 5km, DOYA có thể hỗ trợ giao hàng miễn phí tùy vị trí và thời điểm."
+      }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG là quán ăn Hàn Quốc ở đâu?", answer: "DOYA ở 77i Bùi Thị Xuân, District 1, Ho Chi Minh City." },
+      { question: "Quán có món gì nổi bật?", answer: "Các món dễ gọi gồm mì cay Hàn Quốc jjambbong, mì tương đen, tangsuyuk, mandu và cơm chiên." },
+      { question: "Quán có gần Bùi Viện không?", answer: "Vị trí ở Quận 1, thuận tiện di chuyển từ Bùi Viện, Phạm Ngũ Lão, Bến Thành và khu khách sạn trung tâm." },
+      { question: "Có giao hàng không?", answer: "Bạn có thể gọi hoặc nhắn Zalo 084 337 7788 để hỏi takeaway hoặc giao hàng trong bán kính khoảng 5km." }
+    ],
+    cta:
+      "Tìm quán ăn Hàn Quốc ở Hồ Chí Minh? Ghé DOYA JJAMBBONG tại Quận 1 hoặc gọi/Zalo 084 337 7788."
+  },
+  {
+    locale: "en",
+    slug: "korean-restaurant-ho-chi-minh-doya-jjambbong",
+    title: "Korean restaurant in Ho Chi Minh City: DOYA JJAMBBONG in District 1",
+    description:
+      "Looking for a Korean restaurant in Ho Chi Minh City, Korean food in District 1, or Korean food near Bui Vien and Ben Thanh? DOYA JJAMBBONG serves jjambbong, jajangmyeon, and tangsuyuk.",
+    eyebrow: "Korean restaurant Ho Chi Minh",
+    date: koreanRestaurantHoChiMinhDate,
+    readTime: "5 min",
+    image: "/images/blog/district-1-best-restaurant-doya-01.jpg",
+    imageAlt: "Korean restaurant DOYA JJAMBBONG in District 1 Ho Chi Minh City",
+    gallery: [
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "DOYA JJAMBBONG storefront in District 1 Ho Chi Minh City" },
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "Korean spicy seafood noodles at a Korean restaurant in Ho Chi Minh" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "Jajangmyeon Korean black bean noodles at DOYA JJAMBBONG" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "Tangsuyuk Korean sweet and sour pork in District 1" }
+    ],
+    alternateGroup: "korean-restaurant-ho-chi-minh",
+    keywords: [
+      "Korean restaurant Ho Chi Minh",
+      "Korean restaurant District 1",
+      "Korean food Ho Chi Minh City",
+      "Korean food District 1",
+      "Korean restaurant near Bui Vien",
+      "Korean restaurant near Ben Thanh",
+      "Korean Chinese restaurant Ho Chi Minh",
+      "jjambbong Ho Chi Minh",
+      "jajangmyeon District 1",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "Guests searching for a Korean restaurant in Ho Chi Minh City usually want a clear location, menu photos, familiar Korean flavors, and an easy way to call or order. DOYA JJAMBBONG is a Korean-Chinese restaurant at 77i Bui Thi Xuan, District 1, serving jjambbong, champong, jajangmyeon, tangsuyuk, mandu, and fried rice near Bui Vien, Pham Ngu Lao, and Ben Thanh Market.",
+    sections: [
+      {
+        heading: "A Korean restaurant option in central District 1",
+        body:
+          "DOYA is located in District 1, making it convenient for travelers, hotel guests, office workers, and residents around Bui Vien, Pham Ngu Lao, Ben Thanh, and central Ho Chi Minh hotels."
+      },
+      {
+        heading: "Korean-Chinese comfort food",
+        body:
+          "Instead of a broad Korean BBQ or stew menu, DOYA focuses on Korean-Chinese comfort dishes: spicy seafood jjambbong, Korean black bean noodles, tangsuyuk, mandu, fried rice, and shareable sides."
+      },
+      {
+        heading: "Easy choices for mixed groups",
+        body:
+          "Groups can order spicy and non-spicy dishes together. One guest can choose champong or jjambbong, another can order jajangmyeon, and the table can add tangsuyuk or mandu to share."
+      },
+      {
+        heading: "Dine in, takeaway, and delivery questions",
+        body:
+          "For dine-in, takeaway, or delivery questions, call or message Zalo 084 337 7788. Free delivery may be available within about 5 km depending on location and timing."
+      }
+    ],
+    faq: [
+      { question: "Where is DOYA JJAMBBONG?", answer: "DOYA JJAMBBONG is at 77i Bui Thi Xuan, District 1, Ho Chi Minh City." },
+      { question: "Is DOYA a Korean restaurant?", answer: "Yes. DOYA is a Korean-Chinese restaurant serving Korean-style jjambbong, jajangmyeon, tangsuyuk, mandu, and related dishes." },
+      { question: "Is it near Bui Vien or Ben Thanh?", answer: "Yes. The restaurant is in central District 1, convenient from Bui Vien, Pham Ngu Lao, Ben Thanh Market, and nearby hotels." },
+      { question: "Can I order delivery?", answer: "Call or message Zalo 084 337 7788 to ask about takeaway or free delivery within about 5 km." }
+    ],
+    cta:
+      "Looking for Korean food in Ho Chi Minh City? Visit DOYA JJAMBBONG in District 1 or call/Zalo 084 337 7788."
+  },
+  {
+    locale: "zh",
+    slug: "hu-zhi-ming-han-guo-can-ting-doya-jjambbong",
+    title: "胡志明市韩国餐厅：第1郡 DOYA JJAMBBONG 韩式中餐",
+    description:
+      "寻找胡志明市韩国餐厅、第1郡韩国餐厅、Bui Vien 或滨城市场附近韩餐？DOYA JJAMBBONG 提供韩式辣海鲜面、炸酱面、糖醋肉和煎饺。",
+    eyebrow: "胡志明市韩国餐厅",
+    date: koreanRestaurantHoChiMinhDate,
+    readTime: "5分钟",
+    image: "/images/blog/district-1-best-restaurant-doya-01.jpg",
+    imageAlt: "胡志明市第1郡韩国餐厅 DOYA JJAMBBONG 韩式中餐",
+    gallery: [
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "胡志明市第1郡 DOYA JJAMBBONG 店面" },
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "胡志明市韩国餐厅韩式辣海鲜面" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "DOYA JJAMBBONG 韩式炸酱面" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "第1郡韩国餐厅糖醋肉" }
+    ],
+    alternateGroup: "korean-restaurant-ho-chi-minh",
+    keywords: [
+      "胡志明市韩国餐厅",
+      "胡志明韩国餐厅",
+      "第1郡韩国餐厅",
+      "胡志明市韩国料理",
+      "Bui Vien 韩国餐厅",
+      "滨城市场韩国餐厅",
+      "韩式中餐胡志明",
+      "韩式辣海鲜面",
+      "韩式炸酱面",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "在胡志明市搜索韩国餐厅时，很多客人希望快速确认位置、菜单、图片、订位和外卖方式。DOYA JJAMBBONG 位于 77i Bui Thi Xuan, District 1，提供韩式辣海鲜面、炸酱面、糖醋肉、煎饺和炒饭等韩式中餐，靠近 Bui Vien、Pham Ngu Lao 和滨城市场。",
+    sections: [
+      {
+        heading: "第1郡中心位置",
+        body:
+          "DOYA 位于胡志明市第1郡，适合住在市中心酒店、去 Bui Vien、Pham Ngu Lao 或滨城市场附近的客人。搜索第1郡韩国餐厅或 Bui Vien 韩国餐厅时，位置很直接。"
+      },
+      {
+        heading: "韩式中餐菜单",
+        body:
+          "DOYA 不是烤肉店，而是以韩式中餐为主。菜单包括 jjambbong 辣海鲜面、韩式炸酱面、糖醋肉、煎饺、炒饭等，适合想吃韩国味道但又想要面食和热汤的客人。"
+      },
+      {
+        heading: "适合多人用餐",
+        body:
+          "如果同行有人想吃辣，可以点 champong 或 jjambbong；不吃辣可以点韩式炸酱面；多人分享可以加糖醋肉或煎饺。菜单选择比较容易搭配。"
+      },
+      {
+        heading: "到店、打包和配送咨询",
+        body:
+          "到店、打包或约 5km 范围配送问题，可以通过电话或 Zalo 084 337 7788 咨询。实际配送情况会根据位置和时间确认。"
+      }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG 是韩国餐厅吗？", answer: "是的，DOYA 是提供韩式中餐的韩国餐厅，菜单包括辣海鲜面、炸酱面、糖醋肉和煎饺。" },
+      { question: "餐厅地址在哪里？", answer: "地址是 77i Bui Thi Xuan, District 1, Ho Chi Minh City。" },
+      { question: "离 Bui Vien 和滨城市场近吗？", answer: "位于第1郡中心区域，从 Bui Vien、Pham Ngu Lao、滨城市场和市中心酒店前往都比较方便。" },
+      { question: "可以外带或配送吗？", answer: "可以通过电话或 Zalo 084 337 7788 咨询外带和约 5km 范围配送。" }
+    ],
+    cta:
+      "在胡志明市第1郡寻找韩国餐厅？欢迎到 DOYA JJAMBBONG，电话/Zalo：084 337 7788。"
+  },
+  {
+    locale: "ja",
+    slug: "ho-chi-minh-korean-restaurant-doya-jjambbong",
+    title: "ホーチミンの韓国料理なら DOYA JJAMBBONG：1区の韓国中華レストラン",
+    description:
+      "ホーチミン 韓国料理、ホーチミン1区 韓国料理、ブイビエンやベンタイン市場近くの韓国料理を探す方へ。DOYA JJAMBBONG のチャンポン、ジャージャー麺、タンスユクを紹介します。",
+    eyebrow: "ホーチミン 韓国料理",
+    date: koreanRestaurantHoChiMinhDate,
+    readTime: "5分",
+    image: "/images/blog/district-1-best-restaurant-doya-01.jpg",
+    imageAlt: "ホーチミン1区 韓国料理 DOYA JJAMBBONG 韓国中華メニュー",
+    gallery: [
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "ホーチミン1区 DOYA JJAMBBONG 店舗外観" },
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "ホーチミン韓国料理 チャンポン" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "DOYA JJAMBBONG 韓国式ジャージャー麺" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "ホーチミン1区 韓国中華 タンスユク" }
+    ],
+    alternateGroup: "korean-restaurant-ho-chi-minh",
+    keywords: [
+      "ホーチミン 韓国料理",
+      "ホーチミン1区 韓国料理",
+      "ホーチミン 韓国レストラン",
+      "ブイビエン 韓国料理",
+      "ベンタイン市場 韓国料理",
+      "ホーチミン 韓国中華",
+      "ホーチミン チャンポン",
+      "韓国式ジャージャー麺",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "ホーチミンで韓国料理を探す時、場所、メニュー写真、注文しやすさ、持ち帰りや配達の連絡先が分かると選びやすくなります。DOYA JJAMBBONG は 77i Bui Thi Xuan, District 1 にある韓国中華レストランで、チャンポン、ジャージャー麺、タンスユク、餃子、炒飯を楽しめます。",
+    sections: [
+      {
+        heading: "ホーチミン1区で行きやすい韓国料理",
+        body:
+          "DOYA はブイビエン、ファングーラオ、ベンタイン市場、中心部ホテルから移動しやすい場所にあります。ホーチミン 韓国料理 1区やブイビエン 韓国料理で検索する旅行者にも分かりやすい立地です。"
+      },
+      {
+        heading: "韓国中華を中心にしたメニュー",
+        body:
+          "焼肉や鍋ではなく、DOYA は韓国中華に強いレストランです。辛いチャンポン、韓国式ジャージャー麺、タンスユク、餃子、炒飯など、日本人にも分かりやすい麺と一品料理があります。"
+      },
+      {
+        heading: "辛い料理と辛くない料理を一緒に選べる",
+        body:
+          "辛いものが好きならチャンポン、辛くない麺ならジャージャー麺、シェアするならタンスユクや餃子が選びやすいです。グループでも一人でも注文しやすい構成です。"
+      },
+      {
+        heading: "店内、持ち帰り、配達の相談",
+        body:
+          "店内利用、持ち帰り、約5km圏内の配達については電話または Zalo 084 337 7788 で確認できます。場所と時間により案内が変わる場合があります。"
+      }
+    ],
+    faq: [
+      { question: "DOYA JJAMBBONG は韓国料理店ですか？", answer: "はい。韓国式チャンポン、ジャージャー麺、タンスユクなどを提供する韓国中華レストランです。" },
+      { question: "住所はどこですか？", answer: "77i Bui Thi Xuan, District 1, Ho Chi Minh City です。" },
+      { question: "ブイビエンやベンタイン市場から行きやすいですか？", answer: "はい。ホーチミン1区中心部にあり、ブイビエン、ファングーラオ、ベンタイン市場、周辺ホテルから移動しやすいです。" },
+      { question: "配達はできますか？", answer: "電話または Zalo 084 337 7788 で持ち帰りや約5km圏内の配達について確認できます。" }
+    ],
+    cta:
+      "ホーチミン1区で韓国料理を探しているなら DOYA JJAMBBONG へ。電話・Zalo：084 337 7788"
+  },
   {
     locale: "ko",
     slug: "ho-chi-minh-jjambbong-restaurant-doya-difference",
