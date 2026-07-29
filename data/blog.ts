@@ -40,8 +40,284 @@ const koreanSpicyNoodlesVietnameseDate = "2026-07-29";
 const koreanFoodNearMeDate = "2026-07-29";
 const chineseFoodNearMeDate = "2026-07-29";
 const lateNightWhatToEatVietnameseDate = "2026-07-29";
+const spicyNoodleClusterDate = "2026-07-29";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "en",
+    slug: "spicy-noodle-ho-chi-minh-doya-jjambbong",
+    title: "Spicy noodle in Ho Chi Minh City: Korean jjambbong at DOYA JJAMBBONG",
+    description:
+      "Searching spicy noodle, Korean spicy noodles, or spicy seafood noodles in Ho Chi Minh City? DOYA JJAMBBONG serves jjambbong, champong, beef jjambbong, mara jjambbong, and Korean-Chinese noodles in District 1.",
+    eyebrow: "Spicy noodle Ho Chi Minh",
+    date: spicyNoodleClusterDate,
+    readTime: "5 min",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "Spicy noodle Korean jjambbong at DOYA JJAMBBONG in District 1 Ho Chi Minh City",
+    gallery: [
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "Classic Korean spicy noodle jjambbong at DOYA" },
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "Beef spicy noodle Korean jjambbong in Ho Chi Minh" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "Mara spicy noodle at DOYA JJAMBBONG" },
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "DOYA JJAMBBONG District 1 storefront for spicy noodle searches" }
+    ],
+    alternateGroup: "spicy-noodle-ho-chi-minh",
+    keywords: [
+      "spicy noodle",
+      "spicy noodles Ho Chi Minh",
+      "Korean spicy noodles",
+      "spicy seafood noodles",
+      "jjambbong Ho Chi Minh",
+      "champong District 1",
+      "Korean spicy noodle soup",
+      "spicy noodle District 1",
+      "spicy noodles near Bui Vien",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "If you search spicy noodle in Ho Chi Minh City, you are probably looking for a hot bowl with real broth, noodles, chili heat, vegetables, and enough toppings to feel like a meal. DOYA JJAMBBONG in District 1 serves Korean-Chinese spicy noodles such as jjambbong, champong, seafood jjambbong, beef jjambbong, and mara jjambbong near Bui Vien, Pham Ngu Lao, and Ben Thanh Market.",
+    sections: [
+      {
+        heading: "What kind of spicy noodle is jjambbong?",
+        body:
+          "Jjambbong is a Korean-Chinese spicy noodle soup. It usually has a red broth, noodles, vegetables, seafood flavor, and a warmer chili profile than many dry spicy noodle dishes."
+      },
+      {
+        heading: "Spicy noodle, spicy noodles, jjambbong, and champong",
+        body:
+          "Guests search this kind of dish in different ways: spicy noodle, spicy noodles, Korean spicy noodles, spicy seafood noodles, jjambbong, jjamppong, champong, and champon. This page connects those searches to DOYA's Korean-Chinese noodle menu."
+      },
+      {
+        heading: "Which spicy noodle should you order first?",
+        body:
+          "Try seafood jjambbong if you want the signature spicy seafood broth. Choose beef jjambbong for a richer meat-forward bowl. Choose mara jjambbong if you want a stronger spicy and numbing flavor."
+      },
+      {
+        heading: "Good for District 1 travelers",
+        body:
+          "DOYA is at 77i Bui Thi Xuan, District 1, convenient from Bui Vien, Pham Ngu Lao, Ben Thanh Market, and central hotels. That makes it useful for spicy noodle near me, spicy noodles District 1, and late-night Korean food searches."
+      },
+      {
+        heading: "Dine in, takeaway, or delivery",
+        body:
+          "You can visit the restaurant, ask for takeaway, or call/message Zalo 084 337 7788 for delivery questions. Free delivery may be available within about 5 km depending on time, location, and order conditions."
+      }
+    ],
+    faq: [
+      { question: "What is Korean spicy noodle at DOYA?", answer: "The main Korean spicy noodle at DOYA is jjambbong, also searched as jjamppong, champong, or spicy seafood noodles." },
+      { question: "Is jjambbong spicy?", answer: "Yes. Jjambbong is a spicy Korean-Chinese noodle soup with red broth. Ask the team if you need spice guidance." },
+      { question: "Where is DOYA JJAMBBONG?", answer: "DOYA is at 77i Bui Thi Xuan, District 1, Ho Chi Minh City, near Bui Vien, Pham Ngu Lao, and Ben Thanh Market." },
+      { question: "Can I order spicy noodles for delivery?", answer: "Call or message Zalo 084 337 7788 to ask about takeaway or free delivery within about 5 km." }
+    ],
+    cta:
+      "Searching spicy noodle in Ho Chi Minh City? Visit DOYA JJAMBBONG in District 1 or call/Zalo 084 337 7788."
+  },
+  {
+    locale: "vi",
+    slug: "spicy-noodle-mi-cay-han-quoc-quan-1-doya",
+    title: "Spicy noodle ở Quận 1: mì cay Hàn Quốc jjambbong tại DOYA",
+    description:
+      "Tìm spicy noodle, mì cay Hàn Quốc, mì cay hải sản hoặc jjambbong ở Quận 1? DOYA JJAMBBONG phục vụ mì cay kiểu Hàn-Trung gần Bùi Viện và Bến Thành.",
+    eyebrow: "Spicy noodle / mì cay",
+    date: spicyNoodleClusterDate,
+    readTime: "5 phút",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "Spicy noodle mì cay Hàn Quốc jjambbong tại DOYA JJAMBBONG Quận 1",
+    gallery: [
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "DOYA jjambbong mì cay Hàn Quốc cổ điển" },
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "Mì cay bò Hàn Quốc tại Quận 1" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "Mara jjambbong spicy noodle tại DOYA" },
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "DOYA JJAMBBONG 77i Bùi Thị Xuân Quận 1" }
+    ],
+    alternateGroup: "spicy-noodle-ho-chi-minh",
+    keywords: [
+      "spicy noodle",
+      "mì cay Hàn Quốc",
+      "mì cay Quận 1",
+      "mì cay hải sản",
+      "jjambbong Quận 1",
+      "champong Quận 1",
+      "mì cay gần Bùi Viện",
+      "mì cay gần Bến Thành",
+      "quán ăn Hàn Quốc Quận 1",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "Nhiều khách Việt và khách quốc tế gõ spicy noodle khi muốn tìm một tô mì cay nóng, có nước dùng, rau, hải sản hoặc thịt. Tại DOYA JJAMBBONG ở 77i Bùi Thị Xuân, Quận 1, spicy noodle được hiểu theo phong cách Hàn-Trung: jjambbong, champong, mì cay hải sản, mì cay bò và mara jjambbong.",
+    sections: [
+      {
+        heading: "Spicy noodle tại DOYA là gì?",
+        body:
+          "Đây là dòng mì cay Hàn Quốc kiểu jjambbong/champong. Món có nước dùng đỏ nóng, sợi mì dai, rau, vị hải sản và độ cay rõ, phù hợp khi bạn muốn một bữa ăn no hơn món ăn vặt."
+      },
+      {
+        heading: "Khác gì với mì cay thông thường?",
+        body:
+          "Nhiều nơi tập trung vào cấp độ cay. DOYA tập trung vào nước dùng Hàn-Trung, hương nguyên liệu được xào và vị hải sản, nên hợp với khách tìm spicy noodle, mì cay Hàn Quốc hoặc mì cay hải sản."
+      },
+      {
+        heading: "Các lựa chọn nên thử",
+        body:
+          "Lần đầu có thể chọn DOYA jjambbong hoặc seafood jjambbong. Nếu thích thịt bò, chọn beef jjambbong. Nếu muốn cay mạnh và vị tê hơn, mara jjambbong là lựa chọn đáng thử."
+      },
+      {
+        heading: "Gần Bùi Viện, Bến Thành và khách sạn trung tâm",
+        body:
+          "Vị trí Quận 1 giúp DOYA phù hợp với các tìm kiếm như mì cay gần Bùi Viện, mì cay gần Bến Thành, spicy noodle District 1 hoặc quán Hàn mở khuya."
+      },
+      {
+        heading: "Takeaway và giao hàng",
+        body:
+          "Bạn có thể ăn tại quán, hỏi takeaway hoặc gọi/Zalo 084 337 7788 để hỏi giao hàng miễn phí trong bán kính khoảng 5km nếu phù hợp."
+      }
+    ],
+    faq: [
+      { question: "Spicy noodle tại DOYA có phải mì cay Hàn Quốc không?", answer: "Có. Tại DOYA, spicy noodle thường là jjambbong/champong, mì cay hải sản kiểu Hàn-Trung." },
+      { question: "Món nào cay nhất?", answer: "Mara jjambbong thường hợp với khách muốn vị cay mạnh hơn. Bạn nên hỏi nhân viên khi gọi món." },
+      { question: "DOYA ở đâu?", answer: "DOYA ở 77i Bùi Thị Xuân, District 1, Ho Chi Minh City, gần Bùi Viện, Phạm Ngũ Lão và Bến Thành." },
+      { question: "Có giao hàng spicy noodle không?", answer: "Bạn có thể gọi hoặc nhắn Zalo 084 337 7788 để hỏi takeaway hoặc giao hàng." }
+    ],
+    cta:
+      "Muốn ăn spicy noodle hoặc mì cay Hàn Quốc ở Quận 1? Ghé DOYA JJAMBBONG hoặc gọi/Zalo 084 337 7788."
+  },
+  {
+    locale: "ko",
+    slug: "spicy-noodle-ho-chi-minh-doya-jjambbong-ko",
+    title: "Spicy noodle 검색으로 찾는 호치민 매운 면: 도야짬뽕 1군 가이드",
+    description:
+      "spicy noodle, Korean spicy noodles, 호치민 매운 면, 짬뽕을 찾는 손님에게 도야짬뽕의 해물짬뽕, 소고기짬뽕, 마라짬뽕을 안내합니다.",
+    eyebrow: "Spicy noodle",
+    date: spicyNoodleClusterDate,
+    readTime: "5분",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "호치민 spicy noodle 도야짬뽕 매운 해물짬뽕",
+    gallery: [
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "도야 기본 짬뽕 spicy noodle" },
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "도야 소고기짬뽕 매운 면" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "도야 마라짬뽕 매운 국물면" },
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "호치민 1군 도야짬뽕 매장" }
+    ],
+    alternateGroup: "spicy-noodle-ho-chi-minh",
+    keywords: [
+      "spicy noodle",
+      "호치민 매운 면",
+      "호치민 짬뽕",
+      "호치민 1군 짬뽕",
+      "Korean spicy noodles",
+      "spicy seafood noodles",
+      "jjambbong Ho Chi Minh",
+      "champong District 1",
+      "도야짬뽕"
+    ],
+    intro:
+      "외국인이 호치민에서 spicy noodle을 검색하면 매운 라면만 찾는 것이 아니라, 뜨거운 국물, 면, 해산물, 채소, 진한 맛이 있는 한 그릇을 기대하는 경우가 많습니다. 도야짬뽕은 77i Bùi Thị Xuân, District 1에서 한국식 중화요리 짬뽕을 중심으로 다양한 매운 면 메뉴를 제공합니다.",
+    sections: [
+      { heading: "Spicy noodle 검색어와 짬뽕", body: "spicy noodle, Korean spicy noodles, spicy seafood noodles는 도야짬뽕의 짬뽕 메뉴와 잘 맞는 검색어입니다. 한국식 짬뽕은 빨간 국물, 면, 해산물, 채소가 들어간 매운 국물면입니다." },
+      { heading: "대표 메뉴 선택", body: "처음이라면 해물짬뽕이나 기본 도야짬뽕을 고르면 좋습니다. 고기 맛을 원하면 소고기짬뽕, 더 강한 매운맛과 마라 느낌을 원하면 마라짬뽕을 선택할 수 있습니다." },
+      { heading: "부이비엔과 벤탄시장 근처", body: "도야짬뽕은 호치민 1군 중심에 있어 부이비엔, 팜응우라오, 벤탄시장, 호텔가에서 이동하기 좋습니다. spicy noodle District 1 검색 의도와 위치가 잘 맞습니다." },
+      { heading: "매운 메뉴와 안 매운 메뉴 조합", body: "일행 중 매운 음식을 못 먹는 사람이 있다면 짜장면, 볶음밥, 탕수육, 군만두와 함께 주문하면 좋습니다." },
+      { heading: "포장과 배달 문의", body: "전화 또는 Zalo 084 337 7788로 포장, 배달, 매장 이용 가능 여부를 확인할 수 있습니다. 매장 반경 약 5km 이내 무료 배달 가능 여부도 문의할 수 있습니다." }
+    ],
+    faq: [
+      { question: "도야짬뽕의 spicy noodle은 어떤 메뉴인가요?", answer: "대표적으로 기본 짬뽕, 해물짬뽕, 소고기짬뽕, 마라짬뽕 같은 매운 국물면 메뉴입니다." },
+      { question: "호치민 1군에서 가까운가요?", answer: "네. 도야짬뽕은 77i Bùi Thị Xuân, District 1에 있습니다." },
+      { question: "맵지 않은 메뉴도 있나요?", answer: "짜장면, 볶음밥, 탕수육, 군만두처럼 비교적 편하게 먹을 수 있는 메뉴가 있습니다." },
+      { question: "배달도 가능한가요?", answer: "전화 또는 Zalo 084 337 7788로 문의하면 됩니다." }
+    ],
+    cta:
+      "호치민에서 spicy noodle 또는 매운 짬뽕을 찾고 있다면 도야짬뽕 1군 매장을 확인해보세요."
+  },
+  {
+    locale: "zh",
+    slug: "spicy-noodle-hu-zhi-ming-doya-jjambbong",
+    title: "胡志明市 Spicy Noodle：DOYA JJAMBBONG 韩式辣海鲜面",
+    description:
+      "搜索 spicy noodle、Korean spicy noodles、胡志明市辣面或韩式辣海鲜面？DOYA JJAMBBONG 位于第1郡，提供 jjambbong、champong、牛肉辣面和麻辣风味。",
+    eyebrow: "Spicy noodle 胡志明市",
+    date: spicyNoodleClusterDate,
+    readTime: "5分钟",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "胡志明市 spicy noodle DOYA JJAMBBONG 韩式辣海鲜面",
+    gallery: [
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "DOYA 韩式辣面 jjambbong" },
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "DOYA 牛肉辣面" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "DOYA 麻辣风味 spicy noodle" },
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "胡志明市第1郡 DOYA JJAMBBONG 店面" }
+    ],
+    alternateGroup: "spicy-noodle-ho-chi-minh",
+    keywords: [
+      "spicy noodle 胡志明市",
+      "胡志明市辣面",
+      "韩式辣海鲜面",
+      "Korean spicy noodles",
+      "jjambbong 胡志明",
+      "champong 第1郡",
+      "第1郡韩国餐厅",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "在胡志明市搜索 spicy noodle 的客人，通常想找热汤、辣味、面条和配料都清楚的一碗面。DOYA JJAMBBONG 位于第1郡 77i Bui Thi Xuan，提供韩式中餐风格的 jjambbong、champong、海鲜辣面、牛肉辣面和麻辣风味选择。",
+    sections: [
+      { heading: "Spicy noodle 与韩式辣海鲜面", body: "DOYA 的 spicy noodle 主要对应韩式 jjambbong/champong。它是红色辣汤面，有面条、蔬菜、海鲜风味和热汤。" },
+      { heading: "第一次推荐点什么？", body: "想吃代表菜单可以点海鲜 jjambbong。想要肉味更明显可以点牛肉 jjambbong。想要更强辣味和麻辣感，可以咨询 mara jjambbong。" },
+      { heading: "第1郡中心位置", body: "餐厅靠近 Bui Vien、Pham Ngu Lao、滨城市场和市中心酒店，适合搜索 spicy noodle District 1 或胡志明市辣面 的客人。" },
+      { heading: "多人用餐也容易搭配", body: "如果同行有人不吃辣，可以搭配韩式炸酱面、炒饭、糖醋肉或煎饺。" },
+      { heading: "外带和配送", body: "可以通过电话或 Zalo 084 337 7788 咨询外带和约 5km 范围配送。" }
+    ],
+    faq: [
+      { question: "DOYA 的 spicy noodle 是什么？", answer: "通常指韩式 jjambbong/champong，红汤辣海鲜面。" },
+      { question: "餐厅在哪里？", answer: "地址是 77i Bui Thi Xuan, District 1, Ho Chi Minh City。" },
+      { question: "不吃辣有选择吗？", answer: "可以选择韩式炸酱面、炒饭、糖醋肉或煎饺。" },
+      { question: "可以配送吗？", answer: "可以通过电话或 Zalo 084 337 7788 咨询配送情况。" }
+    ],
+    cta:
+      "在胡志明市第1郡寻找 spicy noodle 或韩式辣海鲜面？欢迎到 DOYA JJAMBBONG。"
+  },
+  {
+    locale: "ja",
+    slug: "spicy-noodle-ho-chi-minh-doya-jjambbong-ja",
+    title: "ホーチミンの Spicy Noodle：DOYA JJAMBBONG の韓国式辛い麺",
+    description:
+      "ホーチミンで spicy noodle、Korean spicy noodles、辛い麺、韓国式チャンポンを探す方へ。DOYA JJAMBBONG は1区で jjambbong、champong、牛肉チャンポン、マラ風チャンポンを提供します。",
+    eyebrow: "Spicy noodle ホーチミン",
+    date: spicyNoodleClusterDate,
+    readTime: "5分",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "ホーチミン spicy noodle DOYA JJAMBBONG 韓国式チャンポン",
+    gallery: [
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "DOYA 韓国式辛い麺 jjambbong" },
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "DOYA 牛肉チャンポン spicy noodle" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "DOYA マラ風チャンポン spicy noodle" },
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "ホーチミン1区 DOYA JJAMBBONG 店舗" }
+    ],
+    alternateGroup: "spicy-noodle-ho-chi-minh",
+    keywords: [
+      "spicy noodle ホーチミン",
+      "ホーチミン 辛い麺",
+      "韓国式チャンポン",
+      "Korean spicy noodles",
+      "jjambbong Ho Chi Minh",
+      "champong District 1",
+      "ホーチミン 韓国料理",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "ホーチミンで spicy noodle や辛い麺を検索する方は、温かいスープ、麺、辛さ、野菜、海鮮の旨味がある一杯を探していることが多いです。DOYA JJAMBBONG は1区 77i Bui Thi Xuan にある韓国中華レストランで、韓国式チャンポンを中心に辛い麺を提供しています。",
+    sections: [
+      { heading: "韓国式 spicy noodle とは？", body: "DOYA の spicy noodle は主に jjambbong / champong のことです。赤い辛口スープ、麺、野菜、海鮮の旨味を一緒に楽しめる韓国中華の麺料理です。" },
+      { heading: "最初に選びやすいメニュー", body: "代表的な一杯なら海鮮チャンポン。肉の旨味を感じたいなら牛肉チャンポン。より強い辛さならマラ風チャンポンを相談できます。" },
+      { heading: "1区中心部で行きやすい", body: "DOYA はブイビエン、ファングーラオ、ベンタイン市場、中心部ホテルからアクセスしやすく、spicy noodle District 1 の検索意図に合います。" },
+      { heading: "辛くないメニューも一緒に", body: "辛い麺が苦手な方がいる場合は、ジャージャー麺、炒飯、タンスユク、餃子も一緒に選べます。" },
+      { heading: "持ち帰りと配達", body: "電話または Zalo 084 337 7788 で持ち帰りや約5km圏内の配達について確認できます。" }
+    ],
+    faq: [
+      { question: "DOYA の spicy noodle は何ですか？", answer: "韓国式チャンポン、jjambbong、champong などの辛いスープ麺です。" },
+      { question: "場所はどこですか？", answer: "77i Bui Thi Xuan, District 1, Ho Chi Minh City です。" },
+      { question: "辛くない料理もありますか？", answer: "ジャージャー麺、炒飯、タンスユク、餃子などがあります。" },
+      { question: "配達できますか？", answer: "電話または Zalo 084 337 7788 で確認できます。" }
+    ],
+    cta:
+      "ホーチミン1区で spicy noodle や韓国式チャンポンを探しているなら DOYA JJAMBBONG へ。"
+  },
   {
     locale: "vi",
     slug: "khuya-an-gi-quan-1-doya-jjambbong",
