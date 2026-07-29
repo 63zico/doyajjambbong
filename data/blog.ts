@@ -37,8 +37,95 @@ const doyaJjambbongDifferenceDate = "2026-07-28";
 const koreanRestaurantHoChiMinhDate = "2026-07-29";
 const koreanColdNoodlesVietnameseDate = "2026-07-29";
 const koreanSpicyNoodlesVietnameseDate = "2026-07-29";
+const koreanFoodNearMeDate = "2026-07-29";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "en",
+    slug: "korean-food-near-me-district-1-doya-jjambbong",
+    title: "Korean food near me in District 1: DOYA JJAMBBONG near Bui Vien and Ben Thanh",
+    description:
+      "Searching Korean food near me in Ho Chi Minh City? DOYA JJAMBBONG is a Korean-Chinese restaurant in District 1 serving jjambbong, jajangmyeon, tangsuyuk, mandu, and takeaway near Bui Vien and Ben Thanh.",
+    eyebrow: "Korean food near me",
+    date: koreanFoodNearMeDate,
+    readTime: "5 min",
+    image: "/images/store/doya-district-1-exterior-sunset.png",
+    imageAlt: "DOYA JJAMBBONG Korean food near me in District 1 Ho Chi Minh City storefront",
+    gallery: [
+      { src: "/images/blog/district-1-best-restaurant-doya-01.jpg", alt: "Korean food table at DOYA JJAMBBONG District 1" },
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "Korean spicy seafood noodles near Bui Vien at DOYA JJAMBBONG" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "Jajangmyeon Korean black bean noodles near Ben Thanh" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "Tangsuyuk Korean sweet and sour pork in District 1" }
+    ],
+    keywords: [
+      "Korean food near me",
+      "Korean restaurant near me",
+      "Korean food District 1",
+      "Korean restaurant District 1",
+      "Korean food near Bui Vien",
+      "Korean restaurant near Ben Thanh",
+      "Korean food near Pham Ngu Lao",
+      "Korean food Ho Chi Minh City",
+      "Korean Chinese restaurant Ho Chi Minh",
+      "jjambbong Ho Chi Minh",
+      "jajangmyeon District 1",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "When you search Korean food near me in Ho Chi Minh City, Google usually looks at your location, nearby business profiles, reviews, and clear local pages. If you are in District 1 near Bui Vien, Pham Ngu Lao, Ben Thanh Market, or a central hotel, DOYA JJAMBBONG at 77i Bui Thi Xuan is a practical Korean food option for spicy noodles, Korean black bean noodles, tangsuyuk, mandu, dine-in, takeaway, and delivery questions.",
+    sections: [
+      {
+        heading: "A Korean food option in central District 1",
+        body:
+          "DOYA JJAMBBONG is located at 77i Bui Thi Xuan, District 1, Ho Chi Minh City. The restaurant is convenient for guests around Bui Vien Walking Street, Pham Ngu Lao, Ben Thanh Market, and nearby hotels who want Korean food without traveling far."
+      },
+      {
+        heading: "What to order when you find DOYA near you",
+        body:
+          "The easiest first order is jjambbong or champong if you want hot Korean spicy seafood noodles. If you prefer a non-spicy noodle dish, choose jajangmyeon. For sharing, tangsuyuk and fried mandu are simple group choices."
+      },
+      {
+        heading: "Why Korean-Chinese food works for travelers",
+        body:
+          "Travelers searching Korean food near me often want something familiar, filling, and easy to understand from photos. Korean-Chinese dishes are direct: spicy noodle soup, black bean noodles, fried dumplings, fried rice, and crispy sweet-and-sour pork."
+      },
+      {
+        heading: "Near Bui Vien, Pham Ngu Lao, and Ben Thanh",
+        body:
+          "If your search includes Korean food near Bui Vien, Korean restaurant near Ben Thanh, or Korean food near Pham Ngu Lao, DOYA's District 1 location helps connect the search to a real storefront, menu photos, contact buttons, and Google Maps."
+      },
+      {
+        heading: "Dine in, takeaway, or delivery",
+        body:
+          "You can visit the restaurant, ask for takeaway, or call/message Zalo 084 337 7788 for delivery questions. Free delivery may be available within about 5 km depending on location, time, and order conditions."
+      }
+    ],
+    faq: [
+      {
+        question: "Where is DOYA JJAMBBONG?",
+        answer: "DOYA JJAMBBONG is at 77i Bui Thi Xuan, District 1, Ho Chi Minh City, near Bui Vien, Pham Ngu Lao, Ben Thanh Market, and central hotels."
+      },
+      {
+        question: "Is DOYA good for Korean food near me searches?",
+        answer:
+          "If you are in central District 1, DOYA is a relevant Korean food option for jjambbong, jajangmyeon, tangsuyuk, mandu, fried rice, dine-in, takeaway, and delivery questions."
+      },
+      {
+        question: "What Korean food should I order first?",
+        answer: "Try jjambbong or champong for spicy seafood noodles, jajangmyeon for non-spicy black bean noodles, and tangsuyuk or fried mandu for sharing."
+      },
+      {
+        question: "Can I order delivery from DOYA?",
+        answer: "Call or message Zalo 084 337 7788 to ask about takeaway or free delivery within about 5 km of the restaurant."
+      },
+      {
+        question: "Is DOYA near Bui Vien or Ben Thanh?",
+        answer: "Yes. DOYA is in District 1 on Bui Thi Xuan, convenient from Bui Vien, Pham Ngu Lao, Ben Thanh Market, and nearby hotels."
+      }
+    ],
+    cta:
+      "Searching Korean food near me in District 1? Visit DOYA JJAMBBONG at 77i Bui Thi Xuan or call/Zalo 084 337 7788 for dine-in, takeaway, and delivery questions."
+  },
   {
     locale: "vi",
     slug: "mi-cay-han-quoc-quan-1-doya-jjambbong",
