@@ -39,8 +39,99 @@ const koreanColdNoodlesVietnameseDate = "2026-07-29";
 const koreanSpicyNoodlesVietnameseDate = "2026-07-29";
 const koreanFoodNearMeDate = "2026-07-29";
 const chineseFoodNearMeDate = "2026-07-29";
+const lateNightWhatToEatVietnameseDate = "2026-07-29";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "vi",
+    slug: "khuya-an-gi-quan-1-doya-jjambbong",
+    title: "Khuya ăn gì ở Quận 1? Gợi ý món nóng, mì cay và món Hàn-Trung tại DOYA",
+    description:
+      "Khuya ăn gì ở Sài Gòn, Quận 1, gần Bùi Viện hoặc Bến Thành? DOYA JJAMBBONG gợi ý mì cay Hàn Quốc, mì tương đen, tangsuyuk, mandu và món nóng mở đến 03:30.",
+    eyebrow: "Khuya ăn gì",
+    date: lateNightWhatToEatVietnameseDate,
+    readTime: "5 phút",
+    image: "/images/store/doya-district-1-neon-night.png",
+    imageAlt: "Khuya ăn gì ở Quận 1 tại DOYA JJAMBBONG mở cửa đến 03:30",
+    gallery: [
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "Mì cay Hàn Quốc ăn khuya ở Quận 1" },
+      { src: "/images/menu/doya-jajangmyeon.jpg", alt: "Mì tương đen Hàn Quốc cho bữa ăn khuya không cay" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "Tangsuyuk món chia sẻ khi ăn khuya gần Bùi Viện" },
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "DOYA JJAMBBONG gần Bùi Viện và Bến Thành" }
+    ],
+    keywords: [
+      "khuya ăn gì",
+      "ăn khuya Quận 1",
+      "món ăn khuya Sài Gòn",
+      "quán ăn khuya Quận 1",
+      "ăn khuya gần Bùi Viện",
+      "ăn khuya gần Bến Thành",
+      "mì cay ăn khuya",
+      "món Hàn ăn khuya",
+      "quán Hàn mở khuya",
+      "mì tương đen ăn khuya",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "Khi trời đã khuya và bạn gõ “khuya ăn gì”, điều quan trọng nhất thường là món phải nóng, no bụng, dễ gọi và quán còn mở. Nếu bạn đang ở Quận 1 gần Bùi Viện, Phạm Ngũ Lão, Bến Thành hoặc khu khách sạn trung tâm, DOYA JJAMBBONG tại 77i Bùi Thị Xuân là một lựa chọn món Hàn-Trung cho bữa tối muộn, ăn sau khi đi chơi hoặc gọi món về phòng.",
+    sections: [
+      {
+        heading: "1. Mì cay Hàn Quốc cho lúc cần món nóng",
+        body:
+          "Nếu bạn muốn một món nóng và đậm vị vào buổi khuya, mì cay Hàn Quốc jjambbong là lựa chọn dễ hiểu. Nước dùng đỏ, sợi mì, rau, thịt và hải sản giúp bữa ăn chắc bụng hơn những món ăn vặt nhẹ."
+      },
+      {
+        heading: "2. Mì tương đen nếu không muốn ăn cay",
+        body:
+          "Không phải ai cũng muốn ăn cay vào buổi tối muộn. Mì tương đen Hàn Quốc jajangmyeon có vị sốt đậu đen mặn ngọt, dễ ăn hơn, phù hợp khi đi nhóm có người ăn cay và người không ăn cay."
+      },
+      {
+        heading: "3. Tangsuyuk hoặc mandu để chia sẻ",
+        body:
+          "Khi đi cùng bạn bè sau khi đi chơi ở Bùi Viện hoặc Phạm Ngũ Lão, các món chia sẻ như tangsuyuk và mandu chiên rất tiện. Bạn có thể gọi một tô mì nóng và thêm món chiên để cả bàn cùng ăn."
+      },
+      {
+        heading: "4. Cơm chiên hoặc món cơm khi muốn no hơn",
+        body:
+          "Nếu bạn tìm khuya ăn gì nhưng không muốn ăn mì, cơm chiên hoặc món cơm kiểu Hàn-Trung là lựa chọn thực tế. Món cơm hợp cho khách vừa đi chơi về, cần một bữa no và không muốn suy nghĩ quá nhiều."
+      },
+      {
+        heading: "5. Chọn quán còn mở và dễ liên hệ",
+        body:
+          "DOYA JJAMBBONG mở cửa từ 10:30 đến 03:30, phù hợp cho bữa trưa, bữa tối và ăn khuya tại Quận 1. Trước khi đến muộn hoặc muốn đặt món, bạn nên gọi hoặc nhắn Zalo 084 337 7788 để xác nhận bàn, món và giao hàng."
+      },
+      {
+        heading: "Ăn khuya gần Bùi Viện, Bến Thành và khách sạn trung tâm",
+        body:
+          "Vị trí 77i Bùi Thị Xuân giúp DOYA phù hợp với các tìm kiếm như ăn khuya Quận 1, ăn khuya gần Bùi Viện, ăn khuya gần Bến Thành, quán Hàn mở khuya hoặc món Hàn ăn khuya. Nếu ở trong bán kính khoảng 5km, bạn có thể hỏi thêm về giao hàng miễn phí tùy thời điểm và vị trí."
+      }
+    ],
+    faq: [
+      {
+        question: "Khuya ăn gì ở Quận 1 cho no bụng?",
+        answer:
+          "Bạn có thể chọn mì cay Hàn Quốc jjambbong, mì tương đen, cơm chiên, tangsuyuk hoặc mandu tại DOYA JJAMBBONG nếu muốn món nóng và dễ ăn."
+      },
+      {
+        question: "DOYA JJAMBBONG mở đến mấy giờ?",
+        answer: "DOYA JJAMBBONG mở cửa từ 10:30 đến 03:30. Nếu đến muộn, nên gọi hoặc nhắn Zalo 084 337 7788 để xác nhận trước."
+      },
+      {
+        question: "DOYA có gần Bùi Viện không?",
+        answer: "DOYA nằm tại 77i Bùi Thị Xuân, Quận 1, thuận tiện di chuyển từ Bùi Viện, Phạm Ngũ Lão, Bến Thành và khu khách sạn trung tâm."
+      },
+      {
+        question: "Không ăn cay thì khuya nên gọi món gì?",
+        answer: "Mì tương đen Hàn Quốc, cơm chiên, mandu hoặc tangsuyuk là các lựa chọn dễ ăn hơn nếu bạn không muốn ăn cay."
+      },
+      {
+        question: "Có giao hàng ăn khuya không?",
+        answer: "Bạn có thể gọi hoặc nhắn Zalo 084 337 7788 để hỏi takeaway hoặc giao hàng miễn phí trong bán kính khoảng 5km nếu phù hợp."
+      }
+    ],
+    cta:
+      "Khuya chưa biết ăn gì ở Quận 1? Ghé DOYA JJAMBBONG tại 77i Bùi Thị Xuân hoặc gọi/Zalo 084 337 7788 để hỏi món, takeaway và giao hàng."
+  },
   {
     locale: "en",
     slug: "chinese-food-near-me-district-1-korean-chinese-doya",
