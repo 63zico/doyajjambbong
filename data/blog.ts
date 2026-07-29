@@ -35,8 +35,91 @@ const vietnameseBlackBeanNoodlesDate = "2026-07-28";
 const champongSeoClusterDate = "2026-07-28";
 const doyaJjambbongDifferenceDate = "2026-07-28";
 const koreanRestaurantHoChiMinhDate = "2026-07-29";
+const koreanColdNoodlesVietnameseDate = "2026-07-29";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "vi",
+    slug: "mi-lanh-han-quoc-naengmyeon-hai-san-doya",
+    title: "Mì lạnh Hàn Quốc ở Quận 1: Naengmyeon hải sản mát lạnh tại DOYA",
+    description:
+      "Tìm mì lạnh Hàn Quốc, mi lanh han quoc, naengmyeon hải sản hoặc món Hàn mát lạnh ở Hồ Chí Minh? DOYA JJAMBBONG giới thiệu tô mì lạnh với nước dùng thanh mát, thịt bò, hải sản và rau.",
+    eyebrow: "Mì lạnh Hàn Quốc",
+    date: koreanColdNoodlesVietnameseDate,
+    readTime: "5 phút",
+    image: "/images/blog/doya-mi-lanh-han-quoc-naengmyeon.png",
+    imageAlt: "Mì lạnh Hàn Quốc naengmyeon hải sản tại DOYA JJAMBBONG Quận 1 Hồ Chí Minh",
+    gallery: [
+      { src: "/images/blog/doya-cold-noodles-quan-1.jpg", alt: "Tô mì lạnh Hàn Quốc với thịt bò, hải sản, rau và nước dùng mát" },
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "Mặt tiền DOYA JJAMBBONG tại 77i Bùi Thị Xuân Quận 1" },
+      { src: "/images/menu/doya-fried-mandu.jpg", alt: "Mandu chiên ăn kèm mì lạnh Hàn Quốc tại DOYA" }
+    ],
+    keywords: [
+      "mì lạnh Hàn Quốc",
+      "mi lanh han quoc",
+      "naengmyeon hải sản",
+      "mì lạnh Quận 1",
+      "mì lạnh Hồ Chí Minh",
+      "món Hàn mát lạnh",
+      "quán ăn Hàn Quốc Quận 1",
+      "Korean cold noodles Ho Chi Minh",
+      "cold noodles District 1",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "Mì lạnh Hàn Quốc, còn được nhiều khách tìm bằng từ naengmyeon hoặc mi lanh han quoc, là lựa chọn dễ ăn khi thời tiết Hồ Chí Minh nóng hoặc khi bạn muốn đổi vị sau các món cay. Tại DOYA JJAMBBONG ở 77i Bùi Thị Xuân, Quận 1, món mì lạnh được giới thiệu theo phong cách Hàn-Trung với nước dùng thanh mát, sợi mì dai, thịt bò, hải sản và rau nhiều màu.",
+    sections: [
+      {
+        heading: "Mì lạnh Hàn Quốc là gì?",
+        body:
+          "Mì lạnh Hàn Quốc thường được biết đến với tên naengmyeon. Điểm hấp dẫn nằm ở nước dùng mát, sợi mì dai và topping được xếp đẹp mắt. Với khách Việt, đây là món Hàn dễ hiểu vì vị thanh, mát và không nặng như các món nước nóng cay."
+      },
+      {
+        heading: "Vì sao mì lạnh hợp với thời tiết Hồ Chí Minh?",
+        body:
+          "Hồ Chí Minh có nhiều ngày nắng nóng, đặc biệt ở khu trung tâm Quận 1 nơi khách du lịch thường đi bộ giữa Bến Thành, Bùi Viện và Phạm Ngũ Lão. Khi muốn một món Hàn mát lạnh, nhẹ hơn jjambbong nhưng vẫn đủ no, mì lạnh Hàn Quốc là từ khóa rất tự nhiên để tìm."
+      },
+      {
+        heading: "Naengmyeon hải sản tại DOYA có gì đáng thử?",
+        body:
+          "Món mì lạnh tại DOYA có sợi mì dai, nước dùng thanh mát, thịt bò, tôm, bào ngư, trứng, cà rốt, dưa leo, cà chua và rau tím. Topping nhiều màu giúp tô mì nhìn hấp dẫn và phù hợp cho khách muốn thử món Hàn mới ngoài mì cay Hàn Quốc hay mì tương đen."
+      },
+      {
+        heading: "Ăn mì lạnh cùng món nào ngon?",
+        body:
+          "Nếu đi nhóm, bạn có thể gọi mì lạnh cùng mandu chiên, tangsuyuk hoặc một tô jjambbong nóng. Cách gọi này tạo sự cân bằng: một món mát, một món giòn hoặc một món cay nóng để cả bàn dễ chia sẻ."
+      },
+      {
+        heading: "Mì lạnh Hàn Quốc ở đâu tại Quận 1?",
+        body:
+          "DOYA JJAMBBONG nằm tại 77i Bùi Thị Xuân, District 1, Ho Chi Minh City, gần Bùi Viện, Phạm Ngũ Lão, Bến Thành và khu khách sạn trung tâm. Trước khi đến, bạn có thể gọi hoặc nhắn Zalo 084 337 7788 để hỏi tình trạng món mì lạnh trong ngày."
+      }
+    ],
+    faq: [
+      {
+        question: "Mì lạnh Hàn Quốc có phải naengmyeon không?",
+        answer: "Có. Naengmyeon là tên thường dùng cho mì lạnh Hàn Quốc. Khách Việt cũng có thể tìm bằng cách gõ mi lanh han quoc hoặc mì lạnh Hàn Quốc."
+      },
+      {
+        question: "Mì lạnh Hàn Quốc có cay không?",
+        answer: "Mì lạnh thường có vị mát và nhẹ hơn các món mì cay như jjambbong. Nếu bạn không ăn cay, hãy hỏi nhân viên khi gọi món để được tư vấn."
+      },
+      {
+        question: "DOYA JJAMBBONG ở đâu?",
+        answer: "DOYA JJAMBBONG ở 77i Bùi Thị Xuân, District 1, Ho Chi Minh City, thuận tiện di chuyển từ Bùi Viện, Phạm Ngũ Lão và Bến Thành."
+      },
+      {
+        question: "Có nên gọi món trước không?",
+        answer: "Có. Vì món theo ngày có thể thay đổi, bạn nên gọi hoặc nhắn Zalo 084 337 7788 để hỏi mì lạnh Hàn Quốc trước khi đến."
+      },
+      {
+        question: "Mì lạnh ăn kèm món gì hợp?",
+        answer: "Mandu chiên, tangsuyuk, mì tương đen hoặc một tô jjambbong nóng là các món dễ gọi cùng mì lạnh khi đi nhóm."
+      }
+    ],
+    cta:
+      "Muốn thử mì lạnh Hàn Quốc ở Quận 1? Ghé DOYA JJAMBBONG tại 77i Bùi Thị Xuân hoặc gọi/Zalo 084 337 7788 để hỏi món trước khi đến."
+  },
   {
     locale: "ko",
     slug: "ho-chi-minh-korean-restaurant-doya-jjambbong",
