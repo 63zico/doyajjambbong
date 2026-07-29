@@ -36,8 +36,95 @@ const champongSeoClusterDate = "2026-07-28";
 const doyaJjambbongDifferenceDate = "2026-07-28";
 const koreanRestaurantHoChiMinhDate = "2026-07-29";
 const koreanColdNoodlesVietnameseDate = "2026-07-29";
+const koreanSpicyNoodlesVietnameseDate = "2026-07-29";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "vi",
+    slug: "mi-cay-han-quoc-quan-1-doya-jjambbong",
+    title: "Mì cay Hàn Quốc ở Quận 1: jjambbong nóng cay tại DOYA JJAMBBONG",
+    description:
+      "Tìm mì cay Hàn Quốc, mi cay Han Quoc, mì cay hải sản hoặc jjambbong ở Hồ Chí Minh? DOYA JJAMBBONG phục vụ mì cay kiểu Hàn-Trung tại 77i Bùi Thị Xuân, Quận 1.",
+    eyebrow: "Mì cay Hàn Quốc",
+    date: koreanSpicyNoodlesVietnameseDate,
+    readTime: "5 phút",
+    image: "/images/menu/doya-seafood-jjambbong.jpg",
+    imageAlt: "Mì cay Hàn Quốc jjambbong hải sản tại DOYA JJAMBBONG Quận 1 Hồ Chí Minh",
+    gallery: [
+      { src: "/images/menu/doya-classic-jjambbong.jpg", alt: "DOYA jjambbong mì cay Hàn Quốc cổ điển tại Quận 1" },
+      { src: "/images/menu/doya-beef-jjambbong.jpg", alt: "Mì cay bò Hàn Quốc tại DOYA JJAMBBONG" },
+      { src: "/images/menu/doya-spicy-pork-jjambbong.jpg", alt: "Mara jjambbong mì cay Hàn Quốc vị cay đậm" },
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "Mặt tiền DOYA JJAMBBONG 77i Bùi Thị Xuân Quận 1" }
+    ],
+    keywords: [
+      "mì cay Hàn Quốc",
+      "mi cay Han Quoc",
+      "mì cay Hàn Quốc Quận 1",
+      "mì cay hải sản",
+      "mì cay hải sản Hàn Quốc",
+      "jjambbong Quận 1",
+      "champong Quận 1",
+      "mì cay gần Bùi Viện",
+      "mì cay gần Bến Thành",
+      "quán ăn Hàn Quốc Quận 1",
+      "giao hàng mì cay Quận 1",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "Nếu bạn đang tìm mì cay Hàn Quốc ở Hồ Chí Minh, rất có thể bạn muốn một tô mì nóng, nước dùng đỏ đậm vị, có rau, hải sản, thịt và cảm giác cay ấm đúng kiểu Hàn. DOYA JJAMBBONG tại 77i Bùi Thị Xuân, Quận 1 là địa chỉ chuyên các món Hàn-Trung như jjambbong, champong, mì tương đen, tangsuyuk và mandu, phù hợp cho bữa trưa, bữa tối, ăn khuya hoặc gọi món về khách sạn.",
+    sections: [
+      {
+        heading: "Mì cay Hàn Quốc tại DOYA là món gì?",
+        body:
+          "Mì cay Hàn Quốc tại DOYA là dòng jjambbong/champong kiểu Hàn-Trung: nước dùng đỏ nóng, sợi mì dai, rau, hải sản và vị cay rõ. Đây là món phù hợp khi bạn muốn ăn mì cay nhưng vẫn cần một tô có nước dùng đậm và topping đủ no."
+      },
+      {
+        heading: "Khác gì với mì cay thông thường?",
+        body:
+          "Nhiều quán mì cay tập trung vào cấp độ cay. DOYA tập trung vào vị nước dùng Hàn-Trung, hương nguyên liệu được xào, vị hải sản và cách ăn giống Korean jjambbong hơn. Vì vậy khách có thể tìm bằng nhiều từ như mì cay Hàn Quốc, mì cay hải sản, jjambbong, jjamppong hoặc champong."
+      },
+      {
+        heading: "Nên chọn món nào khi lần đầu đến?",
+        body:
+          "Nếu muốn món đại diện, hãy chọn DOYA jjambbong hoặc seafood jjambbong. Nếu thích vị thịt rõ hơn, có thể chọn beef jjambbong. Nếu thích cay mạnh và vị tê hơn, mara jjambbong là lựa chọn đáng thử. Nhóm đi chung có thể gọi thêm mì tương đen và tangsuyuk để cân bằng cay và không cay."
+      },
+      {
+        heading: "Vị trí thuận tiện ở Quận 1",
+        body:
+          "DOYA nằm gần Bùi Viện, Phạm Ngũ Lão, Bến Thành và khu khách sạn trung tâm. Khi khách tìm mì cay Hàn Quốc Quận 1, mì cay gần Bùi Viện hoặc mì cay gần Bến Thành, vị trí 77i Bùi Thị Xuân giúp đi lại dễ hơn."
+      },
+      {
+        heading: "Ăn tại quán, takeaway hoặc giao hàng",
+        body:
+          "Bạn có thể ăn tại quán, hỏi takeaway hoặc gọi/Zalo 084 337 7788 để hỏi giao hàng. DOYA có thể hỗ trợ giao hàng miễn phí trong bán kính khoảng 5km tùy vị trí, thời điểm và tình trạng đơn hàng."
+      }
+    ],
+    faq: [
+      {
+        question: "Mì cay Hàn Quốc tại DOYA có phải jjambbong không?",
+        answer:
+          "Có. Mì cay Hàn Quốc tại DOYA thường được hiểu là jjambbong hoặc champong kiểu Hàn-Trung, có nước dùng đỏ cay, mì, rau và hải sản."
+      },
+      {
+        question: "DOYA JJAMBBONG ở đâu?",
+        answer: "DOYA JJAMBBONG nằm tại 77i Bùi Thị Xuân, District 1, Ho Chi Minh City, gần Bùi Viện, Phạm Ngũ Lão và Bến Thành."
+      },
+      {
+        question: "Có món mì cay nào khác ngoài hải sản không?",
+        answer: "Bạn có thể xem các lựa chọn như DOYA jjambbong, seafood jjambbong, beef jjambbong, mara jjambbong, cream jjambbong hoặc white seafood jjambbong."
+      },
+      {
+        question: "Có giao hàng mì cay Hàn Quốc không?",
+        answer: "Bạn có thể gọi hoặc nhắn Zalo 084 337 7788 để hỏi takeaway hoặc giao hàng miễn phí trong bán kính khoảng 5km nếu phù hợp."
+      },
+      {
+        question: "Nếu không ăn cay thì nên gọi gì?",
+        answer: "Nếu không ăn cay, mì tương đen Hàn Quốc jajangmyeon, cơm chiên, mandu hoặc tangsuyuk là các lựa chọn dễ ăn hơn."
+      }
+    ],
+    cta:
+      "Muốn ăn mì cay Hàn Quốc ở Quận 1? Ghé DOYA JJAMBBONG tại 77i Bùi Thị Xuân hoặc gọi/Zalo 084 337 7788 để hỏi bàn, takeaway và giao hàng."
+  },
   {
     locale: "vi",
     slug: "mi-lanh-han-quoc-naengmyeon-hai-san-doya",
