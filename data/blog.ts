@@ -41,8 +41,107 @@ const koreanFoodNearMeDate = "2026-07-29";
 const chineseFoodNearMeDate = "2026-07-29";
 const lateNightWhatToEatVietnameseDate = "2026-07-29";
 const spicyNoodleClusterDate = "2026-07-29";
+const chineseJajangmyeonChamponDate = "2026-08-06";
 
 export const blogPosts: BlogPost[] = [
+  {
+    locale: "zh",
+    slug: "zha-jiang-mian-chao-ma-mian-jajangmyeon-jjambbong-hu-zhi-ming",
+    title: "胡志明市炸酱面 & 炒码面 | DOYA 韩式炸酱面和辣海鲜面第1郡指南",
+    description:
+      "搜索炸酱面、韩式炸酱面、炒码面、韩国炒码面或 jjambbong？DOYA JJAMBBONG 位于胡志明市第1郡，提供韩式炸酱面、辣海鲜炒码面风味汤面、糖醋肉和煎饺。",
+    eyebrow: "炸酱面 & 炒码面",
+    date: chineseJajangmyeonChamponDate,
+    readTime: "5分钟",
+    image: "/images/menu/doya-jajangmyeon.jpg",
+    imageAlt: "胡志明市第1郡 DOYA 韩式炸酱面 炸酱面 jajangmyeon",
+    gallery: [
+      { src: "/images/menu/doya-seafood-jjambbong.jpg", alt: "胡志明市 DOYA 炒码面风味韩式辣海鲜面 jjambbong" },
+      { src: "/images/menu/doya-tangsuyuk.jpg", alt: "炸酱面和炒码面适合搭配的韩式糖醋肉" },
+      { src: "/images/menu/doya-fried-mandu.jpg", alt: "DOYA 煎饺适合搭配韩式炸酱面" },
+      { src: "/images/store/doya-district-1-exterior-sunset.png", alt: "DOYA JJAMBBONG 胡志明市第1郡店面" }
+    ],
+    keywords: [
+      "炸酱面",
+      "韩式炸酱面",
+      "韩国炸酱面",
+      "胡志明炸酱面",
+      "胡志明市韩式炸酱面",
+      "第1郡炸酱面",
+      "炒码面",
+      "韩国炒码面",
+      "胡志明炒码面",
+      "韩式炒码面",
+      "jajangmyeon 胡志明",
+      "jjambbong 胡志明",
+      "champong 第1郡",
+      "韩国中餐 胡志明市",
+      "DOYA JJAMBBONG"
+    ],
+    intro:
+      "在胡志明市搜索“炸酱面 & 炒码面”的客人，通常想找韩国中餐里的经典组合：一份不辣、浓郁的韩式炸酱面，再配一碗热辣的海鲜汤面。DOYA JJAMBBONG 位于 77i Bùi Thị Xuân, District 1, Ho Chi Minh City，主打韩式炸酱面、jjambbong 辣海鲜面、糖醋肉和煎饺，适合中国客人、韩国料理爱好者和住在第1郡的游客。",
+    sections: [
+      {
+        heading: "1. 炸酱面：不辣、浓郁、容易入口",
+        body:
+          "DOYA 的韩式炸酱面也常被搜索为 jajangmyeon、韩国黑豆面或 mi tuong den。它使用黑豆酱风味，口感浓厚但不辣，适合不想吃辣的客人、家庭用餐和第一次尝试韩国中餐的人。"
+      },
+      {
+        heading: "2. 炒码面：很多客人会用来找韩式辣海鲜面",
+        body:
+          "中文里“炒码面”常让人联想到韩国中餐里的辣海鲜汤面。DOYA 菜单中的 jjambbong、champong、韩式辣海鲜面正好对应这种搜索意图：热汤、面条、蔬菜、海鲜风味和明显辣味。"
+      },
+      {
+        heading: "3. 炸酱面 + 炒码面是经典搭配",
+        body:
+          "如果两个人或多人一起吃，一份韩式炸酱面加一碗 jjambbong 很容易搭配。一份不辣、一份辛辣，口味互补，也方便第一次来的客人同时了解 DOYA 的两大招牌。"
+      },
+      {
+        heading: "4. 再加糖醋肉或煎饺更像韩式中餐",
+        body:
+          "韩国中餐里，炸酱面、辣海鲜面、糖醋肉是很常见的组合。DOYA 也提供糖醋肉和煎饺，适合朋友聚餐、晚餐、夜宵或想点几道菜一起分享的客人。"
+      },
+      {
+        heading: "5. 第1郡位置：靠近 Bui Vien、Pham Ngu Lao 和 Ben Thanh",
+        body:
+          "DOYA 在胡志明市第1郡，方便从裴援街、范五老街、滨城市场和市中心酒店前往。搜索胡志明炸酱面、胡志明炒码面、第1郡韩国中餐时，这个位置对游客和本地客人都比较直接。"
+      },
+      {
+        heading: "6. 到店、外带和配送",
+        body:
+          "可以到店用餐，也可以通过电话或 Zalo 084 337 7788 咨询外带和配送。餐厅半径约 5km 内可询问免费配送条件，具体以当日位置、时间和订单情况为准。"
+      }
+    ],
+    faq: [
+      {
+        question: "DOYA 有炸酱面吗？",
+        answer:
+          "有。DOYA 提供韩式炸酱面，也常被搜索为 jajangmyeon、韩国黑豆面或 mi tuong den。"
+      },
+      {
+        question: "炒码面和 jjambbong 是同一种搜索意图吗？",
+        answer:
+          "很多中国客人搜索炒码面时，实际想找韩国中餐里的辣海鲜汤面。DOYA 的 jjambbong / champong 就是这种热辣海鲜汤面风格。"
+      },
+      {
+        question: "第一次来 DOYA 应该怎么点？",
+        answer:
+          "推荐韩式炸酱面 + jjambbong 或韩式炸酱面 + 糖醋肉。想吃辣可以选择海鲜 jjambbong，想不辣可以选择炸酱面。"
+      },
+      {
+        question: "DOYA 在胡志明哪里？",
+        answer:
+          "地址是 77i Bùi Thị Xuân, District 1, Ho Chi Minh City，靠近 Bui Vien、Pham Ngu Lao、Ben Thanh 和第1郡酒店区。"
+      },
+      {
+        question: "可以外带或配送炸酱面和炒码面吗？",
+        answer:
+          "可以通过电话或 Zalo 084 337 7788 咨询外带和配送。约 5km 范围内可询问免费配送条件。"
+      }
+    ],
+    cta:
+      "想在胡志明市第1郡吃炸酱面、炒码面风味辣海鲜面或韩式中餐？到 DOYA JJAMBBONG，或电话/Zalo 084 337 7788 咨询菜单、外带和配送。"
+  },
   {
     locale: "en",
     slug: "spicy-noodle-ho-chi-minh-doya-jjambbong",
